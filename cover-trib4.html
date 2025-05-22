@@ -251,6 +251,84 @@
         const subtitle1Size = fontSize * 0.35;
         const subtitle2Size = fontSize * 0.25;
         
+        // Sediment accumulation grid for natural buildup
+        const gridSize = 4; // Size of each grid cell
+        const sedimentGrid = {};
+        
+        // Function to get grid key
+        function getGridKey(x, y) {
+            const gridX = Math.floor(x / gridSize);
+            const gridY = Math.floor(y / gridSize);
+            return `${gridX},${gridY}`;
+        }
+        
+        // Function to check if a position can hold a particle
+        function canPlaceParticle(x, y) {
+            const key = getGridKey(x, y);
+            const gridX = Math.floor(x / gridSize);
+            const gridY = Math.floor(y / gridSize);
+            
+            // Check if at bottom edge
+            if (y >= canvas.height - gridSize) {
+                return !sedimentGrid[key];
+            }
+            
+            // Check if there's support below
+            const belowKey = `${gridX},${gridY + 1}`;
+            return sedimentGrid[belowKey] && !sedimentGrid[key];
+        }
+        
+        // Function to find settling position
+        function findSettlingPosition(x, y) {
+            const gridX = Math.floor(x / gridSize);
+            let gridY = Math.floor(y / gridSize);
+            
+            // Move down until we find a valid position
+            while (gridY < Math.floor(canvas.height / gridSize)) {
+                const key = `${gridX},${gridY}`;
+                
+                if (gridY >= Math.floor((canvas.height - gridSize) / gridSize)) {
+                    // At bottom
+                    if (!sedimentGrid[key]) {
+                        return { x: gridX * gridSize + gridSize/2, y: canvas.height - gridSize/2, key };
+                    }
+                } else {
+                    // Check if there's support below
+                    const belowKey = `${gridX},${gridY + 1}`;
+                    if (sedimentGrid[belowKey] && !sedimentGrid[key]) {
+                        return { x: gridX * gridSize + gridSize/2, y: gridY * gridSize + gridSize/2, key };
+                    }
+                }
+                gridY++;
+            }
+            
+            // If no direct position below, look for nearby positions
+            for (let dx = -1; dx <= 1; dx++) {
+                if (dx === 0) continue;
+                const newX = gridX + dx;
+                if (newX < 0 || newX >= Math.floor(canvas.width / gridSize)) continue;
+                
+                gridY = Math.floor(y / gridSize);
+                while (gridY < Math.floor(canvas.height / gridSize)) {
+                    const key = `${newX},${gridY}`;
+                    
+                    if (gridY >= Math.floor((canvas.height - gridSize) / gridSize)) {
+                        if (!sedimentGrid[key]) {
+                            return { x: newX * gridSize + gridSize/2, y: canvas.height - gridSize/2, key };
+                        }
+                    } else {
+                        const belowKey = `${newX},${gridY + 1}`;
+                        if (sedimentGrid[belowKey] && !sedimentGrid[key]) {
+                            return { x: newX * gridSize + gridSize/2, y: gridY * gridSize + gridSize/2, key };
+                        }
+                    }
+                    gridY++;
+                }
+            }
+            
+            return null;
+        }
+        
         // Create particles from text
         function createTextParticles() {
             ctx.textAlign = 'center';
@@ -465,74 +543,27 @@
                     particle.x += particle.vx;
                     particle.y += particle.vy;
                     
-                    // Keep particles on screen - create dam barrier at bottom left
+                    // Keep particles on screen
                     if (particle.x < 0) particle.x = 0;
                     if (particle.x > canvas.width) particle.x = canvas.width;
                     if (particle.y > canvas.height) particle.y = canvas.height;
                     
-                    // Dam barrier - no particles can go past the corner
-                    if (particle.x < 5 && particle.y > canvas.height - 5) {
-                        particle.x = Math.max(0, particle.x);
-                        particle.y = Math.min(canvas.height, particle.y);
-                        particle.vx = 0;
-                        particle.vy = 0;
-                        particle.settled = true;
-                    }
-                    
-                    // Settle particles at the corner and back up like a reservoir
-                    if (!particle.settled) {
-                        const cornerX = 0;
-                        const cornerY = canvas.height;
+                    // Check if particle is near the bottom left corner (dam area)
+                    if (particle.x < canvas.width * 0.3 && particle.y > canvas.height * 0.85) {
+                        // Find a settling position
+                        const settlePos = findSettlingPosition(particle.x, particle.y);
                         
-                        // Direct all particles toward the corner initially
-                        if (particle.y > canvas.height * 0.7 && particle.x < canvas.width * 0.5) {
-                            // Strong force pulling particles to the corner
-                            const dx = cornerX - particle.x;
-                            const dy = cornerY - particle.y;
-                            const distance = Math.sqrt(dx * dx + dy * dy);
-                            
-                            if (distance > 0) {
-                                particle.vx += (dx / distance) * 0.01;
-                                particle.vy += (dy / distance) * 0.01;
-                            }
-                            
-                            // Slow down as approaching corner
-                            particle.vx *= 0.9;
-                            particle.vy *= 0.9;
-                        }
-                        
-                        // Check if particle reaches the corner area - then start backing up
-                        if (particle.x < 40 && particle.y > canvas.height - 40) {
+                        if (settlePos) {
+                            particle.x = settlePos.x + (Math.random() - 0.5) * gridSize * 0.5;
+                            particle.y = settlePos.y + (Math.random() - 0.5) * gridSize * 0.5;
                             particle.settled = true;
                             particle.vx = 0;
                             particle.vy = 0;
-                            
-                            // Create reservoir backup effect - particles stack up from corner
-                            // Count settled particles to determine backup position
-                            let settledCount = 0;
-                            particles.forEach(other => {
-                                if (other.settled && other !== particle) {
-                                    settledCount++;
-                                }
-                            });
-                            
-                            // Create expanding reservoir pattern
-                            const layer = Math.floor(settledCount / 50); // New layer every 50 particles
-                            const positionInLayer = settledCount % 50;
-                            
-                            // Calculate position based on layer and position within layer
-                            const maxWidth = Math.min(layer * 15 + 20, canvas.width * 0.3);
-                            const maxHeight = Math.min(layer * 8 + 10, canvas.height * 0.3);
-                            
-                            const angle = (positionInLayer / 50) * Math.PI * 0.5; // Spread in 90 degree arc
-                            const radius = (positionInLayer / 50) * maxWidth;
-                            
-                            particle.x = Math.min(radius * Math.cos(angle), maxWidth) + Math.random() * 5;
-                            particle.y = canvas.height - (radius * Math.sin(angle) + maxHeight * (positionInLayer / 50)) - Math.random() * 5;
-                            
-                            // Ensure particles stay within bounds
-                            particle.x = Math.max(0, Math.min(particle.x, canvas.width * 0.4));
-                            particle.y = Math.max(canvas.height * 0.6, Math.min(particle.y, canvas.height));
+                            sedimentGrid[settlePos.key] = true;
+                        } else {
+                            // If no position found, keep flowing but slow down
+                            particle.vx *= 0.8;
+                            particle.vy *= 0.8;
                         }
                     }
                 }
@@ -568,6 +599,10 @@
         // Restart animation on click
         canvas.addEventListener('click', () => {
             particles.length = 0; // Clear existing particles
+            // Clear sediment grid
+            for (let key in sedimentGrid) {
+                delete sedimentGrid[key];
+            }
             createTextParticles(); // Recreate particles
             particles.forEach(particle => {
                 particle.x = particle.originalX;
