@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedimentation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f8f6f0;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        canvas {
+            display: block;
+            background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Set canvas size
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Particle system
+        const particles = [];
+        const title = "SEDIMENTATION";
+        const fontSize = Math.min(canvas.width / 10, 120);
+        
+        // Create particles from text
+        function createTextParticles() {
+            ctx.font = `bold ${fontSize}px Georgia`;
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#8b7355';
+            
+            const x = canvas.width / 2;
+            const y = canvas.height / 2;
+            
+            // Draw text to get pixel data
+            ctx.fillText(title, x, y);
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Sample pixels to create particles
+            const spacing = 1;
+            for (let px = 0; px < canvas.width; px += spacing) {
+                for (let py = 0; py < canvas.height; py += spacing) {
+                    const index = (py * canvas.width + px) * 4;
+                    const alpha = imageData.data[index + 3];
+                    
+                    if (alpha > 128) {
+                        particles.push({
+                            x: px,
+                            y: py,
+                            originalX: px,
+                            originalY: py,
+                            vx: 0,
+                            vy: 0,
+                            size: Math.random() * 2 + 1,
+                            color: `hsl(${30 + Math.random() * 20}, ${60 + Math.random() * 20}%, ${40 + Math.random() * 20}%)`,
+                            startTime: Math.random() * 5000, // Stagger start times
+                            settled: false
+                        });
+                    }
+                }
+            }
+        }
+        
+        // Animation variables
+        let animationStart = Date.now();
+        const animationDuration = 15000; // 15 seconds
+        
+        function animate() {
+            const elapsed = Date.now() - animationStart;
+            const progress = Math.min(elapsed / animationDuration, 1);
+            
+            // Clear canvas with subtle background
+            ctx.fillStyle = '#f8f6f0';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                const particleProgress = Math.max(0, (elapsed - particle.startTime) / (animationDuration - particle.startTime));
+                
+                if (particleProgress > 0 && !particle.settled) {
+                    // Apply physics: gravity and flow toward bottom right
+                    const flowForce = particleProgress * 0.3;
+                    particle.vx += (Math.random() - 0.3) * 0.2 + flowForce;
+                    particle.vy += 0.1 + particleProgress * 0.3;
+                    
+                    // Add some turbulence
+                    particle.vx += (Math.random() - 0.5) * 0.1;
+                    particle.vy += (Math.random() - 0.5) * 0.05;
+                    
+                    // Update position
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+                    
+                    // Settle particles in bottom right corner
+                    const targetX = canvas.width - 200;
+                    const targetY = canvas.height - 100;
+                    const distToTarget = Math.sqrt((particle.x - targetX) ** 2 + (particle.y - targetY) ** 2);
+                    
+                    if (particle.y > canvas.height - 150 && particle.x > canvas.width - 300) {
+                        particle.vy *= 0.8;
+                        particle.vx *= 0.9;
+                        
+                        if (distToTarget < 100) {
+                            particle.settled = true;
+                            particle.vx = 0;
+                            particle.vy = 0;
+                        }
+                    }
+                    
+                    // Keep particles on screen
+                    if (particle.x < 0) particle.x = 0;
+                    if (particle.x > canvas.width) particle.x = canvas.width;
+                    if (particle.y > canvas.height) particle.y = canvas.height;
+                }
+                
+                // Draw particle
+                ctx.fillStyle = particle.color;
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            
+            // Continue animation
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        }
+        
+        // Initialize
+        createTextParticles();
+        animate();
+        
+        // Restart animation on click
+        canvas.addEventListener('click', () => {
+            particles.forEach(particle => {
+                particle.x = particle.originalX;
+                particle.y = particle.originalY;
+                particle.vx = 0;
+                particle.vy = 0;
+                particle.settled = false;
+                particle.startTime = Math.random() * 2000;
+            });
+            animationStart = Date.now();
+            animate();
+        });
+    </script>
+</body>
+</html>
