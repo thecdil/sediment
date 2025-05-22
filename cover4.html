@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedimentation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f8f6f0;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        canvas {
+            display: block;
+            background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Set canvas size
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Particle system
+        const particles = [];
+        const title = "SEDIMENTATION";
+        const fontSize = Math.min(canvas.width / 10, 100);
+        
+        // Colorado River path - creates a curved flow from center-top to bottom-left
+        function getRiverFlow(x, y, progress) {
+            const startX = canvas.width / 2;
+            const startY = canvas.height * 0.25; // Higher position for title
+            const endX = canvas.width * 0.15; // Bottom left area (Glen Canyon Dam)
+            const endY = canvas.height * 0.85;
+            
+            // Create a curved river path with some meandering
+            const curveStrength = canvas.width * 0.2;
+            const meander = Math.sin(progress * Math.PI * 2) * 30;
+            
+            const targetX = startX + (endX - startX) * progress + 
+                          Math.sin(progress * Math.PI) * curveStrength + meander;
+            const targetY = startY + (endY - startY) * progress;
+            
+            return { targetX, targetY };
+        }
+        
+        // Create particles from text
+        function createTextParticles() {
+            ctx.font = `bold ${fontSize}px Georgia`;
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#8b7355';
+            
+            const x = canvas.width / 2;
+            const y = canvas.height * 0.25; // Position title higher
+            
+            // Draw text to get pixel data
+            ctx.fillText(title, x, y);
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Sample pixels to create particles
+            const spacing = 2;
+            for (let px = 0; px < canvas.width; px += spacing) {
+                for (let py = 0; py < canvas.height; py += spacing) {
+                    const index = (py * canvas.width + px) * 4;
+                    const alpha = imageData.data[index + 3];
+                    
+                    if (alpha > 128) {
+                        particles.push({
+                            x: px,
+                            y: py,
+                            originalX: px,
+                            originalY: py,
+                            vx: 0,
+                            vy: 0,
+                            size: Math.random() * 2.5 + 0.8,
+                            color: `hsl(${25 + Math.random() * 25}, ${50 + Math.random() * 30}%, ${35 + Math.random() * 25}%)`,
+                            startTime: Math.random() * 3000, // Stagger start times
+                            settled: false,
+                            riverProgress: 0
+                        });
+                    }
+                }
+            }
+        }
+        
+        // Animation variables
+        let animationStart = Date.now();
+        const animationDuration = 18000; // 18 seconds for more gradual flow
+        
+        function animate() {
+            const elapsed = Date.now() - animationStart;
+            const progress = Math.min(elapsed / animationDuration, 1);
+            
+            // Clear canvas with subtle background
+            ctx.fillStyle = '#f8f6f0';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                const particleProgress = Math.max(0, (elapsed - particle.startTime) / (animationDuration - particle.startTime));
+                
+                if (particleProgress > 0 && !particle.settled) {
+                    // Update river progress for this particle
+                    particle.riverProgress = Math.min(particleProgress * 1.2, 1);
+                    
+                    // Get target position along river path
+                    const flow = getRiverFlow(particle.x, particle.y, particle.riverProgress);
+                    
+                    // Apply forces toward the river path
+                    const flowStrength = particleProgress * 0.4;
+                    const dx = flow.targetX - particle.x;
+                    const dy = flow.targetY - particle.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance > 5) {
+                        particle.vx += (dx / distance) * flowStrength * 0.3;
+                        particle.vy += (dy / distance) * flowStrength * 0.3;
+                    }
+                    
+                    // Add gravity and downstream flow
+                    particle.vy += 0.08 + particleProgress * 0.2;
+                    particle.vx += (Math.random() - 0.6) * 0.15; // Slight leftward bias
+                    
+                    // Add river turbulence
+                    const turbulence = Math.sin(elapsed * 0.01 + particle.originalX * 0.01) * 0.1;
+                    particle.vx += turbulence;
+                    particle.vy += Math.cos(elapsed * 0.008 + particle.originalY * 0.01) * 0.05;
+                    
+                    // Update position
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+                    
+                    // Glen Canyon Dam area - bottom left corner
+                    const damX = canvas.width * 0.15;
+                    const damY = canvas.height * 0.85;
+                    const distToDam = Math.sqrt((particle.x - damX) ** 2 + (particle.y - damY) ** 2);
+                    
+                    // Settle particles at the dam
+                    if (particle.y > canvas.height * 0.75 && particle.x < canvas.width * 0.3) {
+                        particle.vy *= 0.7;
+                        particle.vx *= 0.8;
+                        
+                        if (distToDam < 80) {
+                            particle.settled = true;
+                            particle.vx *= 0.1;
+                            particle.vy *= 0.1;
+                            
+                            // Create sediment pile effect
+                            const pileHeight = 60;
+                            const pileWidth = 120;
+                            const pileX = damX + (Math.random() - 0.5) * pileWidth;
+                            const pileY = damY - Math.random() * pileHeight;
+                            
+                            particle.x += (pileX - particle.x) * 0.1;
+                            particle.y += (pileY - particle.y) * 0.1;
+                        }
+                    }
+                    
+                    // Keep particles on screen
+                    if (particle.x < 0) particle.x = 0;
+                    if (particle.x > canvas.width) particle.x = canvas.width;
+                    if (particle.y > canvas.height) particle.y = canvas.height;
+                    
+                    // Apply drag
+                    particle.vx *= 0.98;
+                    particle.vy *= 0.98;
+                }
+                
+                // Draw particle with varying opacity based on settlement
+                const opacity = particle.settled ? 0.8 : 0.9;
+                ctx.globalAlpha = opacity;
+                ctx.fillStyle = particle.color;
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            });
+            
+            // Draw Glen Canyon Dam indicator (subtle)
+            ctx.fillStyle = 'rgba(100, 80, 60, 0.3)';
+            ctx.fillRect(canvas.width * 0.05, canvas.height * 0.8, canvas.width * 0.2, canvas.height * 0.15);
+            
+            // Continue animation
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        }
+        
+        // Initialize
+        createTextParticles();
+        animate();
+        
+        // Restart animation on click
+        canvas.addEventListener('click', () => {
+            particles.forEach(particle => {
+                particle.x = particle.originalX;
+                particle.y = particle.originalY;
+                particle.vx = 0;
+                particle.vy = 0;
+                particle.settled = false;
+                particle.riverProgress = 0;
+                particle.startTime = Math.random() * 2000;
+            });
+            animationStart = Date.now();
+            animate();
+        });
+    </script>
+</body>
+</html>
