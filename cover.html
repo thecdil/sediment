@@ -18,14 +18,40 @@
             display: block;
             background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
         }
+        
+        #enterButton {
+            position: absolute;
+            bottom: 40px;
+            left: 200px;
+            padding: 12px 24px;
+            background: #8b7355;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        
+        #enterButton:hover {
+            background: #6d5a42;
+        }
+        
+        #enterButton.visible {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
     <canvas id="canvas"></canvas>
+    <button id="enterButton">Enter</button>
     
     <script>
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
+        const enterButton = document.getElementById('enterButton');
         
         // Set canvas size
         function resizeCanvas() {
@@ -39,35 +65,6 @@
         const particles = [];
         const title = "SEDIMENTATION";
         const fontSize = Math.min(canvas.width / 12, 120);
-        
-        // Colorado River path - winding from top right to bottom left
-        function getRiverFlow(x, y) {
-            const progress = x / canvas.width;
-            
-            // Create meandering river path
-            const riverCenterY = canvas.height * 0.3 + 
-                Math.sin(progress * Math.PI * 3) * canvas.height * 0.2 +
-                Math.sin(progress * Math.PI * 5) * canvas.height * 0.1;
-            
-            // Flow direction follows the river curve
-            const flowX = -0.8 - progress * 0.5; // Generally westward, stronger as it progresses
-            const flowY = (y < riverCenterY) ? 0.3 : -0.3; // Flow toward river center
-            
-            // Add meandering component
-            const meander = Math.cos(progress * Math.PI * 4) * 0.2;
-            
-            return {
-                x: flowX + meander,
-                y: flowY + 0.1, // Slight downward flow
-                inRiver: Math.abs(y - riverCenterY) < canvas.height * 0.15
-            };
-        }
-        
-        // Dam structure in bottom left
-        const damX = canvas.width * 0.15;
-        const damY = canvas.height * 0.7;
-        const damWidth = 8;
-        const damHeight = canvas.height * 0.3;
         
         // Create particles from text
         function createTextParticles() {
@@ -100,7 +97,7 @@
                             vy: 0,
                             size: Math.random() * 2 + 1,
                             color: `hsl(${30 + Math.random() * 20}, ${60 + Math.random() * 20}%, ${40 + Math.random() * 20}%)`,
-                            startTime: Math.random() * 5000, // Stagger start times
+                            startTime: Math.random() * 5000,
                             settled: false
                         });
                     }
@@ -108,28 +105,8 @@
             }
         }
         
-        // Animation variables
-        let animationStart = Date.now();
-        const animationDuration = 15000; // 15 seconds
-        
-        // Check collision with dam and other particles
+        // Check collision with other particles
         function checkCollisions(particle, index) {
-            // Dam collision
-            if (particle.x <= damX + damWidth && 
-                particle.x >= damX - particle.size &&
-                particle.y >= damY - particle.size) {
-                
-                particle.x = Math.max(particle.x, damX + damWidth + particle.size);
-                particle.vx = Math.max(0, particle.vx * 0.1); // Stop horizontal movement
-                particle.vy *= 0.7; // Reduce vertical movement
-                
-                // Settle against dam
-                if (Math.abs(particle.vx) < 0.1) {
-                    particle.vx = 0;
-                }
-            }
-            
-            // Particle-to-particle collision
             for (let i = 0; i < particles.length; i++) {
                 if (i === index) continue;
                 
@@ -156,57 +133,32 @@
             return false;
         }
         
+        // Animation variables
+        let animationStart = Date.now();
+        const animationDuration = 15000; // 15 seconds
+        
         function animate() {
             const elapsed = Date.now() - animationStart;
             const progress = Math.min(elapsed / animationDuration, 1);
             
-            // Clear canvas with subtle background
+            // Clear canvas
             ctx.fillStyle = '#f8f6f0';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            // Draw dam structure
-            ctx.fillStyle = '#666';
-            ctx.fillRect(damX, damY, damWidth, damHeight);
-            
-            // Draw river bed indication (subtle)
-            ctx.strokeStyle = '#d4c4a8';
-            ctx.lineWidth = 2;
-            ctx.setLineDash([5, 5]);
-            ctx.beginPath();
-            for (let x = 0; x < canvas.width; x += 10) {
-                const flow = getRiverFlow(x, 0);
-                const riverY = canvas.height * 0.3 + 
-                    Math.sin((x / canvas.width) * Math.PI * 3) * canvas.height * 0.2 +
-                    Math.sin((x / canvas.width) * Math.PI * 5) * canvas.height * 0.1;
-                if (x === 0) {
-                    ctx.moveTo(x, riverY);
-                } else {
-                    ctx.lineTo(x, riverY);
-                }
-            }
-            ctx.stroke();
-            ctx.setLineDash([]);
             
             particles.forEach((particle, index) => {
                 const particleProgress = Math.max(0, (elapsed - particle.startTime) / (animationDuration - particle.startTime));
                 
                 if (particleProgress > 0 && !particle.settled) {
-                    // Get river flow at particle position
-                    const riverFlow = getRiverFlow(particle.x, particle.y);
+                    // Flow toward bottom-left corner with wind/water effect
+                    const flowX = -0.3 + (Math.random() - 0.5) * 0.1;
+                    const flowY = 0.2 + particleProgress * 0.1;
                     
-                    // Apply river current forces
-                    if (riverFlow.inRiver) {
-                        particle.vx += riverFlow.x * 0.1;
-                        particle.vy += riverFlow.y * 0.05;
-                    } else {
-                        // Gravity pulls particles toward river
-                        particle.vy += 0.08;
-                        particle.vx += riverFlow.x * 0.02;
-                    }
+                    particle.vx += flowX * 0.1;
+                    particle.vy += flowY * 0.1;
                     
-                    // Add natural variation
-                    particle.vx += (Math.random() - 0.5) * 0.03;
-                    particle.vy += (Math.random() - 0.5) * 0.02;
+                    // Add natural turbulence
+                    particle.vx += (Math.random() - 0.5) * 0.05;
+                    particle.vy += (Math.random() - 0.5) * 0.03;
                     
                     // Apply drag
                     particle.vx *= 0.99;
@@ -216,13 +168,11 @@
                     const newX = particle.x + particle.vx;
                     const newY = particle.y + particle.vy;
                     
-                    // Boundary collisions
+                    // Boundary collisions - settle at bottom-left
                     if (newX <= particle.size) {
                         particle.x = particle.size;
-                        particle.vx = Math.abs(particle.vx) * 0.3;
-                    } else if (newX >= canvas.width - particle.size) {
-                        particle.x = canvas.width - particle.size;
-                        particle.vx = -Math.abs(particle.vx) * 0.3;
+                        particle.vx = 0;
+                        particle.vy *= 0.7;
                     } else {
                         particle.x = newX;
                     }
@@ -232,6 +182,7 @@
                         particle.vy = 0;
                         particle.vx *= 0.7;
                         
+                        // Settle if moving slowly
                         if (Math.abs(particle.vx) < 0.1) {
                             particle.settled = true;
                             particle.vx = 0;
@@ -241,34 +192,35 @@
                         particle.y = newY;
                     }
                     
-                    // Check collisions with dam and other particles
+                    // Check collisions with other particles
                     checkCollisions(particle, index);
                     
-                    // Settle particles that are moving slowly and piled up
-                    if (Math.abs(particle.vx) < 0.15 && Math.abs(particle.vy) < 0.15 &&
-                        (particle.y > canvas.height - 100 || particle.x < damX + 50)) {
+                    // Settle particles that are moving slowly and in bottom-left area
+                    if ((particle.x < 100 && particle.y > canvas.height - 100) &&
+                        Math.abs(particle.vx) < 0.2 && Math.abs(particle.vy) < 0.2) {
                         particle.settled = true;
                         particle.vx = 0;
                         particle.vy = 0;
                     }
                 }
                 
-                // Draw particle with color variation based on position
-                const sedimentDepth = Math.max(0, (canvas.height - particle.y) / canvas.height);
-                const hue = 30 + Math.random() * 20;
-                const saturation = 40 + sedimentDepth * 30;
-                const lightness = 35 + Math.random() * 15;
-                
-                ctx.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-                ctx.globalAlpha = 0.85 + sedimentDepth * 0.15;
+                // Draw particle
+                ctx.fillStyle = particle.color;
+                ctx.globalAlpha = 0.9;
                 ctx.beginPath();
                 ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
                 ctx.fill();
                 ctx.globalAlpha = 1;
             });
             
+            // Check if all particles have settled
+            const allSettled = particles.every(p => p.settled);
+            if (allSettled && !enterButton.classList.contains('visible')) {
+                enterButton.classList.add('visible');
+            }
+            
             // Continue animation
-            if (progress < 1 || particles.some(p => !p.settled)) {
+            if (progress < 1 || !allSettled) {
                 requestAnimationFrame(animate);
             }
         }
@@ -277,18 +229,28 @@
         createTextParticles();
         animate();
         
-        // Restart animation on click
-        canvas.addEventListener('click', () => {
-            particles.forEach(particle => {
-                particle.x = particle.originalX;
-                particle.y = particle.originalY;
-                particle.vx = 0;
-                particle.vy = 0;
-                particle.settled = false;
-                particle.startTime = Math.random() * 2000;
-            });
-            animationStart = Date.now();
-            animate();
+        // Restart animation on click (but not on button)
+        canvas.addEventListener('click', (e) => {
+            if (e.target === canvas) {
+                particles.forEach(particle => {
+                    particle.x = particle.originalX;
+                    particle.y = particle.originalY;
+                    particle.vx = 0;
+                    particle.vy = 0;
+                    particle.settled = false;
+                    particle.startTime = Math.random() * 2000;
+                });
+                animationStart = Date.now();
+                enterButton.classList.remove('visible');
+                animate();
+            }
+        });
+        
+        // Button click handler
+        enterButton.addEventListener('click', () => {
+            alert('Entering the project...');
+            // In your Jekyll site, you'd navigate to the main content here
+            // window.location.href = '/main/';
         });
     </script>
 </body>
