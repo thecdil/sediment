@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedimentation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f8f6f0;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        canvas {
+            display: block;
+            background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
+        }
+        
+        #enterButton {
+            position: absolute;
+            bottom: 20px;
+            left: 150px;
+            padding: 12px 24px;
+            background: rgba(139, 115, 85, 0.9);
+            color: #f8f6f0;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        #enterButton:hover {
+            background: rgba(139, 115, 85, 1);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <button id="enterButton">Enter</button>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const enterButton = document.getElementById('enterButton');
+        
+        // Set canvas size
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Define river network - tributaries feeding into main river
+        const riverNetwork = [
+            // Left tributaries
+            {
+                points: [
+                    { x: canvas.width * 0.1, y: canvas.height * 0.3 },
+                    { x: canvas.width * 0.12, y: canvas.height * 0.5 },
+                    { x: canvas.width * 0.15, y: canvas.height * 0.7 },
+                    { x: canvas.width * 0.2, y: canvas.height * 0.85 },
+                    { x: canvas.width * 0.22, y: canvas.height * 0.89 }
+                ],
+                width: 6
+            },
+            {
+                points: [
+                    { x: canvas.width * 0.25, y: canvas.height * 0.25 },
+                    { x: canvas.width * 0.22, y: canvas.height * 0.4 },
+                    { x: canvas.width * 0.18, y: canvas.height * 0.6 },
+                    { x: canvas.width * 0.25, y: canvas.height * 0.82 },
+                    { x: canvas.width * 0.28, y: canvas.height * 0.89 }
+                ],
+                width: 7
+            },
+            // Center tributaries
+            {
+                points: [
+                    { x: canvas.width * 0.45, y: canvas.height * 0.2 },
+                    { x: canvas.width * 0.42, y: canvas.height * 0.35 },
+                    { x: canvas.width * 0.38, y: canvas.height * 0.55 },
+                    { x: canvas.width * 0.35, y: canvas.height * 0.75 },
+                    { x: canvas.width * 0.4, y: canvas.height * 0.88 },
+                    { x: canvas.width * 0.45, y: canvas.height * 0.89 }
+                ],
+                width: 8
+            },
+            {
+                points: [
+                    { x: canvas.width * 0.6, y: canvas.height * 0.15 },
+                    { x: canvas.width * 0.55, y: canvas.height * 0.3 },
+                    { x: canvas.width * 0.5, y: canvas.height * 0.5 },
+                    { x: canvas.width * 0.45, y: canvas.height * 0.7 },
+                    { x: canvas.width * 0.5, y: canvas.height * 0.85 },
+                    { x: canvas.width * 0.55, y: canvas.height * 0.89 }
+                ],
+                width: 9
+            },
+            // Right tributaries
+            {
+                points: [
+                    { x: canvas.width * 0.75, y: canvas.height * 0.25 },
+                    { x: canvas.width * 0.7, y: canvas.height * 0.4 },
+                    { x: canvas.width * 0.65, y: canvas.height * 0.6 },
+                    { x: canvas.width * 0.6, y: canvas.height * 0.8 },
+                    { x: canvas.width * 0.65, y: canvas.height * 0.89 }
+                ],
+                width: 8
+            },
+            {
+                points: [
+                    { x: canvas.width * 0.9, y: canvas.height * 0.3 },
+                    { x: canvas.width * 0.85, y: canvas.height * 0.5 },
+                    { x: canvas.width * 0.8, y: canvas.height * 0.7 },
+                    { x: canvas.width * 0.75, y: canvas.height * 0.85 },
+                    { x: canvas.width * 0.78, y: canvas.height * 0.89 }
+                ],
+                width: 10
+            },
+            // Main river (bottom) - connects all tributaries
+            {
+                points: [
+                    { x: canvas.width * 0.9, y: canvas.height * 0.89 },
+                    { x: canvas.width * 0.7, y: canvas.height * 0.91 },
+                    { x: canvas.width * 0.5, y: canvas.height * 0.93 },
+                    { x: canvas.width * 0.3, y: canvas.height * 0.95 },
+                    { x: canvas.width * 0.1, y: canvas.height * 0.97 },
+                    { x: 0, y: canvas.height }
+                ],
+                width: 25,
+                isMainRiver: true
+            }
+        ];
+        
+        // Function to get distance from point to river path
+        function getDistanceToRiver(x, y, river) {
+            let minDistance = Infinity;
+            let closestSegment = null;
+            
+            for (let i = 0; i < river.points.length - 1; i++) {
+                const p1 = river.points[i];
+                const p2 = river.points[i + 1];
+                
+                // Calculate distance from point to line segment
+                const A = x - p1.x;
+                const B = y - p1.y;
+                const C = p2.x - p1.x;
+                const D = p2.y - p1.y;
+                
+                const dot = A * C + B * D;
+                const lenSq = C * C + D * D;
+                let param = -1;
+                if (lenSq !== 0) param = dot / lenSq;
+                
+                let xx, yy;
+                if (param < 0) {
+                    xx = p1.x;
+                    yy = p1.y;
+                } else if (param > 1) {
+                    xx = p2.x;
+                    yy = p2.y;
+                } else {
+                    xx = p1.x + param * C;
+                    yy = p1.y + param * D;
+                }
+                
+                const dx = x - xx;
+                const dy = y - yy;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestSegment = { p1, p2, param, closestPoint: { x: xx, y: yy } };
+                }
+            }
+            
+            return { distance: minDistance, segment: closestSegment };
+        }
+        
+        // Function to get flow direction along river
+        function getRiverFlow(x, y, river) {
+            const result = getDistanceToRiver(x, y, river);
+            if (result.segment) {
+                const { p1, p2 } = result.segment;
+                const dx = p2.x - p1.x;
+                const dy = p2.y - p1.y;
+                const length = Math.sqrt(dx * dx + dy * dy);
+                return { x: dx / length, y: dy / length };
+            }
+            return { x: 0, y: 1 };
+        }
+        
+        // Function to check if particle is in any river
+        function isInRiver(x, y) {
+            for (let river of riverNetwork) {
+                const result = getDistanceToRiver(x, y, river);
+                if (result.distance <= river.width / 2) {
+                    return { inRiver: true, river, flow: getRiverFlow(x, y, river) };
+                }
+            }
+            return { inRiver: false };
+        }
+        
+        // Particle system
+        const particles = [];
+        const title = "SEDIMENTATION";
+        const subtitle1 = "By Hannah Green";
+        const subtitle2 = "A CD?L Project";
+        const fontSize = Math.min(canvas.width / 10, 120);
+        const subtitle1Size = fontSize * 0.35;
+        const subtitle2Size = fontSize * 0.25;
+        
+        // Create particles from text
+        function createTextParticles() {
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#8b7355';
+            
+            const centerX = canvas.width / 2;
+            const titleY = canvas.height * 0.20;
+            const subtitle1Y = titleY + fontSize * 0.8;
+            const subtitle2Y = subtitle1Y + subtitle1Size * 1.2;
+            
+            // Draw title
+            ctx.font = `bold ${fontSize}px Georgia`;
+            ctx.fillText(title, centerX, titleY);
+            
+            // Draw first subtitle
+            ctx.font = `${subtitle1Size}px Georgia`;
+            ctx.fillText(subtitle1, centerX, subtitle1Y);
+            
+            // Draw second subtitle
+            ctx.font = `${subtitle2Size}px Georgia`;
+            ctx.fillText(subtitle2, centerX, subtitle2Y);
+            
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Sample pixels to create particles - mix of river-constrained and all text
+            const spacing = 1;
+            for (let px = 0; px < canvas.width; px += spacing) {
+                for (let py = 0; py < canvas.height; py += spacing) {
+                    const index = (py * canvas.width + px) * 4;
+                    const alpha = imageData.data[index + 3];
+                    
+                    if (alpha > 128) {
+                        // Check if pixel is in a river path
+                        const riverCheck = isInRiver(px, py);
+                        
+                        // Create particle if in river OR if it's part of title text (to preserve visibility)
+                        const isTitle = py < titleY + fontSize * 0.6;
+                        const isSubtitle1 = py > titleY + fontSize * 0.2 && py < subtitle1Y + subtitle1Size * 0.5;
+                        const isSubtitle2 = py > subtitle1Y + subtitle1Size * 0.3 && py < subtitle2Y + subtitle2Size * 0.5;
+                        
+                        if (riverCheck.inRiver || isTitle || isSubtitle1 || isSubtitle2) {
+                            // Determine particle type based on position
+                            let particleType = 'title';
+                            let particleSize = Math.random() * 1 + .3;
+                            
+                            if (py > titleY + fontSize * 0.2) {
+                                if (py < subtitle1Y + subtitle1Size * 0.5) {
+                                    particleType = 'subtitle1';
+                                    particleSize = Math.random() * .8 + 0.3;
+                                } else if (py < subtitle2Y + subtitle2Size * 0.5) {
+                                    particleType = 'subtitle2';
+                                    particleSize = Math.random() * .7 + 0.2;
+                                }
+                            }
+                            
+                            particles.push({
+                                x: px,
+                                y: py,
+                                originalX: px,
+                                originalY: py,
+                                vx: 0,
+                                vy: 0,
+                                size: particleSize,
+                                color: `hsl(${30 + Math.random() * 20}, ${60 + Math.random() * 20}%, ${40 + Math.random() * 20}%)`,
+                                startTime: Math.random() * 5000,
+                                settled: false,
+                                type: particleType,
+                                inRiver: riverCheck.inRiver,
+                                currentRiver: riverCheck.river
+                            });
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Animation variables
+        let animationStart = Date.now();
+        const animationDuration = 45000;
+        let allSettled = false;
+        
+        function animate() {
+            const elapsed = Date.now() - animationStart;
+            const progress = Math.min(elapsed / animationDuration, 1);
+            
+            // Clear canvas with subtle background
+            ctx.fillStyle = '#f8f6f0';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw river paths (very subtle)
+            ctx.strokeStyle = 'rgba(139, 115, 85, 0.1)';
+            riverNetwork.forEach(river => {
+                ctx.lineWidth = river.width;
+                ctx.beginPath();
+                ctx.moveTo(river.points[0].x, river.points[0].y);
+                for (let i = 1; i < river.points.length; i++) {
+                    ctx.lineTo(river.points[i].x, river.points[i].y);
+                }
+                ctx.stroke();
+            });
+            
+            let settledCount = 0;
+            
+            particles.forEach(particle => {
+                const particleProgress = Math.max(0, (elapsed - particle.startTime) / (animationDuration - particle.startTime));
+                
+                if (particleProgress > 0 && !particle.settled) {
+                    // Check if particle is still in a river
+                    const riverCheck = isInRiver(particle.x, particle.y);
+                    
+                    if (riverCheck.inRiver) {
+                        // Follow river flow
+                        const flowStrength = particleProgress * 0.4;
+                        particle.vx += riverCheck.flow.x * flowStrength;
+                        particle.vy += riverCheck.flow.y * flowStrength;
+                        
+                        // Add slight turbulence
+                        particle.vx += (Math.random() - 0.5) * 0.05;
+                        particle.vy += (Math.random() - 0.5) * 0.03;
+                    } else {
+                        // If not in river, try to get back to nearest river
+                        let nearestRiver = null;
+                        let nearestDistance = Infinity;
+                        
+                        riverNetwork.forEach(river => {
+                            const result = getDistanceToRiver(particle.x, particle.y, river);
+                            if (result.distance < nearestDistance) {
+                                nearestDistance = result.distance;
+                                nearestRiver = river;
+                            }
+                        });
+                        
+                        if (nearestRiver) {
+                            const result = getDistanceToRiver(particle.x, particle.y, nearestRiver);
+                            if (result.segment && result.segment.closestPoint) {
+                                const dx = result.segment.closestPoint.x - particle.x;
+                                const dy = result.segment.closestPoint.y - particle.y;
+                                const distance = Math.sqrt(dx * dx + dy * dy);
+                                if (distance > 0) {
+                                    particle.vx += (dx / distance) * 0.1;
+                                    particle.vy += (dy / distance) * 0.1;
+                                }
+                            }
+                        }
+                    }
+                    
+                    // Apply drag
+                    particle.vx *= 0.95;
+                    particle.vy *= 0.95;
+                    
+                    // Update position
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+                    
+                    // Settle particles in bottom left corner (Glen Canyon Dam)
+                    const cornerDistance = Math.sqrt(particle.x ** 2 + (canvas.height - particle.y) ** 2);
+                    
+                    if (particle.y > canvas.height - 100 && particle.x < 100) {
+                        particle.vy *= 0.7;
+                        particle.vx *= 0.8;
+                        
+                        if (cornerDistance < 60) {
+                            particle.settled = true;
+                            particle.vx = 0;
+                            particle.vy = 0;
+                            
+                            // Create natural sediment pile
+                            const pileHeight = Math.random() * 50;
+                            const pileWidth = Math.random() * 80;
+                            particle.x = Math.min(particle.x, pileWidth);
+                            particle.y = Math.max(particle.y, canvas.height - pileHeight);
+                        }
+                    }
+                    
+                    // Keep particles on screen
+                    if (particle.x < 0) particle.x = 0;
+                    if (particle.x > canvas.width) particle.x = canvas.width;
+                    if (particle.y > canvas.height) particle.y = canvas.height;
+                }
+                
+                if (particle.settled) {
+                    settledCount++;
+                }
+                
+                // Draw particle
+                ctx.fillStyle = particle.color;
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            
+            // Check if all particles have settled
+            if (settledCount === particles.length && !allSettled) {
+                allSettled = true;
+                enterButton.style.opacity = '1';
+            }
+            
+            // Continue animation
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else if (!allSettled) {
+                requestAnimationFrame(animate);
+            }
+        }
+        
+        // Initialize
+        createTextParticles();
+        animate();
+        
+        // Restart animation on click
+        canvas.addEventListener('click', () => {
+            particles.length = 0; // Clear existing particles
+            createTextParticles(); // Recreate particles
+            particles.forEach(particle => {
+                particle.x = particle.originalX;
+                particle.y = particle.originalY;
+                particle.vx = 0;
+                particle.vy = 0;
+                particle.settled = false;
+                particle.startTime = Math.random() * 2000;
+            });
+            animationStart = Date.now();
+            allSettled = false;
+            enterButton.style.opacity = '0';
+            animate();
+        });
+        
+        // Enter button functionality
+        enterButton.addEventListener('click', () => {
+            // Add your navigation logic here
+            console.log('Enter button clicked');
+        });
+    </script>
+</body>
+</html>
