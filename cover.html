@@ -21,7 +21,6 @@
     </style>
 </head>
 <body>
-
     <canvas id="canvas"></canvas>
     
     <script>
@@ -39,7 +38,36 @@
         // Particle system
         const particles = [];
         const title = "SEDIMENTATION";
-        const fontSize = Math.min(canvas.width / 10, 120);
+        const fontSize = Math.min(canvas.width / 12, 120);
+        
+        // Colorado River path - winding from top right to bottom left
+        function getRiverFlow(x, y) {
+            const progress = x / canvas.width;
+            
+            // Create meandering river path
+            const riverCenterY = canvas.height * 0.3 + 
+                Math.sin(progress * Math.PI * 3) * canvas.height * 0.2 +
+                Math.sin(progress * Math.PI * 5) * canvas.height * 0.1;
+            
+            // Flow direction follows the river curve
+            const flowX = -0.8 - progress * 0.5; // Generally westward, stronger as it progresses
+            const flowY = (y < riverCenterY) ? 0.3 : -0.3; // Flow toward river center
+            
+            // Add meandering component
+            const meander = Math.cos(progress * Math.PI * 4) * 0.2;
+            
+            return {
+                x: flowX + meander,
+                y: flowY + 0.1, // Slight downward flow
+                inRiver: Math.abs(y - riverCenterY) < canvas.height * 0.15
+            };
+        }
+        
+        // Dam structure in bottom left
+        const damX = canvas.width * 0.15;
+        const damY = canvas.height * 0.7;
+        const damWidth = 8;
+        const damHeight = canvas.height * 0.3;
         
         // Create particles from text
         function createTextParticles() {
@@ -56,7 +84,7 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
             // Sample pixels to create particles
-            const spacing = 1;
+            const spacing = 3;
             for (let px = 0; px < canvas.width; px += spacing) {
                 for (let py = 0; py < canvas.height; py += spacing) {
                     const index = (py * canvas.width + px) * 4;
@@ -84,6 +112,50 @@
         let animationStart = Date.now();
         const animationDuration = 15000; // 15 seconds
         
+        // Check collision with dam and other particles
+        function checkCollisions(particle, index) {
+            // Dam collision
+            if (particle.x <= damX + damWidth && 
+                particle.x >= damX - particle.size &&
+                particle.y >= damY - particle.size) {
+                
+                particle.x = Math.max(particle.x, damX + damWidth + particle.size);
+                particle.vx = Math.max(0, particle.vx * 0.1); // Stop horizontal movement
+                particle.vy *= 0.7; // Reduce vertical movement
+                
+                // Settle against dam
+                if (Math.abs(particle.vx) < 0.1) {
+                    particle.vx = 0;
+                }
+            }
+            
+            // Particle-to-particle collision
+            for (let i = 0; i < particles.length; i++) {
+                if (i === index) continue;
+                
+                const other = particles[i];
+                const dx = particle.x - other.x;
+                const dy = particle.y - other.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                const minDistance = particle.size + other.size;
+                
+                if (distance < minDistance && distance > 0) {
+                    const overlap = minDistance - distance;
+                    const separationX = (dx / distance) * overlap * 0.5;
+                    const separationY = (dy / distance) * overlap * 0.5;
+                    
+                    particle.x += separationX;
+                    particle.y += separationY;
+                    
+                    particle.vx *= 0.8;
+                    particle.vy *= 0.8;
+                    
+                    return true;
+                }
+            }
+            return false;
+        }
+        
         function animate() {
             const elapsed = Date.now() - animationStart;
             const progress = Math.min(elapsed / animationDuration, 1);
@@ -92,54 +164,111 @@
             ctx.fillStyle = '#f8f6f0';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            particles.forEach(particle => {
+            // Draw dam structure
+            ctx.fillStyle = '#666';
+            ctx.fillRect(damX, damY, damWidth, damHeight);
+            
+            // Draw river bed indication (subtle)
+            ctx.strokeStyle = '#d4c4a8';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath();
+            for (let x = 0; x < canvas.width; x += 10) {
+                const flow = getRiverFlow(x, 0);
+                const riverY = canvas.height * 0.3 + 
+                    Math.sin((x / canvas.width) * Math.PI * 3) * canvas.height * 0.2 +
+                    Math.sin((x / canvas.width) * Math.PI * 5) * canvas.height * 0.1;
+                if (x === 0) {
+                    ctx.moveTo(x, riverY);
+                } else {
+                    ctx.lineTo(x, riverY);
+                }
+            }
+            ctx.stroke();
+            ctx.setLineDash([]);
+            
+            particles.forEach((particle, index) => {
                 const particleProgress = Math.max(0, (elapsed - particle.startTime) / (animationDuration - particle.startTime));
                 
                 if (particleProgress > 0 && !particle.settled) {
-                    // Apply physics: gravity and flow toward bottom right
-                    const flowForce = particleProgress * 0.3;
-                    particle.vx += (Math.random() - 0.3) * 0.2 + flowForce;
-                    particle.vy += 0.1 + particleProgress * 0.3;
+                    // Get river flow at particle position
+                    const riverFlow = getRiverFlow(particle.x, particle.y);
                     
-                    // Add some turbulence
-                    particle.vx += (Math.random() - 0.5) * 0.1;
-                    particle.vy += (Math.random() - 0.5) * 0.05;
+                    // Apply river current forces
+                    if (riverFlow.inRiver) {
+                        particle.vx += riverFlow.x * 0.1;
+                        particle.vy += riverFlow.y * 0.05;
+                    } else {
+                        // Gravity pulls particles toward river
+                        particle.vy += 0.08;
+                        particle.vx += riverFlow.x * 0.02;
+                    }
+                    
+                    // Add natural variation
+                    particle.vx += (Math.random() - 0.5) * 0.03;
+                    particle.vy += (Math.random() - 0.5) * 0.02;
+                    
+                    // Apply drag
+                    particle.vx *= 0.99;
+                    particle.vy *= 0.995;
                     
                     // Update position
-                    particle.x += particle.vx;
-                    particle.y += particle.vy;
+                    const newX = particle.x + particle.vx;
+                    const newY = particle.y + particle.vy;
                     
-                    // Settle particles in bottom right corner
-                    const targetX = canvas.width - 200;
-                    const targetY = canvas.height - 100;
-                    const distToTarget = Math.sqrt((particle.x - targetX) ** 2 + (particle.y - targetY) ** 2);
+                    // Boundary collisions
+                    if (newX <= particle.size) {
+                        particle.x = particle.size;
+                        particle.vx = Math.abs(particle.vx) * 0.3;
+                    } else if (newX >= canvas.width - particle.size) {
+                        particle.x = canvas.width - particle.size;
+                        particle.vx = -Math.abs(particle.vx) * 0.3;
+                    } else {
+                        particle.x = newX;
+                    }
                     
-                    if (particle.y > canvas.height - 150 && particle.x > canvas.width - 300) {
-                        particle.vy *= 0.8;
-                        particle.vx *= 0.9;
+                    if (newY >= canvas.height - particle.size) {
+                        particle.y = canvas.height - particle.size;
+                        particle.vy = 0;
+                        particle.vx *= 0.7;
                         
-                        if (distToTarget < 100) {
+                        if (Math.abs(particle.vx) < 0.1) {
                             particle.settled = true;
                             particle.vx = 0;
                             particle.vy = 0;
                         }
+                    } else {
+                        particle.y = newY;
                     }
                     
-                    // Keep particles on screen
-                    if (particle.x < 0) particle.x = 0;
-                    if (particle.x > canvas.width) particle.x = canvas.width;
-                    if (particle.y > canvas.height) particle.y = canvas.height;
+                    // Check collisions with dam and other particles
+                    checkCollisions(particle, index);
+                    
+                    // Settle particles that are moving slowly and piled up
+                    if (Math.abs(particle.vx) < 0.15 && Math.abs(particle.vy) < 0.15 &&
+                        (particle.y > canvas.height - 100 || particle.x < damX + 50)) {
+                        particle.settled = true;
+                        particle.vx = 0;
+                        particle.vy = 0;
+                    }
                 }
                 
-                // Draw particle
-                ctx.fillStyle = particle.color;
+                // Draw particle with color variation based on position
+                const sedimentDepth = Math.max(0, (canvas.height - particle.y) / canvas.height);
+                const hue = 30 + Math.random() * 20;
+                const saturation = 40 + sedimentDepth * 30;
+                const lightness = 35 + Math.random() * 15;
+                
+                ctx.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+                ctx.globalAlpha = 0.85 + sedimentDepth * 0.15;
                 ctx.beginPath();
                 ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
                 ctx.fill();
+                ctx.globalAlpha = 1;
             });
             
             // Continue animation
-            if (progress < 1) {
+            if (progress < 1 || particles.some(p => !p.settled)) {
                 requestAnimationFrame(animate);
             }
         }
