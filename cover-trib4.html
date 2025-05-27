@@ -72,9 +72,12 @@
                     { x: canvas.width * 0.45, y: canvas.height * 0.8 },
                     { x: canvas.width * 0.3, y: canvas.height * 0.87 },
                     { x: canvas.width * 0.15, y: canvas.height * 0.93 },
-                    { x: canvas.width * 0.05, y: canvas.height * 0.98 }
+                    { x: canvas.width * 0.05, y: canvas.height * 0.98 },
+                    // Extended points to reach the very corner
+                    { x: canvas.width * 0.02, y: canvas.height * 0.995 },
+                    { x: canvas.width * 0.005, y: canvas.height * 0.999 }
                 ],
-                width: 30,
+                width: 35, // Increased width for better flow
                 isMainRiver: true
             },
             // Left tributaries - flow right to join main river
@@ -252,7 +255,7 @@
         const subtitle2Size = fontSize * 0.25;
         
         // Sediment accumulation grid for natural buildup
-        const gridSize = 4; // Size of each grid cell
+        const gridSize = 1; // Size of each grid cell
         const sedimentGrid = {};
         
         // Function to get grid key
@@ -549,7 +552,7 @@
                     if (particle.y > canvas.height) particle.y = canvas.height;
                     
                     // Check if particle is near the bottom left corner (dam area)
-                    if (particle.x < canvas.width * 0.3 && particle.y > canvas.height * 0.85) {
+                    if (particle.x < canvas.width * 0.1 && particle.y > canvas.height * 0.05) {
                         // Find a settling position
                         const settlePos = findSettlingPosition(particle.x, particle.y);
                         
