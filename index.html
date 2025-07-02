@@ -625,7 +625,7 @@
         // Enter button functionality
         enterButton.addEventListener('click', () => {
             // Add your navigation logic here
-            window.location.href = "/main.html";
+            window.location.href = "{{ '/main.html' | relative_url }}";
             console.log('Enter button clicked');
         });
     </script>
