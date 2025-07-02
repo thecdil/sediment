@@ -149,7 +149,7 @@ features:
           <div class="content-box">
             <h3>{{ tributary.title }}</h3>
             <p>{{ tributary.description }}</p>
-            <a href="{{ tributary.url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
+            <a href="{{ tributary.url | relative_url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
           </div>
         </div>
       {% else %}
@@ -157,7 +157,7 @@ features:
           <div class="content-box">
             <h3>{{ tributary.title }}</h3>
             <p>{{ tributary.description }}</p>
-            <a href="{{ tributary.url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
+            <a href="{{ tributary.url | relative_url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
           </div>
           <div class="tributary-branch-right"></div>
         </div>
