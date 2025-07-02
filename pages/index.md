@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-permalink: /
+permalink: /old.html
 ---
 
 <div class="cover-links">

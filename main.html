@@ -1,0 +1,474 @@
+---
+layout: default
+title: "The Colorado River Journey"
+river_path: "M300,-40 Q200,200 150,400 T250,700 Q350,900 300,1200 T400,1500 Q500,1700 450,2000 T550,2300 Q650,2500 600,2800 T500,3100 Q400,3400 450,3700 T550,4000 Q650,4200 600,4500 T500,4800 Q400,5100 450,5400"
+features:
+  - type: "text-block"
+    id: "river-source"
+    title: "River Source"
+    content: "The Colorado River begins its journey in the Rocky Mountains, carrying sediment from alpine watersheds."
+    scroll_position: 15
+    side: "right"
+    
+  - type: "image"
+    id: "glen-canyon-dam"
+    title: "Glen Canyon Dam"
+    image: "/assets/images/glen-canyon-dam.jpg"
+    alt: "Glen Canyon Dam structure"
+    caption: "Glen Canyon Dam: A barrier to sediment flow"
+    description: "Completed in 1966, Glen Canyon Dam stands 710 feet tall and fundamentally altered the river's sediment transport."
+    scroll_position: 30
+    side: "left"
+    
+  - type: "gallery"
+    id: "sediment-samples"
+    title: "Sediment Samples"
+    scroll_position: 60
+    side: "right"
+    images:
+      - thumb: "/assets/images/sediment-sample-1-thumb.jpg"
+        full: "/assets/images/sediment-sample-1.jpg"
+        alt: "Pre-dam sediment sample"
+        caption: "Sediment sample from pre-dam era"
+      - thumb: "/assets/images/sediment-sample-2-thumb.jpg"
+        full: "/assets/images/sediment-sample-2.jpg"
+        alt: "Post-dam sediment sample"
+        caption: "Contemporary sediment composition"
+      - thumb: "/assets/images/sediment-sample-3-thumb.jpg"
+        full: "/assets/images/sediment-sample-3.jpg"
+        alt: "Microscopic view"
+        caption: "Microscopic analysis of particle composition"
+---
+
+<div class="river-container">
+  <!-- Navigation -->
+  <nav class="river-nav position-fixed top-0 start-0 p-3">
+    <div class="nav-links">
+      <a href="#about-project" class="nav-link text-white">About the Project</a>
+      <a href="#about-river" class="nav-link text-white">About the Colorado River/Glen Canyon Dam</a>
+      <a href="#about-sediment" class="nav-link text-white">About Sediment</a>
+    </div>
+  </nav>
+
+  <!-- River SVG Container -->
+  <div class="river-flow-container ">
+    <svg id="riverSvg" class="river-svg" width="100%" height="100%">
+      <!-- River path definition -->
+      <defs>
+        <path id="riverPath" d="{{ page.river_path }}"/>
+        
+        <!-- Tributary path definitions -->
+        <path id="tributary1" d="M250,700 Q200,680 150,650 Q80,620 20,580 Q-40,540 -120,500"/>
+        <path id="tributary2" d="M300,1200 Q360,1170 420,1140 Q500,1100 580,1060 Q670,1020 760,980"/>
+        <path id="tributary3" d="M450,2000 Q380,1980 310,1950 Q220,1920 130,1880 Q40,1840 -50,1800"/>
+        <path id="tributary4" d="M600,2800 Q670,2780 740,2750 Q830,2720 920,2680 Q1020,2640 1120,2600"/>
+        <path id="tributary5" d="M500,3100 Q430,3080 360,3050 Q270,3020 180,2980 Q90,2940 0,2900"/>
+        <path id="tributary6" d="M450,3700 Q520,3680 590,3650 Q680,3620 770,3580 Q870,3540 970,3500"/>
+        <path id="tributary7" d="M600,4500 Q530,4480 460,4450 Q370,4420 280,4380 Q190,4340 100,4300"/>
+        
+        <!-- Gradient for river bed -->
+        <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#7c7b69;stop-opacity:0.3" />
+          <stop offset="50%" style="stop-color:#738aab;stop-opacity:0.2" />
+          <stop offset="100%" style="stop-color:#90976c;stop-opacity:0.3" />
+        </linearGradient>
+
+        <!-- Tributary gradient -->
+        <linearGradient id="tributaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:0.6" />
+          <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.1" />
+        </linearGradient>
+
+        <!-- Particle definitions -->
+        <circle id="sedimentParticle" r="2" fill="#8B4513" opacity="0.7"/>
+        <circle id="sedimentParticle2" r="1.5" fill="#A0522D" opacity="0.8"/>
+        <circle id="sedimentParticle3" r="1" fill="#CD853F" opacity="0.6"/>
+      </defs>
+
+      <!-- River bed -->
+      <path d="{{ page.river_path }}" 
+            stroke="url(#riverGradient)" 
+            stroke-width="80" 
+            fill="none" 
+            opacity="0.4"/>
+      
+      <!-- Tributary streams -->
+      <path d="M250,700 Q200,680 150,650 Q80,620 20,580 Q-40,540 -120,500" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="30" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M300,1200 Q360,1170 420,1140 Q500,1100 580,1060 Q670,1020 760,980" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="30" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M450,2000 Q380,1980 310,1950 Q220,1920 130,1880 Q40,1840 -50,1800" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="30" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M600,2800 Q670,2780 740,2750 Q830,2720 920,2680 Q1020,2640 1120,2600" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="30" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M500,3100 Q430,3080 360,3050 Q270,3020 180,2980 Q90,2940 0,2900" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="30" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M450,3700 Q520,3680 590,3650 Q680,3620 770,3580 Q870,3540 970,3500" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="30" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M600,4500 Q530,4480 460,4450 Q370,4420 280,4380 Q190,4340 100,4300" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="30" 
+            fill="none" 
+            opacity="0.6"/>
+      
+      <!-- Particles will be added here by JavaScript -->
+    </svg>
+  </div>
+
+  <!-- Tributary Points (positioned absolutely) -->
+  <div class="tributary-scroll-container">
+  {% assign sorted_tributaries = site.tributaries | sort: "scroll_position" %}
+  {% for tributary in sorted_tributaries %}
+    <div class="tributary-step" 
+         data-step="{{ forloop.index0 }}"
+         data-position="{{ tributary.position }}" 
+         data-side="{{ tributary.side }}"
+         style="top: {{ tributary.scroll_position }}px; height: 400px;">
+      
+      {% if tributary.side == 'left' %}
+        <div class="tributary-content tributary-left">
+          <div class="tributary-branch-left"></div>
+          <div class="content-box">
+            <h3>{{ tributary.title }}</h3>
+            <p>{{ tributary.description }}</p>
+            <a href="{{ tributary.url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+        </div>
+      {% else %}
+        <div class="tributary-content tributary-right">
+          <div class="content-box">
+            <h3>{{ tributary.title }}</h3>
+            <p>{{ tributary.description }}</p>
+            <a href="{{ tributary.url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+          <div class="tributary-branch-right"></div>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+
+  <!-- Feature Points -->
+  {% for feature in page.features %}
+    {% include river_feature.html feature=feature %}
+  {% endfor %}
+</div>
+
+<style>
+.river-container {
+  position: relative;
+  width: 100%;
+  min-height: 5500px;
+  background: linear-gradient(180deg, #dfe5e8 0%, #90969c 50%, #c5f0f0 100%);
+  overflow-x: hidden;
+}
+
+.river-nav {
+  z-index: 1000;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #4a90e2 !important;
+}
+
+.river-flow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 10000px
+}
+
+.river-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tributary-scroll-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tributary-step {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.tributary-content {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.tributary-content.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tributary-left {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.tributary-right {
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.tributary-branch-left,
+.tributary-branch-right {
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a90e2, transparent);
+  position: relative;
+}
+
+.tributary-branch-right {
+  background: linear-gradient(-90deg, #4a90e2, transparent);
+}
+
+.content-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.content-box h3 {
+  margin-bottom: 10px;
+  color: #2c5aa0;
+  font-size: 18px;
+}
+
+.content-box p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tributary-left,
+  .tributary-right {
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .tributary-branch-left,
+  .tributary-branch-right {
+    display: none;
+  }
+  
+  .content-box {
+    max-width: 280px;
+  }
+}
+</style>
+
+<!-- Load Scrollama -->
+<script src="{{ '/assets/lib/scrollama.js' | relative_url }}"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const svg = document.getElementById('riverSvg');
+  const path = document.getElementById('riverPath');
+  const particles = [];
+  const tributaryParticles = [];
+  const particleTypes = ['sedimentParticle', 'sedimentParticle2', 'sedimentParticle3'];
+  
+  // Get path length for animation
+  const pathLength = path.getTotalLength();
+  
+  // Tributary paths
+  const tributaryPaths = [
+    'tributary1', 'tributary2', 'tributary3', 'tributary4', 
+    'tributary5', 'tributary6', 'tributary7'
+  ];
+  
+  // Create particles for main river
+  function createParticle() {
+    const particleType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + particleType);
+    
+    const particle = {
+      element: use,
+      position: Math.random() * 100, // Start at random position along path
+      speed: 0.1 + Math.random() * 0.3, // Random speed
+      offset: (Math.random() - 0.5) * 20 // Random offset from center line
+    };
+    
+    svg.appendChild(use);
+    particles.push(particle);
+    
+    return particle;
+  }
+  
+  // Create particles for tributaries
+  function createTributaryParticle(tributaryId) {
+    const tributaryPath = document.getElementById(tributaryId);
+    if (!tributaryPath) return;
+    
+    const particleType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + particleType);
+    
+    const particle = {
+      element: use,
+      path: tributaryPath,
+      pathLength: tributaryPath.getTotalLength(),
+      position: Math.random() * 100,
+      speed: 0.15 + Math.random() * 0.2,
+      offset: (Math.random() - 0.5) * 15
+    };
+    
+    svg.appendChild(use);
+    tributaryParticles.push(particle);
+    
+    return particle;
+  }
+  
+  // Animate main river particles
+  function animateParticles() {
+    particles.forEach((particle, index) => {
+      particle.position += particle.speed;
+      
+      // Reset particle if it goes beyond the path
+      if (particle.position > 100) {
+        particle.position = -5;
+      }
+      
+      // Get point along path
+      const distance = (particle.position / 100) * pathLength;
+      const point = path.getPointAtLength(distance);
+      
+      // Apply offset for natural spread
+      const angle = Math.atan2(
+        path.getPointAtLength(distance + 1).y - point.y,
+        path.getPointAtLength(distance + 1).x - point.x
+      );
+      
+      const offsetX = Math.cos(angle + Math.PI/2) * particle.offset;
+      const offsetY = Math.sin(angle + Math.PI/2) * particle.offset;
+      
+      particle.element.setAttribute('transform', 
+        `translate(${point.x + offsetX}, ${point.y + offsetY})`);
+    });
+    
+    // Animate tributary particles
+    tributaryParticles.forEach((particle, index) => {
+      particle.position += particle.speed;
+      
+      // Reset particle if it goes beyond the path
+      if (particle.position > 100) {
+        particle.position = -5;
+      }
+      
+      // Get point along tributary path
+      const distance = (particle.position / 100) * particle.pathLength;
+      const point = particle.path.getPointAtLength(distance);
+      
+      // Apply offset for natural spread
+      const angle = Math.atan2(
+        particle.path.getPointAtLength(distance + 1).y - point.y,
+        particle.path.getPointAtLength(distance + 1).x - point.x
+      );
+      
+      const offsetX = Math.cos(angle + Math.PI/2) * particle.offset;
+      const offsetY = Math.sin(angle + Math.PI/2) * particle.offset;
+      
+      particle.element.setAttribute('transform', 
+        `translate(${point.x + offsetX}, ${point.y + offsetY})`);
+    });
+    
+    requestAnimationFrame(animateParticles);
+  }
+  
+  // Initialize main river particles
+  for (let i = 0; i < 150; i++) {
+    setTimeout(() => createParticle(), i * 100);
+  }
+  
+  // Initialize tributary particles
+  tributaryPaths.forEach((tributaryId, index) => {
+    for (let i = 0; i < 20; i++) {
+      setTimeout(() => createTributaryParticle(tributaryId), (index * 500) + (i * 150));
+    }
+  });
+  
+  // Start animation
+  animateParticles();
+  
+  // Initialize Scrollama for tributary visibility
+  const scroller = scrollama();
+  
+  scroller
+    .setup({
+      step: '.tributary-step',
+      offset: 0.6, // Trigger when element is 60% from top of viewport
+      debug: false // Set to true to see trigger lines
+    })
+    .onStepEnter((response) => {
+      // Fade in tributary content when step enters
+      const content = response.element.querySelector('.tributary-content');
+      if (content) {
+        content.classList.add('is-active');
+      }
+      console.log('Tributary entered:', response.index);
+    })
+    .onStepExit((response) => {
+      // Optionally fade out when step exits (or leave visible)
+      // Uncomment below to fade out when scrolling past
+      // const content = response.element.querySelector('.tributary-content');
+      // if (content) {
+      //   content.classList.remove('is-active');
+      // }
+      console.log('Tributary exited:', response.index);
+    });
+  
+  // Handle window resize
+  window.addEventListener('resize', scroller.resize);
+});
+</script>

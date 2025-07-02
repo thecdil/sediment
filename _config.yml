@@ -62,6 +62,15 @@ organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
 # noindex: true 
 
 ##########
+# COLLECTIONS
+#
+# Tributaries collection for sediment project
+collections:
+  tributaries:
+    output: true
+    permalink: /:collection/:name/
+
+##########
 # BUILD SETTINGS 
 #
 # Note: use environment variable on build command to include analytics

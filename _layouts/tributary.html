@@ -1,0 +1,244 @@
+---
+layout: default
+---
+
+<div class="tributary-container">
+  <!-- Navigation back to main -->
+  <nav class="tributary-nav position-fixed top-0 start-0 p-3">
+    <div class="nav-links">
+      <a href="{{ site.baseurl }}/" class="nav-link text-white">← Back to Main River</a>
+    </div>
+  </nav>
+
+  <!-- Tributary River SVG Container -->
+  <div class="tributary-flow-container">
+    <svg id="tributarySvg" class="tributary-svg" width="100%" height="100%">
+      <defs>
+        {% if page.side == 'left' %}
+        <!-- Left side tributary path - flows from left edge to center-right -->
+        <path id="tributaryRiverPath" d="M-100,300 Q100,350 300,400 Q500,450 700,500 Q900,550 1100,600"/>
+        {% else %}
+        <!-- Right side tributary path - flows from right edge to center-left -->
+        <path id="tributaryRiverPath" d="M1300,300 Q1100,350 900,400 Q700,450 500,500 Q300,550 100,600"/>
+        {% endif %}
+        
+        <!-- Gradient for tributary river -->
+        <linearGradient id="tributaryRiverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:0.8" />
+          <stop offset="50%" style="stop-color:#6bb6ff;stop-opacity:0.6" />
+          <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.8" />
+        </linearGradient>
+
+        <!-- Particle definitions -->
+        <circle id="tributaryParticle" r="1.5" fill="#4a90e2" opacity="0.8"/>
+        <circle id="tributaryParticle2" r="1" fill="#6bb6ff" opacity="0.7"/>
+        <circle id="tributaryParticle3" r="2" fill="#2c5aa0" opacity="0.6"/>
+      </defs>
+
+      <!-- Tributary river bed -->
+      <path d="{% if page.side == 'left' %}M-100,300 Q100,350 300,400 Q500,450 700,500 Q900,550 1100,600{% else %}M1300,300 Q1100,350 900,400 Q700,450 500,500 Q300,550 100,600{% endif %}" 
+            stroke="url(#tributaryRiverGradient)" 
+            stroke-width="60" 
+            fill="none" 
+            opacity="0.7"/>
+      
+      <!-- Particles will be added here by JavaScript -->
+    </svg>
+  </div>
+
+  <!-- Content area -->
+  <div class="tributary-content-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="tributary-header">
+            <h1>{{ page.title }}</h1>
+            <p class="lead">{{ page.description }}</p>
+          </div>
+          
+          <div class="tributary-body">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.tributary-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f4fd 0%, #b8ddf0 50%, #a5d1ea 100%);
+  overflow-x: hidden;
+}
+
+.tributary-nav {
+  z-index: 1000;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #4a90e2 !important;
+}
+
+.tributary-flow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tributary-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tributary-content-area {
+  position: relative;
+  z-index: 2;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.tributary-header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.tributary-header h1 {
+  color: #2c5aa0;
+  margin-bottom: 20px;
+}
+
+.tributary-header .lead {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.tributary-body {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.tributary-body h1,
+.tributary-body h2,
+.tributary-body h3 {
+  color: #2c5aa0;
+}
+
+.tributary-body p {
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tributary-header,
+  .tributary-body {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  .tributary-content-area {
+    padding-top: 120px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const svg = document.getElementById('tributarySvg');
+  const path = document.getElementById('tributaryRiverPath');
+  const particles = [];
+  const particleTypes = ['tributaryParticle', 'tributaryParticle2', 'tributaryParticle3'];
+  
+  // Get path length for animation
+  const pathLength = path.getTotalLength();
+  
+  // Create particles
+  function createParticle() {
+    const particleType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + particleType);
+    
+    const particle = {
+      element: use,
+      position: Math.random() * 100, // Start at random position along path
+      speed: 0.2 + Math.random() * 0.4, // Random speed
+      offset: (Math.random() - 0.5) * 15 // Random offset from center line
+    };
+    
+    svg.appendChild(use);
+    particles.push(particle);
+    
+    return particle;
+  }
+  
+  // Animate particles along the path
+  function animateParticles() {
+    particles.forEach((particle, index) => {
+      particle.position += particle.speed;
+      
+      // Reset particle if it goes beyond the path
+      if (particle.position > 100) {
+        particle.position = -5;
+      }
+      
+      // Get point along path
+      const distance = (particle.position / 100) * pathLength;
+      const point = path.getPointAtLength(distance);
+      
+      // Apply offset for natural spread
+      const angle = Math.atan2(
+        path.getPointAtLength(Math.min(distance + 1, pathLength - 1)).y - point.y,
+        path.getPointAtLength(Math.min(distance + 1, pathLength - 1)).x - point.x
+      );
+      
+      const offsetX = Math.cos(angle + Math.PI/2) * particle.offset;
+      const offsetY = Math.sin(angle + Math.PI/2) * particle.offset;
+      
+      particle.element.setAttribute('transform', 
+        `translate(${point.x + offsetX}, ${point.y + offsetY})`);
+    });
+    
+    requestAnimationFrame(animateParticles);
+  }
+  
+  // Initialize particles
+  for (let i = 0; i < 80; i++) {
+    setTimeout(() => createParticle(), i * 150);
+  }
+  
+  // Start animation
+  animateParticles();
+});
+</script>
