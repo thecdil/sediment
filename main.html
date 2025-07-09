@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "The Colorado River Journey"
-river_path: "M400,-100 Q350,100 380,300 Q420,500 400,700 Q370,900 390,1100 Q420,1300 400,1500 Q370,1700 390,1900 Q420,2100 400,2300 Q370,2500 390,2700 Q420,2900 400,3100 Q370,3300 390,3500 Q420,3700 400,3900 Q370,4100 390,4300 Q420,4500 400,4700 Q370,4900 390,5100 Q420,5300 400,5500"
+river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q22,75 20,85 Q17,95 19,105 Q22,115 20,125 Q17,135 19,145 Q22,155 20,165 Q17,175 19,185 Q22,195 20,205 Q17,215 19,225 Q22,235 20,245 Q17,255 19,265 Q22,275 20,285 Q17,295 19,305 Q22,310 20,320 Q17,330 19,340 Q22,350 20,360 Q17,385 19,400"
 features:
   - type: "text-block"
     id: "river-source"
@@ -53,19 +53,19 @@ features:
 
   <!-- River SVG Container -->
   <div class="river-flow-container ">
-    <svg id="riverSvg" class="river-svg" width="100%" height="100%">
+    <svg id="riverSvg" class="river-svg" width="100%" height="100%" viewBox="0 0 100 320" preserveAspectRatio="xMidYMin meet">
       <!-- River path definition -->
       <defs>
         <path id="riverPath" d="{{ page.river_path }}"/>
         
-        <!-- Tributary path definitions -->
-        <path id="tributary1" d="M380,700 Q320,680 260,650 Q180,620 100,580 Q20,540 -60,500"/>
-        <path id="tributary2" d="M400,1200 Q480,1170 560,1140 Q640,1100 720,1060 Q800,1020 880,980"/>
-        <path id="tributary3" d="M390,2000 Q320,1980 250,1950 Q160,1920 70,1880 Q-20,1840 -110,1800"/>
-        <path id="tributary4" d="M400,2800 Q480,2780 560,2750 Q640,2720 720,2680 Q800,2640 880,2600"/>
-        <path id="tributary5" d="M390,3500 Q320,3480 250,3450 Q160,3420 70,3380 Q-20,3340 -110,3300"/>
-        <path id="tributary6" d="M400,4300 Q480,4280 560,4250 Q640,4220 720,4180 Q800,4140 880,4100"/>
-        <path id="tributary7" d="M390,5000 Q320,4980 250,4950 Q160,4920 70,4880 Q-20,4840 -110,4800"/>
+        <!-- Tributary path definitions - also updated to use percentages -->
+        <path id="tributary1" d="M18,45 Q12,43 6,41 Q0,39 -6,37"/>
+        <path id="tributary2" d="M20,85 Q26,83 32,81 Q38,79 44,77"/>
+        <path id="tributary3" d="M19,125 Q13,123 7,121 Q1,119 -5,117"/>
+        <path id="tributary4" d="M20,165 Q26,163 32,161 Q38,159 44,157"/>
+        <path id="tributary5" d="M19,205 Q13,203 7,201 Q1,199 -5,197"/>
+        <path id="tributary6" d="M20,245 Q26,243 32,241 Q38,239 44,237"/>
+        <path id="tributary7" d="M19,285 Q13,283 7,281 Q1,279 -5,277"/>
         
         <!-- Gradient for river bed -->
         <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -94,67 +94,67 @@ features:
         </linearGradient>
 
         <!-- Particle definitions -->
-        <circle id="sedimentParticle" r="2" fill="#8B4513" opacity="0.7"/>
-        <circle id="sedimentParticle2" r="1.5" fill="#A0522D" opacity="0.8"/>
-        <circle id="sedimentParticle3" r="1" fill="#CD853F" opacity="0.6"/>
-        <circle id="rushParticle" r="3" fill="#654321" opacity="0.9"/>
-        <circle id="rushParticle2" r="2.5" fill="#8B4513" opacity="0.8"/>
-        <circle id="rushParticle3" r="2" fill="#A0522D" opacity="0.7"/>
+        <circle id="sedimentParticle" r="0.2" fill="#8B4513" opacity="0.7"/>
+        <circle id="sedimentParticle2" r="0.15" fill="#A0522D" opacity="0.8"/>
+        <circle id="sedimentParticle3" r="0.1" fill="#CD853F" opacity="0.6"/>
+        <circle id="rushParticle" r="0.3" fill="#654321" opacity="0.9"/>
+        <circle id="rushParticle2" r="0.25" fill="#8B4513" opacity="0.8"/>
+        <circle id="rushParticle3" r="0.2" fill="#A0522D" opacity="0.7"/>
       </defs>
 
       <!-- River bed -->
       <path d="{{ page.river_path }}" 
             stroke="url(#riverGradient)" 
-            stroke-width="80" 
+            stroke-width="8" 
             fill="none" 
             opacity="0.4">
-        <animate attributeName="stroke-width" values="80;120;80" dur="3s" repeatCount="1"/>
+        <animate attributeName="stroke-width" values="8;12;8" dur="3s" repeatCount="1"/>
         <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="1"/>
       </path>
       
       <!-- Breach effect overlay -->
       <path d="{{ page.river_path }}" 
             stroke="url(#breachGradient)" 
-            stroke-width="100" 
+            stroke-width="10" 
             fill="none" 
             opacity="0.8">
         <animate attributeName="opacity" values="0.8;0.3;0" dur="3s" repeatCount="1"/>
       </path>
       
       <!-- Tributary streams -->
-      <path d="M380,700 Q320,680 260,650 Q180,620 100,580 Q20,540 -60,500" 
+      <path d="M18,45 Q12,43 6,41 Q0,39 -6,37" 
             stroke="url(#tributaryGradient)" 
-            stroke-width="30" 
+            stroke-width="3" 
             fill="none" 
             opacity="0.6"/>
-      <path d="M400,1200 Q480,1170 560,1140 Q640,1100 720,1060 Q800,1020 880,980" 
+      <path d="M20,85 Q26,83 32,81 Q38,79 44,77" 
             stroke="url(#tributaryGradient)" 
-            stroke-width="30" 
+            stroke-width="3" 
             fill="none" 
             opacity="0.6"/>
-      <path d="M390,2000 Q320,1980 250,1950 Q160,1920 70,1880 Q-20,1840 -110,1800" 
+      <path d="M19,125 Q13,123 7,121 Q1,119 -5,117" 
             stroke="url(#tributaryGradient)" 
-            stroke-width="30" 
+            stroke-width="3" 
             fill="none" 
             opacity="0.6"/>
-      <path d="M400,2800 Q480,2780 560,2750 Q640,2720 720,2680 Q800,2640 880,2600" 
+      <path d="M20,165 Q26,163 32,161 Q38,159 44,157" 
             stroke="url(#tributaryGradient)" 
-            stroke-width="30" 
+            stroke-width="3" 
             fill="none" 
             opacity="0.6"/>
-      <path d="M390,3500 Q320,3480 250,3450 Q160,3420 70,3380 Q-20,3340 -110,3300" 
+      <path d="M19,205 Q13,203 7,201 Q1,199 -5,197" 
             stroke="url(#tributaryGradient)" 
-            stroke-width="30" 
+            stroke-width="3" 
             fill="none" 
             opacity="0.6"/>
-      <path d="M400,4300 Q480,4280 560,4250 Q640,4220 720,4180 Q800,4140 880,4100" 
+      <path d="M20,245 Q26,243 32,241 Q38,239 44,237" 
             stroke="url(#tributaryGradient)" 
-            stroke-width="30" 
+            stroke-width="3" 
             fill="none" 
             opacity="0.6"/>
-      <path d="M390,5000 Q320,4980 250,4950 Q160,4920 70,4880 Q-20,4840 -110,4800" 
+      <path d="M19,285 Q13,283 7,281 Q1,279 -5,277" 
             stroke="url(#tributaryGradient)" 
-            stroke-width="30" 
+            stroke-width="3" 
             fill="none" 
             opacity="0.6"/>
       
@@ -167,6 +167,7 @@ features:
   {% assign sorted_tributaries = site.tributaries | sort: "scroll_position" %}
   {% for tributary in sorted_tributaries %}
     <div class="tributary-step" 
+         id="{{ tributary.title | downcase }}"
          data-step="{{ forloop.index0 }}"
          data-position="{{ tributary.position }}" 
          data-side="{{ tributary.side }}"
@@ -406,7 +407,7 @@ document.addEventListener('DOMContentLoaded', function() {
       element: use,
       position: Math.random() * 100, // Start at random position along path
       speed: 0.1 + Math.random() * 0.3, // Random speed
-      offset: (Math.random() - 0.5) * 20 // Random offset from center line
+      offset: (Math.random() - 0.5) * 2 // Random offset from center line
     };
     
     svg.appendChild(use);
@@ -430,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function() {
       element: use,
       position: startPosition - 10, // Start slightly above the river path
       speed: 0.8 + Math.random() * 0.4, // Faster speed for rush effect
-      offset: (Math.random() - 0.5) * 30, // Wider spread for dramatic effect
+      offset: (Math.random() - 0.5) * 3, // Wider spread for dramatic effect
       isRush: true, // Mark as rush particle
       life: 1.0,
       decay: 0.998
@@ -457,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function() {
       pathLength: tributaryPath.getTotalLength(),
       position: Math.random() * 100,
       speed: 0.15 + Math.random() * 0.2,
-      offset: (Math.random() - 0.5) * 15
+      offset: (Math.random() - 0.5) * 1.5
     };
     
     svg.appendChild(use);

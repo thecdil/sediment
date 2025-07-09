@@ -7,11 +7,6 @@ position: 35
 scroll_position: 1000
 description: "The flowing medium that carries sediment downstream"
 ---
-order: 2
-side: "right"
-position: 35
-description: "The flowing force that carries sediment through the landscape"
----
 
 # Water
 
