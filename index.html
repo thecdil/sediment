@@ -254,6 +254,18 @@
         const subtitle1Size = fontSize * 0.35;
         const subtitle2Size = fontSize * 0.25;
         
+        // Desert color palette (from main.html)
+        const colors = {
+            path: '#8B4513',
+            particles: ['#CD853F', '#D2691E', '#F4A460', '#DEB887', '#BC8F8F', '#A0522D'],
+            glow: '#F4A460'
+        };
+        
+        // Function to get random particle color from desert palette
+        function getParticleColor() {
+            return colors.particles[Math.floor(Math.random() * colors.particles.length)];
+        }
+        
         // Sediment accumulation grid for natural buildup
         const gridSize = 1; // Size of each grid cell
         const sedimentGrid = {};
@@ -396,7 +408,7 @@
                                 vx: 0,
                                 vy: 0,
                                 size: particleSize,
-                                color: `hsl(${30 + Math.random() * 20}, ${60 + Math.random() * 20}%, ${40 + Math.random() * 20}%)`,
+                                color: getParticleColor(), // Use desert color palette
                                 startTime: Math.random() * 5000,
                                 settled: false,
                                 type: particleType,
@@ -417,23 +429,22 @@
         
         // Function to add new particles during animation (simulating continuous sediment flow)
         function addContinuousParticles(elapsed) {
-            // Start adding particles after 3 seconds, every 200ms
-            if (elapsed > 3000 && elapsed - lastParticleAddTime > 200) {
+            // Start adding particles after 3 seconds, every 100ms for more flow
+            if (elapsed > 3000 && elapsed - lastParticleAddTime > 100) { // Reduced from 200ms to 100ms
                 lastParticleAddTime = elapsed;
                 
-                // Add particles along the main river in the middle section
-                const numberOfNewParticles = 15; // Triple the rate of new particles
+                // Add more particles along the main river, especially from top right
+                const numberOfNewParticles = 25; // Increased from 15 to 25
                 
                 for (let i = 0; i < numberOfNewParticles; i++) {
-                    // Add particles along the main river course
-                    const riverProgress = Math.random();
                     const mainRiver = riverNetwork[0]; // Main river is first in array
                     
-                    // Pick random points along the main river
-                    const segmentIndex = Math.floor(Math.random() * (mainRiver.points.length - 1));
-                    const segment = riverProgress;
+                    // Bias toward top right section (first 40% of river points)
+                    const riverProgress = Math.random() * 0.4; // Focus on top 40% of river
+                    const segmentIndex = Math.floor(riverProgress * (mainRiver.points.length - 1));
+                    const segment = Math.random();
                     const p1 = mainRiver.points[segmentIndex];
-                    const p2 = mainRiver.points[segmentIndex + 1];
+                    const p2 = mainRiver.points[Math.min(segmentIndex + 1, mainRiver.points.length - 1)];
                     
                     const x = p1.x + (p2.x - p1.x) * segment + (Math.random() - 0.5) * mainRiver.width;
                     const y = p1.y + (p2.y - p1.y) * segment + (Math.random() - 0.5) * mainRiver.width * 0.5;
@@ -446,10 +457,37 @@
                         vx: Math.random() * 0.5 - 0.25,
                         vy: Math.random() * 0.3,
                         size: Math.random() * 1.2 + 0.2,
-                        color: `hsl(${25 + Math.random() * 25}, ${50 + Math.random() * 30}%, ${35 + Math.random() * 25}%)`,
+                        color: getParticleColor(), // Use desert color palette
                         startTime: 0, // Start moving immediately
                         settled: false,
                         type: 'continuous',
+                        inRiver: true,
+                        currentRiver: mainRiver
+                    });
+                }
+                
+                // Add additional particles specifically at the very top right
+                const numberOfTopRightParticles = 15; // Extra particles from source
+                for (let i = 0; i < numberOfTopRightParticles; i++) {
+                    const mainRiver = riverNetwork[0];
+                    const sourcePoint = mainRiver.points[0]; // Very first point (top right)
+                    
+                    // Spawn particles in a small area around the source
+                    const x = sourcePoint.x + (Math.random() - 0.5) * mainRiver.width * 2;
+                    const y = sourcePoint.y + (Math.random() - 0.5) * mainRiver.width;
+                    
+                    particles.push({
+                        x: x,
+                        y: y,
+                        originalX: x,
+                        originalY: y,
+                        vx: Math.random() * 0.3 - 0.15,
+                        vy: Math.random() * 0.2 + 0.1,
+                        size: Math.random() * 1.0 + 0.3,
+                        color: getParticleColor(), // Use desert color palette
+                        startTime: 0,
+                        settled: false,
+                        type: 'source',
                         inRiver: true,
                         currentRiver: mainRiver
                     });

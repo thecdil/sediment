@@ -1,0 +1,613 @@
+---
+layout: default
+title: "The Colorado River Journey"
+river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q22,75 20,85 Q17,95 19,105 Q22,115 20,125 Q17,135 19,145 Q22,155 20,165 Q17,175 19,185 Q22,195 20,205 Q17,215 19,225 Q22,235 20,245 Q17,255 19,265 Q22,275 20,285 Q17,295 19,305 Q22,310 20,320 Q17,330 19,340 Q22,350 20,360 Q17,385 19,400"
+features:
+  - type: "text-block"
+    id: "river-source"
+    title: "River Source"
+    content: "The Colorado River begins its journey in the Rocky Mountains, carrying sediment from alpine watersheds."
+    scroll_position: 15
+    side: "right"
+    
+# Commented out until images are available
+#  - type: "image"
+#    id: "glen-canyon-dam"
+#    title: "Glen Canyon Dam"
+#    image: "/assets/images/glen-canyon-dam.jpg"
+#    alt: "Glen Canyon Dam structure"
+#    caption: "Glen Canyon Dam: A barrier to sediment flow"
+#    description: "Completed in 1966, Glen Canyon Dam stands 710 feet tall and fundamentally altered the river's sediment transport."
+#    scroll_position: 30
+#    side: "left"
+#    
+#  - type: "gallery"
+#    id: "sediment-samples"
+#    title: "Sediment Samples"
+#    scroll_position: 60
+#    side: "right"
+#    images:
+#      - thumb: "/assets/images/sediment-sample-1-thumb.jpg"
+#        full: "/assets/images/sediment-sample-1.jpg"
+#        alt: "Pre-dam sediment sample"
+#        caption: "Sediment sample from pre-dam era"
+#      - thumb: "/assets/images/sediment-sample-2-thumb.jpg"
+#        full: "/assets/images/sediment-sample-2.jpg"
+#        alt: "Post-dam sediment sample"
+#        caption: "Contemporary sediment composition"
+#      - thumb: "/assets/images/sediment-sample-3-thumb.jpg"
+#        full: "/assets/images/sediment-sample-3.jpg"
+#        alt: "Microscopic view"
+#        caption: "Microscopic analysis of particle composition"
+---
+
+<div class="river-container">
+  <!-- Navigation -->
+  <nav class="river-nav position-fixed top-0 start-0 p-3">
+    <div class="nav-links">
+      <a href="#about-project" class="nav-link text-white">About the Project</a>
+      <a href="#about-river" class="nav-link text-white">About the Colorado River/Glen Canyon Dam</a>
+      <a href="#about-sediment" class="nav-link text-white">About Sediment</a>
+    </div>
+  </nav>
+
+  <!-- River SVG Container -->
+  <div class="river-flow-container ">
+    <svg id="riverSvg" class="river-svg" width="100%" height="100%" viewBox="0 0 100 320" preserveAspectRatio="xMidYMin meet">
+      <!-- River path definition -->
+      <defs>
+        <path id="riverPath" d="{{ page.river_path }}"/>
+        
+        <!-- Tributary path definitions - also updated to use percentages -->
+        <path id="tributary1" d="M18,45 Q12,43 6,41 Q0,39 -6,37"/>
+        <path id="tributary2" d="M20,85 Q26,83 32,81 Q38,79 44,77"/>
+        <path id="tributary3" d="M19,125 Q13,123 7,121 Q1,119 -5,117"/>
+        <path id="tributary4" d="M20,165 Q26,163 32,161 Q38,159 44,157"/>
+        <path id="tributary5" d="M19,205 Q13,203 7,201 Q1,199 -5,197"/>
+        <path id="tributary6" d="M20,245 Q26,243 32,241 Q38,239 44,237"/>
+        <path id="tributary7" d="M19,285 Q13,283 7,281 Q1,279 -5,277"/>
+        
+        <!-- Gradient for river bed -->
+        <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#7c7b69;stop-opacity:0.4" />
+          <stop offset="50%" style="stop-color:#738aab;stop-opacity:0.3" />
+          <stop offset="100%" style="stop-color:#90976c;stop-opacity:0.4" />
+        </linearGradient>
+        
+        <!-- Animated gradient for breach effect -->
+        <linearGradient id="breachGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:0.6">
+            <animate attributeName="stop-opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="1"/>
+          </stop>
+          <stop offset="50%" style="stop-color:#5ba0f2;stop-opacity:0.4">
+            <animate attributeName="stop-opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="1"/>
+          </stop>
+          <stop offset="100%" style="stop-color:#6bb0ff;stop-opacity:0.6">
+            <animate attributeName="stop-opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="1"/>
+          </stop>
+        </linearGradient>
+
+        <!-- Tributary gradient -->
+        <linearGradient id="tributaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:0.6" />
+          <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.1" />
+        </linearGradient>
+
+        <!-- Particle definitions -->
+        <circle id="sedimentParticle" r="0.2" fill="#8B4513" opacity="0.7"/>
+        <circle id="sedimentParticle2" r="0.15" fill="#A0522D" opacity="0.8"/>
+        <circle id="sedimentParticle3" r="0.1" fill="#CD853F" opacity="0.6"/>
+        <circle id="rushParticle" r="0.3" fill="#654321" opacity="0.9"/>
+        <circle id="rushParticle2" r="0.25" fill="#8B4513" opacity="0.8"/>
+        <circle id="rushParticle3" r="0.2" fill="#A0522D" opacity="0.7"/>
+      </defs>
+
+      <!-- River bed -->
+      <path d="{{ page.river_path }}" 
+            stroke="url(#riverGradient)" 
+            stroke-width="8" 
+            fill="none" 
+            opacity="0.4">
+        <animate attributeName="stroke-width" values="8;12;8" dur="3s" repeatCount="1"/>
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="1"/>
+      </path>
+      
+      <!-- Breach effect overlay -->
+      <path d="{{ page.river_path }}" 
+            stroke="url(#breachGradient)" 
+            stroke-width="10" 
+            fill="none" 
+            opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0" dur="3s" repeatCount="1"/>
+      </path>
+      
+      <!-- Tributary streams -->
+      <path d="M18,45 Q12,43 6,41 Q0,39 -6,37" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="3" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M20,85 Q26,83 32,81 Q38,79 44,77" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="3" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M19,125 Q13,123 7,121 Q1,119 -5,117" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="3" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M20,165 Q26,163 32,161 Q38,159 44,157" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="3" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M19,205 Q13,203 7,201 Q1,199 -5,197" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="3" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M20,245 Q26,243 32,241 Q38,239 44,237" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="3" 
+            fill="none" 
+            opacity="0.6"/>
+      <path d="M19,285 Q13,283 7,281 Q1,279 -5,277" 
+            stroke="url(#tributaryGradient)" 
+            stroke-width="3" 
+            fill="none" 
+            opacity="0.6"/>
+      
+      <!-- Particles will be added here by JavaScript -->
+    </svg>
+  </div>
+
+  <!-- Tributary Points (positioned absolutely) -->
+  <div class="tributary-scroll-container">
+  {% assign sorted_tributaries = site.tributaries | sort: "scroll_position" %}
+  {% for tributary in sorted_tributaries %}
+    <div class="tributary-step" 
+         id="{{ tributary.title | downcase }}"
+         data-step="{{ forloop.index0 }}"
+         data-position="{{ tributary.position }}" 
+         data-side="{{ tributary.side }}"
+         style="top: {{ tributary.scroll_position }}px; height: 400px;">
+      
+      {% if tributary.side == 'left' %}
+        <div class="tributary-content tributary-left">
+          <div class="tributary-branch-left"></div>
+          <div class="content-box">
+            <h3>{{ tributary.title }}</h3>
+            <p>{{ tributary.description }}</p>
+            <a href="{{ tributary.url | relative_url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+        </div>
+      {% else %}
+        <div class="tributary-content tributary-right">
+          <div class="content-box">
+            <h3>{{ tributary.title }}</h3>
+            <p>{{ tributary.description }}</p>
+            <a href="{{ tributary.url | relative_url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+          <div class="tributary-branch-right"></div>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+
+  <!-- Feature Points -->
+  {% for feature in page.features %}
+    {% include river_feature.html feature=feature %}
+  {% endfor %}
+</div>
+
+<style>
+.river-container {
+  position: relative;
+  width: 100%;
+  min-height: 5500px;
+  background: linear-gradient(180deg, #dfe5e8 0%, #90969c 50%, #c5f0f0 100%);
+  overflow-x: hidden;
+  animation: breach-flash 3s ease-out;
+}
+
+@keyframes breach-flash {
+  0% {
+    background: linear-gradient(180deg, #f0f8ff 0%, #e6f3ff 50%, #dce9ff 100%);
+    filter: brightness(1.2);
+  }
+  30% {
+    background: linear-gradient(180deg, #e8f0f8 0%, #95a5b5 50%, #c8e8e8 100%);
+    filter: brightness(1.1);
+  }
+  100% {
+    background: linear-gradient(180deg, #dfe5e8 0%, #90969c 50%, #c5f0f0 100%);
+    filter: brightness(1.0);
+  }
+}
+
+.river-nav {
+  z-index: 1000;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #4a90e2 !important;
+}
+
+.river-flow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.river-svg {
+  width: 100%;
+  height: 100%;
+  animation: river-surge 2s ease-out;
+}
+
+@keyframes river-surge {
+  0% {
+    filter: drop-shadow(0 0 10px rgba(74, 144, 226, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(74, 144, 226, 0.4));
+  }
+  100% {
+    filter: none;
+  }
+}
+
+.tributary-scroll-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tributary-step {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.tributary-content {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.tributary-content.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tributary-left {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.tributary-right {
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.tributary-branch-left,
+.tributary-branch-right {
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a90e2, transparent);
+  position: relative;
+}
+
+.tributary-branch-right {
+  background: linear-gradient(-90deg, #4a90e2, transparent);
+}
+
+.content-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.content-box h3 {
+  margin-bottom: 10px;
+  color: #2c5aa0;
+  font-size: 18px;
+}
+
+.content-box p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tributary-left,
+  .tributary-right {
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .tributary-branch-left,
+  .tributary-branch-right {
+    display: none;
+  }
+  
+  .content-box {
+    max-width: 280px;
+  }
+}
+</style>
+
+<!-- Load Scrollama -->
+<script src="{{ '/assets/lib/scrollama.js' | relative_url }}"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const svg = document.getElementById('riverSvg');
+  const path = document.getElementById('riverPath');
+  const particles = [];
+  const tributaryParticles = [];
+  const rushParticles = [];
+  const particleTypes = ['sedimentParticle', 'sedimentParticle2', 'sedimentParticle3'];
+  const rushParticleTypes = ['rushParticle', 'rushParticle2', 'rushParticle3'];
+  
+  // Get path length for animation
+  const pathLength = path.getTotalLength();
+  
+  // Tributary paths
+  const tributaryPaths = [
+    'tributary1', 'tributary2', 'tributary3', 'tributary4', 
+    'tributary5', 'tributary6', 'tributary7'
+  ];
+  
+  // Note: Tributary paths are now configurable via markdown frontmatter
+  // Each tributary markdown file can include:
+  // path: "M50,50 Q80,300 120,550 Q150,800 200,1000 Q250,1200 300,1400"
+  
+  // Breach effect state
+  let breachEffect = true;
+  let breachStartTime = Date.now();
+  const breachDuration = 3000; // 3 seconds of intense rush
+  
+  // Create particles for main river
+  function createParticle() {
+    const particleType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + particleType);
+    
+    const particle = {
+      element: use,
+      position: Math.random() * 100, // Start at random position along path
+      speed: 0.1 + Math.random() * 0.3, // Random speed
+      offset: (Math.random() - 0.5) * 2 // Random offset from center line
+    };
+    
+    svg.appendChild(use);
+    particles.push(particle);
+    
+    return particle;
+  }
+  
+  // Create rush particles for breach effect - aligned with main river
+  function createRushParticle() {
+    const particleType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + particleType);
+    
+    // Use the same system as main river particles
+    const startPosition = Math.random() * 20; // Start in upper 20% of river
+    const distance = (startPosition / 100) * pathLength;
+    const point = path.getPointAtLength(distance);
+    
+    const particle = {
+      element: use,
+      position: startPosition - 10, // Start slightly above the river path
+      speed: 0.8 + Math.random() * 0.4, // Faster speed for rush effect
+      offset: (Math.random() - 0.5) * 3, // Wider spread for dramatic effect
+      isRush: true, // Mark as rush particle
+      life: 1.0,
+      decay: 0.998
+    };
+    
+    svg.appendChild(use);
+    particles.push(particle); // Add directly to main particles array
+    
+    return particle;
+  }
+  
+  // Create particles for tributaries
+  function createTributaryParticle(tributaryId) {
+    const tributaryPath = document.getElementById(tributaryId);
+    if (!tributaryPath) return;
+    
+    const particleType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + particleType);
+    
+    const particle = {
+      element: use,
+      path: tributaryPath,
+      pathLength: tributaryPath.getTotalLength(),
+      position: Math.random() * 100,
+      speed: 0.15 + Math.random() * 0.2,
+      offset: (Math.random() - 0.5) * 1.5
+    };
+    
+    svg.appendChild(use);
+    tributaryParticles.push(particle);
+    
+    return particle;
+  }
+  
+  // Animate main river particles
+  function animateParticles() {
+    const currentTime = Date.now();
+    const breachProgress = Math.min((currentTime - breachStartTime) / breachDuration, 1);
+    
+    // Animate main river particles (including rush particles)
+    particles.forEach((particle, index) => {
+      particle.position += particle.speed;
+      
+      // Reset particle if it goes beyond the path
+      if (particle.position > 100) {
+        particle.position = -5;
+        // Convert rush particles to regular particles after one cycle
+        if (particle.isRush) {
+          particle.isRush = false;
+          particle.speed = 0.1 + Math.random() * 0.3;
+          particle.offset = (Math.random() - 0.5) * 20;
+        }
+      }
+      
+      // Get point along path
+      const distance = (particle.position / 100) * pathLength;
+      const point = path.getPointAtLength(distance);
+      
+      // Apply offset for natural spread
+      const nextDistance = Math.min(distance + 1, pathLength);
+      const nextPoint = path.getPointAtLength(nextDistance);
+      const angle = Math.atan2(nextPoint.y - point.y, nextPoint.x - point.x);
+      
+      const offsetX = Math.cos(angle + Math.PI/2) * particle.offset;
+      const offsetY = Math.sin(angle + Math.PI/2) * particle.offset;
+      
+      // Handle rush particle fading
+      let opacity = 1;
+      if (particle.isRush) {
+        particle.life *= particle.decay;
+        opacity = particle.life;
+        
+        // Remove rush particle if too faded
+        if (particle.life < 0.1) {
+          svg.removeChild(particle.element);
+          particles.splice(index, 1);
+          return;
+        }
+      }
+      
+      particle.element.setAttribute('transform', 
+        `translate(${point.x + offsetX}, ${point.y + offsetY})`);
+      particle.element.setAttribute('opacity', opacity);
+    });
+    
+    // Animate tributary particles
+    tributaryParticles.forEach((particle, index) => {
+      particle.position += particle.speed;
+      
+      // Reset particle if it goes beyond the path
+      if (particle.position > 100) {
+        particle.position = -5;
+      }
+      
+      // Get point along tributary path
+      const distance = (particle.position / 100) * particle.pathLength;
+      const point = particle.path.getPointAtLength(distance);
+      
+      // Apply offset for natural spread
+      const angle = Math.atan2(
+        particle.path.getPointAtLength(distance + 1).y - point.y,
+        particle.path.getPointAtLength(distance + 1).x - point.x
+      );
+      
+      const offsetX = Math.cos(angle + Math.PI/2) * particle.offset;
+      const offsetY = Math.sin(angle + Math.PI/2) * particle.offset;
+      
+      particle.element.setAttribute('transform', 
+        `translate(${point.x + offsetX}, ${point.y + offsetY})`);
+    });
+    
+    // Rush particles are now integrated into main particle system
+    // No separate animation needed
+    
+    // Create new rush particles during breach effect
+    if (breachEffect && breachProgress < 1) {
+      // Create burst of particles - reduced for performance
+      if (Math.random() < 0.6) { // 60% chance each frame
+        createRushParticle();
+      }
+    } else if (breachProgress >= 1) {
+      breachEffect = false;
+    }
+    
+    requestAnimationFrame(animateParticles);
+  }
+  
+  // Initialize main river particles (reduced for breach effect)
+  for (let i = 0; i < 280; i++) {
+    setTimeout(() => createParticle(), i * 150);
+  }
+  
+  // Create initial rush particles for breach effect
+  for (let i = 0; i < 500; i++) {
+    setTimeout(() => createRushParticle(), i * 50);
+  }
+  
+  // Initialize tributary particles
+  tributaryPaths.forEach((tributaryId, index) => {
+    for (let i = 0; i < 20; i++) {
+      setTimeout(() => createTributaryParticle(tributaryId), (index * 500) + (i * 150));
+    }
+  });
+  
+  // Start animation
+  animateParticles();
+  
+  // Initialize Scrollama for tributary visibility
+  const scroller = scrollama();
+  
+  scroller
+    .setup({
+      step: '.tributary-step',
+      offset: 0.6, // Trigger when element is 60% from top of viewport
+      debug: false // Set to true to see trigger lines
+    })
+    .onStepEnter((response) => {
+      // Fade in tributary content when step enters
+      const content = response.element.querySelector('.tributary-content');
+      if (content) {
+        content.classList.add('is-active');
+      }
+      console.log('Tributary entered:', response.index);
+    })
+    .onStepExit((response) => {
+      // Optionally fade out when step exits (or leave visible)
+      // Uncomment below to fade out when scrolling past
+      // const content = response.element.querySelector('.tributary-content');
+      // if (content) {
+      //   content.classList.remove('is-active');
+      // }
+      console.log('Tributary exited:', response.index);
+    });
+  
+  // Handle window resize
+  window.addEventListener('resize', scroller.resize);
+});
+</script>
