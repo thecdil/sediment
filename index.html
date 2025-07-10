@@ -1,5 +1,6 @@
 ---
 font: Inconsolata
+font-size-calc: "7, 140"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -255,9 +256,6 @@ font: Inconsolata
         const subtitle1 = "By Hannah Green";
         const subtitle2 = "A CD?L Project";
         const fontFamily = "{{page.font}}";
-        const fontSize = Math.min(canvas.width / 10, 120);
-        const subtitle1Size = fontSize * 0.35;
-        const subtitle2Size = fontSize * 0.25;
         
         // Desert color palette (from main.html)
         const colors = {
@@ -351,6 +349,11 @@ font: Inconsolata
         
         // Create particles from text
         function createTextParticles() {
+            // Calculate font sizes based on current canvas dimensions
+            const fontSize = Math.min(canvas.width / {{page.font-size-calc}});
+            const subtitle1Size = fontSize * 0.5;
+            const subtitle2Size = fontSize * 0.35;
+            
             ctx.textAlign = 'center';
             ctx.fillStyle = '#8b7355';
             
@@ -512,6 +515,11 @@ font: Inconsolata
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
             // Draw faint text outlines that remain visible
+            // Recalculate font sizes here too
+            const fontSize = Math.min(canvas.width / {{page.font-size-calc}});
+            const subtitle1Size = fontSize * 0.5;
+            const subtitle2Size = fontSize * 0.35;
+            
             const centerX = canvas.width / 2;
             const titleY = canvas.height * 0.20;
             const subtitle1Y = titleY + fontSize * 0.8;
@@ -641,8 +649,8 @@ font: Inconsolata
         // Wait for font to load before initializing particles
         async function initializeApp() {
             try {
-                // Wait for the Inconsolata font to load
-                await document.fonts.load('16px ${fontFamily}');
+                // Wait for the font to load using the variable - fix the template literal
+                await document.fonts.load(`16px ${fontFamily}`);
                 await document.fonts.ready;
                 
                 // Now create particles with the properly loaded font
