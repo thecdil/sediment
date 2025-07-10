@@ -82,7 +82,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.02, y: canvas.height * 0.995 },
                     { x: canvas.width * 0.005, y: canvas.height * 0.999 }
                 ],
-                width: 35, // Increased width for better flow
+                width: 135, // Increased width for better flow
                 isMainRiver: true
             },
             // Left tributaries - flow right to join main river
@@ -94,7 +94,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.4, y: canvas.height * 0.6 },
                     { x: canvas.width * 0.55, y: canvas.height * 0.68 }
                 ],
-                width: 8
+                width: 13
             },
             {
                 points: [
@@ -103,7 +103,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.35, y: canvas.height * 0.66 },
                     { x: canvas.width * 0.5, y: canvas.height * 0.73 }
                 ],
-                width: 6
+                width: 9
             },
             {
                 points: [
@@ -112,7 +112,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.25, y: canvas.height * 0.82 },
                     { x: canvas.width * 0.35, y: canvas.height * 0.86 }
                 ],
-                width: 7
+                width: 11
             },
             // Center tributaries - flow down to join main river
             {
@@ -123,7 +123,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.5, y: canvas.height * 0.65 },
                     { x: canvas.width * 0.6, y: canvas.height * 0.72 }
                 ],
-                width: 8
+                width: 12
             },
             {
                 points: [
@@ -133,7 +133,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.65, y: canvas.height * 0.6 },
                     { x: canvas.width * 0.7, y: canvas.height * 0.68 }
                 ],
-                width: 9
+                width: 15
             },
             // Right tributaries - flow left to join main river
             {
@@ -142,7 +142,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.92, y: canvas.height * 0.38 },
                     { x: canvas.width * 0.85, y: canvas.height * 0.45 }
                 ],
-                width: 7
+                width: 10
             },
             {
                 points: [
@@ -150,7 +150,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.88, y: canvas.height * 0.58 },
                     { x: canvas.width * 0.78, y: canvas.height * 0.65 }
                 ],
-                width: 6
+                width: 9
             },
             {
                 points: [
@@ -158,7 +158,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.8, y: canvas.height * 0.75 },
                     { x: canvas.width * 0.7, y: canvas.height * 0.78 }
                 ],
-                width: 8
+                width: 14
             },
             // Additional small tributaries for better coverage
             {
@@ -168,7 +168,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.76, y: canvas.height * 0.42 },
                     { x: canvas.width * 0.8, y: canvas.height * 0.52 }
                 ],
-                width: 5
+                width: 6
             },
             {
                 points: [
@@ -177,7 +177,7 @@ font-size-calc: "7, 140"
                     { x: canvas.width * 0.4, y: canvas.height * 0.35 },
                     { x: canvas.width * 0.55, y: canvas.height * 0.48 }
                 ],
-                width: 6
+                width: 8
             }
         ];
         
@@ -438,11 +438,11 @@ font-size-calc: "7, 140"
         // Function to add new particles during animation (simulating continuous sediment flow)
         function addContinuousParticles(elapsed) {
             // Start adding particles after 3 seconds, every 100ms for more flow
-            if (elapsed > 3000 && elapsed - lastParticleAddTime > 100) { // Reduced from 200ms to 100ms
+            if (elapsed > 2000 && elapsed - lastParticleAddTime > 100) { // Reduced from 200ms to 100ms
                 lastParticleAddTime = elapsed;
                 
                 // Add more particles along the main river, especially from top right
-                const numberOfNewParticles = 25; // Increased from 15 to 25
+                const numberOfNewParticles = 155; // Increased from 15 to 25
                 
                 for (let i = 0; i < numberOfNewParticles; i++) {
                     const mainRiver = riverNetwork[0]; // Main river is first in array
@@ -475,7 +475,7 @@ font-size-calc: "7, 140"
                 }
                 
                 // Add additional particles specifically at the very top right
-                const numberOfTopRightParticles = 15; // Extra particles from source
+                const numberOfTopRightParticles = 50; // Extra particles from source
                 for (let i = 0; i < numberOfTopRightParticles; i++) {
                     const mainRiver = riverNetwork[0];
                     const sourcePoint = mainRiver.points[0]; // Very first point (top right)
