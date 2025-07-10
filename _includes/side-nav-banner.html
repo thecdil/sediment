@@ -1,5 +1,5 @@
-<div class="text-end d-none" style="background:transparent;">
-    <button class="navbar-toggler {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border"
+<div style="background:transparent;">
+    <button class="navbar-toggler {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border border-dark"
         type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
         aria-label="Open navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi icon-sprite fs-1"
@@ -8,7 +8,7 @@
                 d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
         </svg>
     </button>
-    <div class="offcanvas offcanvas-end bg-dark text-start" tabindex="-1" id="offcanvasNavbar"
+    <div class="offcanvas offcanvas-start bg-dark text-start" tabindex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header text-white">
             <h2 class="offcanvas-title" id="offcanvasNavbarLabel">{{ site.title }}</h2>
@@ -51,6 +51,19 @@
                 </li>
                 {% endif %}
                 {%- endfor -%}
+                <li class="nav-item dropdown">
+                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent ==
+                    nav.display_name' %}
+                    {%- assign childStubs = navChildren | map: 'stub' -%}
+                    <a class="nav-link text-light dropdown-toggle{% if childStubs contains page.url %} active{% endif %}"
+                        data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tributaries</a>
+                    <div class="dropdown-menu">
+                        {% for c in site.tributaries %}
+                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}"
+                            href="{{ c.url | relative_url }}">{{ c.title }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
             </ul>
             <div class="text-center">
                 {% if site.organization-logo-nav %}

@@ -1,4 +1,5 @@
 ---
+font: Inconsolata
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -6,12 +7,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedimentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             background: #f8f6f0;
-            font-family: 'Georgia', serif;
+            font-family: '{{ page.font }}', mono;
             overflow: hidden;
             height: 100vh;
         }
@@ -30,7 +34,7 @@
             color: #f8f6f0;
             border: none;
             border-radius: 4px;
-            font-family: 'Georgia', serif;
+            font-family: '{{ page.font }}', serif;
             font-size: 16px;
             cursor: pointer;
             opacity: 0;
@@ -250,6 +254,7 @@
         const title = "SEDIMENTATION";
         const subtitle1 = "By Hannah Green";
         const subtitle2 = "A CD?L Project";
+        const fontFamily = "{{page.font}}";
         const fontSize = Math.min(canvas.width / 10, 120);
         const subtitle1Size = fontSize * 0.35;
         const subtitle2Size = fontSize * 0.25;
@@ -355,15 +360,15 @@
             const subtitle2Y = subtitle1Y + subtitle1Size * 1.2;
             
             // Draw title
-            ctx.font = `bold ${fontSize}px Georgia`;
+            ctx.font = `bold ${fontSize}px ${fontFamily}`;
             ctx.fillText(title, centerX, titleY);
             
             // Draw first subtitle
-            ctx.font = `${subtitle1Size}px Georgia`;
+            ctx.font = `${subtitle1Size}px ${fontFamily}`;
             ctx.fillText(subtitle1, centerX, subtitle1Y);
             
             // Draw second subtitle
-            ctx.font = `${subtitle2Size}px Georgia`;
+            ctx.font = `${subtitle2Size}px ${fontFamily}`;
             ctx.fillText(subtitle2, centerX, subtitle2Y);
             
             const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -517,15 +522,15 @@
             ctx.textAlign = 'center';
             
             // Draw title outline
-            ctx.font = `bold ${fontSize}px Georgia`;
+            ctx.font = `bold ${fontSize}px ${fontFamily}`;
             ctx.strokeText(title, centerX, titleY);
             
             // Draw first subtitle outline
-            ctx.font = `${subtitle1Size}px Georgia`;
+            ctx.font = `${subtitle1Size}px ${fontFamily}`;
             ctx.strokeText(subtitle1, centerX, subtitle1Y);
             
             // Draw second subtitle outline
-            ctx.font = `${subtitle2Size}px Georgia`;
+            ctx.font = `${subtitle2Size}px ${fontFamily}`;
             ctx.strokeText(subtitle2, centerX, subtitle2Y);
             
             // Don't draw river paths - make them invisible
@@ -633,9 +638,28 @@
             }
         }
         
-        // Initialize
-        createTextParticles();
-        animate();
+        // Wait for font to load before initializing particles
+        async function initializeApp() {
+            try {
+                // Wait for the Inconsolata font to load
+                await document.fonts.load('16px ${fontFamily}');
+                await document.fonts.ready;
+                
+                // Now create particles with the properly loaded font
+                createTextParticles();
+                animate();
+            } catch (error) {
+                console.warn('Font loading failed, proceeding with fallback:', error);
+                // Fallback: proceed anyway after a short delay
+                setTimeout(() => {
+                    createTextParticles();
+                    animate();
+                }, 100);
+            }
+        }
+        
+        // Initialize after font loads
+        initializeApp();
         
         // Restart animation on click
         canvas.addEventListener('click', () => {

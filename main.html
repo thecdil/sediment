@@ -10,16 +10,13 @@ features:
     scroll_position: 15
     side: "right"
 ---
-{% include side-nav-banner.html %}
+
 <div class="river-container">
   
   <!-- Navigation -->
-  <nav class="river-nav position-relative top-0 start-0 p-3 mt-5 col-3">
-    <div class="nav-links">
-      <a href="#about-project" class="nav-link">About the Project</a>
-      <a href="#about-river" class="nav-link">About the Colorado River/Glen Canyon Dam</a>
-      <a href="#about-sediment" class="nav-link">About Sediment</a>
-    </div>
+  <nav class="river-nav position-fixed top-0 start-0 p-3 w-25">
+      {% include side-nav-banner.html %}
+    
   </nav>
 
   <!-- Canvas River -->
@@ -86,9 +83,7 @@ features:
 
 .river-nav {
   z-index: 1000;
-  background: rgba(139, 69, 19, 0.8);
-  border-radius: 8px;
-  backdrop-filter: blur(10px);
+
 }
 
 .nav-links {
@@ -333,10 +328,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Settle if close to river (doubled distance for larger river)
-        if (this.distanceToRiver < 0.050 && nearestPoint) { // 0.036 * 2 for doubled size
+        if (this.distanceToRiver < 0.036 && nearestPoint) { // 0.036 * 2 for doubled size
           this.settled = true;
-          this.targetX = nearestPoint.x + (Math.random() - 0.5) * 0.096; // 0.048 * 2 for doubled width
-          this.targetY = nearestPoint.y + (Math.random() - 0.5) * 0.048; // 0.024 * 2 for doubled width
+          this.targetX = nearestPoint.x + (Math.random() - 0.5) * 0.048; // 0.048 * 2 for doubled width
+          this.targetY = nearestPoint.y + (Math.random() - 0.5) * 0.024; // 0.024 * 2 for doubled width
           this.vx *= 0.1;
           this.vy *= 0.1;
           this.decay = 0; // Stop decaying when settled
@@ -347,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Gravity toward river if detected (doubled range)
-        if (this.distanceToRiver < 0.10 && nearestPoint) { // 0.07 * 2 for doubled attraction range
+        if (this.distanceToRiver < 0.07 && nearestPoint) { // 0.07 * 2 for doubled attraction range
           const attraction = 0.05;
           const dx = nearestPoint.x - this.x;
           const dy = nearestPoint.y - this.y;
@@ -404,8 +399,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const point = pathPoints[i];
       // Create more particles around each point for wider river (doubled)
       for (let w = 0; w < 400; w++) { // Quadruple the particles for doubled river
-        const offsetX = (Math.random() - 0.5) * 0.070; // 0.048 * 2 for doubled width (percentage)
-        const offsetY = (Math.random() - 0.5) * 0.038; // 0.024 * 2 for doubled width (percentage)
+        const offsetX = (Math.random() - 0.5) * 0.048; // 0.048 * 2 for doubled width (percentage)
+        const offsetY = (Math.random() - 0.5) * 0.024; // 0.024 * 2 for doubled width (percentage)
         riverBedParticles.push(new Particle(
           point.x + offsetX * canvas.width, 
           point.y + offsetY * canvas.height, 
