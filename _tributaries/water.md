@@ -6,6 +6,7 @@ side: "right"
 position: 35
 scroll_position: 1000
 description: "The flowing medium that carries sediment downstream"
+gallery: true
 ---
 
 # Water

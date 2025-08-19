@@ -6,6 +6,7 @@ side: "left"
 position: 50
 scroll_position: 1500
 description: "Plants that interact with and depend on sediment flows"
+gallery: true
 ---
 
 # Vegetation

@@ -6,6 +6,7 @@ side: "right"
 position: 595
 scroll_position: 3000
 description: "Human-built structures that control and redirect sediment"
+gallery: true
 ---
 
 # Infrastructure

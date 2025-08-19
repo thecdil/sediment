@@ -6,6 +6,7 @@ side: "right"
 position: 65
 scroll_position: 2000
 description: "Aquatic life affected by changing sediment patterns"
+gallery: true
 ---
 
 # Fish and Animals

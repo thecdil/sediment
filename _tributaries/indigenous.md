@@ -6,6 +6,7 @@ side: "left"
 position: 110
 scroll_position: 3500
 description: "Indigenous knowledge and connections to sediment and landscape"
+gallery: true
 ---
 
 # Indigenous Relations
