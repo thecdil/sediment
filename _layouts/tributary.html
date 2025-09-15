@@ -2,88 +2,25 @@
 layout: default
 ---
 
+{% assign tributary_side = page.tributary-side | default: "left" %}
+
 <div class="tributary-container">
   <!-- Navigation back to main -->
   <nav class="tributary-nav position-fixed top-0 start-0 p-3">
     <div class="nav-links">
-      <a href="{{ '/main.html#' | append: page.title | downcase | relative_url }}" class="nav-link text-white">← Back to Main River</a>
+      <a href="{{ '/main.html#' | append: page.title | downcase | relative_url }}" class="nav-link">← Back to Main River</a>
     </div>
   </nav>
 
-  <!-- Tributary River SVG Container -->
-  <div class="tributary-flow-container">
-    <svg id="tributarySvg" class="tributary-svg" width="100%" height="100%">
-      <defs>
-        {% assign custom_path = page.river_path | default: page.path %}
-        {% if page.side == 'left' %}
-        <!-- Left side tributary path - flows from top left down the left side -->
-        {% if custom_path and custom_path contains 'M' %}
-        <path id="tributaryRiverPath" d="{{ custom_path }}"/>
-        {% else %}
-        <path id="tributaryRiverPath" d="M50,50 Q80,150 120,300 Q150,450 180,600 Q200,750 220,900 Q240,1050 260,1200 Q280,1350 300,1500"/>
-        {% endif %}
-        {% else %}
-        <!-- Right side tributary path - flows from top right down the right side -->
-        {% if custom_path and custom_path contains 'M' %}
-        <path id="tributaryRiverPath" d="{{ custom_path }}"/>
-        {% else %}
-        <path id="tributaryRiverPath" d="M750,50 Q720,150 680,300 Q650,450 620,600 Q600,750 580,900 Q560,1050 540,1200 Q520,1350 500,1500"/>
-        {% endif %}
-        {% endif %}
-        
-        <!-- Gradient for tributary river -->
-        <linearGradient id="tributaryRiverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:0.8" />
-          <stop offset="50%" style="stop-color:#6bb6ff;stop-opacity:0.6" />
-          <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.8" />
-        </linearGradient>
-
-        <!-- Particle definitions -->
-        <circle id="tributaryParticle" r="1.5" fill="#4a90e2" opacity="0.8"/>
-        <circle id="tributaryParticle2" r="1" fill="#6bb6ff" opacity="0.7"/>
-        <circle id="tributaryParticle3" r="2" fill="#2c5aa0" opacity="0.6"/>
-      </defs>
-
-      <!-- Tributary river bed -->
-      {% if page.side == 'left' %}
-        {% if custom_path and custom_path contains 'M' %}
-        <path d="{{ custom_path }}" 
-              stroke="url(#tributaryRiverGradient)" 
-              stroke-width="40" 
-              fill="none" 
-              opacity="0.7"/>
-        {% else %}
-        <path d="M50,50 Q80,150 120,300 Q150,450 180,600 Q200,750 220,900 Q240,1050 260,1200 Q280,1350 300,1500" 
-              stroke="url(#tributaryRiverGradient)" 
-              stroke-width="40" 
-              fill="none" 
-              opacity="0.7"/>
-        {% endif %}
-      {% else %}
-        {% if custom_path and custom_path contains 'M' %}
-        <path d="{{ custom_path }}" 
-              stroke="url(#tributaryRiverGradient)" 
-              stroke-width="40" 
-              fill="none" 
-              opacity="0.7"/>
-        {% else %}
-        <path d="M750,50 Q720,150 680,300 Q650,450 620,600 Q600,750 580,900 Q560,1050 540,1200 Q520,1350 500,1500" 
-              stroke="url(#tributaryRiverGradient)" 
-              stroke-width="40" 
-              fill="none" 
-              opacity="0.7"/>
-        {% endif %}
-      {% endif %}
-      
-      <!-- Particles will be added here by JavaScript -->
-    </svg>
-  </div>
+  <!-- Canvas River -->
+  <canvas id="tributaryCanvas" class="tributary-canvas"></canvas>
 
   <!-- Content area -->
   <div class="tributary-content-area">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        {% if tributary_side == 'right' %}
+        <div class="col-lg-6">
           <div class="tributary-header">
             <h1>{{ page.title }}</h1>
             <p class="lead">{{ page.description }}</p>
@@ -93,6 +30,24 @@ layout: default
             {{ content }}
           </div>
         </div>
+        <div class="col-lg-3">
+          <!-- River space on right -->
+        </div>
+        {% else %}
+        <div class="col-lg-3">
+          <!-- River space on left -->
+        </div>
+        <div class="col-lg-6">
+          <div class="tributary-header">
+            <h1>{{ page.title }}</h1>
+            <p class="lead">{{ page.description }}</p>
+          </div>
+          
+          <div class="tributary-body">
+            {{ content }}
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -103,13 +58,23 @@ layout: default
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #e8f4fd 0%, #b8ddf0 50%, #a5d1ea 100%);
+  background: linear-gradient(180deg, #F5DEB3 0%, #DEB887 30%, #D2691E 70%, #8B4513 100%);
   overflow-x: hidden;
+}
+
+.tributary-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
 }
 
 .tributary-nav {
   z-index: 1000;
-  background: rgba(0,0,0,0.7);
+  background: rgba(139, 69, 19, 0.8);
   border-radius: 8px;
   backdrop-filter: blur(10px);
 }
@@ -123,74 +88,61 @@ layout: default
 .nav-link {
   text-decoration: none;
   font-size: 14px;
+  color: #F5DEB3;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #4a90e2 !important;
-}
-
-.tributary-flow-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.tributary-svg {
-  width: 100%;
-  height: 100%;
+  color: #DEB887 !important;
 }
 
 .tributary-content-area {
   position: relative;
-  z-index: 2;
+  z-index: 100;
   padding-top: 200px;
   padding-bottom: 100px;
+  min-height: 100vh;
 }
 
 .tributary-header {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(245, 222, 179, 0.95);
   padding: 40px;
   border-radius: 15px;
   margin-bottom: 30px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(139, 69, 19, 0.3);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(210, 105, 30, 0.3);
 }
 
 .tributary-header h1 {
-  color: #2c5aa0;
+  color: #8B4513;
   margin-bottom: 20px;
 }
 
 .tributary-header .lead {
-  color: #555;
+  color: #5D4037;
   font-size: 1.2rem;
   line-height: 1.6;
 }
 
 .tributary-body {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(245, 222, 179, 0.9);
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(139, 69, 19, 0.3);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(210, 105, 30, 0.3);
 }
 
 .tributary-body h1,
 .tributary-body h2,
 .tributary-body h3 {
-  color: #2c5aa0;
+  color: #8B4513;
 }
 
 .tributary-body p {
   line-height: 1.7;
-  color: #333;
+  color: #5D4037;
 }
 
 /* Responsive adjustments */
@@ -209,82 +161,242 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const svg = document.getElementById('tributarySvg');
-  const path = document.getElementById('tributaryRiverPath');
-  const particles = [];
-  const particleTypes = ['tributaryParticle', 'tributaryParticle2', 'tributaryParticle3'];
+  const canvas = document.getElementById('tributaryCanvas');
+  const ctx = canvas.getContext('2d');
+  const tributarySide = '{{ tributary_side }}';
   
-  // Get path length for animation - check if path exists and is valid
-  let pathLength = 0;
-  try {
-    if (path && path.getTotalLength) {
-      pathLength = path.getTotalLength();
-    }
-  } catch (error) {
-    console.warn('Invalid path element, using fallback');
-    return; // Exit if path is invalid
+  // Desert color palette matching main.html
+  const colors = {
+    path: '#8B4513',
+    particles: ['#CD853F', '#D2691E', '#F4A460', '#DEB887', '#BC8F8F', '#A0522D'],
+    glow: '#F4A460'
+  };
+  
+  // Set up canvas responsively
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = Math.max(document.documentElement.scrollHeight, window.innerHeight);
   }
   
-  if (pathLength === 0) {
-    console.warn('Path length is 0, animation not started');
-    return;
-  }
+  resizeCanvas();
   
-  // Create particles
-  function createParticle() {
-    const particleType = particleTypes[Math.floor(Math.random() * particleTypes.length)];
-    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-    use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + particleType);
+  // Generate tributary path based on side
+  function generateTributaryPath() {
+    const points = [];
+    const canvasHeight = canvas.height;
+    const canvasWidth = canvas.width;
     
-    const particle = {
-      element: use,
-      position: Math.random() * 100, // Start at random position along path
-      speed: 0.2 + Math.random() * 0.4, // Random speed
-      offset: (Math.random() - 0.5) * 15 // Random offset from center line
-    };
-    
-    svg.appendChild(use);
-    particles.push(particle);
-    
-    return particle;
-  }
-  
-  // Animate particles along the path
-  function animateParticles() {
-    particles.forEach((particle, index) => {
-      particle.position += particle.speed;
+    if (tributarySide === 'right') {
+      // Right side tributary - flows down the right side
+      const baseX = canvasWidth * 0.95; // 75% from left
+      const startY = 0;
+      const endY = canvasHeight - 100;
+      const steps = 50;
       
-      // Reset particle if it goes beyond the path
-      if (particle.position > 100) {
-        particle.position = -5;
+      for (let i = 0; i <= steps; i++) {
+        const t = i / steps;
+        const y = startY + (endY - startY) * t;
+        // Add some curvature for natural flow
+        const curve = Math.sin(t * Math.PI * 3) * 30;
+        const x = baseX + curve;
+        points.push({x, y});
+      }
+    } else {
+      // Left side tributary - flows down the left side (default)
+      const baseX = canvasWidth * 0.05; // 25% from left
+      const startY = 0;
+      const endY = canvasHeight - 100;
+      const steps = 50;
+      
+      for (let i = 0; i <= steps; i++) {
+        const t = i / steps;
+        const y = startY + (endY - startY) * t;
+        // Add some curvature for natural flow
+        const curve = Math.sin(t * Math.PI * 3) * 30;
+        const x = baseX + curve;
+        points.push({x, y});
+      }
+    }
+    
+    return points;
+  }
+  
+  let pathPoints = generateTributaryPath();
+  
+  // Particle class (adapted from main.html)
+  class Particle {
+    constructor(x, y, isRiverBed = false) {
+      this.x = x / canvas.width;
+      this.y = y / canvas.height;
+      this.targetX = this.x;
+      this.targetY = this.y;
+      this.vx = isRiverBed ? 0 : (Math.random() - 0.5) * 0.001;
+      this.vy = isRiverBed ? 0 : Math.random() * 0.0008 + 0.0005;
+      this.life = 1;
+      this.decay = isRiverBed ? 0 : Math.random() * 0.008 + 0.002;
+      this.size = (Math.random() * 1.2 + 0.5) / Math.min(canvas.width, canvas.height) * 1000;
+      this.color = colors.particles[Math.floor(Math.random() * colors.particles.length)];
+      this.isRiverBed = isRiverBed;
+      this.settled = isRiverBed;
+      this.distanceToRiver = Infinity;
+    }
+    
+    update(drawnPoints) {
+      if (!this.settled) {
+        this.x += this.vx;
+        this.y += this.vy;
+        
+        this.distanceToRiver = Infinity;
+        let nearestPoint = null;
+        
+        for (let point of drawnPoints) {
+          const pointX = point.x / canvas.width;
+          const pointY = point.y / canvas.height;
+          const dist = Math.sqrt(Math.pow(this.x - pointX, 2) + Math.pow(this.y - pointY, 2));
+          if (dist < this.distanceToRiver) {
+            this.distanceToRiver = dist;
+            nearestPoint = {x: pointX, y: pointY};
+          }
+        }
+        
+        if (this.distanceToRiver < 0.03 && nearestPoint) {
+          this.settled = true;
+          this.targetX = nearestPoint.x + (Math.random() - 0.5) * 0.04;
+          this.targetY = nearestPoint.y + (Math.random() - 0.5) * 0.02;
+          this.vx *= 0.1;
+          this.vy *= 0.1;
+          this.decay = 0;
+          this.life = 1;
+        } else {
+          this.life -= this.decay;
+        }
+        
+        if (this.distanceToRiver < 0.06 && nearestPoint) {
+          const attraction = 0.05;
+          const dx = nearestPoint.x - this.x;
+          const dy = nearestPoint.y - this.y;
+          this.vx += dx * attraction / this.distanceToRiver;
+          this.vy += dy * attraction / this.distanceToRiver;
+        }
+      } else {
+        const dx = this.targetX - this.x;
+        const dy = this.targetY - this.y;
+        this.x += dx * 0.05;
+        this.y += dy * 0.05;
+        
+        const time = Date.now() * 0.001;
+        this.x += Math.sin(time + this.targetX * 100) * 0.0001;
+        this.y += Math.cos(time + this.targetY * 100) * 0.00005;
+      }
+    }
+    
+    draw() {
+      if (this.life <= 0) return;
+      
+      ctx.save();
+      ctx.globalAlpha = Math.min(this.life, this.settled ? 0.9 : 0.7);
+      
+      const pixelX = this.x * canvas.width;
+      const pixelY = this.y * canvas.height;
+      const pixelSize = this.size * Math.min(canvas.width, canvas.height) / 1000;
+      
+      ctx.fillStyle = this.color;
+      ctx.beginPath();
+      ctx.arc(pixelX, pixelY, pixelSize, 0, Math.PI * 2);
+      ctx.fill();
+      
+      ctx.restore();
+    }
+  }
+  
+  let particles = [];
+  let riverBedParticles = [];
+  let drawnPoints = [];
+  let currentPointIndex = 0;
+  let startTime = Date.now();
+  
+  // Create river bed particles
+  function createRiverBed() {
+    for (let i = 0; i < pathPoints.length; i += 1) {
+      const point = pathPoints[i];
+      for (let w = 0; w < 200; w++) {
+        const offsetX = (Math.random() - 0.5) * 0.04;
+        const offsetY = (Math.random() - 0.5) * 0.02;
+        riverBedParticles.push(new Particle(
+          point.x + offsetX * canvas.width, 
+          point.y + offsetY * canvas.height, 
+          true
+        ));
+      }
+    }
+  }
+  
+  function getTimeProgress() {
+    const elapsed = (Date.now() - startTime) / 1000;
+    return Math.min(elapsed / 8, 1); // Faster loading - 8 seconds instead of 25
+  }
+  
+  function spawnParticles(x, y, count = 2) {
+    for (let i = 0; i < count; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const distance = (Math.random() * 0.05 + 0.02) * canvas.width;
+      const px = x + Math.cos(angle) * distance;
+      const py = y + Math.sin(angle) * distance;
+      particles.push(new Particle(px, py));
+    }
+  }
+  
+  function animate() {
+    ctx.fillStyle = 'rgba(248, 245, 240, 0.08)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    const timeProgress = getTimeProgress();
+    const targetIndex = Math.floor(timeProgress * pathPoints.length);
+    
+    if (currentPointIndex < targetIndex && currentPointIndex < pathPoints.length) {
+      const point = pathPoints[currentPointIndex];
+      drawnPoints.push(point);
+      
+      if (Math.random() < 0.7) {
+        spawnParticles(point.x, point.y, 2);
       }
       
-      // Get point along path
-      const distance = (particle.position / 100) * pathLength;
-      const point = path.getPointAtLength(distance);
-      
-      // Apply offset for natural spread
-      const angle = Math.atan2(
-        path.getPointAtLength(Math.min(distance + 1, pathLength - 1)).y - point.y,
-        path.getPointAtLength(Math.min(distance + 1, pathLength - 1)).x - point.x
-      );
-      
-      const offsetX = Math.cos(angle + Math.PI/2) * particle.offset;
-      const offsetY = Math.sin(angle + Math.PI/2) * particle.offset;
-      
-      particle.element.setAttribute('transform', 
-        `translate(${point.x + offsetX}, ${point.y + offsetY})`);
+      currentPointIndex++;
+    }
+    
+    const revealedBedCount = Math.floor(timeProgress * riverBedParticles.length);
+    for (let i = 0; i < revealedBedCount; i++) {
+      const particle = riverBedParticles[i];
+      particle.update(drawnPoints);
+      particle.draw();
+    }
+    
+    particles = particles.filter(particle => {
+      particle.update(drawnPoints);
+      particle.draw();
+      return particle.life > 0 || particle.settled;
     });
     
-    requestAnimationFrame(animateParticles);
+    if (drawnPoints.length > 10 && Math.random() < 0.2) {
+      const randomPoint = drawnPoints[Math.floor(Math.random() * drawnPoints.length)];
+      spawnParticles(randomPoint.x, randomPoint.y, 1);
+    }
+    
+    requestAnimationFrame(animate);
   }
   
-  // Initialize particles
-  for (let i = 0; i < 80; i++) {
-    setTimeout(() => createParticle(), i * 150);
-  }
+  createRiverBed();
+  animate();
   
-  // Start animation
-  animateParticles();
+  window.addEventListener('resize', () => {
+    resizeCanvas();
+    pathPoints = generateTributaryPath();
+    drawnPoints = [];
+    currentPointIndex = 0;
+    riverBedParticles = [];
+    particles = [];
+    createRiverBed();
+    startTime = Date.now(); // Reset animation timer
+  });
 });
 </script>
