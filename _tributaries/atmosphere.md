@@ -16,7 +16,7 @@ tributary-side: right
 
 ### Wind
 
-{% include feature/image-gallery.html objectid="sediment8;sediment38;sediment39;sediment40;sediment7;sediment46"%}
+{% include feature/image-gallery.html objectid="sediment8;sediment38;sediment39;sediment40;sediment7;sediment46" caption=false%}
 
 Navajo Sandstone was blown in on wind systems 190 million years ago, during the Early Jurassic Period. The cross-bedding reveals that these winds originated from the north-north west. The particulates themselves are well-rounded and fine quartz, evidence of a long journey. Geologists have found zircon in the particulates, which shows they came from the Appalachain mountains, carried by an ancient river system and then blown by desert winds. They formed sand dunes larger than the Sahara, which will leave no record behind. Sandstone is the largest aeolian record on earth. These winds still sculpt the region today. 
 
