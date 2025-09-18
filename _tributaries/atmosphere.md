@@ -7,6 +7,7 @@ position: 580
 scroll_position: 2500
 description: "Wind-carried sediment and atmospheric connections"
 gallery: true
+tributary-side: right
 ---
 
 # Atmosphere
