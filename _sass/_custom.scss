@@ -2,3 +2,101 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+
+
+.tributary-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #F5DEB3 0%, #DEB887 30%, #D2691E 70%, #8B4513 100%);
+  overflow-x: hidden;
+}
+
+.tributary-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.tributary-nav {
+  z-index: 1000;
+  background: rgba(139, 69, 19, 0.8);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #F5DEB3;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #DEB887 !important;
+}
+
+.tributary-content-area {
+  position: relative;
+  z-index: 100;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.tributary-header {
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(210, 105, 30, 0.3);
+}
+
+.tributary-header h1 {
+  color: #8B4513;
+  margin-bottom: 20px;
+}
+
+.tributary-header .lead {
+  color: #5D4037;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.tributary-body {
+  padding: 40px;
+}
+
+.tributary-body h1,
+.tributary-body h2,
+.tributary-body h3 {
+  color: #8B4513;
+}
+
+.tributary-body p {
+  line-height: 1.7;
+  color: #5D4037;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tributary-header,
+  .tributary-body {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  .tributary-content-area {
+    padding-top: 120px;
+  }
+}
