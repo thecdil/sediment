@@ -13,7 +13,7 @@ gallery: true
 
 ## Dam
 
-{% include feature/image-gallery.html objectid="sediment41;sediment20"%}
+{% include feature/image-gallery.html objectid="sediment41;sediment20" caption=false%}
 
 Sediment both forms the concrete of the dam itself and the strata which it in place. But its accretion behind the dam reveals the project’s consequences, showing the ways these projects accumulate and hoard resources in some places, burying and subsuming the lives that came before while withholding it from others. 
 
@@ -23,7 +23,14 @@ When projects like the Glen Canyon Dam drown a landscape, they physically and fi
 
 ### Mine Economies
 
-{% include feature/image-gallery.html objectid="sediment31;sediment56;sediment60"%}
+{% include feature/image-gallery.html objectid="sediment31;sediment56" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment60;sediment62" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment63;sediment67" caption=false%}
+
+
+
 
 Sediment caches the gold, silver, and uranium deposits which drew early prospectors. It also stymied those same prospectors as it clogged and wore down mining machinery and chewed up and dispersed its minerals into fragments too small to be economically extractible. 
 

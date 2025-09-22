@@ -16,30 +16,60 @@ tributary-side: right
 
 ### Wind
 
-{% include feature/image-gallery.html objectid="sediment8;sediment38;sediment39;sediment40;sediment7;sediment46" caption=false%}
+{% include feature/image-gallery.html objectid="sediment8;sediment38" caption=false%}
+
+
+{% include feature/image-gallery.html objectid="sediment39;sediment40" caption=false%}
+
+
+{% include feature/image-gallery.html objectid="sediment7;sediment46" caption=false%}
+
+
+{% include feature/image-gallery.html objectid="sediment57;sediment70" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment82;sediment84" caption=false%}
+
 
 Navajo Sandstone was blown in on wind systems 190 million years ago, during the Early Jurassic Period. The cross-bedding reveals that these winds originated from the north-north west. The particulates themselves are well-rounded and fine quartz, evidence of a long journey. Geologists have found zircon in the particulates, which shows they came from the Appalachain mountains, carried by an ancient river system and then blown by desert winds. They formed sand dunes larger than the Sahara, which will leave no record behind. Sandstone is the largest aeolian record on earth. These winds still sculpt the region today. 
 
-{% include feature/image-gallery.html objectid="sediment16;sediment25;sediment47"%}
+{% include feature/image-gallery.html objectid="sediment16;sediment25" caption=false%}
+{% include feature/image-gallery.html objectid="sediment47" caption=false%}
 
 Table and balanced rocks are formed when wind plucks loose sand off the ground and blasts it against a boulder, eating away the rock's lower layers until all that is left is a thin pedestal. Balanced rocks also reveal where the particulates in a rock are cemented together less tightly. If the sandstone is composed of quartz sediment, it is likely to be more durable and erosion resistant, while sandstone made from feldspar and clay tends to be less closely bound.  
 
 ### Wonder
 
-{% include feature/image-gallery.html objectid="sediment0;sediment5;sediment21;sediment36" %}
+{% include feature/image-gallery.html objectid="sediment0;sediment5" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment21;sediment36" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment54;sediment64" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment66;sediment73" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment99;sediment100" caption=false%}
 
 
-{% include feature/image-gallery.html objectid="sediment50" %}
+
+{% include feature/image-gallery.html objectid="sediment50" caption=false%}
 
 ### Fear
+
+### Loss
+{% include feature/image-gallery.html objectid="sediment68" caption=false%}
+
+
 
 
 ### Aridity
 
+{% include feature/image-gallery.html objectid="sediment61" caption=false%}
+
+
 
 The Mormons called Glen Canyon's dusty landscape barren, and ordained themselves by God to make “the desert blossom like a rose,” (Isaiah 35:1), kicking off a reclamation and infrastructure mania that still grips and shapes life and land in the river basin today. 
 
-{% include feature/image-gallery.html objectid="sediment53" %}
+{% include feature/image-gallery.html objectid="sediment53" caption=false%}
 
 During the dust bowl years, the U.S. government enlisted sediment to justify the state-mandated slaughter of half a million Navajo sheep, which the government incorrectly blamed for the erosion that was silting up their newly-built dams. 
 
@@ -51,7 +81,7 @@ Silt deposits form ‘mud volcanoes’ which emit methane into the atmosphere. G
 
 Dry silt particles blow into the air and can cause air pollution. This has recently become a pertinent concern since 24,000 tons of silt became radioactive after Lake Powell backed up over the tailing pit of an open uranium mill. As the lake dries up, radioactive dust may soon begin blowing across the basin. 
 
-{% include feature/image-gallery.html objectid="sediment16" %}
+{% include feature/image-gallery.html objectid="sediment16" caption=false%}
 
 
 
