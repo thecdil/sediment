@@ -7,7 +7,9 @@ layout: default
 <div class="tributary-container">
   <!-- Navigation back to main -->
  <nav class="river-nav position-fixed top-0 start-0 p-3 w-25">
-      {% include side-nav-banner.html %}
+      <div class="nav-links">
+      <a href="{{ '/main.html#' | append: page.title | downcase | relative_url }}" class="nav-link">← Back to Main River</a>
+    </div>
     
   </nav>
 
@@ -19,31 +21,31 @@ layout: default
     <div class="container">
       <div class="row">
         {% if tributary_side == 'right' %}
-         <div class="col-lg-2">
+         <div class="col-lg-1">
           <!-- River space on right -->
         </div>
-        <div class="col-lg-8">
-          <div class="tributary-header">
+        <div class="col-lg-10">
+         <!-- <div class="tributary-header">
             <h1>{{ page.title }}</h1>
             <p class="lead">{{ page.description }}</p>
-          </div>
+          </div>-->
           
           <div class="tributary-body">
             {{ content }}
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-1">
           <!-- River space on right -->
         </div>
         {% else %}
         <div class="col-lg-2">
           <!-- River space on left -->
         </div>
-        <div class="col-lg-8">
-          <div class="tributary-header">
+        <div class="col-lg-9">
+         <!-- <div class="tributary-header">
             <h1>{{ page.title }}</h1>
             <p class="lead">{{ page.description }}</p>
-          </div>
+          </div>-->
           
           <div class="tributary-body">
             {{ content }}
