@@ -12,11 +12,16 @@ icon: "rock.png"
 
 # Land
 
+<div class="row">
+<div class="col-lg-5">
 {% include feature/image-gallery.html objectid="sediment25;sediment33" caption=false%}
 
 {% include feature/image-gallery.html objectid="sediment17;sediment12" caption=false%}
-
+</div>
+<div class="col-lg-7">
 Glen Canyon is a land is made of sediment, deposited by ancient oceans, rivers, and winds. The Colorado River carries a heavy sediment load, and its silt-sharp waters enable the river to etch canyons, bridges, buttes, spires, and pedestal rocks out of the land. The water always delivers more sediment, laying down sandbars, rippled laminae, pocked muck, sink holes, silt volcanoes, and desiccated mud over the sandstone ground. 
+</div>
+</div>
 
 ### Formations
 
