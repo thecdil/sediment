@@ -2,3 +2,8 @@ display_name,stub,dropdown_parent
 About the Project,#
 About the Colorado River,#
 About Sediment,#
+Collection
+Subjects,/subjects.html,Collection
+Map,/map.html,Collection
+Data,/data.html,Collection
+Locations,/locations.html,Collection
