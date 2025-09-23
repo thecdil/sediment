@@ -42,7 +42,7 @@
 <div class="col-md {% if figcount == 1 %}text-center{% elsif forloop.first %}text-md-end{% elsif forloop.last %}text-md-start{% else %}text-center{% endif %}">
 <figure class="figure mx-3{% if include.width %} feature-w-{{ include.width }}{% endif %}">
 <a class="spotlight gallery-img" data-download="true" title="{{ figure.title | escape }}" href="{{ figure.object_location }}">
-    <div><div class="visually-hidden">Click image for full screen</div><small class="mini text-secondary float-end">{% include feature/icon.html icon="arrows-fullscreen" label="link to page" class="ms-1 mini mb-1"%}</small></div>
+    <!--<div><div class="visually-hidden">Click image for full screen</div><small class="mini text-secondary float-end">{% include feature/icon.html icon="arrows-fullscreen" label="link to page" class="ms-1 mini mb-1"%}</small></div>-->
     <img src="{{ figure.image_small | relative_url }}" alt="{{ figure.image_alt_text | default: figure.description | default: figure.title | escape }}" class="img-fluid">
 </a>
 
