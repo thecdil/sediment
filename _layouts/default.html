@@ -5,6 +5,11 @@
   </head>
   <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    {% unless page.url == '/' or page.river_path or page.url == '/main.html' %}
+    <div style="flex-shrink: 0;">
+      {% include sediment-header.html %}
+    </div>
+    {% endunless %}
     <main id="maincontent" role="main" class="flex-shrink-0">
       {{ content }}
     </main>
