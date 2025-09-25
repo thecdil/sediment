@@ -10,22 +10,32 @@
     </button>
     <div class="offcanvas offcanvas-start bg-dark text-start" tabindex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header text-white">
-            <h2 class="offcanvas-title" id="offcanvasNavbarLabel">{{ site.title }}</h2>
+        <div class="offcanvas-header ">
+            <h2 class="offcanvas-title text-white" id="offcanvasNavbarLabel"><a class="text-white"
+                        href="{{ '/.html' | relative_url }}">{{ site.title }}</a></h2>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body text-white">
-            <p class="h5 mb-3">{{ site.tagline }}</p>
-            <p><small>{{ site.description }}</small></p>
+        <div class="offcanvas-body">
+            <p class="h6 mb-3 text-white">{{ site.tagline }}</p>
+            
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 side-nav">
                 <li class="nav-item">
                     <a class="nav-link text-light{% if page.url == '/' %} active{% endif %}"
-                        href="{{ '/' | relative_url }}">Home</a>
+                        href="{{ '/main.html' | relative_url }}">Main</a>
                 </li>
-                <li class="nav-item d-none">
-                    <a class="nav-link text-light{% if page.url == site.essay[0].url %} active{% endif %}"
-                        href="{{ site.essay[0].url | relative_url }}">Read</a>
+                <li class="nav-item dropdown">
+                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent ==
+                    nav.display_name' %}
+                    {%- assign childStubs = navChildren | map: 'stub' -%}
+                    <a class="nav-link text-light dropdown-toggle{% if childStubs contains page.url %} active{% endif %}"
+                        data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tributaries</a>
+                    <div class="dropdown-menu">
+                        {% for c in site.tributaries %}
+                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}"
+                            href="{{ c.url | relative_url }}">{{ c.title }}</a>
+                        {% endfor %}
+                    </div>
                 </li>
                 {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
                 {% for nav in navItems %}
@@ -51,19 +61,6 @@
                 </li>
                 {% endif %}
                 {%- endfor -%}
-                <li class="nav-item dropdown">
-                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent ==
-                    nav.display_name' %}
-                    {%- assign childStubs = navChildren | map: 'stub' -%}
-                    <a class="nav-link text-light dropdown-toggle{% if childStubs contains page.url %} active{% endif %}"
-                        data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tributaries</a>
-                    <div class="dropdown-menu">
-                        {% for c in site.tributaries %}
-                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}"
-                            href="{{ c.url | relative_url }}">{{ c.title }}</a>
-                        {% endfor %}
-                    </div>
-                </li>
             </ul>
             <div class="text-center">
                 {% if site.organization-logo-nav %}

@@ -2,13 +2,14 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
-
+#maincontent{
+  background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
+}
 
 .tributary-container {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, #F5DEB3 0%, #DEB887 30%, #D2691E 70%, #8B4513 100%);
   overflow-x: hidden;
 }
 
@@ -49,7 +50,7 @@
 .tributary-content-area {
   position: relative;
   z-index: 100;
-  padding-top: 200px;
+  padding-top: 20px;
   padding-bottom: 100px;
   min-height: 100vh;
 }
@@ -62,12 +63,12 @@
   border: 1px solid rgba(210, 105, 30, 0.3);
 }
 
-.tributary-header h1 {
+ h1 {
   color: #8B4513;
   margin-bottom: 20px;
 }
 
-.tributary-header .lead {
+ .lead {
   color: #5D4037;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -77,16 +78,27 @@
   padding: 40px;
 }
 
-.tributary-body h1,
-.tributary-body h2,
-.tributary-body h3 {
+ h1,
+ h2,
+ h3 {
   color: #8B4513;
 }
 
 .tributary-body p {
-  line-height: 1.7;
-  color: #5D4037;
+    line-height: 1.5;
+    color: #5d4037;
+    max-width: 550px;
+    margin: 0 auto 1.2rem;
 }
+.tributary-body figure {
+    margin: 50px 0px;
+}
+
+.tributary-body h1,
+.tributary-body h2,
+.tributary-body h3 {
+  margin-top:40px;}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
