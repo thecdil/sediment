@@ -45,16 +45,49 @@ font-size-calc: "7, 140"
         #enterButton:hover {
             background: rgba(139, 115, 85, 1);
         }
+        
+        #subtitle {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-family: '{{ page.font }}', mono;
+            font-size: 30px;
+            color: rgba(139, 115, 85, 0.8);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            max-width: 75%;
+            text-align: right;
+            line-height: 1.3;
+        }
+        
+        #subtitle::after {
+            content: '|';
+            animation: blink 1s infinite;
+            margin-left: 2px;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Responsive adjustments */
+@media (max-width: 768px) {
+     #subtitle {
+        font-size:25px;
+        max-width:300px;
     </style>
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <button id="enterButton">Breach</button>
+    <div id="subtitle"></div>
     
     <script>
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
         const enterButton = document.getElementById('enterButton');
+        const subtitleElement = document.getElementById('subtitle');
         
         // Set canvas size
         function resizeCanvas() {
@@ -254,8 +287,9 @@ font-size-calc: "7, 140"
         const particles = [];
         const title = "SEDIMENTATION";
         const subtitle1 = "By Hannah Green";
-        const subtitle2 = "A CD?L Project";
-        const fontFamily = "{{page.font}}";
+        const subtitle2 = "A CD²L Project";
+        const siteSubtitle = "An Agentic Archive of the Glen Canyon Dam";
+        const fontFamily = "{{ page.font }}";
         
         // Desert color palette (from main.html)
         const colors = {
@@ -347,10 +381,35 @@ font-size-calc: "7, 140"
             return null;
         }
         
+        // Typewriter effect variables
+        let typewriterIndex = 0;
+        let typewriterStartTime = 0;
+        let typewriterActive = false;
+        const typewriterDuration = 2500; // 2.5 seconds
+        
+        // Function to update typewriter effect
+        function updateTypewriter(elapsed) {
+            if (!typewriterActive) return;
+            
+            const typewriterElapsed = elapsed - typewriterStartTime;
+            const progress = Math.min(typewriterElapsed / typewriterDuration, 1);
+            const targetIndex = Math.floor(progress * siteSubtitle.length);
+            
+            if (targetIndex > typewriterIndex) {
+                typewriterIndex = targetIndex;
+                subtitleElement.textContent = siteSubtitle.substring(0, typewriterIndex);
+            }
+            
+            // Remove cursor when complete
+            if (progress >= 1) {
+                subtitleElement.style.setProperty('--cursor-display', 'none');
+            }
+        }
+        
         // Create particles from text
         function createTextParticles() {
             // Calculate font sizes based on current canvas dimensions
-            const fontSize = Math.min(canvas.width / {{page.font-size-calc}});
+            const fontSize = Math.min(canvas.width / {{ page.font-size-calc }});
             const subtitle1Size = fontSize * 0.5;
             const subtitle2Size = fontSize * 0.35;
             
@@ -516,7 +575,7 @@ font-size-calc: "7, 140"
             
             // Draw faint text outlines that remain visible
             // Recalculate font sizes here too
-            const fontSize = Math.min(canvas.width / {{page.font-size-calc}});
+            const fontSize = Math.min(canvas.width / {{ page.font-size-calc }});
             const subtitle1Size = fontSize * 0.5;
             const subtitle2Size = fontSize * 0.35;
             
@@ -633,6 +692,17 @@ font-size-calc: "7, 140"
                 ctx.fill();
             });
             
+            // Start typewriter effect when particles start emptying (after 1 seconds)
+            if (elapsed > 1000 && !typewriterActive) {
+                typewriterActive = true;
+                typewriterStartTime = elapsed;
+                subtitleElement.style.opacity = '1';
+                typewriterIndex = 0;
+            }
+            
+            // Update typewriter effect
+            updateTypewriter(elapsed);
+            
             // Show enter button after 7 seconds
             if (elapsed > 7000) {
                 enterButton.style.opacity = '1';
@@ -676,6 +746,13 @@ font-size-calc: "7, 140"
             for (let key in sedimentGrid) {
                 delete sedimentGrid[key];
             }
+            // Reset typewriter effect
+            typewriterActive = false;
+            typewriterIndex = 0;
+            subtitleElement.style.opacity = '0';
+            subtitleElement.textContent = '';
+            subtitleElement.style.removeProperty('--cursor-display');
+            
             createTextParticles(); // Recreate particles
             particles.forEach(particle => {
                 particle.x = particle.originalX;
