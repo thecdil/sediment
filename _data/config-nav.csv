@@ -2,6 +2,7 @@ display_name,stub,dropdown_parent
 Main Essay,/main.html
 About the Project,/about.html
 Collection
+Browse,/browse.html,Collection
 Subjects,/subjects.html,Collection
 Map,/map.html,Collection
 Data,/data.html,Collection

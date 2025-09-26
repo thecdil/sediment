@@ -17,51 +17,95 @@
                 aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <p class="h6 mb-3 text-white">{{ site.tagline }}</p>
-            
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 side-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-light{% if page.url == '/' %} active{% endif %}"
-                        href="{{ '/main.html' | relative_url }}">Main</a>
-                </li>
-                <li class="nav-item dropdown">
-                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent ==
-                    nav.display_name' %}
-                    {%- assign childStubs = navChildren | map: 'stub' -%}
-                    <a class="nav-link text-light dropdown-toggle{% if childStubs contains page.url %} active{% endif %}"
-                        data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tributaries</a>
-                    <div class="dropdown-menu">
-                        {% for c in site.tributaries %}
-                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}"
-                            href="{{ c.url | relative_url }}">{{ c.title }}</a>
-                        {% endfor %}
+            <p class="h5 mb-3 text-white fst-italic">{{ site.tagline }}</p>
+
+            <div class="accordion accordion-flush" id="sideNavAccordion">
+                <!-- Main link -->
+                <div class="accordion-item bg-dark">
+                    <div class="nav-link text-light{% if page.url == '/' %} active{% endif %}">
+                        <a class="text-light text-decoration-none" href="{{ '/main.html' | relative_url }}">Main</a>
                     </div>
-                </li>
+                </div>
+
+                <!-- Tributaries accordion item -->
+                <div class="accordion-item bg-dark">
+                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == "Tributaries"' %}
+                    {%- assign childStubs = navChildren | map: 'stub' -%}
+                    <div class="accordion-header" id="tributariesHeading">
+                        <button class="accordion-button collapsed nav-accordion-button text-light{% if childStubs contains page.url %} active{% endif %}" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#tributariesCollapse" 
+                                aria-expanded="false" 
+                                aria-controls="tributariesCollapse">
+                            <span class="text-light">Tributaries</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="chevron-icon" viewBox="0 0 16 16">
+                                <path d="m1 8 6-6 6 6 3 0L8 0 0 8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="tributariesCollapse" 
+                         class="accordion-collapse collapse{% if page.url contains 'tributaries' %} show{% endif %}" 
+                         aria-labelledby="tributariesHeading" 
+                         data-bs-parent="#sideNavAccordion">
+                        <div class="accordion-body p-0 ps-3">
+                            {% for c in site.tributaries %}
+                            <div class="nav-item">
+                                <a class="nav-link text-light {% if page.url contains c.url %}active{% endif %}"
+                                   href="{{ c.url | relative_url }}">{{ c.title }}</a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic navigation items -->
                 {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
                 {% for nav in navItems %}
                 {% if nav.stub %}
-                <li class="nav-item">
-                    <a class="nav-link text-light{% if page.url == nav.stub %} active{% endif %}"
-                        href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
-                </li>
-                {%- else -%}
-                <li class="nav-item dropdown">
-                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent ==
-                    nav.display_name' %}
-                    {%- assign childStubs = navChildren | map: 'stub' -%}
-                    <a class="nav-link text-light dropdown-toggle{% if childStubs contains page.url %} active{% endif %}"
-                        data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{
-                        nav.display_name }}</a>
-                    <div class="dropdown-menu">
-                        {% for c in navChildren %}
-                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}"
-                            href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
-                        {% endfor %}
+                <!-- Single nav item -->
+                <div class="accordion-item bg-dark">
+                    <div class="nav-link text-light{% if page.url == nav.stub %} active{% endif %}">
+                        <a class="text-light text-decoration-none" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
                     </div>
-                </li>
+                </div>
+                {%- else -%}
+                <!-- Accordion nav item with children -->
+                <div class="accordion-item bg-dark">
+                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
+                    {%- assign childStubs = navChildren | map: 'stub' -%}
+                    {% assign accordionId = nav.display_name | slugify %}
+                    <div class="accordion-header" id="{{ accordionId }}Heading">
+                        <button class="accordion-button collapsed nav-accordion-button text-light{% if childStubs contains page.url %} active{% endif %}" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#{{ accordionId }}Collapse" 
+                                aria-expanded="false" 
+                                aria-controls="{{ accordionId }}Collapse">
+                            <span class="text-light">{{ nav.display_name }}</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="chevron-icon" viewBox="0 0 16 16">
+                                <path d="m1 8 6-6 6 6 3 0L8 0 0 8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="{{ accordionId }}Collapse" 
+                         class="accordion-collapse collapse{% if childStubs contains page.url %} show{% endif %}" 
+                         aria-labelledby="{{ accordionId }}Heading" 
+                         data-bs-parent="#sideNavAccordion">
+                        <div class="accordion-body p-0 ps-3">
+                            {% for c in navChildren %}
+                            <div class="nav-item">
+                                <a class="nav-link text-light {% if page.url == c.stub %}active{% endif %}"
+                                   href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
                 {% endif %}
                 {%- endfor -%}
-            </ul>
+            </div>
+
             <div class="text-center">
                 {% if site.organization-logo-nav %}
                 <div class="mt-5">

@@ -22,30 +22,10 @@
   pointer-events: none;
   z-index: 50;
 }
-
-.tributary-nav {
-  z-index: 1000;
-  background: rgba(139, 69, 19, 0.8);
-  border-radius: 8px;
-  backdrop-filter: blur(10px);
+.accordion-button{
+  font-size: 19px !important;
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.nav-link {
-  text-decoration: none;
-  font-size: 14px;
-  color: #F5DEB3;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #DEB887 !important;
-}
 
 .tributary-content-area {
   position: relative;
@@ -111,4 +91,64 @@
   .tributary-content-area {
     padding-top: 120px;
   }
+}
+
+/* Side Nav Menu style side-nav */
+#sideNavAccordion .nav-link,
+#sideNavAccordion .nav-link a,
+#sideNavAccordion .accordion-button,
+#sideNavAccordion .accordion-button span {
+    font-size: 19px !important;
+    line-height: 1.4 !important;
+}
+
+/* Fixed active nav link styling */
+#sideNavAccordion .nav-link.active,
+#sideNavAccordion .nav-link.active a {
+  background: white !important;
+  color: black !important;
+}
+
+.nav-accordion-button {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.5rem 1rem !important;
+    width: 100%;
+    text-align: left;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 0.5rem;
+    font-size: 19px !important;
+}
+
+.nav-accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.nav-accordion-button::after {
+    content: none !important;
+}
+
+.chevron-icon {
+    transition: transform 0.3s ease;
+    stroke: white;
+    fill: none;
+    stroke-width: 2;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.nav-accordion-button.collapsed .chevron-icon {
+    transform: rotate(0deg);
+}
+
+.nav-accordion-button:not(.collapsed) .chevron-icon {
+    transform: rotate(180deg);
+}
+
+/* Ensure consistent padding and spacing for all nav items */
+#sideNavAccordion .accordion-item .nav-link {
+    padding: 0.5rem 1rem;
+    margin: 0;
 }
