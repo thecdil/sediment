@@ -20,16 +20,34 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 50;
-}
-.accordion-button{
-  font-size: 19px !important;
+  z-index: 1; /* Changed from 50 to 1 - much lower than header */
 }
 
+/* Ensure header and navigation have higher z-index than tributary canvas */
+.sediment-header {
+  z-index: 1000 !important; /* Much higher than tributary canvas */
+}
+
+.header-content {
+  z-index: 1001 !important;
+}
+
+.header-nav {
+  z-index: 1002 !important;
+}
+
+/* Ensure offcanvas navigation has the highest z-index */
+.offcanvas {
+  z-index: 1050 !important; /* Bootstrap's default offcanvas z-index */
+}
+
+.offcanvas-backdrop {
+  z-index: 1040 !important; /* Backdrop should be below offcanvas but above everything else */
+}
 
 .tributary-content-area {
   position: relative;
-  z-index: 100;
+  z-index: 10; /* Lower than header but higher than canvas */
   padding-top: 20px;
   padding-bottom: 100px;
   min-height: 100vh;
@@ -97,14 +115,16 @@
 #sideNavAccordion .nav-link,
 #sideNavAccordion .nav-link a,
 #sideNavAccordion .accordion-button,
-#sideNavAccordion .accordion-button span {
-    font-size: 19px !important;
-    line-height: 1.4 !important;
+#sideNavAccordion .accordion-button span,
+.nav-accordion-button {
+    font-size: 15px !important;
+    
 }
 
 /* Fixed active nav link styling */
 #sideNavAccordion .nav-link.active,
-#sideNavAccordion .nav-link.active a {
+#sideNavAccordion .nav-link.active a,
+#sideNavAccordion .accordion-button.active {
   background: white !important;
   color: black !important;
 }
@@ -120,7 +140,6 @@
     justify-content: flex-start !important;
     align-items: center !important;
     gap: 0.5rem;
-    font-size: 19px !important;
 }
 
 .nav-accordion-button:focus {
