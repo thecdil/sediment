@@ -1,5 +1,5 @@
 ---
-title: "colonization"
+title: "Colonization"
 layout: tributary
 order: 6
 side: "right"
