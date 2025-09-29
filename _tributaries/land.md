@@ -41,7 +41,7 @@ Geologist Herbert E. Gregory surveyed the land beginning in 1908 for the USGS, a
 "Many Navajos consider specific rock formations, including Tsé Naní' áhígíí 'actual incarnate forms of Navajo gods.'  Native peoples from the Navajo Mountain area...claim that 'geological formations in the Rainbow Bridge area...held positions of central importance in the religion of Navajo peoples,' and various tribal groups had constructed shrines in the vicinity of the bridge for centuries...Tsé Naní' áhígíí is linked  to Navajo origin stories...Navajo Holy Beings placed the magic rainbow in the safest place they could imagine...it was a place of refuge, where many Navajos fleeing Kit Carson's violent campaign to destroy their homelands between 1863 and 1864 hid.”  (Bsumek 68)
 
 
-{% include feature/image-gallery.html objectid="sediment69 caption=false%}
+{% include feature/image-gallery.html objectid="sediment69" caption=false%}
 
 
 
