@@ -25,6 +25,9 @@ In 1776, Franciscan priests, Fathers Escalante and Dominguez set out from Santa 
 
 {% include feature/image-gallery.html objectid="sediment17;sediment58" caption=false%}
 
+{% include feature/image-gallery.html objectid="sediment103" caption=false%}
+
+
 "An adequate conception of the ruggedness of this particular region cannot be conveyed in words," wrote Earl Morris during his 1921 expedition into Forbidding Canyon. Morris had joined Charles L. Bernheimer's expedition to find an easier route between the main stem of the Colorado River and Rainbow Bridge, a natural arch which has captivated and drawn humans for millenia, and is sacred for many Indigenous groups including the Navajo, Hopi, San Juan Southern Paiute, Kaibab Paiute, and White Mesa Ute. The group found little hope that Forbidding Canyon would make for an easier journey as it formed "a maze of tortuous canons winding in and out among dumpling-like knobs of rock, too hopelessly rough to be crossed" according to Morris. Eventually the group returned with dynamite to blast obstacles from their path. This trail became known as the Bernheimer trail. Forbidding Canyon flooded deep with water after Glen Canyon Dam was built, and it has now become the most visited tributary of Glen Canyon as 200,000-300,000 tourists motor boat through it to visit Rainbow Bridge. 
 
 "Bryon Cummings, an archaeologist and professor of Greek and Latin at the University of Utah, and William Douglass, the general land surveyor for the USGS...set out to find [Rainbow Bridge] in 1909...It became a significant episode in the use of science in the name of preservation as a form of regional development. The discourse of discovery was often a precursor to the invention of a place in the historical imagination. Douglass wanted the region to remain 'wild' and 'undeveloped'...Cumming's desire to claim the bridge was fueled by his academic ambition." (Bsumek 68-69). 

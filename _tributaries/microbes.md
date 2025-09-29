@@ -52,7 +52,12 @@ The stagnant waters of Lake Powell have created optimal conditions for cyanobact
 
 {% include feature/image-gallery.html objectid="sediment88;sediment90" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment98" caption=false%}
+{% include feature/image-gallery.html objectid="sediment98;sediment138" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment128; sediment127" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment118; sediment120" caption=false%}
+
 
 
 Much of Navajo Sandstone has "churned by insects and trampled by reptiles" (Loope and Rowe 2003, p. 223). Evidence of stromatalites has also been found, which are laminated growth structures created by microbes. 

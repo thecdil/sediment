@@ -15,6 +15,15 @@ gallery: true
 
 {% include feature/image-gallery.html objectid="sediment41;sediment20" caption=false%}
 
+{% include feature/image-gallery.html objectid="sediment104; sediment 105" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment106; sediment107" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment108; sediment 109" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment110; sediment140" caption=false%}
+
+
 Sediment both forms the concrete of the dam itself and the strata which it in place. But its accretion behind the dam reveals the project’s consequences, showing the ways these projects accumulate and hoard resources in some places, burying and subsuming the lives that came before while withholding it from others. 
 
 The foundations of the Glen Canyon Dam were laid in the Colorado River's old bed. The river's water first had to be rerouted through temporary diversion tunnels, which took three years to dig. The diversion tunnels finished behind schedule as the soft sandstone continuously broke apart and collapsed into the tunnels. In 1958, for example, 5,200 cubic yards, or 500 dump trucks worth of sediment cleaved away in the left diversion tunnel. Much of the sand and rock used in Glen Canyon's concrete walls comes from Wahweep Canyon, which is a nearby tributary just five miles away from the dam site. 
@@ -29,8 +38,12 @@ When projects like the Glen Canyon Dam drown a landscape, they physically and fi
 
 {% include feature/image-gallery.html objectid="sediment63;sediment67" caption=false%}
 
+{% include feature/image-gallery.html objectid="sediment135; sediment124" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment126; sediment 130" caption=false%}
 
 
+{% include feature/image-gallery.html objectid="sediment136; sediment125" caption=false%}
 
 Sediment caches the gold, silver, and uranium deposits which drew early prospectors. It also stymied those same prospectors as it clogged and wore down mining machinery and chewed up and dispersed its minerals into fragments too small to be economically extractible. 
 

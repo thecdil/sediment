@@ -19,6 +19,7 @@ Indigenous groups have lived in and around Glen Canyon for over 9,000 years. Sed
 
 {% include feature/image-gallery.html objectid="sediment44;sediment64" caption=false%}
 
+{% include feature/image-gallery.html objectid="sediment137; sediment116" caption=false%}
 
 Ancestral Puebloans built thousands of dwelling structures up and down the Canyon and its tributaries. These dwellings were typically constructed with stone fragments held together by adobe, composed of sediment, straw, and water. Dwellings were often nestled in the canyon's natural topographical features such as alcoves or mesa tops. 
 
@@ -30,7 +31,10 @@ Ancestral Puebloans built thousands of dwelling structures up and down the Canyo
 
 {% include feature/image-gallery.html objectid="sediment80;sediment81" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment87" caption=false%}
+{% include feature/image-gallery.html objectid="sediment87; sediment101" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment102; sediment119" caption=false%}
+
 
 
 
@@ -47,6 +51,9 @@ Petroglyphs adorn much of the canyon, marking places where culturally or persona
 
 ### Pottery
 
+{% include feature/image-gallery.html objectid="sediment117" caption=false%}
+
+
 ### Tracks
 {% include feature/image-gallery.html objectid="sediment72;sediment91" caption=false%}
 
@@ -55,6 +62,9 @@ Petroglyphs adorn much of the canyon, marking places where culturally or persona
 {% include feature/image-gallery.html objectid="sediment94;sediment95" caption=false%}
 
 {% include feature/image-gallery.html objectid="sediment96;sediment97" caption=false%}
+
+{% include feature/image-gallery.html objectid="sediment135" caption=false%}
+
 
 
 
