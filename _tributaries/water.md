@@ -19,6 +19,8 @@ Silt regulates water temperature, controls the river’s course, and stains it r
 
 Seeps are places where water pushes out from a cliff face. As rain falls on sandstone ground, it percolates down through the porous rock until it reaches a layer of shale, whose sedimentary particulates are gathered too tightly to allow water to pass. The water then moves sideways along the shale surface until it pushes out through the cliff wall. Water can spend years traveling through the rock before it emerges from a seep. 
 
+{% include feature/trib-button.html trib="land" %}
+
 ### Beds
 
 {% include feature/image-gallery.html objectid="sediment33;sediment89" caption=false%}
