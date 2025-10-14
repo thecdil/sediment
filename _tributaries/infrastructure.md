@@ -4,8 +4,8 @@ layout: tributary
 order: 6
 side: "right"
 position: 595
-scroll_position: 3000
-description: "Human-built structures that control and redirect sediment"
+scroll_position: 2000
+description: 
 gallery: true
 ---
 
@@ -30,7 +30,7 @@ The foundations of the Glen Canyon Dam were laid in the Colorado River's old bed
 
 When projects like the Glen Canyon Dam drown a landscape, they physically and figuratively subsume the histories encoded in that landscape. The inscription of other histories and forms of life and agency– the long and ancient geologic forces that formed the land, the river and wind and rain’s  work in composing the canyons and landforms, the microbes that bred desert varnish upon which Indigenous people etched out their stories in petroglyphs,  the landforms that allowed early Conquistadors to cross the river, the markings left by failed mining operations, the spoils of those operations, even the dry and muddy landscape that inspired such projects–all become illegible beneath the glossy reservoir, which instead asserts a scene of colonial control, stagnancy, riches, and violent, potent power. This breeds new inscriptions of a feral and pre-collapse–the proliferation of algae, mud glaciers, pollution, all of which are traces of both colonial impact on the land and work like tentacles to lay further claim on it. As the reservoir dries up and sediment continues to accumulate, these histories and inscriptions are resurfacing. 
 
-### Mine Economies
+## Mine Economies
 
 {% include feature/image-gallery.html objectid="sediment31;sediment56" caption=false%}
 
