@@ -29,7 +29,7 @@ Glen Canyon is a land is made of sediment, deposited by ancient oceans, rivers, 
 
 Soft sandstone often develop hollows across its face called tafoni. These caverns are scooped out by weathering processes such as water, wind, and chemical reactions, revealing where sediment particulates were bound together less firmly. 
 
-{% include feature/trib-button.html text="Water Essay" link="/tributaries/water/" %}
+{% include feature/trib-button.html trib="water" %}
 
 {% include feature/image-gallery.html objectid="sediment34; sediment134" caption=false%}
 

@@ -1,19 +1,204 @@
 {% comment %}
 
-    Bootstrap button link, https://getbootstrap.com/docs/5.1/components/buttons/
+    Tributary Button with Particle Disintegration Effect
 
-    E.G. --> {% include feature/button.html text="Example Button Link" link="https://example.com" color="success" %}
+    E.G. --> {% include feature/trib-button.html trib="water" %}
 
     Options:
-    - "text" = main button text
-    - "link" = button link
-    - "color" = a bootstrap color (primary, secondary, success, danger, warning, info, light, dark)
-    - "size" = optional btn size, choose from "lg", "sm" (defaults to normal size)
-    - "width" = will use Bootstrap sizing to set the % size, choose from "25", "50", "75", or "100" 
+    - "trib" = tributary name (matches the png filename in /objects/ and the tributary slug)
     - "centered" = give "true" to add the button to a div and center on page
-    - "float" = will use Bootstrap float utility to add float, choose from "start" (left) or "end" (right) (not recommended)
 
 {%- endcomment -%}
+{% assign flow_side = page.tributary-side | default: "left" %}
+{% assign opposite_side = "right" %}
+{% if flow_side == "right" %}
+  {% assign opposite_side = "left" %}
+{% endif %}
+
+{% assign trib_name = include.trib | capitalize %}
+{% assign trib_link = '/tributaries/' | append: include.trib | append: '/' | relative_url %}
+
 {% if include.centered %}<div class="text-center mb-3">{%- endif -%}
-<a class="btn{% if include.size %} btn-{{ include.size }}{% endif %} btn-{{ include.color | default: 'secondary' }}{% if include.float %} float-{{ include.float }}{% endif %}{% if include.width %} w-{{ include.width }}{% endif %}" href="{{ include.link }}">{{ include.text }}</a>
+<div class="trib-button-container" style="float: {{ opposite_side }}; margin: 0 0 15px {{ opposite_side == 'right' | ternary: '20px', '0' }}; margin-{{ opposite_side == 'left' | ternary: 'right', 'left' }}: 20px; max-width: 180px;">
+  <canvas class="trib-particle-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; display: none;"></canvas>
+  <div class="trib-button-wrapper" style="text-align: center;">
+    <a href="{{ trib_link }}"
+       class="trib-button-link"
+       data-trib="{{ include.trib }}"
+       data-flow-side="{{ opposite_side }}"
+       aria-label="Branch off to {{ trib_name }}">
+      <img src="{{'/objects/' | append: include.trib | append: '.png' | relative_url}}"
+           class="trib-button-image img-fluid"
+           alt="{{ trib_name }}"
+           style="width: 100%; transition: transform 0.3s ease;">
+    </a>
+    <p class="trib-button-text" style="margin-top: 8px; color: #8B4513; font-size: 13px; font-weight: 500; line-height: 1.3;">
+      Branch off to {{ trib_name }}
+    </p>
+  </div>
+</div>
 {% if include.centered %}</div>{%- endif -%}
+
+<style>
+.trib-button-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.trib-button-container {
+  transition: opacity 0.7s ease;
+}
+
+
+</style>
+
+<script>
+(function() {
+  const colors = {
+    particles: ['#CD853F', '#D2691E', '#F4A460', '#DEB887', '#BC8F8F', '#A0522D']
+  };
+
+  class TribParticle {
+    constructor(x, y, targetSide, color, size) {
+      this.x = x;
+      this.y = y;
+      this.targetSide = targetSide;
+      this.color = color;
+      this.size = size;
+
+      // Fast river flow
+      this.vx = (targetSide === 'right' ? 1 : -1) * (Math.random() * 3 + 4);
+      this.vy = Math.random() * 2 - 0.5;
+    }
+
+    update() {
+      this.vx *= 0.99;
+      this.vy *= 0.99;
+      this.vy += 0.08;
+
+      this.x += this.vx;
+      this.y += this.vy;
+    }
+
+    draw(ctx) {
+      ctx.fillStyle = this.color;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function disintegrateImage(imgElement, targetLink, flowSide) {
+    const canvas = document.querySelector('.trib-particle-canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvas.style.display = 'block';
+
+    const rect = imgElement.getBoundingClientRect();
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.src = imgElement.src;
+
+    img.onload = function() {
+      const tempCanvas = document.createElement('canvas');
+      const tempCtx = tempCanvas.getContext('2d');
+      tempCanvas.width = rect.width;
+      tempCanvas.height = rect.height;
+      tempCtx.drawImage(img, 0, 0, rect.width, rect.height);
+
+      const particles = [];
+      const sampleRate = 3;
+
+      try {
+        const imageData = tempCtx.getImageData(0, 0, rect.width, rect.height);
+
+        for (let y = 0; y < rect.height; y += sampleRate) {
+          for (let x = 0; x < rect.width; x += sampleRate) {
+            const index = (y * rect.width + x) * 4;
+            const alpha = imageData.data[index + 3];
+
+            if (alpha > 50) {
+              const r = imageData.data[index];
+              const g = imageData.data[index + 1];
+              const b = imageData.data[index + 2];
+              const color = `rgb(${r},${g},${b})`;
+
+              const particleX = rect.left + x;
+              const particleY = rect.top + y;
+              const size = Math.random() * 2.5 + 1;
+
+              particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
+            }
+          }
+        }
+      } catch(e) {
+        for (let y = 0; y < rect.height; y += sampleRate) {
+          for (let x = 0; x < rect.width; x += sampleRate) {
+            const particleX = rect.left + x;
+            const particleY = rect.top + y;
+            const color = colors.particles[Math.floor(Math.random() * colors.particles.length)];
+            const size = Math.random() * 2.5 + 1;
+
+            particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
+          }
+        }
+      }
+
+      // Hide original image
+      const container = imgElement.closest('.trib-button-container');
+
+      // Quick page fade
+      document.body.style.transition = 'opacity 0.6s ease';
+      document.body.style.opacity = '0.8';
+
+      let startTime = Date.now();
+      const totalDuration = 2000; // 2 seconds
+
+      function animate() {
+        const elapsed = Date.now() - startTime;
+
+        // Light trail for river visibility
+        ctx.fillStyle = 'rgba(248, 245, 240, 0.1)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Update and draw - no fading!
+        particles.forEach(particle => {
+          particle.update();
+          particle.draw(ctx);
+        });
+
+        if (elapsed >= totalDuration) {
+          canvas.style.display = 'none';
+          window.location.href = targetLink;
+        } else {
+          requestAnimationFrame(animate);
+        }
+      }
+
+      animate();
+    };
+
+    img.onerror = function() {
+      window.location.href = targetLink;
+    };
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const tribButtons = document.querySelectorAll('.trib-button-link');
+
+    tribButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const imgElement = this.querySelector('.trib-button-image');
+        const targetLink = this.getAttribute('href');
+        const flowSide = this.getAttribute('data-flow-side');
+
+        disintegrateImage(imgElement, targetLink, flowSide);
+      });
+    });
+  });
+})();
+</script>
+ 
