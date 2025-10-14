@@ -33,7 +33,7 @@
            style="width: 100%; transition: transform 0.3s ease;">
     </a>
     <p class="trib-button-text" style="margin-top: 8px; color: #8B4513; font-size: 13px; font-weight: 500; line-height: 1.3;">
-      Branch off to {{ trib_name }}
+      {% if include.text %} {{include.text}}{% else %}Branch off to {{ trib_name }}{% endif %}
     </p>
   </div>
 </div>

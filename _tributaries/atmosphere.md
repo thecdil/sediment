@@ -43,7 +43,7 @@ The wind, I have learned, works with many collaborators to shape Glen Canyon.
 *Note to editors: I could say more here about the idea of ecological assemblages and how they challenge old western notions that the world is made of discrete, contained elements, perhaps tying in Anna Tsing. It feels like this point has been made so many times by others that the best way I can add to this conversation is by simply showing an assemblage at work, and I think this site will demonstrate the idea of an assemblage enough that I don't have to make this argument so overtly. But I might just be too deep in this to see it from the outside. Thoughts?*
 
 
-{% include feature/trib-button.html text="Microbes" link="/tributaries/microbes/" %}
+{% include feature/trib-button.html trib="animals" text="Microbes" %}
 
 {% include feature/image-gallery.html objectid="sediment139" caption=false%}
 
