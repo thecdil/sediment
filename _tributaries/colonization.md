@@ -12,7 +12,7 @@ gallery: true
 # Colonization
 
 
-### Conquistadors
+## Conquistadors
 
 {% include feature/image-gallery.html objectid="sediment4;sediment18" caption=false%}
 
@@ -21,7 +21,7 @@ gallery: true
 
 In 1776, Franciscan priests, Fathers Escalante and Dominguez set out from Santa Fe, New Mexico in search of an overland route to a Catholic Mission in Monterrey, California, but they were forced to backtrack as winter approached. Indigenous guides had initially led them safely across the Colorado, but on their return their guide, who was 12 years old, suddenly quit after witnessing the severe punishment of a servant. Lost and out of supplies, the party was forced to eat their horses. They wandered along the Colorado River for a month before they found an accessible crossing. The exact location of this crossing is unknown, but the Fathers remarked in their journal that the crossing was made possible by carving steps down the sandstone cliffs, and by swimming across a part of the river that had been made narrow by sandbars trapped by a bend in the river. The Crossing of the Fathers now lies beneath Lake Powell's waters. 
 
-### Exploration
+## Exploration
 
 {% include feature/image-gallery.html objectid="sediment17;sediment58" caption=false%}
 
@@ -40,12 +40,12 @@ Eugene C. LeRue, hydraulic engineer was hired in 1921 by USGS and the Southern C
 {% include feature/image-gallery.html objectid="sediment55;sediment58" caption=false%}
 
 
-### Reclamation
+## Reclamation
 
 When John Wesley Powell surveyed and mapped Glen Canyon in 1869, he read the canyon's petroglyphs and Indigenous dwellings both as important evidence of human presence and absence, both which spurred the project of colonizing the region.
 
 
-### Mormons
+## Mormons
 
 {% include feature/image-gallery.html objectid="sediment49;sediment57" caption=false%}
 

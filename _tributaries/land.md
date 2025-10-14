@@ -5,7 +5,7 @@ order: 1
 side: "left"
 position: 20
 scroll_position: 500
-description: "The particulate matter that builds and shapes landscapes"
+description: 
 gallery: true
 icon: "rock.png"
 ---
@@ -23,7 +23,7 @@ Glen Canyon is a land is made of sediment, deposited by ancient oceans, rivers, 
 </div>
 </div>
 
-### Formations
+## Formations
 
 {% include feature/image-gallery.html objectid="sediment14" caption=false%}
 
@@ -45,7 +45,7 @@ Geologist Herbert E. Gregory surveyed the land beginning in 1908 for the USGS, a
 
 
 
-### Canyons
+## Canyons
 
 {% include feature/image-gallery.html objectid="sediment17;sediment139" caption=false %}
 {% include feature/image-gallery.html objectid="sediment121" caption=false %}
@@ -58,7 +58,7 @@ Geologist Herbert E. Gregory surveyed the land beginning in 1908 for the USGS, a
 Each layer of the sediment laminae was laid by a distinct geologic event--such as a spring flood which deposited a load of sediment all at once. The ripples forms are carved by water, and keep a record of the river's current. Ripples form as water erodes sediment on the upstream (stoss) side of a bank and quickly deposit it on the downstream (lee) side.  These scallop-shaped structures are called catenary ripples, which suggest a faster flow. Today there is no current in the bottom reaches of Cottonwood Canyon as it lies below Lake Powell. 
 
 
-### Mud
+## Mud
 
 
 {% include feature/image-gallery.html objectid="sediment76;sediment77;" caption=false%}
@@ -69,7 +69,7 @@ Each layer of the sediment laminae was laid by a distinct geologic event--such a
 
 
 
-### Inscriptions
+## Inscriptions
 
 {% include feature/image-gallery.html objectid="sediment55;sediment83" caption=false%}
 

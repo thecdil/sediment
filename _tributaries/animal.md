@@ -1,11 +1,11 @@
 ---
-title: "Microbes"
+title: "Biota"
 layout: tributary
 order: 3
 side: "left"
 position: 50
 scroll_position: 1500
-description: "Microbial life has proliferated in the canyon for millions of years"
+description: 
 gallery: true
 ---
 
@@ -15,7 +15,7 @@ gallery: true
 
 Glen Canyon's sediment has sustained microbial life for millions of years. Microbes metabolize sediment, water, and sunlight to eat potholes in the earth, paint “desert varnish” over the canyon walls, and build domed structures called stromatolites. Today, toxic cyanobacteria festers in Lake Powell's stagnant waters and deep silt pits. 
 
-### Varnish
+## Varnish
 {% include feature/image-gallery.html objectid="sediment23;sediment75" caption=false%}
 
 {% include feature/image-gallery.html objectid="sediment86" caption=false%}
@@ -26,7 +26,7 @@ The vertical stripes on this canyon wall are called 'desert varnish.' The varnis
 {% include feature/trib-button.html text="Humans" link="/tributaries/humans/" %}
 
 
-### Mesozoic Lifeboats
+## Mesozoic Lifeboats
 
 {% include feature/image-gallery.html objectid="sediment28;sediment26" caption=false%}
 
@@ -42,12 +42,12 @@ Potholes are formed by water erosion, and mark places in the sandstone where the
 
 
 
-### Cyanobacteria 
+## Cyanobacteria 
 
 The stagnant waters of Lake Powell have created optimal conditions for cyanobacteria colonies to breed, staining the lake pea-green and posing serious health risks to animals and humans. Bacteria can become airborne as the water is disturbed. When ingested, cyanobacteria can cause respiratory paralysis, blistering, numbness, burning, incoherent speech, kidney failure, liver failure, vomiting, and death. Sediment provides a habitat for these bacteria to lie dormant over winter and seed future blooms. 
 
 
-### Other life
+## Other life
 {% include feature/image-gallery.html objectid="sediment51;sediment74" caption=false%}
 
 {% include feature/image-gallery.html objectid="sediment88;sediment90" caption=false%}
