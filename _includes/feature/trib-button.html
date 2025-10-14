@@ -27,7 +27,7 @@
        data-trib="{{ include.trib }}"
        data-flow-side="{{ opposite_side }}"
        aria-label="Branch off to {{ trib_name }}">
-      <img src="{{'/objects/' | append: include.trib | append: '.png' | relative_url}}"
+      <img src="{% if include.image %}{{'/objects/' | append: include.image | append: '.png' | relative_url}}{% else %}{{'/objects/' | append: include.trib | append: '.png' | relative_url}}{% endif %}"
            class="trib-button-image img-fluid"
            alt="{{ trib_name }}"
            style="width: 100%; transition: transform 0.3s ease;">
