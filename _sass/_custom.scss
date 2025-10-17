@@ -6,6 +6,10 @@
   background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
 }
 
+article{
+  max-width: 710px;
+}
+
 .tributary-container {
   position: relative;
   width: 100%;
@@ -13,14 +17,122 @@
   overflow-x: hidden;
 }
 
-.tributary-canvas {
+.tributary-river {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 1; /* Changed from 50 to 1 - much lower than header */
+  z-index: 1;
+  /* GPU acceleration for smooth rendering */
+  will-change: clip-path;
+  transform: translateZ(0);
+}
+
+.river-group {
+  transition: clip-path 0.1s ease-out;
+}
+
+.tributary-base {
+  /* Subtle wave animation on the base */
+  animation: gentleWave 12s ease-in-out infinite;
+}
+
+.tributary-particles {
+  /* Flowing particles animation */
+  animation: flowDown 15s linear infinite;
+}
+
+.tributary-streaks {
+  /* Faster streak flow */
+  animation: flowDown 8s linear infinite;
+}
+
+@keyframes flowDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(80px); /* Matches pattern height */
+  }
+}
+
+@keyframes gentleWave {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Edge styling for depth */
+.tributary-edge {
+  opacity: 0.4;
+  animation: edgePulse 6s ease-in-out infinite;
+}
+
+@keyframes edgePulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Optimize rendering performance */
+.tributary-base,
+.tributary-particles,
+.tributary-streaks,
+.tributary-shimmer {
+  shape-rendering: geometricPrecision;
+  /* Smooth curves */
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.tributary-path {
+  /* Ensure smooth path rendering */
+  vector-effect: non-scaling-stroke;
+}
+
+/* Remove the old canvas styles since we're not using it anymore */
+.tributary-canvas {
+  display: none;
+}
+
+/* Responsive adjustments for tributary river */
+@media (max-width: 768px) {
+  .tributary-river {
+    /* Optionally make river narrower on mobile */
+    opacity: 0.8;
+  }
+  
+  .tributary-header,
+  .tributary-body {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  .tributary-content-area {
+    padding-top: 120px;
+  }
+}
+
+/* Optional: fade-in animation for the river */
+@keyframes fadeInRiver {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tributary-river {
+  animation: fadeInRiver 1.5s ease-in;
 }
 
 /* Ensure header and navigation have higher z-index than tributary canvas */
@@ -85,7 +197,6 @@
 .tributary-body p {
     line-height: 1.5;
     color: #5d4037;
-    max-width: 550px;
     margin: 0 auto 1.2rem;
 }
 .tributary-body figure {
@@ -97,6 +208,10 @@
 .tributary-body h3 {
   margin-top:40px;}
 
+
+.tributary-body h2,
+.tributary-body h3 {
+  margin-bottom:20px;}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -170,4 +285,9 @@
 #sideNavAccordion .accordion-item .nav-link {
     padding: 0.5rem 1rem;
     margin: 0;
+}
+
+
+.trib-button-image{
+  height:100px;
 }

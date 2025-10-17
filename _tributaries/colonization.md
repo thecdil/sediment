@@ -3,7 +3,7 @@ title: "Colonization"
 layout: tributary
 order: 6
 side: "right"
-position: 595
+position: 795
 scroll_position: 4000
 description: ""
 gallery: true
