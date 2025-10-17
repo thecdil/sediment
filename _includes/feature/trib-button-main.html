@@ -42,7 +42,7 @@
       <img src="{% if include.image %}{{'/objects/' | append: include.image | append: '.png' | relative_url}}{% else %}{{'/objects/' | append: include.trib | append: '.png' | relative_url}}{% endif %}"
            class="trib-button-image"
            alt="{{ trib_name }}"
-           style="transition: transform 0.3s ease;">
+           style="transition: transform 0.3s ease;max-height:50px;">
     </a>
     {% unless include.hidetext == "true" %}
     <p class="trib-button-text text-center fs-6" style="margin-top: 8px; color: #8B4513;">
@@ -168,7 +168,7 @@
       document.body.style.opacity = '0.8';
 
       let startTime = Date.now();
-      const totalDuration = 2000; // 2 seconds
+      const totalDuration = 1000; // 2 seconds
 
       function animate() {
         const elapsed = Date.now() - startTime;
