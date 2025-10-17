@@ -1,14 +1,7 @@
 ---
 layout: default
 title: "The Colorado River Journey"
-river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q22,75 20,85 Q17,95 19,105 Q22,115 20,125 Q17,135 19,145 Q22,155 20,165 Q17,175 19,185 Q22,195 20,205 Q17,215 19,225 Q22,235 20,245 Q17,255 19,265 Q22,275 20,285 Q17,295 19,305 Q22,310 20,320 Q17,330 19,340 Q22,350 20,360 Q17,385 19,400"
-features:
-  - type: "text-block"
-    id: "river-source"
-    title: "River Source"
-    content: "The Colorado River begins its journey in the Rocky Mountains, carrying sediment from alpine watersheds."
-    scroll_position: 15
-    side: "right"
+river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75 50,85 Q53,95 67,105 Q80,115 93,125 Q92,135 80,145 Q74,155 60,165 Q57,175 59,185 Q52,195 50,205 Q47,215 49,225 Q42,235 40,245 Q47,255 59,265 Q72,275 70,285 Q67,295 59,305 Q52,310 50,320 Q47,330 39,340 Q32,350 30,360 Q35,370 45,380 Q55,390 65,400 Q75,410 85,420 Q95,430 98,440 Q92,450 85,460 Q78,470 75,480 Q72,490 78,500 Q84,510 90,520 Q96,530 98,540 Q95,550 88,560 Q81,570 75,580 Q69,590 72,600 Q75,610 82,620 Q89,630 95,640 Q98,650 95,660 Q92,670 85,680 Q78,690 72,700 Q66,710 70,720 Q74,730 82,740 Q90,750 96,760 Q98,770 94,780 Q90,790 83,800 Q76,810 70,820 Q64,830 68,840 Q72,850 80,860 Q88,870 94,880 Q98,890 95,900"
 ---
 
 <div class="river-container">
@@ -34,7 +27,7 @@ features:
   <!-- Canvas River -->
   <canvas id="riverCanvas" class="river-canvas"></canvas>
 
-  <!-- Tributary Points -->
+  <!-- Tributary Points
   <div class="tributary-scroll-container">
     {% assign sorted_tributaries = site.tributaries | sort: "scroll_position" %}
     {% for tributary in sorted_tributaries %}
@@ -66,19 +59,17 @@ features:
         {% endif %}
       </div>
     {% endfor %}
-  </div>
+  </div>  -->
 
-  <!-- Feature Points -->
-  {% for feature in page.features %}
-    {% include river_feature.html feature=feature %}
-  {% endfor %}
+  <!-- Poem Narrative -->
+  {% include river-poem.html %}
 </div>
 
 <style>
 .river-container {
   position: relative;
   width: 100%;
-  min-height: 5500px;
+  min-height: 6000px;
   background: linear-gradient(180deg, #F5DEB3 0%, #DEB887 30%, #D2691E 70%, #8B4513 100%);
   overflow-x: hidden;
 }
@@ -244,6 +235,10 @@ features:
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .river-container {
+    min-height: 6000px; /* Keep the same height for scroll-based positioning */
+  }
+  
   .intro-content-box {
     position: relative;
     top: 20px;

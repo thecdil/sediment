@@ -1,0 +1,134 @@
+{% comment %}
+    River Poem Narrative Renderer
+    
+    This include reads the river-poem.yml data file and renders 
+    poem sections along the river with customizable positioning,
+    styling, icons, and links to tributary essays.
+    
+    Usage in page:
+    {% include river-poem.html %}
+    
+    Configuration is controlled via _data/river-poem.yml
+{% endcomment %}
+
+{% assign poem_data = site.data.river-poem %}
+
+{% if poem_data.sections %}
+  {% for section in poem_data.sections %}
+    <div class="poem-section" 
+         id="poem-{{ section.id }}"
+         data-side="{{ section.side }}"
+         style="position: absolute; 
+                top: {{ section.scroll_position | default: 0 }}px;
+                {{ section.side }}: 0;
+                z-index: 150;">
+      
+      <div class="poem-content-wrapper"
+           style="display: flex;
+                  align-items: center;
+                  justify-content: {{ section.side == 'right' ? 'flex-end' : 'flex-start' }};
+                  padding-top: {{ section.padding_top | default: 20 }}px;
+                  padding-bottom: {{ section.padding_bottom | default: 20 }}px;
+                  padding-left: {{ section.padding_left | default: 20 }}px;
+                  padding-right: {{ section.padding_right | default: 20 }}px;">
+        
+        {% if section.side == 'left' %}
+          <!-- Branch line on left -->
+          <div class="poem-branch-left" 
+               style="width: 60px;
+                      height: 2px;
+                      background: linear-gradient(90deg, #D2691E, transparent);
+                      margin-right: 15px;"></div>
+        {% endif %}
+        
+        <!-- Content box -->
+        <div class="poem-content-box"
+             style="padding: 20px;
+                    max-width: {{ section.max_width | default: 400 }}px;
+                    text-align: {{ section.text_align | default: 'left' }};">
+          
+          <!-- Poem text -->
+          <div class="poem-text" 
+               style="color: #2C1810;
+                      font-size: {{ section.font_size | default: 18 }}px;
+                      line-height: 1.6;
+                      margin-bottom: {{ section.icon ? '15px' : '0' }};
+                      font-family: Georgia, serif;
+                      font-style: normal;
+                      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), 
+                                   -1px -1px 2px rgba(255, 255, 255, 0.6);
+                      font-weight: 500;">
+            {{ section.content | markdownify }}
+          </div>
+          
+          <!-- Icon and link using trib-button-main (if provided) -->
+          {% if section.icon and section.trib %}
+            <div style="margin-top: 15px; 
+                        text-align: {{ section.text_align | default: 'left' }};">
+              {% include feature/trib-button-main.html trib=section.trib image=section.icon anchor=section.anchor hidetext="true" %}
+            </div>
+          {% endif %}
+          
+        </div>
+        
+        {% if section.side == 'right' %}
+          <!-- Branch line on right -->
+          <div class="poem-branch-right" 
+               style="width: 60px;
+                      height: 2px;
+                      background: linear-gradient(-90deg, #D2691E, transparent);
+                      margin-left: 15px;"></div>
+        {% endif %}
+        
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}
+
+<style>
+.poem-section {
+  width: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .poem-section {
+    /* Keep absolute positioning but center horizontally */
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 320px;
+  }
+  
+  .poem-content-wrapper {
+    justify-content: center !important;
+    padding: 10px !important;
+  }
+  
+  .poem-branch-left,
+  .poem-branch-right {
+    display: none !important;
+  }
+  
+  .poem-content-box {
+    max-width: 100% !important;
+    padding: 15px !important;
+  }
+  
+  .poem-text {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .poem-section {
+    width: 95%;
+    max-width: 280px;
+  }
+  
+  .poem-text {
+    font-size: 15px !important;
+  }
+}
+</style>
