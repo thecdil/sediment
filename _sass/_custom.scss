@@ -39,14 +39,15 @@ article{
   animation: gentleWave 12s ease-in-out infinite;
 }
 
+/* 
 .tributary-particles {
-  /* Flowing particles animation */
-  animation: flowDown 15s linear infinite;
+  /* Flowing particles animation 
+  animation: flowDown 2s linear infinite;
 }
 
 .tributary-streaks {
-  /* Faster streak flow */
-  animation: flowDown 8s linear infinite;
+  /* Faster streak flow 
+  animation: flowDown 2s linear infinite;
 }
 
 @keyframes flowDown {
@@ -54,9 +55,10 @@ article{
     transform: translateY(0);
   }
   100% {
-    transform: translateY(80px); /* Matches pattern height */
+    transform: translateY(5px); 
+    /* Matches pattern height
   }
-}
+}*/
 
 @keyframes gentleWave {
   0%, 100% {
