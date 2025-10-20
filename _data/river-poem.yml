@@ -39,7 +39,7 @@ sections:
   - id: "line-5"
     scroll_position: 650
     side: "right"
-    content: "you may be deep underground"
+    content: "deep underground"
     padding_right: 85
     
   - id: "line-6"
@@ -60,7 +60,7 @@ sections:
   - id: "line-8"
     scroll_position: 1250
     side: "left"
-    content: "or, 190 million years ago, you flew in on wind gusts which plucked you off quartz and iron dunes. you arranged yourselves horizontally along wind lines and when enough of you had piled up, you tumbled down yourself in avalanches, cutting vertical creases down your stacks"
+    content: "or, 190 million years ago, you flew in on wind gusts which plucked you from quartz and iron dunes. you arranged yourselves horizontally along wind lines, and when enough of you had piled up, you tumbled down yourself in avalanches, cutting vertical creases down your stacks"
     padding_left: 400
     max_width: 500
     font_size: 17
@@ -70,7 +70,7 @@ sections:
   - id: "line-9"
     scroll_position: 1500
     side: "right"
-    content: "or maybe you were brought by an inland sea that flooded this side of the continent 90 millions ago. much of you are made from flecks of sharks, fish, turtles, and dinosaurs"
+    content: "you were brought by an inland sea that flooded this side of the continent 90 millions ago. much of you are made from flecks of sharks, fish, turtles, and dinosaurs"
     padding_right: 75
     max_width: 460
     font_size: 17
@@ -80,14 +80,14 @@ sections:
   - id: "line-10"
     scroll_position: 1750
     side: "left"
-    content: "or perhaps you arrived recently, from somewhere else, delivered by bird wing, on shoe, from mountain side or through fish gut"
+    content: "perhaps you arrived recently, from somewhere else, delivered by bird wing, on shoe, from mountain side or through fish gut"
     padding_left: 20
     max_width: 340
     
   - id: "line-11"
     scroll_position: 1950
     side: "right"
-    content: "or the river might cut you from your bed and carry you away"
+    content: "you might stay here for another day, century, millennia, or billion years" 
     padding_right: 70
     max_width: 420
     icon: "water"
@@ -96,7 +96,7 @@ sections:
   - id: "line-12"
     scroll_position: 2100
     side: "right"
-    content: "you might stay here for another day, century, millennia, or billion years"
+    content: "or the river might cut you from your bed and carry you away"
     padding_right: 40
     max_width: 400
     icon: "devin"
