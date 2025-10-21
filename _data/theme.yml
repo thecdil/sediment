@@ -95,7 +95,7 @@ navbar-background: bg-dark
 bootswatch: # leave blank or comment out for plain bootstrap
 
 # THEME FONTS [optional!]
-base-font-size: 1.25em
+base-font-size: 1.15em
 base-nav-size: 19px
 text-color: "#191919"
 link-color: "#0d6efd"
