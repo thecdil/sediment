@@ -22,7 +22,15 @@ body {
     @if $base-font-family != "" { font-family: $base-font-family; }
     @if $base-font-size != "" { font-size: $base-font-size; }
     @if $text-color != "" { color: $text-color; }
+
 }
+
+@media (max-width: 767px) {
+    body{
+        font-size: 0.95em;
+    }
+}
+
 a {
     /* remove link underline */ 
     text-decoration: none;
