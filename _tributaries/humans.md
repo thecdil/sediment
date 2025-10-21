@@ -11,7 +11,7 @@ gallery: true
 
 # Humans
 
-{% include feature/image-gallery.html objectid="sediment44" caption=false%}
+{% include feature/image-gallery.html objectid="sediment80" caption=false%}
 
 Indigenous groups have lived in and around Glen Canyon for over 9,000 years. Sediment has provided material for the dwelling structures, pottery, irrigation canals, petroglyphs, and spiritual landmarks that support and orient the lives of the region’s many Indigenous communities. The canyons, bridges, buttes, and spires sediment carved out of itself–aided by wind and water–became important landmarks for many tribes’ cultural and spiritual formations. Despite the coerced removal of Indigenous people from the land, these sedimentary landmarks persist as markings of Indigenous territory. Nine federally recognized tribes have ties to Glen Canyon, including the Anasazi, Núu-agha-tʉvʉ-pʉ̱ (Ute), Diné Bikéyah (Navajo), Hopitutskwa (Hopi), Nuwuvi (Southern Paiute), A:shiwi (Zuni), and Havasu Baaja (Havasupai). 
 

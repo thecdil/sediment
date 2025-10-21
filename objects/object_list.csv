@@ -1,16 +1,17 @@
 filename,object_location,image_small,image_thumb
+Me.png,/objects/Me.png,/objects/small/me_sm.jpg,/objects/thumbs/me_th.jpg
 atmosphere.png,/objects/atmosphere.png,/objects/small/atmosphere_sm.jpg,/objects/thumbs/atmosphere_th.jpg
 balancedrock.png,/objects/balancedrock.png,/objects/small/balancedrock_sm.jpg,/objects/thumbs/balancedrock_th.jpg
-dam.png,/objects/dam.png,/objects/small/dam_sm.jpg,/objects/thumbs/dam_th.jpg
+biota.png,/objects/biota.png,/objects/small/biota_sm.jpg,/objects/thumbs/biota_th.jpg
 devin.png,/objects/devin.png,/objects/small/devin_sm.jpg,/objects/thumbs/devin_th.jpg
 dwellings.png,/objects/dwellings.png,/objects/small/dwellings_sm.jpg,/objects/thumbs/dwellings_th.jpg
 exploration.png,/objects/exploration.png,/objects/small/exploration_sm.jpg,/objects/thumbs/exploration_th.jpg
-fish.png,/objects/fish.png,/objects/small/fish_sm.jpg,/objects/thumbs/fish_th.jpg
+humans.png,/objects/humans.png,/objects/small/humans_sm.jpg,/objects/thumbs/humans_th.jpg
+infrastructure.png,/objects/infrastructure.png,/objects/small/infrastructure_sm.jpg,/objects/thumbs/infrastructure_th.jpg
 land.png,/objects/land.png,/objects/small/land_sm.jpg,/objects/thumbs/land_th.jpg
 microbes.png,/objects/microbes.png,/objects/small/microbes_sm.jpg,/objects/thumbs/microbes_th.jpg
 mining.png,/objects/mining.png,/objects/small/mining_sm.jpg,/objects/thumbs/mining_th.jpg
 mormons.png,/objects/mormons.png,/objects/small/mormons_sm.jpg,/objects/thumbs/mormons_th.jpg
-pottery.png,/objects/pottery.png,/objects/small/pottery_sm.jpg,/objects/thumbs/pottery_th.jpg
 sediment0.jpg,/objects/sediment0.jpg,/objects/small/sediment0_sm.jpg,/objects/thumbs/sediment0_th.jpg
 sediment1.jpg,/objects/sediment1.jpg,/objects/small/sediment1_sm.jpg,/objects/thumbs/sediment1_th.jpg
 sediment10.mp4,/objects/sediment10.mp4,,
@@ -78,6 +79,7 @@ sediment155.jpg,/objects/sediment155.jpg,/objects/small/sediment155_sm.jpg,/obje
 sediment156.jpg,/objects/sediment156.jpg,/objects/small/sediment156_sm.jpg,/objects/thumbs/sediment156_th.jpg
 sediment157.jpg,/objects/sediment157.jpg,/objects/small/sediment157_sm.jpg,/objects/thumbs/sediment157_th.jpg
 sediment158.jpg,/objects/sediment158.jpg,/objects/small/sediment158_sm.jpg,/objects/thumbs/sediment158_th.jpg
+sediment159.jpg,/objects/sediment159.jpg,/objects/small/sediment159_sm.jpg,/objects/thumbs/sediment159_th.jpg
 sediment16.jpg,/objects/sediment16.jpg,/objects/small/sediment16_sm.jpg,/objects/thumbs/sediment16_th.jpg
 sediment17.jpg,/objects/sediment17.jpg,/objects/small/sediment17_sm.jpg,/objects/thumbs/sediment17_th.jpg
 sediment18.jpg,/objects/sediment18.jpg,/objects/small/sediment18_sm.jpg,/objects/thumbs/sediment18_th.jpg
@@ -177,4 +179,5 @@ uranium.png,/objects/uranium.png,/objects/small/uranium_sm.jpg,/objects/thumbs/u
 vegetation.png,/objects/vegetation.png,/objects/small/vegetation_sm.jpg,/objects/thumbs/vegetation_th.jpg
 volcano.png,/objects/volcano.png,/objects/small/volcano_sm.jpg,/objects/thumbs/volcano_th.jpg
 water.png,/objects/water.png,/objects/small/water_sm.jpg,/objects/thumbs/water_th.jpg
+water1.png,/objects/water1.png,/objects/small/water1_sm.jpg,/objects/thumbs/water1_th.jpg
 water2.png,/objects/water2.png,/objects/small/water2_sm.jpg,/objects/thumbs/water2_th.jpg

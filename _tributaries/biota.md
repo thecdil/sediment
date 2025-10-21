@@ -11,9 +11,12 @@ gallery: true
 
 # Microbes
 
-{% include feature/image-gallery.html objectid="sediment52" caption=false%}
+{% include feature/image-gallery.html objectid="sediment159" caption=false%}
 
 Glen Canyon's sediment has sustained microbial life for millions of years. Microbes metabolize sediment, water, and sunlight to eat potholes in the earth, paint “desert varnish” over the canyon walls, and build domed structures called stromatolites. Today, toxic cyanobacteria festers in Lake Powell's stagnant waters and deep silt pits. 
+
+{% include feature/trib-button.html trib="humans" image="humans" text="Human Histories" anchor="exploration" %}
+
 
 ## Varnish
 {% include feature/image-gallery.html objectid="sediment23;sediment75" caption=false%}

@@ -38,6 +38,9 @@ Together, the sand's shape and mineral identities have helped geologists to reco
 
 I cannot see the shape of the sand grains, nor discern its mineral makeup. But by reading geologic histories, I have come to understand that material can carry an imprint of its origins and communicate the tracings of its movements. Scholars who study narrative say that a narrative occurs when "somebody tells someone else on some occasion and for some purpose that something happened" (Phelan). When sand grains reveal to geologists their continental crossings and encounters with distant rivers, when they lay down in such a way that they tell my friend about the wind, I wonder: is this a narrative? 
 
+{% include feature/trib-button.html trib="land" image="land" text="Land" %}
+
+
 {% include feature/new-section.html %}
 
 
@@ -49,6 +52,9 @@ I cannot see the shape of the sand grains, nor discern its mineral makeup. But b
 AS I COME across closer pictures of sandstone, I begin to see the texture of its grain, and I think about the multitude of histories collected in Glen Canyon's old dunes. If sand and rock tell a story, it is one that is swirled with other places, strung with webs of countless interactions, brought together by the wind. There is an odd trick of scales at play here: the more closely I hone in on a single grain of sand, the less I see sand, and the more I see mountains, rivers, and wind. 
 
 This narrative structure is unfamiliar to me. It does not line up with the narratives I know, in which a singular character--almost always human--marches through time, self-individuating as they brush against actors and places outside of themselves. By the time I reach the end of most stories, each character has become contained, made distinct against their settings and their relations. But no matter how hard I try to isolate the story of a single sand grain, I continue to get flung out across wider and wider reaches of space, and the less I am able to pinpoint where the agency behind this story lies: with sand, with river, or with wind?
+
+{% include feature/trib-button.html trib="water" image="water1" text="River" %}
+
 
 {% include feature/new-section.html %}
 
@@ -75,7 +81,7 @@ Microbial communities proliferate in sandstone, eating holes out of the rock as 
 The wind, I have learned, works with many collaborators to shape Glen Canyon.
 
 
-{% include feature/trib-button.html trib="animal" image="microbes" text="Microbes" %}
+{% include feature/trib-button.html trib="biota" image="microbes" text="Microbes" %}
 
 
 {% include feature/new-section.html %}
@@ -102,6 +108,9 @@ I found myself moving through my research like sediment moves through the river.
 
 I did not know how I would unravel this tangled muddle, but I knew that each story mattered, and mattered enough to impress itself into the canyon's sediment. 
 
+{% comment %}
+  could include link to "about" page here. 
+{%- endcomment -%}
 
 {% include feature/new-section.html %}
 
@@ -115,13 +124,13 @@ Instead, I search the photograph's title, "Balanced Rocks," and find that balanc
 
 Even after I learn how balanced rocks get formed, I cannot get past a feeling of wonder. I wonder at the cooperation between wind and sand, their joint ability to sculpt such lively forms. I wonder too that even in its absence, in the spaces where it has blown away, sediment divulges its stories. 
 
-{% include feature/new-section.html %}
-
-
 {% include feature/image-gallery.html objectid="sediment147;sediment148" caption=false%}
 {% include feature/image-gallery.html objectid="sediment149;sediment150" caption=false%}
 
-IN THE COLLECTION, I find more photographs of balanced rocks, and in all of them, the photographer, Tad Nichols, has placed the rocks at the center of the image, as if he is taking their portrait, as if he is trying to capture something essential about their presence, their strange forms. I sense wonder in the composition of these photographs, and think perhaps my wonder is not only mine, but also Tad's.
+In the collection, I find more photographs of balanced rocks, and in all of them, the photographer, Tad Nichols, has placed the rocks at the center of the image, as if he is taking their portrait, as if he is trying to capture something essential about their presence, their strange forms. I sense wonder in the composition of these photographs, and think perhaps my wonder is not only mine, but also Tad's.
+
+{% include feature/trib-button.html trib="land" image="land" text="Land" %}
+
 
 {% include feature/new-section.html %}
 
@@ -138,9 +147,6 @@ ON HIS TRIPS, Tad was frequently accompanied by his friends Frank Wright and Kat
 When I read Katie's journals, I cannot help but feel tangible wonder for a landscape I will never see. Katie also writes sharply of loss, and I feel loss too, not only as I read her anguish for the drowned canyon, but as I move through the archive knowing much of what I see is now gone.
 
 Currents of loss seem to run through Tad's photographs as well. On the same trip that he took the balanced rock pictures, Tad noted in his journal that workers had already descended on the canyon, marking out the site of the future dam. Knowing that the canyon would soon be submerged beneath Lake Powell, was Tad driven to capture Glen Canyon's wonder, or its impending loss? In his balanced rock pictures, wonder and loss seem to twine.
-
-
-{% include feature/new-section.html %}
 
 {% include feature/image-gallery.html objectid="sediment154" caption=false%}
 
@@ -159,7 +165,7 @@ For Ogden, wonder does not lie outside of loss. Oftentimes, wonder instigates lo
 
 I think here about the title of Katie's book, her possessive "my" when referring to the river, and I think about the customary use of the words "capture" and "take" in photography. In this light, Tad's photograph collection becomes a kind of *Wunder-kammer,* a curiosity cabinet filled with the rocks and artifacts of Glen Canyon. Katie and Tad did not want to take the canyon all for themselves, but they did want to maintain their access to it, an access that was predicated on the removal of Glen Canyon from Indigenous possession--oftentimes in the name of wonder. 
 
-
+{% include feature/trib-button.html trib="humans" image="exploration" text="Exploration" anchor="exploration" %}
 {% include feature/new-section.html %}
 
 
@@ -167,16 +173,17 @@ I think here about the title of Katie's book, her possessive "my" when referring
 
 {% include feature/image-gallery.html objectid="sediment103" caption=false%}
 
-In 1909, BYRON Cummings, an archaeologist at the University of Utah, and William Douglass, the general land surveyor for the USGS set out on a mission to find the rumored Rainbow Bridge, a large natural arch wedged into one of Glen Canyon's side canyons. Led by Paiute guides Jim Mike and a father and son both named Noscha Begay, they found it, and quickly disseminated papers declaring their "discovery," despite the fact that this discovery was only made possible by their native guides' prior knowledge and connection with Rainbow Bridge. 
+In 1909, BYRON Cummings, an archaeologist at the University of Utah, and William Douglass, the general land surveyor for the USGS set out on a mission to find the rumored Rainbow Bridge, a large natural arch wedged into one of Glen Canyon's side canyons, formed by the erosional forces of water and wind. Led by Paiute guides Jim Mike and a father and son both named Noscha Begay, they found it, and quickly disseminated papers declaring their "discovery," despite the fact that this discovery was only made possible by their native guides' prior knowledge and connection with Rainbow Bridge. 
 
 One year later, President William Howard Taft removed Rainbow Bridge and the 160 acres surround it from the Navajo and Paiute lands and designated it a National Monument, writing in his proclamation that "[the] extraordinary natural bridge, having an arch which is in form and appearance much like a rainbow...[is] of great scientific interest as an example of eccentric stream erosion....[It] appears that the public interest would be promoted by reserving this bridge as a National Monument" (qtd. in Bsumek 72). 
-
-{% include feature/trib-button.html trib="humans" image="exploration" text="Exploration" anchor="exploration" %}
 
 
 The attitude that the American people are entitled to wondrous landscapes is reflected in the words of journalist John Stewart MacClary, who visited Rainbow Bridge in the 1930s and subsequently published a magazine article which declared that “all classes were entitled to the privilege of viewing the natural wonder, since Uncle Sam had reserved it as property for the people” (qtd. in Farmer 79). Wonder, as MacClary illustrates, is a useful device for making and legitimizing territory claims. 
 
 Of course, neither Glen Canyon nor Rainbow Bridge were free for the taking. Rainbow Bridge, called Tsé'naa Na'ní'áhí by the Navajo, had long been a sacred site for the Puebloan, Navajo, Ute and Paiute peoples, and the land surrounding it their home. But as western rhetorics of wonder and curiosity about the bridge began to circulate, so did the colonial desire know the land, and then to acquire it, even if this meant removing original inhabitants from their ancestral home. Thus, settler wonder becomes a tool of Indigenous dispossession, and the tides of loss follow in wonder's wake. 
+
+
+{% include feature/trib-button.html trib="water" image="water2" text="Water" %}
 
 {% include feature/new-section.html %}
 
@@ -195,6 +202,9 @@ Economies of wonder have allowed settlers to maintain their existence around the
 
 Wonder thus became a limitlessly replenishable resource that promised to forever sustain settler life--that is, as long as the region's water supply kept up. 
 
+
+{% include feature/trib-button.html trib="humans" image="exploration" text="Human Histories" anchor="exploration" %}
+
 {% include feature/new-section.html %}
 
 ## Aridity
@@ -211,17 +221,13 @@ In the 19th century, the Mormons arrived to Colorado Plateau from the east, but 
 
 {% include feature/trib-button.html trib="humans" image="mormons" text="Mormon Settlement" anchor="mormons" %}
 
-<br>
-<br>
-<br>
+{% include feature/new-section.html %}
 
 {% include feature/image-gallery.html objectid="sediment53" caption=false%}
 
 For historian Erika Marie Bsumek, colonization is often built upon rhetorics that first cast the land as somehow impoverished--too dry, too dusty, too icy, too wild--and therefore in need of transformation. By imagining the aridity of the Colorado Plateau as a problem in need of a solution, Mormon settlers justified their encroachment on land that had been occupied by--and supported--Indigenous communities for thousands of years. Bsumek notes, as does Jen Rose Smith, that settler logics are quick to extend judgments about inadequate landscapes to make racialized demarcations about the land's native inhabitants, both of which serve the same aim: to legitimize the dispossession of Indigenous nations in the name of settler expansion. 
 
 This logic was made overt in the 1930s, when the United States government declared that erosion along the Colorado River corridor was threatening to silt up to their newly-built Hoover Dam. Although the Colorado River has carried a heavy silt load for millions of years, the government blamed Navajo sheepherders, and mandated the slaughter of half a million Navajo sheep. The Livestock Reduction Act decimated Navajo livelihoods, and it paved the way for the coercive treaties that would transfer Navajo lands into the hands of the United States. On some of this land, the government built the Glen Canyon Dam. 
-
-{% include feature/trib-button.html trib="infrastructure" image="infrastructure" text="Dam" %}
 
 When I read these histories, I am reminded that stories have the power to recontour the land. Stories configure human experience and imagination, which in turn directs how humans treat the earth. There is nothing inherently inadequate about Glen Canyon's arid atmosphere, about its dust; the land supported diverse modes of human life for thousands of years before the Mormon's arrival. Notions that the land was deficient and in need of transformation were formulated in the Mormon imagination, borne out of a biblical story which conceived of desert spaces as geographically and spiritually barren. 
 
@@ -234,6 +240,9 @@ I see it as no coincidence that the Livestock Reduction Act coincided with the D
 Western stories altered the landscape in the western imagination--they rendered dust a threat and aridity a problem--but these imaginations also were materially manifested in the landscape. The Mormons did not transform the desert into a garden of roses, nor did the Livestock Reduction Act put an end to dust or erosion. Years later, much of the Plateau is still dry and dusty, its water often out of reach. But the landscape is changed: dams have drawn the water up to canyon rims, pipes crisscross the plateau and deliver water to settler homes, homes which are built on ground that for millenea belonged to the Núu-agha-tʉvʉ-pʉ̱ (Ute), Diné Bikéyah (Navajo), Hopitutskwa (Hopi), Nuwuvi (Southern Paiute), A:shiwi (Zuni), and Havasu Baaja (Havasupai) tribes. 
 
 I think back now to my work on those lands, the water from our office faucet that filled our camp jugs, the showers I took at my aunt's house, the road that took me to the river, and I understand that my existence on the Plateau was a manifestation of a long and violent history that transfigured the social and physical landscape. This history was made possible by those biblical, philosphical, and rhetorical imaginations which came into contact with the Plateau's deserts and dust, and transformed it.  
+
+{% include feature/trib-button.html trib="infrastructure" image="infrastructure" text="Reclamation" %}
+
 
 {% include feature/new-section.html %}
 
@@ -267,6 +276,8 @@ At the same time as the global climate affects Lake Powell, Lake Powell affects 
 
 Thus, the currents of change that flow through Glen Canyon become inextricably entwined with those that flow through the global climate. The motions of the external world collect and settle in Glen Canyon--the shards of distant mountains, the tailings of continental winds, the spillage of colonialism and global wars, the legacies of imperial thought--but in Glen Canyon, these distant remnants get reworked as they come into contact with the canyon's people, microbes, water, wind, and sediment, and then flung back out to gust across the basin and the planet. 
 
+{% include feature/trib-button.html trib="biota" image="microbes" text="Bacteria" %}
+
 {% include feature/new-section.html %}
 
 ## Erosions
@@ -275,8 +286,7 @@ Thus, the currents of change that flow through Glen Canyon become inextricably e
 
 As I try to map Glen Canyon's past and future stories, pull together the threads of events that have moved through so many other places, drawn along by so many other actors across so many different times, I think back to the swirled layers of the petrified sandsea. If I am to tell a true story about Glen Canyon, I think it needs to look like this: it needs to be particular--made of a mass of granular stories-- and it needs to also follow alonside the vaster currents that carried them there. These stories need to heap, whirl, and mingle, and they must inevitably erode, recirculate, and transform as they are dragged out into other spaces and other times.
 
-{% include feature/trib-button.html text="Back to Main Stem" image="tracks" trib="main" %}
-
+{% include feature/trib-button.html text="Back to Main Stem" link="/main.html" image="tracks" %}
 
 ## Works Cited
 
