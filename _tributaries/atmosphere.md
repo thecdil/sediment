@@ -176,7 +176,7 @@ One year later, President William Howard Taft removed Rainbow Bridge and the 160
 
 The attitude that the American people are entitled to wondrous landscapes is reflected in the words of journalist John Stewart MacClary, who visited Rainbow Bridge in the 1930s and subsequently published a magazine article which declared that “all classes were entitled to the privilege of viewing the natural wonder, since Uncle Sam had reserved it as property for the people” (qtd. in Farmer 79). Wonder, as MacClary illustrates, is a useful device for making and legitimizing territory claims. 
 
-Of course, neither Glen Canyon nor Rainbow Bridge were free for the taking. Rainbow Bridge, called Tsé'naa Na'ní'áhí by the Navajo, had long been a sacred site for the Puebloan, Navajo, Ute and Paiute peoples, and the land surrounding it their home. But as western rhetorics of wonder and curiosity about the bridge began to circulate, so did the colonial desire know the land, and then to acquire it, even if this meant removing original inhabitants from their ancestral home. Thus, settler wonder thus becomes a tool of Indigenous dispossession, and the tides of loss follow in wonder's wake. 
+Of course, neither Glen Canyon nor Rainbow Bridge were free for the taking. Rainbow Bridge, called Tsé'naa Na'ní'áhí by the Navajo, had long been a sacred site for the Puebloan, Navajo, Ute and Paiute peoples, and the land surrounding it their home. But as western rhetorics of wonder and curiosity about the bridge began to circulate, so did the colonial desire know the land, and then to acquire it, even if this meant removing original inhabitants from their ancestral home. Thus, settler wonder becomes a tool of Indigenous dispossession, and the tides of loss follow in wonder's wake. 
 
 {% include feature/new-section.html %}
 
@@ -221,7 +221,7 @@ For historian Erika Marie Bsumek, colonization is often built upon rhetorics tha
 
 This logic was made overt in the 1930s, when the United States government declared that erosion along the Colorado River corridor was threatening to silt up to their newly-built Hoover Dam. Although the Colorado River has carried a heavy silt load for millions of years, the government blamed Navajo sheepherders, and mandated the slaughter of half a million Navajo sheep. The Livestock Reduction Act decimated Navajo livelihoods, and it paved the way for the coercive treaties that would transfer Navajo lands into the hands of the United States. On some of this land, the government built the Glen Canyon Dam. 
 
-{% include feature/trib-button.html trib="infrastructure" image="dam" text="Dam" %}
+{% include feature/trib-button.html trib="infrastructure" image="infrastructure" text="Dam" %}
 
 When I read these histories, I am reminded that stories have the power to recontour the land. Stories configure human experience and imagination, which in turn directs how humans treat the earth. There is nothing inherently inadequate about Glen Canyon's arid atmosphere, about its dust; the land supported diverse modes of human life for thousands of years before the Mormon's arrival. Notions that the land was deficient and in need of transformation were formulated in the Mormon imagination, borne out of a biblical story which conceived of desert spaces as geographically and spiritually barren. 
 
@@ -237,7 +237,7 @@ I think back now to my work on those lands, the water from our office faucet tha
 
 {% include feature/new-section.html %}
 
-## Toxic Air
+## Radium Dust
 {% include feature/image-gallery.html objectid="sediment77" caption=false%}
 
 AS WITH THE rest of the globe, a new climate has arrived in Glen Canyon. Temperatures are rising, water supply is falling, demand for water is growing, and Lake Powell is drying up. Data published by the Bureau of Reclamation shows a steady decline in the lake's water levels beginning in the year 2000, when the lake was nearly full. As of October 2025, the lake is at 27.62% of its total capacity, and many worry that if this trend continues, the lake could eventually disappear altogether. 
@@ -256,6 +256,8 @@ Here, sediment becomes not only an archive of the past, but an archive of the fu
 {% include feature/trib-button.html trib="infrastructure" image="mining" text="Mining" anchor="mining" %}
 
 {% include feature/new-section.html %}
+
+## Feedback Loops
 
 {% include feature/image-gallery.html objectid="sediment155" caption=false%} 
 
