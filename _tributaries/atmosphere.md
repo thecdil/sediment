@@ -76,7 +76,7 @@ For five days, we paddled by thousands of honeycombed hollows and wondered what 
 
 We were wrong, of course, but our instincts that the caverns marked traces of invisible life turned out to be right. 
 
-Microbial communities proliferate in sandstone, eating holes out of the rock as they metabolize sediment. This work is not performed alone, however: microbes might etch a only small indentation in the rock before rain and wind take over, scooping the hollows deeper, allowing small pools of water to collect. In these pools, microbes flourish, devour more sediment, and burrow deeper. 
+Microbial communities proliferate in sandstone, eating holes out of the rock as they metabolize sediment. This work is not performed alone, however: microbes might etch a only small indentation in the rock before rain and wind take over, scooping the hollows deeper. Pools of water might collect in cavern bottoms, and in them, microbes flourish, devour more sediment, and burrow deeper. 
 
 The wind, I have learned, works with many collaborators to shape Glen Canyon.
 
@@ -91,7 +91,7 @@ The wind, I have learned, works with many collaborators to shape Glen Canyon.
 
 {% include feature/image-gallery.html objectid="sediment47" caption=false%} 
 
-I SPENT THE summer of 2025 in Northern Arizona University's digital collections, clicking through photographs of Glen Canyon from my desk in Idaho. I was in the early stages of my thesis work, and I had become intrigued by the idea that sediment was an under-narrated character in Glen Canyon's history, a kind of unseen agential force in the ecosystem. I had found this agency difficult, perhaps impossible, to represent in writing alone: if I wanted to capture sediment in its vastness, its multitude of formations, its snarlings across space and time, I needed photographs, animations, and a way to arrange my narrative so that it could disperse, tangle, and swirl, like sediment. 
+I SPENT THE summer of 2025 in Northern Arizona University's digital collections, clicking through photographs of Glen Canyon from my desk in Idaho. I was in the early stages of my thesis work, and I had become intrigued by the idea that sediment was an under-narrated character in Glen Canyon's history, a kind of unseen agential force in the ecosystem. I had found this agency difficult, even impossible, to represent in writing: if I wanted to capture sediment in its vastness, its multitude of formations, its snarlings across space and time, I needed photographs, animations, and a way to arrange my narrative so that it could disperse, tangle, and swirl, like sediment. 
 
 I submitted a proposal to the University of Idaho's Center for Digital Inquiry and Learning (CDIL), hoping they could help me present a multimedia narrative of sediment in a digital format. As I moved along in my research, however, I found that sediment's agency was inextricably wrapped up in a variety of others; I could not talk about sediment without talking about its associations with wind, water, animals, and humans. 
 
@@ -102,7 +102,7 @@ When I began my summer fellowship with the CDIL, they explained to me that their
 {% include feature/image-gallery.html objectid="sediment83;sediment55" caption=false%} 
 {% include feature/image-gallery.html objectid="sediment131;sediment71" caption=false%} 
 
-I shifted my focus. I started to approach the archive with the question: what can sediment tell me about the history of Glen Canyon? Most photographs of Glen Canyon feature sediment in some formation, of course; the terrain is composed almost entirely by sedimentary strata, rock fragments, and sandy beaches. I decided to pause on photographs in which I sensed there might be some kind of underlying story that would help me explain what I was seeing. I then tracked down these stories by searching across books, geologic reports, and written histories. 
+I shifted my focus. I started to approach the archive with the question: what can sediment tell me about the history of Glen Canyon? Most photographs of Glen Canyon feature sediment in some formation, of course; the terrain is composed almost entirely by sedimentary strata, rock fragments, and sandy beaches. I decided instead to pause on photographs in which I sensed there might be some kind of underlying story that would help me explain what I was seeing. I then tracked down these stories by searching across books, geologic reports, and written histories. 
 
 I found myself moving through my research like sediment moves through the river. Each photograph pulled me into distinct eddies of the canyon's history; now I was reading about the inland seas of Cretaceous period, now about the Conquistadors and their labored river crossings, now about Hopi irrigation methods; now placer mining; now the Cretaceous sea again. I drifted along what seemed like random and fractaling currents, recirculated around same histories over and over again, found old stories resurfacing around the edges of new ones. Microbes would appear while I was reading about petroglyphs; Jurassic winds rustled in the margins of government proclamations. I grabbed each fragment and heaped them into a spreadsheet which began to resemble a jumbled stratigraphy of historical scraps. 
 
@@ -116,7 +116,7 @@ I did not know how I would unravel this tangled muddle, but I knew that each sto
 
 ## Wonder 
 
-WHEN I SAW photograph number 25, a rock in the vague shape of an animal trudging up a hill, at first, I did not want to know its story. I did not want to find an explanation, spelled out in unambiguous scientific terms, that would uncover how a rock could come to take such a life-like shape. I wanted to believe for an irrational moment that this rock exhibited something verging on mythical animacy. I wanted to remain in wonder. 
+WHEN I SAW photograph number 25, a rock in the vague shape of an animal trudging up a hill, at first, I did not want to know its story. I did not want to find an explanation, spelled out in unambiguous scientific terms, that would uncover how a rock could come to take such a life-like shape. I wanted to believe for an irrational moment that this rock exhibited something verging on mythical animacy--I wanted to remain in wonder. 
 
 {% include feature/image-gallery.html objectid="sediment25" caption=false%}
 
@@ -139,7 +139,7 @@ In the collection, I find more photographs of balanced rocks, and in all of them
 
 {% include feature/image-gallery.html objectid="sediment144;sediment145" caption=false%}
 
-ON HIS TRIPS, Tad was frequently accompanied by his friends Frank Wright and Katie Lee, who documented the travels of "We Three" in her journal, published under the title *All My Rivers Are Gone.* Katie's journals are ebullient with a wonder that often times erupts in passion and grief. 
+ON HIS TRIPS, Tad was frequently accompanied by his friends Frank Wright and Katie Lee, who documented the travels of "We Three" in her journal, which she later published under the title *All My Rivers Are Gone.* Katie's journals are ebullient with a wonder that often times erupts in passion and grief. 
 
 
 {% include feature/blockquote.html quote="*For reasons unexplained, we spoke in whispers as we walked beside a stream that seemed to flow stronger and gurgle louder than it had in times past. We waded between high sloping banks of maidenhair furn that had turned to bright turquoise--they bobbed under a seep and shivered in a light breeze. We skirted gentle sluices, stooping to feel them run through our fingers, awed by the patient force of moving water that ultimately wins. Dilation darkened our eyes, amazement heightened our whispers. <br><br>As our intimacy with the the canyon grew, all we said and did threaded past in slow motion. For once, I was lagging behind, wrapped in a timeless aura--not at all certain that I hadn't been standing right there two thousand, ten thousand years ago. The thought must have occurred to us all at the same time--that we were passing through a subterranean fairlyland in a sparkling blue sea--but only Tad voiced it--'feels like we're walking under water'--before he realized he shouldn't have. I lost it completely; went to my knees crying hysterically, screaming obscenities at the politicians and bureaucracies that had orchestrated the drowning of Eden.*" source="Katie Lee, All My Rivers are Gone, pp. 165-166." link="sedminent12" size="sm" class="px-3 mt-0" %}
@@ -154,16 +154,19 @@ Laura Ogden posits in her book *Loss and Wonder at the World's End* that loss an
 
 But the tides of loss, Ogden notes, tend to spread unevenly, taking on different shapes and intensities as loss flows through the various bodies that populate a lost terrain. My sense of loss is not the same as Tad's or Katie's, and their loss is not the same as that of the canyon's native species or people, who, when the flood came, lost their home and means of living. "Losses," she continues, "are rarely equally distributed" (7). 
 
+The patchwork of loss and wonder that emanates from Glen Canyon's photographs, seeps out of its books, circles its ochre mesas, its salt-stained buttes, might be thought of as a kind of atmosphere that hovers over the landscape. 
 
-The patchwork of loss and wonder that emanates from Glen Canyon's photographs, seeps out of its books, circles its ochre mesas, its salt-stained buttes, might be thought of as a kind of atmosphere that hovers over the landscape. Geographer Ben Anderson says that affects, such as loss and wonder, tend to behave like bodies of air. Atmospheres envelop people and places in their auras, but they also shapeshift as they eddy around those people and places. Atmospheres, Anderson writes, "are always being taken up and reworked in lived experience," which is why they are "uncertain, disordered, shifting, and contingent" (79, 78).
+Geographer Ben Anderson says that affects, such as loss and wonder, tend to behave like bodies of air. Atmospheres envelop people and places in their auras, but they also shapeshift as they eddy around those people and places. Atmospheres might jump across space and time as they stick to books, art, photographs, or archives--but because they "are always being taken up and reworked in lived experience" (79) they are "uncertain, disordered, shifting, and contingent" (78). 
 
-Despite their airy indeterminacy, the atmospheres generated by loss and wonder matter for Glen Canyon. Like the winds that cut the canyon's dunes and sculpted its balanced rocks, currents of loss and wonder also leave their marks on the landscape.
+When I look at Tad's photos or read Katie's journals, and I sense loss, or wonder, I am drawn into a shared atmosphere, enveloped by the same resonances. As Ogden writes, they "carry the past and being-­in-­the-world forcibly into the present. In doing so, they touch us" (28). Kathleen Stewart says that affective encounters such as these are “a kind of contact zone” where “flows of power literally take place” (qtd. in Ogden 28)
 
 {% include feature/image-gallery.html objectid="sediment54" caption=false%}
 
 For Ogden, wonder does not lie outside of loss. Oftentimes, wonder instigates loss. Pointing to the word's entanglement with *Wunder-kammer*, "those “curiosity cabinets” filled with skulls, artifacts, rocks, fossils, and other specimens" she defines wonder as the "impulse to know and acquire the world" (7). 
 
 I think here about the title of Katie's book, her possessive "my" when referring to the river, and I think about the customary use of the words "capture" and "take" in photography. In this light, Tad's photograph collection becomes a kind of *Wunder-kammer,* a curiosity cabinet filled with the rocks and artifacts of Glen Canyon. Katie and Tad did not want to take the canyon all for themselves, but they did want to maintain their access to it, an access that was predicated on the removal of Glen Canyon from Indigenous possession--oftentimes in the name of wonder. 
+
+Despite their airy indeterminacy, the atmospheres generated by loss and wonder matter for Glen Canyon. Like the winds that cut the canyon's dunes and sculpted its balanced rocks, currents of loss and wonder also leave their marks on the landscape.
 
 {% include feature/trib-button.html trib="humans" image="exploration" text="Exploration" anchor="exploration" %}
 {% include feature/new-section.html %}
@@ -285,8 +288,6 @@ Thus, the currents of change that flow through Glen Canyon become inextricably e
 {% include feature/image-gallery.html objectid="sediment38" caption=false%} 
 
 As I try to map Glen Canyon's past and future stories, pull together the threads of events that have moved through so many other places, drawn along by so many other actors across so many different times, I think back to the swirled layers of the petrified sandsea. If I am to tell a true story about Glen Canyon, I think it needs to look like this: it needs to be particular--made of a mass of granular stories-- and it needs to also follow alonside the vaster currents that carried them there. These stories need to heap, whirl, and mingle, and they must inevitably erode, recirculate, and transform as they are dragged out into other spaces and other times.
-
-{% include feature/trib-button.html text="Back to Main Stem" link="/main.html" image="tracks" %}
 
 ## Works Cited
 
