@@ -8,6 +8,7 @@ scroll_position: 500
 description: 
 gallery: true
 icon: "rock.png"
+scrollama: true
 ---
 
 # Land
