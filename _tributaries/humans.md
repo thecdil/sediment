@@ -15,6 +15,20 @@ gallery: true
 
 Indigenous groups have lived in and around Glen Canyon for over 9,000 years. Sediment has provided material for the dwelling structures, pottery, irrigation canals, petroglyphs, and spiritual landmarks that support and orient the lives of the region’s many Indigenous communities. The canyons, bridges, buttes, and spires sediment carved out of itself–aided by wind and water–became important landmarks for many tribes’ cultural and spiritual formations. Despite the coerced removal of Indigenous people from the land, these sedimentary landmarks persist as markings of Indigenous territory. Nine federally recognized tribes have ties to Glen Canyon, including the Anasazi, Núu-agha-tʉvʉ-pʉ̱ (Ute), Diné Bikéyah (Navajo), Hopitutskwa (Hopi), Nuwuvi (Southern Paiute), A:shiwi (Zuni), and Havasu Baaja (Havasupai). 
 
+{% include feature/trib-button.html trib="humans" image="exploration" text="Exploration" anchor="exploration" %}
+
+
+{% include feature/new-section.html %}
+
+## Exploration
+
+{% include feature/image-gallery.html objectid="sediment37" caption=false%}
+
+ When John Wesley Powell surveyed and mapped Glen Canyon in 1869, he read the canyon's petroglyphs and Indigenous dwellings as important evidence that the canyon was capable of sustaining human life, encouraging settlement of the region. 
+
+
+{% include feature/new-section.html %}
+
 ## Dwelling
 
 {% include feature/image-gallery.html objectid="sediment44;sediment64" caption=false%}
@@ -36,9 +50,6 @@ Ancestral Puebloans built thousands of dwelling structures up and down the Canyo
 {% include feature/image-gallery.html objectid="sediment102; sediment119" caption=false%}
 
 
-
-
-
 Petroglyphs adorn much of the canyon, marking places where culturally or personally important events have unfolded, and inscribing various Indigenous communities’ presence, territory, and ways of life onto the landscape itself. The contrast in color between the glyph and the surrounding stone is created by desert varnish, which forms when sediment interacts with air, water, minerals, and microorganisms over thousands of years. A petroglyph requires both the absence and presence of sediment: one must carve out some sediment and release it into the land. This process entrusts the human story to the land, and it binds humans, language, and sediment together and locks it in the landscape. This is markedly different than a paper medium, which can be transported across locations, which does not return material to the land, and which does not locate the human story in the geologic record. 
 
 "We can see evidence of how Utes used the landscape to record their history and culture on the area's sandstone walls. The archaeologist Polly Schaafsma asserts, 'Rock art is the product of shared concepts and modes of picturing the world held by members of any given culture at any particular time and in a particular place. With or without intent, a corpus of mutually understandable iconography distributed throughout a given landscape is a mechanism for asserting identity in space...such images illustrate that Utes chronicled their kills, kept an eye on animal populations, used horses and dogs in their hunts, and made their mark on the landscape as they etched their activities onto the canyon walls in their homeland." (Bsumek 41)
@@ -54,9 +65,6 @@ Petroglyphs adorn much of the canyon, marking places where culturally or persona
 {% include feature/image-gallery.html objectid="sediment117" caption=false%}
 
 
-# Colonization
-
-
 ## Conquistadors
 
 {% include feature/image-gallery.html objectid="sediment4;sediment18" caption=false%}
@@ -66,12 +74,17 @@ Petroglyphs adorn much of the canyon, marking places where culturally or persona
 
 In 1776, Franciscan priests, Fathers Escalante and Dominguez set out from Santa Fe, New Mexico in search of an overland route to a Catholic Mission in Monterrey, California, but they were forced to backtrack as winter approached. Indigenous guides had initially led them safely across the Colorado, but on their return their guide, who was 12 years old, suddenly quit after witnessing the severe punishment of a servant. Lost and out of supplies, the party was forced to eat their horses. They wandered along the Colorado River for a month before they found an accessible crossing. The exact location of this crossing is unknown, but the Fathers remarked in their journal that the crossing was made possible by carving steps down the sandstone cliffs, and by swimming across a part of the river that had been made narrow by sandbars trapped by a bend in the river. The Crossing of the Fathers now lies beneath Lake Powell's waters. 
 
-## Exploration
 
-{% include feature/image-gallery.html objectid="sediment17;sediment58" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment103" caption=false%}
 
+
+
+
+
+
+
+
+ 
 
 "An adequate conception of the ruggedness of this particular region cannot be conveyed in words," wrote Earl Morris during his 1921 expedition into Forbidding Canyon. Morris had joined Charles L. Bernheimer's expedition to find an easier route between the main stem of the Colorado River and Rainbow Bridge, a natural arch which has captivated and drawn humans for millenia, and is sacred for many Indigenous groups including the Navajo, Hopi, San Juan Southern Paiute, Kaibab Paiute, and White Mesa Ute. The group found little hope that Forbidding Canyon would make for an easier journey as it formed "a maze of tortuous canons winding in and out among dumpling-like knobs of rock, too hopelessly rough to be crossed" according to Morris. Eventually the group returned with dynamite to blast obstacles from their path. This trail became known as the Bernheimer trail. Forbidding Canyon flooded deep with water after Glen Canyon Dam was built, and it has now become the most visited tributary of Glen Canyon as 200,000-300,000 tourists motor boat through it to visit Rainbow Bridge. 
 
@@ -81,6 +94,7 @@ Eugene C. LeRue, hydraulic engineer was hired in 1921 by USGS and the Southern C
 
 "On May 10, 1910, President William Howard Taft signed a proclamation designating the 160 acres surrounding the bridge as Rainbow Bridge National Monument...the official proclamation stated: "the extraordinary natural bridge, having an arch which is in form and appearance much like a rainbow...is of great scientific interest as an example of eccentric stream erosion....It appears that the public interest would be promoted by reserving this bridge as a National Monument." (Bsumek 72)
 
+{% include feature/image-gallery.html objectid="sediment103" caption=false%}
 
 {% include feature/image-gallery.html objectid="sediment55;sediment58" caption=false%}
 
