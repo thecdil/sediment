@@ -42,6 +42,17 @@ layout: default
                 <div class="row my-4 step">
                   <div class="">
                     {{content}}
+
+                    <div class="row">
+                      <h2 class="m-5">More Tributaries to Travel</h2>
+                      {% for trib in site.tributaries%}
+                      <div class="col text-center my-3">
+                    
+                    
+                        {% include feature/trib-button-end.html trib=trib.slug text="" %}
+                    
+                      </div> {% endfor %}
+                    </div>
                   </div>
                 </div>
               </article>
@@ -55,14 +66,6 @@ layout: default
     </div>
   </div>
   <div class="container-fluid">
-                <div class="row">
-
-                  {% for trib in site.tributaries%}
-                      <div class="col">
-                    
-                      {% include feature/trib-button.html trib=trib.slug text="" %}
-                     
-                      </div> {% endfor %}
-                    </div>
+                
                     </div>
 </div>
