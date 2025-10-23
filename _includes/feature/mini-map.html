@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fullscreen.css' | relative_url }}">
 <script src="{{ '/assets/lib/leaflet/leaflet.js' | relative_url }}"></script>
 <script src="{{ '/assets/lib/leaflet/Leaflet.fullscreen.min.js' | relative_url }}"></script>
+<script src="https://unpkg.com/esri-leaflet@3.0.12/dist/esri-leaflet.js"></script>
 
 <script>
     // initial start point
@@ -55,9 +56,26 @@
     };
     L.control.layers(baseMaps).addTo(map);
     /* load base map */
-    {{ include.basemap | default: 'Esri_WorldImagery' }}.addTo(map);
-    /* add fullscreen control */ 
+    {% if include.basemap == 'Esri_WorldStreetMap' %}
+    Esri_WorldStreetMap.addTo(map);
+    {% elsif include.basemap == 'Esri_NatGeoWorldMap' %}
+    Esri_NatGeoWorldMap.addTo(map);
+    {% else %}
+    Esri_WorldImagery.addTo(map);
+    {% endif %}
+    /* add fullscreen control */
     map.addControl(new L.Control.Fullscreen());
+
+    /* fix center positioning after map loads */
+    setTimeout(function(){ map.invalidateSize(); map.setView(mapCenter, mapZoom); }, 100);
+
+    /* add Lake Powell Boundary layer */
+    var lakePowellBoundary = L.esri.featureLayer({
+        url: 'https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/LakePowellBoundary/FeatureServer/0',
+        style: function () {
+            return { color: '#0066cc', weight: 2, fillOpacity: 0.2 };
+        }
+    }).addTo(map);
 
     {% if include.objectid %}
     /* add marker */ 
