@@ -185,120 +185,98 @@
     canvas.style.display = 'block';
 
     const rect = imgElement.getBoundingClientRect();
-    const img = new Image();
     
-    // Only set crossOrigin if image is from different domain
-    const imgUrl = new URL(imgElement.src, window.location.href);
-    if (imgUrl.origin !== window.location.origin) {
-        img.crossOrigin = "anonymous";
+    // ALWAYS create particles immediately from the visible image
+    const particles = [];
+    const sampleRate = 3; // Adjust for density
+
+    // Use the actual displayed image element directly
+    const tempCanvas = document.createElement('canvas');
+    const tempCtx = tempCanvas.getContext('2d');
+    tempCanvas.width = rect.width;
+    tempCanvas.height = rect.height;
+    
+    try {
+      // Draw the actual DOM image element
+      tempCtx.drawImage(imgElement, 0, 0, rect.width, rect.height);
+      const imageData = tempCtx.getImageData(0, 0, rect.width, rect.height);
+
+      for (let y = 0; y < rect.height; y += sampleRate) {
+        for (let x = 0; x < rect.width; x += sampleRate) {
+          const index = (y * rect.width + x) * 4;
+          const alpha = imageData.data[index + 3];
+
+          if (alpha > 50) {
+            const r = imageData.data[index];
+            const g = imageData.data[index + 1];
+            const b = imageData.data[index + 2];
+            const color = `rgb(${r},${g},${b})`;
+
+            const particleX = rect.left + x;
+            const particleY = rect.top + y;
+            const size = Math.random() * 2.5 + 1.5;
+
+            particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
+          }
+        }
+      }
+    } catch(e) {
+      console.log('Image processing failed, using fallback');
     }
 
-    function createParticles() {
-        const tempCanvas = document.createElement('canvas');
-        const tempCtx = tempCanvas.getContext('2d');
-        tempCanvas.width = rect.width;
-        tempCanvas.height = rect.height;
-        tempCtx.drawImage(img, 0, 0, rect.width, rect.height);
+    // If we got too few particles (or none), add guaranteed fallback
+    if (particles.length < 100) {
+      for (let y = 0; y < rect.height; y += sampleRate) {
+        for (let x = 0; x < rect.width; x += sampleRate) {
+          const particleX = rect.left + x;
+          const particleY = rect.top + y;
+          const color = colors.particles[Math.floor(Math.random() * colors.particles.length)];
+          const size = Math.random() * 2.5 + 1.5;
 
-        const particles = [];
-        const sampleRate = 2;
-        let useFallback = false;
-
-        try {
-            const imageData = tempCtx.getImageData(0, 0, rect.width, rect.height);
-
-            for (let y = 0; y < rect.height; y += sampleRate) {
-                for (let x = 0; x < rect.width; x += sampleRate) {
-                    const index = (y * rect.width + x) * 4;
-                    const alpha = imageData.data[index + 3];
-
-                    // Lower threshold for transparent images
-                    if (alpha > 20) {
-                        const r = imageData.data[index];
-                        const g = imageData.data[index + 1];
-                        const b = imageData.data[index + 2];
-                        const color = `rgba(${r},${g},${b},${alpha/255})`;
-
-                        const particleX = rect.left + x;
-                        const particleY = rect.top + y;
-                        const size = Math.random() * 2.5 + 1.5;
-
-                        particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
-                    }
-                }
-            }
-            
-            // If very few particles, use fallback
-            if (particles.length < 50) {
-                useFallback = true;
-            }
-        } catch(e) {
-            useFallback = true;
+          particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
         }
-
-        // Enhanced fallback for CORS issues or small images
-        if (useFallback) {
-            particles.length = 0; // Clear any existing particles
-            const particleCount = Math.max(150, (rect.width * rect.height) / 20);
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particleX = rect.left + Math.random() * rect.width;
-                const particleY = rect.top + Math.random() * rect.height;
-                const color = colors.particles[Math.floor(Math.random() * colors.particles.length)];
-                const size = Math.random() * 2.5 + 1.5;
-
-                particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
-            }
-        }
-
-        // Rest of animation code...
-        imgElement.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.8s ease';
-        document.body.style.opacity = '0.85';
-
-        let startTime = Date.now();
-        const totalDuration = 2200;
-
-        function animate() {
-            const elapsed = Date.now() - startTime;
-            ctx.fillStyle = 'rgba(248, 245, 240, 0.15)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            for (let i = particles.length - 1; i >= 0; i--) {
-                particles[i].update();
-                particles[i].draw(ctx);
-                
-                if (particles[i].isDead()) {
-                    particles.splice(i, 1);
-                }
-            }
-
-            if (elapsed >= totalDuration || particles.length === 0) {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                canvas.style.display = 'none';
-                window.location.href = targetLink;
-            } else {
-                requestAnimationFrame(animate);
-            }
-        }
-
-        animate();
+      }
     }
 
-    // Handle both cached and uncached images
-    if (img.complete || imgElement.complete) {
-        img.src = imgElement.src;
-        // Image already loaded, start immediately
-        setTimeout(createParticles, 0);
-    } else {
-        img.onload = createParticles;
-        img.onerror = function() {
-            // Still show effect even on error
-            createParticles();
-        };
-        img.src = imgElement.src;
+    // Hide original image
+    imgElement.style.opacity = '0';
+
+    // Subtle page fade
+    document.body.style.transition = 'opacity 0.8s ease';
+    document.body.style.opacity = '0.85';
+
+    let startTime = Date.now();
+    const totalDuration = 2200;
+
+    function animate() {
+      const elapsed = Date.now() - startTime;
+
+      // Semi-transparent trail for flow effect
+      ctx.fillStyle = 'rgba(248, 245, 240, 0.15)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Update and draw particles
+      for (let i = particles.length - 1; i >= 0; i--) {
+        particles[i].update();
+        particles[i].draw(ctx);
+        
+        // Remove dead particles
+        if (particles[i].isDead()) {
+          particles.splice(i, 1);
+        }
+      }
+
+      if (elapsed >= totalDuration || particles.length === 0) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        canvas.style.display = 'none';
+        window.location.href = targetLink;
+      } else {
+        requestAnimationFrame(animate);
+      }
     }
-}
+
+    animate();
+  }
 
   document.addEventListener('DOMContentLoaded', function() {
     const tribButtons = document.querySelectorAll('.trib-button-link');

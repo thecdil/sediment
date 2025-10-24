@@ -7,6 +7,7 @@ position: 35
 scroll_position: 1000
 description: 
 gallery: true
+scrollama: true
 ---
 
 # Water

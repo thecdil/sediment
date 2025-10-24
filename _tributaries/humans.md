@@ -7,6 +7,7 @@ position: 110
 scroll_position: 3500
 description: 
 gallery: true
+scrollama: true
 ---
 
 # Humans
