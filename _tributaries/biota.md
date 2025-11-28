@@ -19,6 +19,9 @@ Glen Canyon's sediment has sustained microbial life for millions of years. Micro
 {% include feature/trib-button.html trib="humans" image="humans" text="Human Histories" %}
 
 
+Microbes produce new silt
+
+
 ## Varnish
 {% include feature/image-gallery.html objectid="sediment23;sediment75" caption=false%}
 
@@ -50,8 +53,28 @@ Potholes are formed by water erosion, and mark places in the sandstone where the
 
 The stagnant waters of Lake Powell have created optimal conditions for cyanobacteria colonies to breed, staining the lake pea-green and posing serious health risks to animals and humans. Bacteria can become airborne as the water is disturbed. When ingested, cyanobacteria can cause respiratory paralysis, blistering, numbness, burning, incoherent speech, kidney failure, liver failure, vomiting, and death. Sediment provides a habitat for these bacteria to lie dormant over winter and seed future blooms. 
 
+## Cryptobiotic 
 
+living soils. The crusts hold soils in place during windstorms and hold moisture by up to 14% (Podmore 140). Dust landing on snowfields can decrease runoff by as much as 5%. (Podmore 140). Could help the toxic dust from blowing. (Podmore 141). 
+
+## Fish
+
+prior to 1973, state and federal governments stocked non-native sport fish and intentionally rmoved humbpack jub, boytail chub, razorback zuckers, flannelmouth suckers, Colorado pikeminnows calling them "trash fish." They also dumped 20,000 gallons fo rotenone to exterminate fish into the Green River. Native fish live longer because they must be patient to the river's fluctuations (Podmore 142). 
+
+Humans are transporting pikeminnows and razorbacks in buckets up Fatt Falls, a waterfall that formed because of sedimenation. But the waterfall separates them from invasive predators. (Podmore 145)
+## Beavers
+slow the water, allowing plants to root
+
+## Plants
+
+At first, invasive species like tumbleweed, cheatgrass, and camelthorn take root. But after a few years, native species come back. Fremont fcottonwood, coyote willow, Goodding's willow, Indian paintbrush, hackberry, Western redbuds, singleleaf ash, miadenhair fern, columbine
+
+"This is the most intact native ecosystem I've ever seen!" (Podmore 25) - biologist
 ## Other life
+
+Also bighorn sheep, deer, lizards, snakes, frogs, mountain lioins, ringtail cats, coytotes, black bears. Many drowned. Side canyons could support up to 200 species of birds. 
+
+Wooly Mammoths used to live in Glen Canyon, according to dung found in Bechan Cave. There are petroglyph carvings of mammoths as well. 
 {% include feature/image-gallery.html objectid="sediment51;sediment74" caption=false%}
 
 {% include feature/image-gallery.html objectid="sediment88;sediment90" caption=false%}
