@@ -15,6 +15,11 @@ item-meta: true
                 <use xlink:href="{{ '/assets/lib/cb-icons.svg' | relative_url }}#arrow-down"/>
             </svg>
         </a>{% endunless %}
+        {% if page.callnumber %}<a href="{{page.sourceline}}" class="ms-5 btn btn-sm btn-outline-dark small" target="_blank">Original Source 
+            <svg class="bi icon-sprite" role="img" aria-label="Go to original source">
+                <use xlink:href="{{ '/assets/lib/cb-icons.svg' | relative_url }}#arrow-up-right"/>
+            </svg>
+        </a>{% endif %}
     </h2>
 
     <div class="row justify-content-center">
