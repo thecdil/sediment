@@ -7,6 +7,7 @@ position: 110
 scroll_position: 3500
 description: 
 gallery: true
+scrollama: true
 ---
 
 # Humans
@@ -100,9 +101,7 @@ Hopi stories talk about a hero who floated from Colorado River to the Gulf of Ca
 
 Built a tank used for irrigating corn, squash, and beans.
 
-{% include feature/trib-button.html trib="humans" image="exploration" text="Exploration" anchor="exploration" %}
 
-{% include feature/new-section.html %}
 
 ## Exploration
 
