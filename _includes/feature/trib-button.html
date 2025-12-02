@@ -132,8 +132,8 @@
       this.life = 1;
 
       // River flow with variance
-      this.vx = (targetSide === 'right' ? 1 : -1) * (Math.random() * 3 + 5);
-      this.vy = Math.random() * 3 - 1;
+      this.vx = (targetSide === 'right' ? 1 : -1) * (Math.random() * 4 + 6);
+      this.vy = Math.random() * 4 - 1.5;
       
       // Turbulence for water effect
       this.turbulence = Math.random() * 0.5;
@@ -141,11 +141,11 @@
 
     update() {
       // Gradual slowdown
-      this.vx *= 0.98;
-      this.vy *= 0.98;
+      this.vx *= 0.97;
+      this.vy *= 0.97;
       
       // Gravity and turbulence
-      this.vy += 0.12;
+      this.vy += 0.15;
       this.vx += Math.sin(this.y * 0.02) * this.turbulence;
 
       this.x += this.vx;
@@ -155,7 +155,7 @@
       const margin = 100;
       if (this.x < -margin || this.x > window.innerWidth + margin || 
           this.y > window.innerHeight + margin) {
-        this.life -= 0.05;
+        this.life -= 0.08;
         this.opacity = Math.max(0, this.life);
       }
     }
@@ -201,7 +201,7 @@
         tempCtx.drawImage(img, 0, 0, rect.width, rect.height);
 
         const particles = [];
-        const sampleRate = 2;
+        const sampleRate = 2.5;
         let useFallback = false;
 
         try {
@@ -239,7 +239,7 @@
         // Enhanced fallback for CORS issues or small images
         if (useFallback) {
             particles.length = 0; // Clear any existing particles
-            const particleCount = Math.max(150, (rect.width * rect.height) / 20);
+            const particleCount = Math.max(120, (rect.width * rect.height) / 25);
             
             for (let i = 0; i < particleCount; i++) {
                 const particleX = rect.left + Math.random() * rect.width;
@@ -251,17 +251,17 @@
             }
         }
 
-        // Rest of animation code...
+        // Hide image and fade page
         imgElement.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.8s ease';
-        document.body.style.opacity = '0.85';
+        document.body.style.transition = 'opacity 0.5s ease';
+        document.body.style.opacity = '0.7';
 
         let startTime = Date.now();
-        const totalDuration = 2200;
+        const totalDuration = 1400;
 
         function animate() {
             const elapsed = Date.now() - startTime;
-            ctx.fillStyle = 'rgba(248, 245, 240, 0.15)';
+            ctx.fillStyle = 'rgba(248, 245, 240, 0.2)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             for (let i = particles.length - 1; i >= 0; i--) {
@@ -274,9 +274,15 @@
             }
 
             if (elapsed >= totalDuration || particles.length === 0) {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                // Immediately hide everything
+                document.body.style.transition = 'none';
+                document.body.style.opacity = '0';
                 canvas.style.display = 'none';
-                window.location.href = targetLink;
+                
+                // Brief delay to ensure fade is applied before navigation
+                setTimeout(function() {
+                    window.location.href = targetLink;
+                }, 50);
             } else {
                 requestAnimationFrame(animate);
             }

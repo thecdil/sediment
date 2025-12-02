@@ -1,15 +1,16 @@
 {% comment %}
 
-    Tributary Button with Particle Disintegration Effect
+    Tributary Button with Particle Disintegration Effect (Fast Version)
 
     Creates an interactive button that disintegrates into particles when clicked,
     simulating sediment flowing down the river before navigating to a tributary page.
+    This is the faster version designed for the main page.
 
     Basic example:
-    {% include feature/trib-button.html trib="water" %}
+    {% include feature/trib-button-main.html trib="water" %}
 
     Full example with all options:
-    {% include feature/trib-button.html trib="water" image="custom-image" text="Explore Water" centered="true" %}
+    {% include feature/trib-button-main.html trib="water" image="custom-image" text="Explore Water" centered="true" %}
 
     Options:
     - "trib" = tributary name (required) - matches the tributary slug in /tributaries/
@@ -42,7 +43,7 @@
       <img src="{% if include.image %}{{'/objects/' | append: include.image | append: '.png' | relative_url}}{% else %}{{'/objects/' | append: include.trib | append: '.png' | relative_url}}{% endif %}"
            class="trib-button-image"
            alt="{{ trib_name }}"
-           style="transition: transform 0.3s ease;max-height:50px;">
+           style="transition: transform 0.3s ease; max-height: 50px;">
     </a>
     {% unless include.hidetext == "true" %}
     <p class="trib-button-text text-center fs-6" style="margin-top: 8px; color: #8B4513;">
@@ -60,10 +61,8 @@
 }
 
 .trib-button-container {
-  transition: opacity 0.7s ease;
+  transition: opacity 0.3s ease;
 }
-
-
 </style>
 
 <script>
@@ -79,26 +78,51 @@
       this.targetSide = targetSide;
       this.color = color;
       this.size = size;
+      this.opacity = 1;
+      this.life = 1;
 
-      // Fast river flow
-      this.vx = (targetSide === 'right' ? 1 : -1) * (Math.random() * 3 + 4);
-      this.vy = Math.random() * 2 - 0.5;
+      // Faster river flow for quick animation
+      this.vx = (targetSide === 'right' ? 1 : -1) * (Math.random() * 5 + 8);
+      this.vy = Math.random() * 5 - 2;
+      
+      // Turbulence for water effect
+      this.turbulence = Math.random() * 0.6;
     }
 
     update() {
-      this.vx *= 0.99;
-      this.vy *= 0.99;
-      this.vy += 0.08;
+      // Less slowdown for faster movement
+      this.vx *= 0.96;
+      this.vy *= 0.96;
+      
+      // Stronger gravity
+      this.vy += 0.2;
+      this.vx += Math.sin(this.y * 0.02) * this.turbulence;
 
       this.x += this.vx;
       this.y += this.vy;
+
+      // Faster fade for particles exiting viewport
+      const margin = 80;
+      if (this.x < -margin || this.x > window.innerWidth + margin || 
+          this.y > window.innerHeight + margin) {
+        this.life -= 0.12;
+        this.opacity = Math.max(0, this.life);
+      }
     }
 
     draw(ctx) {
+      if (this.opacity <= 0) return;
+      
+      ctx.globalAlpha = this.opacity;
       ctx.fillStyle = this.color;
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
       ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    isDead() {
+      return this.opacity <= 0;
     }
   }
 
@@ -112,91 +136,122 @@
 
     const rect = imgElement.getBoundingClientRect();
     const img = new Image();
-    img.crossOrigin = "anonymous";
-    img.src = imgElement.src;
+    
+    // Only set crossOrigin if image is from different domain
+    const imgUrl = new URL(imgElement.src, window.location.href);
+    if (imgUrl.origin !== window.location.origin) {
+        img.crossOrigin = "anonymous";
+    }
 
-    img.onload = function() {
-      const tempCanvas = document.createElement('canvas');
-      const tempCtx = tempCanvas.getContext('2d');
-      tempCanvas.width = rect.width;
-      tempCanvas.height = rect.height;
-      tempCtx.drawImage(img, 0, 0, rect.width, rect.height);
+    function createParticles() {
+        const tempCanvas = document.createElement('canvas');
+        const tempCtx = tempCanvas.getContext('2d');
+        tempCanvas.width = rect.width;
+        tempCanvas.height = rect.height;
+        tempCtx.drawImage(img, 0, 0, rect.width, rect.height);
 
-      const particles = [];
-      const sampleRate = 3;
+        const particles = [];
+        const sampleRate = 3.5; // Fewer particles for faster performance
+        let useFallback = false;
 
-      try {
-        const imageData = tempCtx.getImageData(0, 0, rect.width, rect.height);
+        try {
+            const imageData = tempCtx.getImageData(0, 0, rect.width, rect.height);
 
-        for (let y = 0; y < rect.height; y += sampleRate) {
-          for (let x = 0; x < rect.width; x += sampleRate) {
-            const index = (y * rect.width + x) * 4;
-            const alpha = imageData.data[index + 3];
+            for (let y = 0; y < rect.height; y += sampleRate) {
+                for (let x = 0; x < rect.width; x += sampleRate) {
+                    const index = (y * rect.width + x) * 4;
+                    const alpha = imageData.data[index + 3];
 
-            if (alpha > 50) {
-              const r = imageData.data[index];
-              const g = imageData.data[index + 1];
-              const b = imageData.data[index + 2];
-              const color = `rgb(${r},${g},${b})`;
+                    if (alpha > 20) {
+                        const r = imageData.data[index];
+                        const g = imageData.data[index + 1];
+                        const b = imageData.data[index + 2];
+                        const color = `rgba(${r},${g},${b},${alpha/255})`;
 
-              const particleX = rect.left + x;
-              const particleY = rect.top + y;
-              const size = Math.random() * 2.5 + 1;
+                        const particleX = rect.left + x;
+                        const particleY = rect.top + y;
+                        const size = Math.random() * 2.5 + 1.5;
 
-              particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
+                        particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
+                    }
+                }
             }
-          }
+            
+            // If very few particles, use fallback
+            if (particles.length < 40) {
+                useFallback = true;
+            }
+        } catch(e) {
+            useFallback = true;
         }
-      } catch(e) {
-        for (let y = 0; y < rect.height; y += sampleRate) {
-          for (let x = 0; x < rect.width; x += sampleRate) {
-            const particleX = rect.left + x;
-            const particleY = rect.top + y;
-            const color = colors.particles[Math.floor(Math.random() * colors.particles.length)];
-            const size = Math.random() * 2.5 + 1;
 
-            particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
-          }
+        // Enhanced fallback for CORS issues or small images
+        if (useFallback) {
+            particles.length = 0;
+            const particleCount = Math.max(80, (rect.width * rect.height) / 30);
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particleX = rect.left + Math.random() * rect.width;
+                const particleY = rect.top + Math.random() * rect.height;
+                const color = colors.particles[Math.floor(Math.random() * colors.particles.length)];
+                const size = Math.random() * 2.5 + 1.5;
+
+                particles.push(new TribParticle(particleX, particleY, flowSide, color, size));
+            }
         }
-      }
 
-      // Hide original image
-      const container = imgElement.closest('.trib-button-container');
+        // Hide image and quick fade
+        imgElement.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.3s ease';
+        document.body.style.opacity = '0.6';
 
-      // Quick page fade
-      document.body.style.transition = 'opacity 0.6s ease';
-      document.body.style.opacity = '0.8';
+        let startTime = Date.now();
+        const totalDuration = 700; // Half the time of regular button (1400ms / 2)
 
-      let startTime = Date.now();
-      const totalDuration = 1000; // 2 seconds
+        function animate() {
+            const elapsed = Date.now() - startTime;
+            ctx.fillStyle = 'rgba(248, 245, 240, 0.25)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      function animate() {
-        const elapsed = Date.now() - startTime;
+            for (let i = particles.length - 1; i >= 0; i--) {
+                particles[i].update();
+                particles[i].draw(ctx);
+                
+                if (particles[i].isDead()) {
+                    particles.splice(i, 1);
+                }
+            }
 
-        // Light trail for river visibility
-        ctx.fillStyle = 'rgba(248, 245, 240, 0.1)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        // Update and draw - no fading!
-        particles.forEach(particle => {
-          particle.update();
-          particle.draw(ctx);
-        });
-
-        if (elapsed >= totalDuration) {
-          canvas.style.display = 'none';
-          window.location.href = targetLink;
-        } else {
-          requestAnimationFrame(animate);
+            if (elapsed >= totalDuration || particles.length === 0) {
+                // Immediately hide everything
+                document.body.style.transition = 'none';
+                document.body.style.opacity = '0';
+                canvas.style.display = 'none';
+                
+                // Brief delay to ensure fade is applied before navigation
+                setTimeout(function() {
+                    window.location.href = targetLink;
+                }, 50);
+            } else {
+                requestAnimationFrame(animate);
+            }
         }
-      }
 
-      animate();
-    };
+        animate();
+    }
 
-    img.onerror = function() {
-      window.location.href = targetLink;
-    };
+    // Handle both cached and uncached images
+    if (img.complete || imgElement.complete) {
+        img.src = imgElement.src;
+        setTimeout(createParticles, 0);
+    } else {
+        img.onload = createParticles;
+        img.onerror = function() {
+            // Still show effect even on error
+            createParticles();
+        };
+        img.src = imgElement.src;
+    }
   }
 
   document.addEventListener('DOMContentLoaded', function() {
