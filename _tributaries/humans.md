@@ -117,7 +117,7 @@ Built a tank used for irrigating corn, squash, and beans.
 
 {% include feature/image-gallery.html objectid="sediment44;sediment64" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment137; sediment116" caption=false%}
+{% include feature/image-gallery.html objectid="sediment137;sediment116" caption=false%}
 
 Ancestral Puebloans built thousands of dwelling structures up and down the Canyon and its tributaries. These dwellings were typically constructed with stone fragments held together by adobe, composed of sediment, straw, and water. Dwellings were often nestled in the canyon's natural topographical features such as alcoves or mesa tops. 
 
@@ -129,9 +129,9 @@ Ancestral Puebloans built thousands of dwelling structures up and down the Canyo
 
 {% include feature/image-gallery.html objectid="sediment80;sediment81" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment87; sediment101" caption=false%}
+{% include feature/image-gallery.html objectid="sediment87;sediment101" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment102; sediment119" caption=false%}
+{% include feature/image-gallery.html objectid="sediment102;sediment119" caption=false%}
 
 
 Petroglyphs adorn much of the canyon, marking places where culturally or personally important events have unfolded, and inscribing various Indigenous communities’ presence, territory, and ways of life onto the landscape itself. The contrast in color between the glyph and the surrounding stone is created by desert varnish, which forms when sediment interacts with air, water, minerals, and microorganisms over thousands of years. A petroglyph requires both the absence and presence of sediment: one must carve out some sediment and release it into the land. This process entrusts the human story to the land, and it binds humans, language, and sediment together and locks it in the landscape. This is markedly different than a paper medium, which can be transported across locations, which does not return material to the land, and which does not locate the human story in the geologic record. 
@@ -290,13 +290,13 @@ The Mormons did not invent irrigation in Glen Canyon, and they often built their
 
 {% include feature/image-gallery.html objectid="sediment41;sediment20" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment104; sediment 105" caption=false%}
+{% include feature/image-gallery.html objectid="sediment104;sediment 105" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment106; sediment107" caption=false%}
+{% include feature/image-gallery.html objectid="sediment106;sediment107" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment108; sediment 109" caption=false%}
+{% include feature/image-gallery.html objectid="sediment108;sediment 109" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment110; sediment140" caption=false%}
+{% include feature/image-gallery.html objectid="sediment110;sediment140" caption=false%}
 
 Sediment both forms the concrete of the dam itself and the strata which it in place. But its accretion behind the dam reveals the project’s consequences, showing the ways these projects accumulate and hoard resources in some places, burying and subsuming the lives that came before while withholding it from others. 
 
@@ -312,12 +312,12 @@ When projects like the Glen Canyon Dam drown a landscape, they physically and fi
 
 {% include feature/image-gallery.html objectid="sediment63;sediment67" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment135; sediment124" caption=false%}
+{% include feature/image-gallery.html objectid="sediment135;sediment124" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment126; sediment 130" caption=false%}
+{% include feature/image-gallery.html objectid="sediment126;sediment 130" caption=false%}
 
 
-{% include feature/image-gallery.html objectid="sediment136; sediment125" caption=false%}
+{% include feature/image-gallery.html objectid="sediment136;sediment125" caption=false%}
 
 Sediment caches the gold, silver, and uranium deposits which drew early prospectors. It also stymied those same prospectors as it clogged and wore down mining machinery and chewed up and dispersed its minerals into fragments too small to be economically extractible. 
 

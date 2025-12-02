@@ -32,7 +32,7 @@ Soft sandstone often develop hollows across its face called tafoni. These cavern
 
 {% include feature/trib-button.html trib="water" %}
 
-{% include feature/image-gallery.html objectid="sediment34; sediment134" caption=false%}
+{% include feature/image-gallery.html objectid="sediment34;sediment134" caption=false%}
 
 
 Geologist Herbert E. Gregory surveyed the land beginning in 1908 for the USGS, and is responsible for naming much of the strata. Gregory named layers Navajo Sandstone, Entrada (conquistadors), Bluff and Cow Springs (mormon settlements), Yale Point (alma mater). "Gregory, like Powell, affixed his interpretation of the stages of civilization onto the landscape, effectively placing Navajos beneath European and white civilization...the whites...named the features of the land according to a social and stratigraphical order that they themselves helped create. The emerging names of landforms and rock layers represented a narrative of racial hierarchies and stadial evolution theory....In this sense, knowledge production and shifting power relations were interconnected processes. As whites came to dominate in the region, a narrative retelling of the imposition of racial hierarchies and colonization efforts was literally mapped onto the landscape itself" (Bsumek 85-86).
@@ -108,7 +108,7 @@ Each layer of the sediment laminae was laid by a distinct geologic event--such a
 
 {% include feature/image-gallery.html objectid="sediment76;sediment77;" caption=false%}
 {% include feature/image-gallery.html objectid="sediment78;sediment79" caption=false%}
-{% include feature/image-gallery.html objectid="sediment112; sediment 113" caption=false%}
+{% include feature/image-gallery.html objectid="sediment112;sediment 113" caption=false%}
 
 
 
@@ -118,7 +118,7 @@ Each layer of the sediment laminae was laid by a distinct geologic event--such a
 
 {% include feature/image-gallery.html objectid="sediment55;sediment83" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment111; sediment131" caption=false%}
+{% include feature/image-gallery.html objectid="sediment111;sediment131" caption=false%}
 
 
 

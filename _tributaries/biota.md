@@ -81,9 +81,9 @@ Wooly Mammoths used to live in Glen Canyon, according to dung found in Bechan Ca
 
 {% include feature/image-gallery.html objectid="sediment98;sediment138" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment128; sediment127" caption=false%}
+{% include feature/image-gallery.html objectid="sediment128;sediment127" caption=false%}
 
-{% include feature/image-gallery.html objectid="sediment118; sediment120" caption=false%}
+{% include feature/image-gallery.html objectid="sediment118;sediment120" caption=false%}
 
 
 
