@@ -293,3 +293,58 @@ article{
 .trib-button-image{
   height:100px;
 }
+
+
+/* Spotlight custom item-page button */
+.spl-item-page {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="%23fff" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>');
+    background-size: 21px;
+}
+
+/* Spotlight footer title and button layout */
+#spotlight .spl-footer .spl-title {
+    display: inline-block;
+    margin: 6px 0px;
+    font-size: 25px;
+}
+
+/* Container for buttons - stack vertically on the right */
+#spotlight .spl-footer .spl-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Spotlight source button styling */
+#spotlight .spl-footer .spl-source-button {
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+#spotlight .spl-footer .spl-source-button:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: #fff !important;
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+    #spotlight .spl-footer .spl-title {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #spotlight .spl-footer .spl-button {
+        align-items: flex-start;
+        text-align: left;
+        float: none;
+    }
+}
