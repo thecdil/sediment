@@ -33,13 +33,17 @@ body {
 
 a {
     /* remove link underline */ 
-    text-decoration: none;
+    text-decoration: underline;
     @if $link-color != "" { 
         color: $link-color; 
         &:hover {
             @if $text-color != "" { color: $text-color; }
         }
     }
+}
+
+.footnote {
+    text-decoration: none !important;
 }
 
 /* skip nav for accessibility, based on https://webaim.org/techniques/skipnav/ */
