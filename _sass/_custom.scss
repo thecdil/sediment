@@ -290,8 +290,244 @@ article{
 }
 
 
-.trib-button-image{
-  height:100px;
+/* ========================================
+   Tributary Choice Buttons - Modern Earthy Design
+   ======================================== */
+
+/* Main container for the choice */
+.trib-choice-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+  padding: 20px;
+  position: relative;
+}
+
+.trib-choice-container.centered {
+  justify-content: center;
+}
+
+/* Individual choice button */
+.trib-choice-button {
+  flex: 0 0 auto;
+  position: relative;
+}
+
+/* Inner button/link styling (shared between continue and branch) */
+.choice-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 24px;
+  min-width: 130px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(210, 105, 30, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: visible;
+  backdrop-filter: blur(8px);
+}
+
+/* Hover states */
+.choice-inner:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(210, 105, 30, 0.3);
+  box-shadow: 0 4px 16px rgba(210, 105, 30, 0.12),
+              0 2px 4px rgba(139, 69, 19, 0.08);
+  transform: translateY(-3px);
+}
+
+.choice-inner:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(210, 105, 30, 0.1);
+}
+
+/* Icon container */
+.choice-icon {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.choice-inner:hover .choice-icon {
+  transform: scale(1.08);
+}
+
+/* Continue button specific */
+.continue-choice .choice-icon svg {
+  filter: drop-shadow(0 1px 3px rgba(155, 107, 107, 0.2));
+  transition: all 0.3s ease;
+}
+
+.continue-choice .choice-inner:hover .choice-icon svg {
+  filter: drop-shadow(0 2px 6px rgba(155, 107, 107, 0.3));
+  fill: #8B4513;
+}
+
+/* Branch button image */
+.trib-button-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 3px rgba(139, 69, 19, 0.12));
+  transition: filter 0.3s ease;
+}
+
+.branch-choice .choice-inner:hover .trib-button-image {
+  filter: drop-shadow(0 2px 8px rgba(210, 105, 30, 0.25));
+}
+
+/* Choice label text */
+.choice-label {
+  margin: 0;
+  color: #5D4037;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
+  letter-spacing: 0.2px;
+}
+
+.choice-inner:hover .choice-label {
+  color: #4E342E;
+}
+
+/* Visual separator between choices - subtle modern line */
+.trib-choice-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(210, 105, 30, 0.1) 30%,
+    rgba(210, 105, 30, 0.15) 50%,
+    rgba(210, 105, 30, 0.1) 70%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.trib-choice-container.centered::before {
+  display: none;
+}
+
+/* Special styling for river-poem icons on main.html */
+.river-poem-icon .trib-choice-container {
+  margin: 0;
+  padding: 0;
+}
+
+.river-poem-icon .choice-inner {
+  padding: 8px 12px;
+  min-width: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.river-poem-icon .choice-inner:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(210, 105, 30, 0.1);
+  transform: translateY(-2px);
+}
+
+.river-poem-icon .choice-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+.river-poem-icon .trib-button-image {
+  max-height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.river-poem-icon .choice-inner:hover .choice-icon {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .trib-choice-container {
+    gap: 30px;
+    margin: 40px 0;
+    padding: 15px;
+  }
+
+  .choice-inner {
+    padding: 16px 20px;
+    min-width: 115px;
+  }
+
+  .choice-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+  }
+
+  .choice-label {
+    font-size: 14px;
+  }
+
+  .river-poem-icon .choice-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .river-poem-icon .trib-button-image {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trib-choice-container {
+    flex-direction: column;
+    gap: 24px;
+    margin: 30px 0;
+  }
+
+  .trib-choice-container::before {
+    width: 50%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(210, 105, 30, 0.1) 30%,
+      rgba(210, 105, 30, 0.15) 50%,
+      rgba(210, 105, 30, 0.1) 70%,
+      transparent 100%
+    );
+  }
+
+  .choice-inner {
+    padding: 14px 18px;
+    min-width: 130px;
+  }
+
+  .choice-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .choice-label {
+    font-size: 14px;
+  }
 }
 
 
