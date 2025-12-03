@@ -48,10 +48,10 @@ custom-foot: js/spotlight-media-handler.html
                       <h2 class="m-5">More Tributaries to Travel</h2>
                       {% for trib in site.tributaries%}
                       <div class="col text-center my-3">
-                    
-                    
-                        {% include feature/trib-button-end.html trib=trib.slug text="" %}
-                    
+
+
+                        {% include feature/trib-button.html trib=trib.slug text="" no-continue="true" centered="true" %}
+
                       </div> {% endfor %}
                     </div>
                   </div>

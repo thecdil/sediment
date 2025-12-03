@@ -61,11 +61,11 @@
             {{ section.content | markdownify }}
           </div>
           
-          <!-- Icon and link using trib-button-main (if provided) -->
+          <!-- Icon and link using trib-button (if provided) -->
           {% if section.icon and section.trib %}
-            <div style="margin-top: 15px; 
+            <div class="river-poem-icon" style="margin-top: 15px;
                         text-align: {{ section.text_align | default: 'left' }};">
-              {% include feature/trib-button-main.html trib=section.trib image=section.icon anchor=section.anchor hidetext="true" %}
+              {% include feature/trib-button.html trib=section.trib image=section.icon anchor=section.anchor hidetext="true" speed="fast" no-continue="true" %}
             </div>
           {% endif %}
           
