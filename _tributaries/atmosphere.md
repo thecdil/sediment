@@ -30,7 +30,7 @@ When I look at these photos, I am struck by the memories that the land holds, an
 
 It does not take a geologist to see what has happened here: when I showed these photographs to a poet friend and asked him to describe what he saw, he said he saw the wind. If I look long enough, I start to believe that I can feel the old winds, see the dunes spill over themselves, hear the swish of sand, although I am separated from all of this not only a thousand miles but also by 200 million years. 
 
-The dunes no longer shift, but I can clearly sense their motion. I think about the stretching millenia, the torrent of events through which these thin remainders of wind have stood, and it seems that time has compressed, as if the past has risen up, as if the land is impressing a story of its ancient self--its lively motion, its patient world-making--on all who care to look. 
+The dunes no longer shift, but I can clearly sense their motion. I think about the stretching millenia, the torrent of events through which these thin remainders of wind have stood, and it seems that time has compressed, as if the past has risen up, as if the land is impressing a story of its ancient self--its lively motion, its patient world-making--on all who care to look.
 
 Geologists have, however, helped me to translate a more detailed story about the sand's origins. By reading the slope of the rock's striations—which they call cross-beds—they can determine that in the era of the dunes, the prevailing winds blew in from the north-north west. And by looking closely at individual sand grains, geologists have also found that the particles are round in shape, evidence of a long and wearing journey, and are made from fine quartz and zircon, which discloses their origin: the Appalachian mountains of the east.[^2]
 
@@ -57,13 +57,11 @@ This narrative structure is unfamiliar to me. It does not line up with the narra
 
 {% include feature/new-section.html %}
 
-## Twin Warriors: Lightning and Sound
+## Twin Warriors
 
 {% include feature/image-gallery.html objectid="sediment161" caption=false%} 
 
-
-
-FOR THE HOPI people, the slashes in the Plateau's dunes mark the moment that the living world transformed from flat mudsea to a terrain contoured by canyons, mountains, and hills. Hopi oral traditions tell of two warrior twins, Pokanghoya and Polongahoya, who emerged from the Lower World of the spirits in order mold the earth of the Upper World. According to Harold Courlander's synthesis of Hopi accounts, when the twins arrived to the Upper World, Pokanghoya declared that "Everything has a sameness. Something needs to be done," to which his brother replied “yes...The ground is soft. It is nothing but mud" (26). The brothers gathered up this mud and heaped it into mounds and mountains, buttes and spires. When they had finished, they began a game of *nahoydadatsia*, chasing a buckskin ball across the earth with sticks. As Pokanghoya and Polongahoya ran, they hurled lightning arrows at the land and scored it with their sticks. Beneath their feet, the soft mud turned hard. [^4].
+FOR THE HOPI people, the slashes in the Plateau's dunes mark the moment that the living world transformed from flat mudsea to a terrain contoured by canyons, mountains, and hills. Hopi oral traditions tell of two warrior twins, Pokanghoya and Polongahoya, who emerged from the Lower World of the spirits in order mold the earth of the Upper World. According to Harold Courlander's synthesis of Hopi accounts, when the twins arrived to the Upper World, Pokanghoya declared that "Everything has a sameness. Something needs to be done," to which his brother replied “yes...The ground is soft. It is nothing but mud." [^4] The brothers gathered up this mud and heaped it into mounds and mountains, buttes and spires. When they had finished, they began a game of *nahoydadatsia*, chasing a buckskin ball across the earth with sticks. As Pokanghoya and Polongahoya ran, they hurled lightning arrows at the land and scored it with their sticks, and the soft mud turned hard beneath their footsteps. 
 
 ## Crossed Tracks
 
@@ -102,15 +100,13 @@ Diné elders explained to ethnographer James Kale McNeley [^7] in the early 1970
 {% include feature/image-gallery.html objectid="sediment82" caption=false%}
 </div>
 
-{% include feature/blockquote.html quote="*There are whorls here at the tips of our fingers. Winds stick out here. it is the same way on the toes of our feet, and Winds exist on us here where soft spots are, where there are spirals. At the tops of our heads some children have two spirals, some have only one, you see.*" source="CM" size="sm" class="px-3 mt-0" %}
+{% include feature/blockquote.html quote="*There are whorls here at the tips of our fingers. Winds stick out here. It is the same way on the toes of our feet, and Winds exist on us here where soft spots are, where there are spirals. At the tops of our heads some children have two spirals, some have only one, you see.*" source="CM" size="sm" class="px-3 mt-0" %}
 
 I hold my fingertips up close to my desk lamp, and see the same whorled patterns that mark Glen Canyon's dunes. 
 
 Cordova stresses that although Diné know humans to be expressions of níłch’i, humans can still cause disruption to the world by acting incorrectly. Thus, Cordova says, the human's "first obligation is to be aware of the consequences of his actions in the world and in relationship with other beings. The second (but equally important) obligation," she continues, "is to create, or add to, the beauty of the universe. He does this through adjusting his behaviour to harmonize with his surroundings and he does this also through the creation of beauty through ritual, song, and artistic objects. The deliberate creation of ugliness or introduction of disorderly elements is a disruption of the universe." [^8]
 
-Here, I think about how many of the Wind's formations--the swooping dunes, spring-fed pools, maidenhair tapestries, snakes, scorpions, frogs, the Diné people themselves--were drowned or displaced by the Glen Canyon Dam and the stagnant, bloated waters of Lake Powell. 
-
-Eventually, however, Cordova insists that Diné universe will "handle any disruptions with its tendency to balance and harmony," Cordova writes. "But as it balances itself," she warns "a human may be harmed," perhaps by events such as persistent "drought and disease." [^9]
+I think about how many of the Wind's formations--the swooping dunes, spring-fed pools, maidenhair tapestries, snakes, scorpions, frogs, the Diné people themselves--were drowned or displaced by the Glen Canyon Dam and the stagnant, bloated waters of Lake Powell. Eventually, however, Cordova insists that Diné universe will "handle any disruptions with its tendency to balance and harmony," Cordova writes. "But as it balances itself," she warns "a human may be harmed," perhaps by events such as persistent "drought and disease." [^9]
 
 
 ## Formations
@@ -146,7 +142,7 @@ WHEN I SAW photograph number 25, a rock in the vague shape of an animal trudging
 
 {% include feature/image-gallery.html objectid="sediment25" caption=false%}
 
-Instead, I searched the photograph's title, "Balanced Rocks," and found that balanced rocks are formed as when the wind plucks loose sand off the ground and blasts it against a boulder, eating away the rock's lower layers until only a narrow pedestal remains. I found that the formation of balanced rocks also depends on what kinds of material composes each layer of the rock: quartz particles stick closely together, and are more resistant to erosion, while sandstone made of feldspar and clay is loose, and crumbles easily away.
+Instead, I searched the photograph's title, "Balanced Rocks," and found that balanced rocks are formed as when the wind plucks loose sand off the ground and blasts it against a boulder, eating away the rock's lower layers until only a narrow pedestal remains. I found that the formation of balanced rocks also depends on what kinds of material composes each layer of the rock: quartz particles stick closely together, and are more resistant to erosion, while sandstone made of feldspar and clay is loose, and crumbles easily away.[^10] 
 
 Even after I learned how balanced rocks get formed, I cannot get past a feeling of wonder. I wonder at the cooperation between wind and sand, their joint ability to sculpt such lively forms. I wonder too that even in its absence, in the spaces where it has blown away, sediment divulges its stories. 
 
@@ -165,24 +161,24 @@ In the collection, I find more photographs of balanced rocks, and in all of them
 
 {% include feature/image-gallery.html objectid="sediment144;sediment145" caption=false%}
 
-ON HIS TRIPS, Tad was frequently accompanied by his friends Frank Wright and Katie Lee, who documented the travels of "We Three" in her journal, which she later published under the title *All My Rivers Are Gone.* Katie's journals are ebullient with a wonder that often times erupts in passion and grief. 
+ON HIS TRIPS, Tad was frequently accompanied by his friends Frank Wright and Katie Lee, who documented the travels of "We Three" in her journal, which she later published under the title *All My Rivers Are Gone.* Katie's journals are ebullient with a wonder that often times erupts in passion and grief.[^11] 
 
 
-{% include feature/blockquote.html quote="*For reasons unexplained, we spoke in whispers as we walked beside a stream that seemed to flow stronger and gurgle louder than it had in times past. We waded between high sloping banks of maidenhair fern that had turned to bright turquoise--they bobbed under a seep and shivered in a light breeze. We skirted gentle sluices, stooping to feel them run through our fingers, awed by the patient force of moving water that ultimately wins. Dilation darkened our eyes, amazement heightened our whispers. <br><br>As our intimacy with the canyon grew, all we said and did threaded past in slow motion. For once, I was lagging behind, wrapped in a timeless aura--not at all certain that I hadn't been standing right there two thousand, ten thousand years ago. The thought must have occurred to us all at the same time--that we were passing through a subterranean fairyland in a sparkling blue sea--but only Tad voiced it--'feels like we're walking under water'--before he realized he shouldn't have. I lost it completely; went to my knees crying hysterically, screaming obscenities at the politicians and bureaucracies that had orchestrated the drowning of Eden.*" source="Katie Lee, All My Rivers are Gone, pp. 165-166." link="sedminent12" size="sm" class="px-3 mt-0" %}
+{% include feature/blockquote.html quote="*For reasons unexplained, we spoke in whispers as we walked beside a stream that seemed to flow stronger and gurgle louder than it had in times past. We waded between high sloping banks of maidenhair fern that had turned to bright turquoise--they bobbed under a seep and shivered in a light breeze. We skirted gentle sluices, stooping to feel them run through our fingers, awed by the patient force of moving water that ultimately wins. Dilation darkened our eyes, amazement heightened our whispers. <br><br>As our intimacy with the canyon grew, all we said and did threaded past in slow motion. For once, I was lagging behind, wrapped in a timeless aura--not at all certain that I hadn't been standing right there two thousand, ten thousand years ago. The thought must have occurred to us all at the same time--that we were passing through a subterranean fairyland in a sparkling blue sea--but only Tad voiced it--'feels like we're walking under water'--before he realized he shouldn't have. I lost it completely; went to my knees crying hysterically, screaming obscenities at the politicians and bureaucracies that had orchestrated the drowning of Eden.*" source="Katie Lee" link="sedminent12" size="sm" class="px-3 mt-0" %}
 
 When I read Katie's journals, I cannot help but feel wonder for a landscape I will never see. Katie also writes sharply of loss, and I feel loss too, not only as I read her anguish for the drowned canyon, but as I move through the archive knowing much of what I see is now gone.
 
-Currents of loss seem to run through Tad's photographs as well. On the same trip that he took the balanced rock pictures, Tad noted in his journal that workers had already descended on the canyon, marking out the site of the future dam. Knowing that the canyon would soon be submerged beneath Lake Powell, was Tad driven to capture Glen Canyon's wonder, or its impending loss? In his balanced rock pictures, wonder and loss seem to twine.
+Currents of loss seem to run through Tad's photographs as well. On the same trip that he took the balanced rock pictures, Tad noted in his journal that workers had already descended on the canyon, marking out the site of the future dam.[^12] Knowing that the canyon would soon be submerged beneath Lake Powell, was Tad driven to capture Glen Canyon's wonder, or its impending loss? In his balanced rock pictures, wonder and loss seem to twine.
 
 {% include feature/image-gallery.html objectid="sediment154" caption=false%}
 
-Laura Ogden posits in her book *Loss and Wonder at the World's End* that loss and wonder commonly emerge as dual refrains in places touched by colonization and environmental change. Ogden thinks of loss not only as absence, but inundation. “These days," she writes, "loss doesn’t seem like a dry empty desert. Instead, loss is soggy, a terrain of wet clothes and sodden dry wall” (5). Loss is the rising seas, the toxins accruing in the land and in our blood, the water creeping up behind a dam.
+Laura Ogden posits in her book *Loss and Wonder at the World's End* that loss and wonder commonly emerge as dual refrains in places touched by colonization and environmental change. Ogden thinks of loss not only as absence, but inundation. “These days," she writes, "loss doesn’t seem like a dry empty desert. Instead, loss is soggy, a terrain of wet clothes and sodden dry wall”.[^13] Loss is the rising seas, the toxins accruing in the land and in our blood, the water creeping up behind a dam.
 
-But the tides of loss, Ogden notes, tend to spread unevenly, taking on different shapes and intensities as loss flows through the various bodies that populate a lost terrain. My sense of loss is not the same as Tad's or Katie's, and their loss is not the same as that of the canyon's native species or people, who, when the flood came, lost their home and means of living. "Losses," she continues, "are rarely equally distributed" (7). 
+But the tides of loss, Ogden notes, tend to spread unevenly, taking on different shapes and intensities as loss flows through the various bodies that populate a lost terrain. My sense of loss is not the same as Tad's or Katie's, and their loss is not the same as that of the canyon's native species or people, who, when the flood came, lost their home and means of living. "Losses," she continues, "are rarely equally distributed." [^14]
 
 The patchwork of loss and wonder that emanates from Glen Canyon's photographs, seeps out of its books, circles its ochre mesas and mineral-stained buttes, might be thought of as a kind of atmosphere that hovers over the landscape. 
 
-Geographer Ben Anderson says that affects, such as loss and wonder, tend to behave like bodies of air. Whereas emotions are the distinct personal manifestations of feelings about something particular, affects are the more diffuse valences that precede and produce emotions. Affective atmospheres envelop people and places in their auras, but they also shapeshift as they eddy around those people and places. Atmospheres might jump across space and time as they stick to books, art, photographs, or archives--but because they "are always being taken up and reworked in lived experience" (79) they are "uncertain, disordered, shifting, and contingent" (78). 
+Geographer Ben Anderson says that affects, such as loss and wonder, tend to behave like bodies of air. Whereas emotions are the distinct personal manifestations of feelings about something particular, affects are the more diffuse valences that precede and produce emotions. Affective atmospheres envelop people and places in their auras, but they also shapeshift as they eddy around those people and places. Atmospheres might jump across space and time as they stick to books, art, photographs, or archives--but because they "are always being taken up and reworked in lived experience" they are "uncertain, disordered, shifting, and contingent" [^15]
 
 When I look at Tad's photographs or read Katie's journals, I am drawn into a shared atmosphere of loss and wonder. But this atmosphere arrives to me already transformed, reworked through a circuitry of interluding histories, reworked again as it touches me. I see Tad's photos and Katie's writings through the filter of my own experiences or inexperiences with the canyon, and also through the haze of ensuing rhetorics of loss and wonder, which add new resonances to the canyon's affective atmospheres.  
 
@@ -191,7 +187,7 @@ Despite their airy indeterminacy, the atmospheres generated by loss and wonder m
 
 {% include feature/image-gallery.html objectid="sediment54" caption=false%}
 
-For Ogden, wonder does not lie outside of loss. Oftentimes, wonder instigates loss. Pointing to the word's entanglement with *Wunder-kammer*, "those “curiosity cabinets” filled with skulls, artifacts, rocks, fossils, and other specimens," she defines wonder as the "impulse to know and acquire the world" (7). 
+For Ogden, wonder does not lie outside of loss. Oftentimes, wonder instigates loss. Pointing to the word's entanglement with *Wunder-kammer*, "those “curiosity cabinets” filled with skulls, artifacts, rocks, fossils, and other specimens," she defines wonder as the "impulse to know and acquire the world." [^16] 
 
 I think here about the title of Katie's book, her possessive "my" when referring to the river, and I think about the customary use of the words "capture" and "take" in photography. In this light, Tad's photograph collection becomes a kind of *Wunder-kammer,* a curiosity cabinet filled with the rocks and artifacts of Glen Canyon. Katie and Tad did not want to take the canyon all for themselves, but they did want to maintain their access to it, an access that was predicated on the removal of Glen Canyon from Indigenous possession--oftentimes in the name of wonder. 
 
@@ -203,11 +199,11 @@ I think here about the title of Katie's book, her possessive "my" when referring
 
 {% include feature/image-gallery.html objectid="sediment103" caption=false%}
 
-In 1909, BYRON Cummings, an archaeologist at the University of Utah, and William Douglass, the general land surveyor for the USGS set out on a mission to find the rumored Rainbow Bridge, a large natural arch wedged into one of Glen Canyon's side canyons, formed by the erosional forces of water and wind. Led by Paiute guides Jim Mike and a father and son both named Noscha Begay, they found it, and quickly disseminated papers declaring their "discovery," despite the fact that this discovery was only made possible by their native guides' prior knowledge and connection with Rainbow Bridge. 
+In 1909, BYRON Cummings, an archaeologist at the University of Utah, and William Douglass, the general land surveyor for the USGS set out on a mission to find the rumored Rainbow Bridge, a large natural arch wedged into one of Glen Canyon's side canyons, formed by the erosional forces of water and wind. Led by Paiute guides Jim Mike and a father and son both named Noscha Begay, they found it, and quickly disseminated papers declaring their "discovery," despite the fact that this discovery was only made possible by their native guides' prior knowledge and connection with Rainbow Bridge. [^17]
 
-One year later, President William Howard Taft removed Rainbow Bridge and the 160 acres surround it from Diné and Paiute lands and designated it a National Monument, writing in his proclamation that "[the] extraordinary natural bridge, having an arch which is in form and appearance much like a rainbow...[is] of great scientific interest as an example of eccentric stream erosion....[It] appears that the public interest would be promoted by reserving this bridge as a National Monument" (qtd. in Bsumek 72). 
+One year later, President William Howard Taft removed Rainbow Bridge and the 160 acres surround it from Diné and Paiute lands and designated it a National Monument, writing in his proclamation that "[the] extraordinary natural bridge, having an arch which is in form and appearance much like a rainbow...[is] of great scientific interest as an example of eccentric stream erosion....[It] appears that the public interest would be promoted by reserving this bridge as a National Monument" [^18] 
 
-The attitude that the American people are entitled to wondrous landscapes is reflected in the words of journalist John Stewart MacClary, who visited Rainbow Bridge in the 1930s and subsequently published a magazine article which declared that “all classes were entitled to the privilege of viewing the natural wonder, since Uncle Sam had reserved it as property for the people” (qtd. in Farmer 79). Wonder, as MacClary illustrates, is a useful device for making and legitimizing territory claims. 
+The attitude that the American people are entitled to wondrous landscapes is reflected in the words of journalist John Stewart MacClary, who visited Rainbow Bridge in the 1930s and subsequently published a magazine article which declared that “all classes were entitled to the privilege of viewing the natural wonder, since Uncle Sam had reserved it as property for the people” [^19]. Wonder, as MacClary illustrates, is a useful device for making and legitimizing territory claims. 
 
 Of course, neither Glen Canyon nor Rainbow Bridge were free for the taking. Rainbow Bridge, called Tsé'naa Na'ní'áhí by the Diné, had long been a sacred site for the Puebloan, Navajo, Ute and Paiute peoples, and the land surrounding it their home. But as western rhetorics of wonder and curiosity about the bridge began to circulate, so did the colonial desire know the land, and then to acquire it, even if this meant removing original inhabitants from their ancestral home. Thus, settler wonder becomes a tool of Indigenous dispossession, and the tides of loss follow in wonder's wake. 
 
@@ -219,15 +215,15 @@ Of course, neither Glen Canyon nor Rainbow Bridge were free for the taking. Rain
 ## Wonder Economies
 {% include feature/image-gallery.html objectid="sediment156;sediment157" caption=false%}
 
-Wonder continued to facilitate settler claims over Glen Canyon and its surrounding lands. Shortly after Cummings and Douglass broadcast the news about their "discovery," tourists flocked to the region, seeking guides-for-hire who could lead them across the rugged country to see the bridge. Recognizing the economic opportunity to appease wonder-seeking travelers, S.I. and Hubert Richardson founded the Rainbow Natural Bridge Transportation Company, and more visitors flooded in. 
+Wonder continued to facilitate settler claims over Glen Canyon and its surrounding lands. Shortly after Cummings and Douglass broadcast the news about their "discovery," tourists flocked to the region, seeking guides-for-hire who could lead them across the rugged country to see the bridge. Recognizing the economic opportunity to appease wonder-seeking travelers, S.I. and Hubert Richardson founded the Rainbow Natural Bridge Transportation Company, and more visitors flooded in. [^20] 
 
-A robust tourist economy began to collect around Glen Canyon, built on marketing the wonder of the landscape. And the tourist register at Rainbow Bridge is indeed rife with comments of wonder: "no person returned from the trip an atheist" wrote one tourist. "Nothing more perfectly attests the definite existence of a Supreme Being," wrote another (qtd. in Farmer 90). As testimonials the wondrous landscape spread, visitation grew, until, by the 1960s, tourism had replaced energy as the largest industry in the Four Corners region. Wonder had become the region's most profitable commodity. 
+A robust tourist economy began to collect around Glen Canyon, built on marketing the wonder of the landscape. And the tourist register at Rainbow Bridge is indeed rife with comments of wonder: "no person returned from the trip an atheist" wrote one tourist. "Nothing more perfectly attests the definite existence of a Supreme Being," wrote another. [^21] As testimonials the wondrous landscape spread, visitation grew, until, by the 1960s, tourism had replaced energy as the largest industry in the Four Corners region. Wonder had become the region's most profitable commodity. 
 
 {% include feature/image-gallery.html objectid="sediment158" caption=false%}
 
-The atmosphere of wonder provoked by Rainbow Bridge still hovers in the public imagination. Since the dam's construction, tourists have been able to access the bridge by motorboat--a far easier journey than the rough horseback rides of the early 20th century. According to the National Park Service, as many as 300,000 people visit the bridge each year, most of them by boat. As boat rides run at $167 per passenger, the bridge alone generates a $50 million economy--not taking into account the additional money that bridge-seekers spend at nearby restaurants, hotels, and businesses. The Park Service said in 2025 that tourism in Glen Canyon generates a total economy of $635.4 million, most of which goes to the corporate entities like Aramark and the Del Webb corporation which own concessions on Lake Powell.  
+The atmosphere of wonder provoked by Rainbow Bridge still hovers in the public imagination. Since the dam's construction, tourists have been able to access the bridge by motorboat--a far easier journey than the rough horseback rides of the early 20th century. According to the National Park Service, as many as 300,000 people visit the bridge each year, most of them by boat.[^22] As boat rides run at $167 per passenger, the bridge alone generates a $50 million economy--not taking into account the additional money that bridge-seekers spend at nearby restaurants, hotels, and businesses, most of which are owned by corporate entities like Aramark and Del Webb. [^23]
 
-Economies of wonder have allowed settlers to maintain their existence around the canyon, and they also kept western settlements in place after the collapse of the region's gold and uranium industries threatened to uproot settler life. Shortly after the conclusion of the uranium boom of the 1950s, a reporter wrote that "the West is in for its greatest boom. This time it's not the lure of gold, free land, or uranium. It's a concerted quest for the most valuable of our natural resources: recreation" (qtd. in Farmer 35). 
+Economies of wonder have allowed settlers to maintain their existence around the canyon, and they also kept western settlements in place after the collapse of the region's gold and uranium industries threatened to uproot settler life. Shortly after the conclusion of the uranium boom of the 1950s, a reporter wrote that "the West is in for its greatest boom. This time it's not the lure of gold, free land, or uranium. It's a concerted quest for the most valuable of our natural resources: recreation" [^24]
 
 Wonder thus became a limitlessly replenishable resource that promised to forever sustain settler life--that is, as long as the region's water supply kept up. 
 
@@ -245,7 +241,7 @@ Only once, in all those months, did I wash my dust off in the Colorado River. Th
 
 {% include feature/image-gallery.html objectid="sediment123" caption=false%}
 
-In the 19th century, the Mormons arrived to Colorado Plateau from the east, but they quickly found that the desert climate did not offer sufficient rain to nourish their farms, nor could they access the waters of the plateau's stashed rivers without either settling in the canyons or constantly moving between plateau and river. But both options would have limited their ability to impose the kind of agricultural expansion needed to support their ambitions of establishing a large-scale Mormon state in the west. Instead, Mormons looked at the dry, dusty, landscape, the deep rivers, and decided they had been ordained by God to make "the desert bloom like a rose." So began an irrigation mania set on drawing the Colorado River up out of its canyons to water Mormon homes and fields, and so began a cascade of reclamation projects which would radically restructure life and land across the Colorado Plateau. 
+In the 19th century, the Mormons arrived to Colorado Plateau from the east, but they quickly found that the desert climate did not offer sufficient rain to nourish their farms, nor could they access the waters of the plateau's stashed rivers without either settling in the canyons or constantly moving between plateau and river. But both options would have limited their ability to impose the kind of agricultural expansion needed to support their ambitions of establishing a large-scale Mormon state in the west. Instead, Mormons looked at the dry, dusty, landscape, the deep rivers, and decided they had been ordained by God to make "the desert bloom like a rose." [^25] So began an irrigation mania set on drawing the Colorado River up out of its canyons to water Mormon homes and fields, and so began a cascade of reclamation projects which would radically restructure life and land across the Colorado Plateau. 
 
 {% include feature/trib-button.html trib="humans" image="mormons" text="Mormon Settlement" anchor="mormons" %}
 
@@ -253,13 +249,13 @@ In the 19th century, the Mormons arrived to Colorado Plateau from the east, but 
 
 {% include feature/image-gallery.html objectid="sediment114" caption=false%}
 
-For historian Erika Marie Bsumek, colonization is often built upon rhetorics that first cast the land as somehow impoverished--too dry, too dusty, too icy, too wild--and therefore in need of transformation. By imagining the aridity of the Colorado Plateau as a problem in need of a solution, Mormon settlers justified their encroachment on land that had been occupied by--and supported--Indigenous communities for thousands of years. Bsumek notes, as does Jen Rose Smith, that settler logics are quick to extend judgments about inadequate landscapes to make racialized demarcations about the land's native inhabitants, both of which serve the same aim: to legitimize the dispossession of Indigenous nations in the name of settler expansion. 
+For historian Erika Marie Bsumek, colonization is often built upon rhetorics that first cast the land as somehow impoverished--too dry, too dusty, too icy, too wild--and therefore in need of transformation. By imagining the aridity of the Colorado Plateau as a problem in need of a solution, Mormon settlers justified their encroachment on land that had been occupied by--and supported--Indigenous communities for thousands of years. Bsumek notes, as does Jen Rose Smith,[^26] that settler logics are quick to extend judgments about inadequate landscapes to make racialized demarcations about the land's native inhabitants, both of which serve the same aim: to legitimize the dispossession of Indigenous nations in the name of settler expansion. 
 
-This logic was made overt in the 1930s, when the United States government declared that erosion along the Colorado River corridor was threatening to silt up to their newly-built Hoover Dam. Although the Colorado River has carried a heavy silt load for millions of years, the government blamed Diné sheepherders, and mandated the slaughter of half a million Diné sheep. The Livestock Reduction Act decimated Diné livelihoods, and it paved the way for the coercive treaties that would transfer Diné lands into the hands of the United States. On some of this land, the government built the Glen Canyon Dam. 
+This logic was made overt in the 1930s, when the United States government declared that erosion along the Colorado River corridor was threatening to silt up to their newly-built Hoover Dam. Although the Colorado River has carried a heavy silt load for millions of years, the government blamed Diné sheepherders for overgrazing, and mandated the slaughter of half a million Diné sheep. The Livestock Reduction Act decimated Diné livelihoods, and it paved the way for the coercive treaties that would transfer Diné lands into the hands of the United States. On some of this land, the government built the Glen Canyon Dam.[^27]
 
 When I read these histories, I am reminded that stories have the power to recontour the land. Stories configure human experience and imagination, which in turn directs how humans treat the earth. There is nothing inherently inadequate about Glen Canyon's arid atmosphere, about its dust; the land supported diverse modes of human life for thousands of years before the Mormon's arrival. Notions that the land was deficient and in need of transformation were formulated in the Mormon imagination, borne out of a biblical story which conceived of desert spaces as geographically and spiritually barren. 
 
-As Jen Rose Smith outlines in her book *Ice Geographies,* assumptions about the superiority of temperate landscapes over dry deserts or icy tundras have proliferated through centuries of western thought. Smith calls such views "temperatively-normative," and writes that temperate-normativity works to mark some landscapes as "non-generative" in "relation to a Western ideal of agriculture, which is meant to act as both a civilizational and government-making activity" (109). She traces the lineage of temperatively-normative beliefs through the writings produced by Enlightenment-era philosophers as well as by various New Imperial explorers and scientists, all of whom characterize non-temperate geographies as incongruent with "civilization," and therefore inferior. These ideas, she notes, though old, continue to suffuse western attitudes towards dry and icy spaces today.
+As Jen Rose Smith outlines in her book *Ice Geographies,* assumptions about the superiority of temperate landscapes over dry deserts or icy tundras have proliferated through centuries of western thought. Smith calls such views "temperatively-normative," and writes that temperate-normativity works to mark some landscapes as "non-generative" in "relation to a Western ideal of agriculture, which is meant to act as both a civilizational and government-making activity." [^28] She traces the lineage of temperatively-normative beliefs through the writings produced by Enlightenment-era philosophers as well as by various New Imperial explorers and scientists, all of whom characterize non-temperate geographies as incongruent with "civilization," and therefore inferior. These ideas, she notes, though old, continue to suffuse western attitudes towards dry and icy spaces today.
 
 As Smith shows us, ideas and stories circulate through culture like invisible winds; they get carried across continents, through time, appearing and reappearing in locations far from their site of origin. As old stories gust into new geographies, they sweep up whatever fodder might fuel them forward, and they get remolded to fit the new landscape. Thus, when the currents of temperate normativity--which already imagined the dusty west as non-conducive for settler life--met the gales of the Dust Bowl, they gained newfound force. 
 
@@ -267,7 +263,7 @@ I see it as no coincidence that the Livestock Reduction Act coincided with the D
 
 {% include feature/image-gallery.html objectid="sediment140" caption=false%}
 
-Western stories altered the landscape in the western imagination--they rendered dust a threat and aridity a problem--but these imaginations also were materially manifested in the landscape. The Mormons did not transform the desert into a garden of roses, nor did the Livestock Reduction Act put an end to dust or erosion. Years later, much of the Plateau is still dry and dusty, its water often out of reach. But the landscape is changed: dams have drawn the water up to canyon rims, pipes crisscross the plateau and deliver water to settler homes, homes which are built on ground that for millenia belonged to the Núu-agha-tʉvʉ-pʉ̱ (Ute), Diné (Navajo), Hopitutskwa (Hopi), Nuwuvi (Southern Paiute), A:shiwi (Zuni), and Havasu Baaja (Havasupai) tribes. 
+Western stories altered the landscape in the western imagination--they rendered dust a threat and aridity a problem--but these imaginations also were materially manifested in the landscape. The Mormons did not transform the desert into a garden of roses, nor did the Livestock Reduction Act put an end to dust or erosion. Years later, much of the Plateau is still dry and dusty, its water often out of reach. But the landscape is changed: dams have drawn the water up to canyon rims, pipes crisscross the plateau and deliver water to settler homes, homes which are built on ground that for millenia belonged to the Nuchu (Southern Ute), Nuwuvi (Southern Paiute) Diné (Navajo), and Hopituh Shi-nu-mu (Hopi) tribes. 
 
 I think back now to my work on those lands, the water from our office faucet that filled our camp jugs, the showers I took at my aunt's house, the road that took me to the river, and I understand that my existence on the Plateau was a manifestation of a long and violent history that transfigured the social and physical landscape. This history was made possible by those biblical, philosophical, and rhetorical imaginations which came into contact with the Plateau's deserts and dust, and transformed it.  
 
@@ -279,7 +275,7 @@ I think back now to my work on those lands, the water from our office faucet tha
 ## A New Climate
 {% include feature/image-gallery.html objectid="sediment77" caption=false%}
 
-AS WITH THE rest of the globe, a new climate has arrived in Glen Canyon. Temperatures are rising, water supply is falling, demand for water is growing, and Lake Powell is drying up. Data published by the Bureau of Reclamation shows a steady decline in the lake's water levels beginning in the year 2000, when the lake was nearly full. As of October 2025, the lake is at 27.62% of its total capacity, and many worry that if this trend continues, the lake could eventually disappear altogether. 
+AS WITH THE rest of the globe, a new climate has arrived in Glen Canyon. Temperatures are rising, water supply is falling, demand for water is growing, and Lake Powell is drying up. Data published by the Bureau of Reclamation shows a steady decline in the lake's water levels beginning in the year 2000, when the lake was nearly full. As of October 2025, the lake is at 27.62% of its total capacity, and many worry that if this trend continues, the lake could eventually disappear altogether. [^29]
 
 As the lake runs dry, a transformed landscape--and climate--is emerging. Where there was once canyon, river, or lake, there are now deep beds of silt which have been accumulating behind the dam for the last 60 years. And buried in those silt beds are the spoilages of Glen Canyon's industrial past, waiting to resurface and spew across the basin. 
 
@@ -289,8 +285,7 @@ As the lake runs dry, a transformed landscape--and climate--is emerging. Where t
 ## Radium Dust
 {% include feature/image-gallery.html objectid="sediment60" caption=false%}
 
-
-In 1949, in the wake of World War II and the rush for nuclear power, the Vanadium Corporation of America constructed a uranium mill on the banks of Glen Canyon. The mill closed in 1953, but Vanadium left behind 26,000 tons of radioactive tailings in an uncovered heap. When Lake Powell began to fill ten years later, dam managers decided to allow lake waters to back up over Vanadium's refuse, all of which leached into Lake Powell's sediment. 
+In 1949, in the wake of World War II and the rush for nuclear power, the Vanadium Corporation of America constructed a uranium mill on the banks of Glen Canyon. The mill closed in 1953, but Vanadium left behind 26,000 tons of radioactive tailings in an uncovered heap. When Lake Powell began to fill ten years later, dam managers decided to allow lake waters to back up over Vanadium's refuse, all of which leached into Lake Powell's sediment. [^30]
 
 If and when the lake retreats, radium-infused sediment will become exposed to air, and radioactive dust will blow across the basin. Uranium is bone-seeking, meaning once it gets into the body, it settles in the skeleton and incorporates with the bone's minerals. Cells decay when they come into contact with radium, causing the body to eventually disintegrate. 
 
@@ -305,9 +300,9 @@ Here, sediment becomes not only an archive of the past, but an archive of the fu
 
 {% include feature/image-gallery.html objectid="sediment155" caption=false%} 
 
-Radium is not the only danger lurking in Lake Powell's sediment. The lake's silt beds have also become a breeding ground for anaerobic bacteria, which digest organic material cached in the sediment and turn this material into methane. Trapped beneath the pressure of the lake, methane will collect in pockets and fissures in the silt, but as the lake recedes and pressure is released, methane erupts to surface and dissipates into the atmosphere. 
+Radium is not the only danger lurking in Lake Powell's sediment. The lake's silt beds have also become a breeding ground for anaerobic bacteria, which digest organic material cached in the sediment and turn this material into methane. Trapped beneath the pressure of the lake, methane will collect in pockets and fissures in the silt, but as the lake recedes and pressure is released, methane erupts to surface and dissipates into the atmosphere. [^31]
 
-Methane is 80 times more effective at trapping heat than carbon dioxide and reservoirs--such as Lake Powell--contribute 6%-8% of total human-caused methane emissions, according to John Harrison, a professor at Washington State University.  
+Methane is 80 times more effective at trapping heat than carbon dioxide and reservoirs--such as Lake Powell--contribute 6%-8% of total human-caused methane emissions. [^32]
 
 At the same time as the global climate affects Lake Powell, Lake Powell affects the global climate. Scientists call this kind of cycle, in which change amplifies change amplifies change a positive feedback loop. Positive feedback loops draw their components together into an ever more chaotic and tightly bound spiral. I picture two hurricanes colliding, their arms locking, and turning each other like gears spun out of control until they merge into one superstorm, and I think about the echo between a microphone brought too close to a speaker, which gets faster and higher and faster and higher until the two echoes become one high screech. 
 
@@ -333,13 +328,13 @@ As I try to map Glen Canyon's past and future stories, pull together the threads
 
 ## Works Cited
 
-[^1]: Tape, Carl. "The Lower Jurassic Navajo Sandstone: large-scale deposition and small-scale structures." nhmu.utah.edu, 14-18 April 2005, accessed 19 October 2025, [https://nhmu.utah.edu/sites/default/files/trail-resource/Navajo%20Sandstone.pdf.](https://nhmu.utah.edu/sites/default/files/trail-resource/Navajo%20Sandstone.pdf)
+[^1]: Tape, Carl. "The Lower Jurassic Navajo Sandstone: large-scale deposition and small-scale structures." nhmu.utah.edu, 2005. [https://nhmu.utah.edu/sites/default/files/trail-resource/Navajo%20Sandstone.pdf.](https://nhmu.utah.edu/sites/default/files/trail-resource/Navajo%20Sandstone.pdf)
 
 [^2]: Ibid
 
 [^3]: James, Erin. “Narration.” *Narrative in the Anthropocene.* The Ohio State University Press, 2022, p. 19. [https://ohiostatepress.org/books/titles/9780814215074.html](https://ohiostatepress.org/books/titles/9780814215074.html)
 
-[^4]: Courlander, Harold. *The Fourth World of the Hopis: The Epic Story of the Hopi Indians as Preserved in Their Legends and Traditions.* University of New Mexico Press, 1987. [https://www.unmpress.com/9780826310118/the-fourth-world-of-the-hopis/](https://www.unmpress.com/9780826310118/the-fourth-world-of-the-hopis/)
+[^4]: Courlander, Harold. *The Fourth World of the Hopis: The Epic Story of the Hopi Indians as Preserved in Their Legends and Traditions.* University of New Mexico Press, 1987, p. 26. [https://www.unmpress.com/9780826310118/the-fourth-world-of-the-hopis/](https://www.unmpress.com/9780826310118/the-fourth-world-of-the-hopis/)
 
 [^5]: Mustoe, G. E. "The origin of honeycomb weathering." *Geological Society of America Bulletin,* vol. 93, 1982, pp. 108-115 [https://doi.org/10.1130/0016-7606(1982)93<108:TOOHW>2.0.CO;2.](https://doi.org/10.1130/0016-7606(1982)93<108:TOOHW>2.0.CO;2)
 
@@ -349,45 +344,53 @@ As I try to map Glen Canyon's past and future stories, pull together the threads
 
 [^8]: Cordova, p. 106
 
-[^9]" Ibid, pp. 102-103
+[^9]: Ibid, pp. 102-103
 
+[^10]: Nocita, Bruce W. "Pedestal rocks in the Pliocene Puye Formation, New Mexico." *Sedimentary Geology,* vol. 49, issues 3-4, October 1986, pp. 193-200. ScienceDirect, accessed 19 October 2025, [https://doi.org/10.1016/0037-0738(86)90038-2.](https://www.sciencedirect.com/science/article/abs/pii/0037073886900382?via%3Dihub)
 
+[^11]: Lee, Katie, and Terry Tempest Williams. *All My Rivers Are Gone: A Journey of Discovery through Glen Canyon.* 1st ed., Johnson Books, 1998. pp. 165-166. 
 
+[^12]: Nichols, Tad. River Journal, Colorado River [constructed title], 1956, 1957. p. 24. *Colorado Plateau Archives,* Colorado Plateau Digital Collections, Northern Arizona University. Cline Library, accessed 19 October 2025, [https://archive.library.nau.edu/digital/collection/cpa/id/60150/rec/13](https://archive.library.nau.edu/digital/collection/cpa/id/60150/rec/13)
 
+[^13]: Ogden, Laura A. *Loss and Wonder at the World’s End.* Duke University Press, 2021, p. 5. [https://doi.org/10.1215/9781478021865.](https://read.dukeupress.edu/books/book/2956/Loss-and-Wonder-at-the-World-s-End)
 
-Anderson, Ben. “Affective atmospheres.” *Emotion, Space and Society 2* (2), 2009.  pp. 77–81. https://doi.org/10.1016/j.emospa.2009.08.005.
+[^14]: Ibid, p. 7
 
-Bsumek, Erika Marie. *The Foundations of Glen Canyon Dam: Infrastructures of Dispossession on the Colorado Plateau.* University of Texas Press, 2023.
+[^15]: Anderson, Ben. “Affective atmospheres.” *Emotion, Space and Society 2* (2), 2009, pp. 79,78. [https://doi.org/10.1016/j.emospa.2009.08.005](https://www.sciencedirect.com/science/article/abs/pii/S1755458609000589?via%3Dihub)
 
-Bureau of Reclamation. *Lake Powell Storage Data.* Bureau of Reclamation, 12 October 2025. https://www.usbr.gov/uc/water/hydrodata/reservoir_data/919/dashboard.html#csv/
+[^16]: Ogden, p. 7.
 
+[^17]: Bsumek, Erika Marie. *The Foundations of Glen Canyon Dam: Infrastructures of Dispossession on the Colorado Plateau.* University of Texas Press, 2023.
 
+[^18]: qtd. in Bsumek, p. 72
 
-Farmer, Jared. *Glen Canyon Dammed: Inventing Lake Powell and the Canyon Country.* University of Arizona Press, 1999.
+[^19]: Farmer, Jared. *Glen Canyon Dammed: Inventing Lake Powell and the Canyon Country.* University of Arizona Press, 1999, p. 79.
 
-James, Erin. “Narration.” *Narrative in the Anthropocene.* The Ohio State University Press, 2022.
+[^20]: Ibid
 
-Lee, Katie, and Terry Tempest Williams. *All My Rivers Are Gone: A Journey of Discovery through Glen Canyon.* 1st ed., Johnson Books, 1998.
+[^21]: Ibid, p. 79
 
-Mazzini, Adriano, and Giuseppe Etiope. "Mud volcanism: An updated review." *Earth-Science Reviews*, vol. 168, May 2017, pp. 81-112. ScienceDirect, accessed 19 October 2025, https://doi.org/10.1016/j.earscirev.2017.03.001.
+[^22]: United States, National Park Service. "Frequently Asked Questions - Rainbow Bridge National Monument." *National Park Service*, 17 Apr. 2025, [www.nps.gov/rabr/faqs.htm](www.nps.gov/rabr/faqs.htm)
 
-Mustoe, G. E. "The origin of honeycomb weathering." *Geological Society of America Bulletin,* vol. 93, 1982, pp. 108-115. tafoni.com, accessed 19 October 2025, https://tafoni.com/References_files/Origin%20of%20Honeycomb%20Weathering.pdf.
+[^23]: Podmore, Zak. *Life After Dead Pool: Lake Powell’s Last Days and the Rebirth of the Colorado River.* Torrey House Press, 2024.[https://www.torreyhouse.org/life-after-dead-pool](https://www.torreyhouse.org/life-after-dead-pool)
 
-Nichols, Tad. River Journal, Colorado River [constructed title], 1956, 1957. pg 24. 1956-1957. *Colorado Plateau Archives,* Colorado Plateau Digital Collections, Northern Arizona University. Cline Library, accessed 19 October 2025, https://archive.library.nau.edu/digital/collection/cpa/id/60150/rec/13.
+[^24]: Farmer, p. 35
 
-Nocita, Bruce W. "Pedestal rocks in the Pliocene Puye Formation, New Mexico." *Sedimentary Geology,* vol. 49, issues 3-4, October 1986, pp. 193-200. ScienceDirect, accessed 19 October 2025, https://doi.org/10.1016/0037-0738(86)90038-2.
+[^25]: Bsumek, p. 187
 
-Ogden, Laura A. *Loss and Wonder at the World’s End.* Duke University Press, 2021. Crossref, https://doi.org/10.1215/9781478021865.
+[^26]: Smith, Jen Rose. *Ice Geographies: The Colonial Politics of Race and Indigeneity in the Arctic.* Duke University Press, 2025.[https://doi.org/10.1215/9781478060758](https://www.dukeupress.edu/ice-geographies)
 
-Smith, Jen Rose. *Ice Geographies: The Colonial Politics of Race and Indigeneity in the Arctic.* Duke University Press, 2025. DOI.org (Crossref), https://doi.org/10.1215/9781478060758.
+[^27]: Curley, Andrew. “Infrastructures as Colonial Beachheads: The Central Arizona Project and the Taking of Navajo Resources.” *Environment and Planning D: Society and Space,* vol. 39, no. 3, June 2021, pp. 387–404. [https://journals-sagepub-com.uidaho.idm.oclc.org/doi/10.1177/0263775821991537](https://journals-sagepub-com.uidaho.idm.oclc.org/doi/10.1177/0263775821991537)
 
-Thompson, Jonathan. "The 26,000 Tons of Radioactive Waste under Lake Powell" *High Country News*, 18 December 2017, https://www.hcn.org/articles/pollution-a-26-000-ton-pile-of-radioactive-waste-lies-under-the-waters-and-silt-of-lake-powell/. Accessed 13 Oct. 2025.
+[^28]: Smith, p. 109
 
-United States, National Park Service. "Frequently Asked Questions - Rainbow Bridge National Monument." *National Park Service*, 17 Apr. 2025, www.nps.gov/rabr/faqs.htm. Accessed 20 Oct. 2025.
+[^29]: Bureau of Reclamation. *Lake Powell Storage Data.* Bureau of Reclamation, 12 October 2025. [https://www.usbr.gov/uc/water/hydrodata/reservoir_data/919/dashboard.html#csv/](https://www.usbr.gov/uc/water/hydrodata/reservoir_data/919/dashboard.html#csv/)
 
-Williams, A. Park, et al. "Large contribution from anthropogenic warming to an emerging North American megadrought." *Science*, vol. 368, no. 6488, 17 Apr. 2020, pp. 314-318. Science, doi:10.1126/science.aaz9600.
+[^30]: Thompson, Jonathan. "The 26,000 Tons of Radioactive Waste under Lake Powell" *High Country News*, 18 December 2017, [https://www.hcn.org/articles/pollution-a-26-000-ton-pile-of-radioactive-waste-lies-under-the-waters-and-silt-of-lake-powell/](https://www.hcn.org/articles/pollution-a-26-000-ton-pile-of-radioactive-waste-lies-under-the-waters-and-silt-of-lake-powell/)
 
-Zaske, Sara, et al. “Methane Emissions from Reservoirs Are Increasing.” WSU Insider, *WSU Insider*, 19 September 2022, https://news.wsu.edu/news/2022/09/19/methane-emissions-from-reservoirs-are-increasing/. Accessed 13 Oct. 2025.
+[^31]: Mazzini, Adriano, and Giuseppe Etiope. "Mud volcanism: An updated review." *Earth-Science Reviews*, vol. 168, May 2017, pp. 81-112. ScienceDirect, accessed 19 October 2025, [https://doi.org/10.1016/j.earscirev.2017.03.001](https://www.sciencedirect.com/science/article/abs/pii/S0012825216302197?via%3Dihub)
+
+[^32]: Zaske, Sara, et al. “Methane Emissions from Reservoirs Are Increasing.” WSU Insider, *WSU Insider*, 19 September 2022, [https://news.wsu.edu/news/2022/09/19/methane-emissions-from-reservoirs-are-increasing/](ttps://news.wsu.edu/news/2022/09/19/methane-emissions-from-reservoirs-are-increasing/)
 
 
 

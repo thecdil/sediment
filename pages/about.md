@@ -16,3 +16,11 @@ Yet if you were to travel to Glen Canyon today, you would not find a canyon. Nor
 When the Glen Canyon Dam drowned Glen Canyon beneath Lake Powell in 1963, it also subsumed the lives and histories inscribed in the canyon’s landscape. But these histories are not lost. As sediment and its unceasing erosions reminds us, the past is always resurfacing to shape the present.
 
 
+
+## Call to Action
+
+
+## More CDIL Projects
+
+
+
