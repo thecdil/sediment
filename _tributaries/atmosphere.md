@@ -212,7 +212,7 @@ Of course, neither Glen Canyon nor Rainbow Bridge were free for the taking. Rain
 
 {% include feature/new-section.html %}
 
-## Wonder Economies
+## Economies of Wonder
 {% include feature/image-gallery.html objectid="sediment156;sediment157" caption=false%}
 
 Wonder continued to facilitate settler claims over Glen Canyon and its surrounding lands. Shortly after Cummings and Douglass broadcast the news about their "discovery," tourists flocked to the region, seeking guides-for-hire who could lead them across the rugged country to see the bridge. Recognizing the economic opportunity to appease wonder-seeking travelers, S.I. and Hubert Richardson founded the Rainbow Natural Bridge Transportation Company, and more visitors flooded in. [^20] 
@@ -314,6 +314,19 @@ Thus, the currents of change that flow through Glen Canyon become inextricably e
 
 ## Reemergence
 
+Alongside Glen Canyon's radium beds, silt glaciers, and methane volcanoes, an ecosystem that is both new and old is reemerging. As the lake retreats, plants have been quick to take root in the freshly-exposed soil. At first, these plants are mostly invasive--tumbleweed, cheatgrass, and camelthorn. But after a few years, native species return. One biologist declared the recently resurfaced X Canyon "the most intact native ecosystem I've ever seen!" [^33]
+
+As I read about Glen Canyon's history, or about the progression of climate change, it is easy to imagine a story of steady, unidirectional degradation, an unrelenting fall towards widespread ruin and destruction. But when I learned that Glen Canyon is once again blossoming with fremont cottonwood, coyote willow, Goodding's willow, paintbrush, hackberry, Western redbuds, singleleaf ash, maidenhair fern, and columbine, I felt, for the first time since I can remember, that there are other, more vibrant possibilities for the future. Perhaps the out-of-control superstorm that is climate change and human recklessness once in a while blows in an opportunity to do things differently, to do things better. 
+
+Perhaps time and change do not always unfold along such straight lines: sometimes the landscapes of the past reemerge to share spaces with the landscapes of the future. Radium and silt glaciers nest alongside willows and cottonwoods. We must deal with both. 
+
+For example, if the territory lines between Navajo Nation and the United States were originally drawn around the edges of Lake Powell, 
+
+Perhaps time does not always unfold quite so linearly: sometimes, 
+
+On some of these silt beds, cryptobiotic microorganisms are already at work rebuilding desert crust. 
+
+living soils. The crusts hold soils in place during windstorms and hold moisture by up to 14% (Podmore 140). Dust landing on snowfields can decrease runoff by as much as 5%. (Podmore 140). Could help the toxic dust from blowing. (Podmore 141). 
 
 
 
@@ -392,5 +405,5 @@ As I try to map Glen Canyon's past and future stories, pull together the threads
 
 [^32]: Zaske, Sara, et al. “Methane Emissions from Reservoirs Are Increasing.” WSU Insider, *WSU Insider*, 19 September 2022, [https://news.wsu.edu/news/2022/09/19/methane-emissions-from-reservoirs-are-increasing/](ttps://news.wsu.edu/news/2022/09/19/methane-emissions-from-reservoirs-are-increasing/)
 
-
+[^33]: Podmore, 25. 
 
