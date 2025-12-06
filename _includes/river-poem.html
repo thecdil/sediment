@@ -15,10 +15,12 @@
 
 {% if poem_data.sections %}
   {% for section in poem_data.sections %}
-    <div class="poem-section" 
+    <div class="poem-section"
          id="poem-{{ section.id }}"
          data-side="{{ section.side }}"
-         style="position: absolute; 
+         data-scroll-desktop="{{ section.scroll_position | default: 0 }}"
+         data-scroll-mobile="{{ section.scroll_position_mobile | default: section.scroll_position | default: 0 }}"
+         style="position: absolute;
                 top: {{ section.scroll_position | default: 0 }}px;
                 {{ section.side }}: 0;
                 z-index: 150;">
@@ -100,35 +102,89 @@
     width: 90%;
     max-width: 320px;
   }
-  
+
   .poem-content-wrapper {
     justify-content: center !important;
     padding: 10px !important;
   }
-  
+
   .poem-branch-left,
   .poem-branch-right {
     display: none !important;
   }
-  
+
   .poem-content-box {
     max-width: 100% !important;
     padding: 15px !important;
+    background: rgb(255 255 255 / 65%);
+    padding: 14px;
   }
-  
+
   .poem-text {
     font-size: 16px !important;
+  }
+
+  /* Reduce icon size on mobile */
+  .river-poem-icon .choice-icon {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .river-poem-icon .trib-button-image {
+    max-height: 35px !important;
   }
 }
 
 @media (max-width: 480px) {
+  
   .poem-section {
     width: 95%;
     max-width: 280px;
   }
-  
+
   .poem-text {
     font-size: 15px !important;
   }
+
+  /* Further reduce icon size on small mobile */
+  .river-poem-icon .choice-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .river-poem-icon .trib-button-image {
+    max-height: 30px !important;
+  }
 }
 </style>
+
+<script>
+// Apply mobile scroll positions on page load and resize
+(function() {
+  function applyScrollPositions() {
+    const isMobile = window.innerWidth <= 768;
+    const poemSections = document.querySelectorAll('.poem-section');
+
+    poemSections.forEach(section => {
+      const desktopPos = section.getAttribute('data-scroll-desktop');
+      const mobilePos = section.getAttribute('data-scroll-mobile');
+      const position = isMobile ? mobilePos : desktopPos;
+      section.style.top = position + 'px';
+    });
+  }
+
+  // Apply on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyScrollPositions);
+  } else {
+    applyScrollPositions();
+  }
+
+  // Reapply on resize (debounced)
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(applyScrollPositions, 250);
+  });
+})();
+</script>

@@ -44,15 +44,18 @@ custom-foot: js/spotlight-media-handler.html
                   <div class="">
                     {{content}}
 
-                    <div class="row">
-                      <h2 class="m-5">More Tributaries to Travel</h2>
-                      {% for trib in site.tributaries%}
-                      <div class="col text-center my-3">
-
-
-                        {% include feature/trib-button.html trib=trib.slug text="" no-continue="true" centered="true" %}
-
-                      </div> {% endfor %}
+                    <div class="more-tributaries-section">
+                      <h2 class="mt-5 mb-4">More Tributaries to Travel</h2>
+                      <div class="row row-cols-2 row-cols-lg-4 g-3 justify-content-center">
+                        {% assign current_slug = page.slug %}
+                        {% for trib in site.tributaries %}
+                          {% unless trib.slug == current_slug %}
+                          <div class="col text-center">
+                            {% include feature/trib-button.html trib=trib.slug text="" no-continue="true" centered="true" %}
+                          </div>
+                          {% endunless %}
+                        {% endfor %}
+                      </div>
                     </div>
                   </div>
                 </div>

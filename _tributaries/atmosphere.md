@@ -15,7 +15,7 @@ scrollama: true
 
 ## Wind Memories
 
-<div class="float-start pe-4 mb-2 w-50" >
+<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
 {% include feature/image-gallery.html objectid="sediment40" caption=false%}
 {% include feature/image-gallery.html objectid="sediment82" caption=false%}
 {% include feature/image-gallery.html objectid="sediment129" caption=false%}
@@ -65,7 +65,7 @@ FOR THE HOPI people, the slashes in the Plateau's dunes mark the moment that the
 
 ## Crossed Tracks
 
-<div class="float-start pe-4 mb-2 w-50" >
+<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
 
 {% include feature/image-gallery.html objectid="sediment133" caption=false%}
 {% include feature/image-gallery.html objectid="sediment84" caption=false%}
@@ -94,9 +94,9 @@ The wind, I have learned, works with many collaborators to shape Glen Canyon.
 
 Diné worldviews understand that all of nature is suffused with níłch’i, which translates roughly into "Holy Wind". Apache philosopher Viola Cordova notes that for Diné people, níłch’i "serves as the means of communication between all elements of the living world” and gives "life, thought, speech, and the power of motion to all living things." Níłch’i, in other words, is the force that animates life, and all life is a manifestation of níłch’i. Humans, Cordova writes, are "vortices" within níłch’i, as are all of the other "'things' of the world." [^6]
 
-Diné elders explained to ethnographer James Kale McNeley [^7] in the early 1970s that the traces of níłch’i can be seen within the swirls on our fingertips and toes, and in the coils of our ears and hair:
+Diné elders explained to ethnographer James Kale McNeley [^7] in the early 1970s that the traces of níłch'i can be seen within the swirls on our fingertips and toes, and in the coils of our ears and hair:
 
-<div class="float-start pe-4 mb-2 w-50" >
+<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
 {% include feature/image-gallery.html objectid="sediment82" caption=false%}
 </div>
 

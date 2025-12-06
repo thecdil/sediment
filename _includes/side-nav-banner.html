@@ -1,11 +1,11 @@
 <div style="background:transparent;">
-    <button class="navbar-toggler {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border border-dark"
+    <button class="navbar-toggler sediment-map-toggle {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border border-dark"
         type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
         aria-label="Open navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi icon-sprite fs-1"
+        <!-- Folding Map Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi icon-sprite map-icon"
             viewBox="0 0 16 16">
-            <path
-                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+            <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
         </svg>
     </button>
     <div class="offcanvas offcanvas-start bg-dark text-start" tabindex="-1" id="offcanvasNavbar"

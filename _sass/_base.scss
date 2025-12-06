@@ -101,12 +101,20 @@ a {
 
 /* scroll to top */
 #scroll-to-top {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     z-index: 99;
-    font-size: 40px; 
+    font-size: 40px;
+}
+
+/* Move scroll-to-top to left on mobile */
+@media (max-width: 768px) {
+    #scroll-to-top {
+        left: 20px;
+        right: auto;
+    }
 }
 
 /* feature include tweaks */

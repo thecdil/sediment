@@ -3,7 +3,8 @@
 #
 # Configuration options for each section:
 # - id: unique identifier
-# - scroll_position: vertical position in pixels
+# - scroll_position: vertical position in pixels (desktop)
+# - scroll_position_mobile: vertical position in pixels (mobile, optional - uses scroll_position if not set)
 # - side: "left" or "right"
 # - content: the text content
 # - padding_left/padding_right: spacing in pixels
@@ -23,13 +24,15 @@ sections:
     
   - id: "line-2"
     scroll_position: 200
+    scroll_position_mobile: 1000
     side: "left"
     content: "you are silt"
     padding_left: 100
     font_size: 19
-    
+
   - id: "line-3"
     scroll_position: 350
+    scroll_position_mobile: 1300
     side: "right"
     content: "you may be embedded in the strata"
     padding_right: 70
@@ -38,27 +41,31 @@ sections:
     
   - id: "line-5"
     scroll_position: 650
+    scroll_position_mobile: 1600
     side: "right"
     content: "deep underground"
     padding_right: 85
-    
+
   - id: "line-6"
     scroll_position: 800
+    scroll_position_mobile: 1850
     side: "left"
     content: "or clinging to the outer dermis of a canyon wall"
     padding_left: 195
     max_width: 400
-    
+
   - id: "line-7"
     scroll_position: 950
+    scroll_position_mobile: 2150
     side: "right"
     content: "you arrived 220 million years ago, borne by a river that no longer exists. you came from lakes, streams, and briny wetlands. you blew here on the wind, hard to say from where. you are fossil dust"
     padding_right: 60
     max_width: 480
     font_size: 17
-    
+
   - id: "line-8"
     scroll_position: 1250
+    scroll_position_mobile: 2600
     side: "left"
     content: "or, 190 million years ago, you flew in on wind gusts which plucked you from quartz and iron dunes. you arranged yourselves horizontally along wind lines, and when enough of you had piled up, you tumbled down yourself in avalanches, cutting vertical creases down your stacks"
     padding_left: 400
@@ -66,9 +73,10 @@ sections:
     font_size: 17
     icon: "atmosphere"
     trib: "atmosphere"
-    
+
   - id: "line-9"
     scroll_position: 1500
+    scroll_position_mobile: 3000
     side: "right"
     content: "you were brought by an inland sea that flooded this side of the continent 90 millions ago. much of you are made from flecks of sharks, fish, turtles, and dinosaurs"
     padding_right: 75
@@ -76,9 +84,10 @@ sections:
     font_size: 17
     icon: "microbes"
     trib: "animal"
-    
+
   - id: "line-10"
     scroll_position: 1750
+    scroll_position_mobile: 3350
     side: "left"
     content: "perhaps you arrived recently, from somewhere else, delivered by bird wing, on shoe, from mountain side or through fish gut"
     padding_left: 20
@@ -86,55 +95,63 @@ sections:
     
   - id: "line-11"
     scroll_position: 1950
+    scroll_position_mobile: 3650
     side: "right"
-    content: "you might stay here for another day, century, millennia, or billion years" 
+    content: "you might stay here for another day, century, millennia, or billion years"
     padding_right: 70
     max_width: 420
     icon: "water"
     trib: "water"
-    
+
   - id: "line-12"
     scroll_position: 2100
+    scroll_position_mobile: 3950
     side: "right"
     content: "or the river might cut you from your bed and carry you away"
     padding_right: 40
     max_width: 400
     icon: "devin"
     trib: "animal"
-    
+
   - id: "line-13"
     scroll_position: 2350
+    scroll_position_mobile: 4250
     side: "right"
     content: "perhaps you wash up on a beach"
     padding_right: 80
-    
+
   - id: "line-14"
     scroll_position: 2500
+    scroll_position_mobile: 4500
     side: "left"
     content: "there is so much of you you tune the water's temperature"
     padding_left: 85
     max_width: 200
-    
+
   - id: "line-15"
     scroll_position: 2750
+    scroll_position_mobile: 4800
     side: "right"
     content: "algae blossoms in your nooks"
     padding_right: 90
-    
+
   - id: "line-16"
     scroll_position: 2900
+    scroll_position_mobile: 5050
     side: "left"
     content: "you hold magnesium, potassium, and calcium"
     padding_left: 295
-    
+
   - id: "line-17"
     scroll_position: 3000
+    scroll_position_mobile: 5250
     side: "right"
     content: "endemic fish proliferate"
     padding_right: 85
-    
+
   - id: "line-18"
     scroll_position: 3100
+    scroll_position_mobile: 5450
     side: "right"
     content: "when enough of you gathers you alter the river's course"
     padding_right: 40
@@ -142,71 +159,81 @@ sections:
     
   - id: "line-19"
     scroll_position: 3350
+    scroll_position_mobile: 5700
     side: "left"
     content: "the water takes you fast or"
     padding_left: 275
-    
+
   - id: "line-20"
     scroll_position: 3400
+    scroll_position_mobile: 5850
     side: "right"
     content: "slow all the way to the ocean"
     padding_right: 100
-    
+
   - id: "line-21"
     scroll_position: 3850
+    scroll_position_mobile: 6150
     side: "right"
     content: "plants take root in your fertile shores"
     padding_right: 80
-    
+
   - id: "line-22"
     scroll_position: 4000
+    scroll_position_mobile: 6400
     side: "left"
     content: "some of you stream over an abandoned uranium mine"
     padding_left: 90
     max_width: 400
     icon: "infrastructure"
     trib: "infrastructure"
-    
+
   - id: "line-23"
     scroll_position: 4250
+    scroll_position_mobile: 6750
     side: "right"
     content: "you are radioactive"
     padding_right: 85
     font_size: 19
-    
+
   - id: "line-24"
     scroll_position: 4340
+    scroll_position_mobile: 6950
     side: "left"
     content: "humans gather you in handfuls to make art and homes"
     padding_left: 85
     max_width: 420
     icon: "humans"
     trib: "humans"
-    
+
   - id: "line-25"
     scroll_position: 4550
+    scroll_position_mobile: 7250
     side: "right"
     content: "much of you heaps up behind concrete dams"
     padding_right: 75
     max_width: 380
-    
+
   - id: "line-26"
     scroll_position: 5000
+    scroll_position_mobile: 7600
     side: "left"
     content: "not so much of you flows to the sea now"
     padding_left: 95
-    
+
   - id: "line-27"
     scroll_position: 5150
+    scroll_position_mobile: 7850
     side: "right"
     content: "there is not so much room left for the water anymore"
     padding_right: 70
     max_width: 400
     icon: "colonization"
     trib: "colonization"
-    
+
   - id: "line-28"
     scroll_position: 5300
+    scroll_position_mobile: 8200
     side: "left"
     content: "still, maybe you are embedded in the rock strata maybe you are deep underground or clinging to the outer dermis of a canyon wall or maybe you arrived recently, from somewhere else, delivered by bird wing, on shoe, from mountain or through fish gut you might stay here for another day, century, millennia, or billion years or the river might cut you from your bed and carry you away"
     padding_left: 60

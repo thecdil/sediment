@@ -14,7 +14,7 @@ scrollama: true
 
 ## Inscriptions
 
-<div class="float-start pe-4 mb-2 w-50" >
+<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
 {% include feature/image-gallery.html objectid="sediment49" caption=false%}
 {% include feature/image-gallery.html objectid="sediment55" caption=false%}
 {% include feature/image-gallery.html objectid="sediment119" caption=false%}

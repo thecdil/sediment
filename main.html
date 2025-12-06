@@ -88,17 +88,39 @@ river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75
   z-index: 1000;
 }
 
+/* Circular map button styling - match sediment header */
+.river-nav .sediment-map-toggle {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  background-color: #F8F6F0 !important;
+  border: 2px solid #D2691E !important;
+}
+
+.river-nav .sediment-map-toggle .map-icon {
+  width: 28px !important;
+  height: 28px !important;
+  color: #8B4513 !important;
+}
+
+.river-nav .sediment-map-toggle:hover {
+  background-color: #FFF !important;
+  box-shadow: 0 6px 16px rgba(139, 69, 19, 0.4) !important;
+}
+
 .intro-content-box {
   position: absolute;
-  top: 80px;
+  top: 240px;
   right: 30px;
   width: 650px;
   background: white;
   padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 12px 40px rgba(139, 69, 19, 0.4);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(210, 105, 30, 0.3);
+  
   z-index: 200;
   animation: fadeInUp 1s ease-out;
 }
@@ -112,7 +134,7 @@ river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75
 
 .intro-content-box p {
   color: #5D4037;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -138,7 +160,9 @@ river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75
     transform: translateY(0);
   }
 }
-
+.poem-content-box{
+background: rgb(255 255 255 / 65%);
+    padding: 14px;}
 
 .tributary-scroll-container {
   position: relative;
@@ -206,7 +230,7 @@ river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75
 
 .content-box p {
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.4;
   color: #5D4037;
 }
@@ -236,39 +260,38 @@ river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .river-container {
-    min-height: 6000px; /* Keep the same height for scroll-based positioning */
+    min-height: 8600px; /* Increased height for mobile to accommodate spread-out poem sections */
   }
-  
+
   .intro-content-box {
     position: relative;
-    top: 20px;
+    top: 40px;
     right: auto;
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     margin: 20px;
+    background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 40px rgba(139, 69, 19, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(210, 105, 30, 0.3);
   }
-  
+
   .tributary-left,
   .tributary-right {
     padding: 10px;
     justify-content: center;
   }
-  
+
   .tributary-branch-left,
   .tributary-branch-right {
     display: none;
   }
-  
+
   .content-box {
     max-width: 280px;
   }
 }
 
-@media (max-width: 1200px) {
-  .intro-content-box {
-    width: 300px;
-    right: 20px;
-  }
-}
 </style>
 
 <!-- Load Scrollama -->

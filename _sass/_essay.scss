@@ -77,11 +77,43 @@ aside, .aside {
     @media (max-width: 768px) {
     aside, .aside {
     display: block;
-    float: none;
-    margin: 5% 10%;
+    float: none !important; /* Force removal of float */
+    clear: both; /* Clear any previous floats */
+    margin: 5% auto; /* Center with auto horizontal margins */
     width: 80%;
+    max_width: 100%;
     font-size: 15px;
     font-style: italic;
+    }
+
+    /* Clear floats after aside elements */
+    aside::after, .aside::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Ensure images within aside don't float on mobile */
+    aside img, .aside img {
+      float: none !important;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Fix floating divs with float-start class on mobile */
+    .float-start {
+      float: none !important;
+      width: 100% !important;
+      margin: 20px 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Ensure floated content doesn't overlap text on mobile */
+    .float-start + p,
+    .float-start + div {
+      clear: both;
     }
 }
 
