@@ -63,6 +63,12 @@ This narrative structure is unfamiliar to me. It does not line up with the narra
 
 FOR THE HOPI people, the slashes in the Plateau's dunes hold the story of the living world's transformation from flat mudsea to a terrain contoured by canyons, mountains, and hills. Two warrior twins, Pokanghoya and Polongahoya emerged from the Lower World of the spirits in order mold the earth of the Upper World. When the twins arrived to the Upper World, Pokanghoya declared that "Everything has a sameness. Something needs to be done," to which his brother replied “yes...The ground is soft. It is nothing but mud." [^4] The brothers gathered up this mud and heaped it into mounds and mountains, buttes and spires. When they had finished, they began a game of *nahoydadatsia*, chasing a buckskin ball across the earth with sticks. As Pokanghoya and Polongahoya ran, they hurled lightning arrows at the land and scored it with their sticks, and the soft mud turned hard beneath their footsteps. 
 
+{% include feature/trib-button.html trib="humans" image="dwellings" text="Humans" %}
+
+
+{% include feature/new-section.html %}
+
+
 ## Crossed Tracks
 
 <div class="float-start pe-4 mb-2 w-50" >
@@ -96,13 +102,16 @@ Diné worldviews understand that all of nature is suffused with níłch’i, whi
 
 Diné elders[^7] explain that the traces of níłch’i can be seen within the swirls on our fingertips and toes, and in the coils of our ears and hair:
 
-<div class="float-start pe-4 mb-2 w-50" >
-{% include feature/image-gallery.html objectid="sediment82" caption=false%}
-</div>
-
 {% include feature/blockquote.html quote="*There are whorls here at the tips of our fingers. Winds stick out here. It is the same way on the toes of our feet, and Winds exist on us here where soft spots are, where there are spirals. At the tops of our heads some children have two spirals, some have only one, you see.*" source="CM" size="sm" class="px-3 mt-0" %}
 
+{% include feature/image-gallery.html objectid="sediment82" caption=false%}
+
 I hold my fingertips up close to my desk lamp, and see the same whorled patterns that mark Glen Canyon's dunes. 
+
+{% include feature/trib-button.html trib="humans" image="dwellings" text="Humans" %}
+
+
+{% include feature/new-section.html %}
 
 
 ## Formations
@@ -126,9 +135,7 @@ I found myself moving through my research like sediment moves through the river.
 
 I did not know how I would unravel this tangled muddle, but I knew that each story mattered, and mattered enough to impress itself into the canyon's sediment. 
 
-{% comment %}
-  could include link to "about" page here. 
-{%- endcomment -%}
+{% include feature/trib-button.html trib="biota" image="microbes" text="Microbes" %}
 
 {% include feature/new-section.html %}
 
@@ -275,6 +282,9 @@ DINÉ KNOW HUMANS to be expressions of the Holy Wind níłch’i, as are canyons
 
 I think about how many of the Wind's formations--the swooping dunes, spring-fed pools, maidenhair tapestries, snakes, scorpions, frogs, the Diné people themselves--were drowned or displaced by the Glen Canyon Dam and the stagnant, bloated waters of Lake Powell. 
 
+{% include feature/trib-button.html trib="atmosphere/#Níłch’i" image="atmosphere" text="Níłch’i" %}
+
+
 {% include feature/new-section.html %}
 
 ## A New Climate
@@ -283,6 +293,7 @@ I think about how many of the Wind's formations--the swooping dunes, spring-fed 
 AS WITH THE rest of the globe, a new climate has arrived in Glen Canyon. Temperatures are rising, water supply is falling, demand for water is growing, and Lake Powell is drying up. Data published by the Bureau of Reclamation shows a steady decline in the lake's water levels beginning in the year 2000, when the lake was nearly full. As of October 2025, the lake is at 27.62% of its total capacity, and many worry that if this trend continues, the lake could eventually disappear altogether. [^29]
 
 As the lake runs dry, a transformed landscape--and climate--is emerging. Where there was once canyon, river, or lake, there are now deep beds of silt which have been accumulating behind the dam for the last 60 years. And buried in those silt beds are the spoilages of Glen Canyon's industrial past, waiting to resurface and spew across the basin. 
+
 
 {% include feature/new-section.html %}
 
@@ -328,28 +339,21 @@ As I read about Glen Canyon's history, and about the progression of climate chan
 
 In Glen Canyon, the out-of-control superstorm that is climate change and human recklessness has paradoxically caused time to stutter, and reel back on itself. The seemingly unstoppable, forward-hurtling train of anthropogenic domination and inundation has—-for a moment, at least—-burnt itself to a stop. And as Lake Powell retreats, a landscape is surfacing that insists, in every flowering columbine, in every shifting silt bed, that even amidst ruination, there still remain opportunities for rearrangement and regrowth. 
 
+{% include feature/image-gallery.html objectid="sediment120" caption=false%}
+
 This is a landscape that is neither lost, nor wholly restored: this is a new kind of landscape altogether, rife with incongruities and surprises. Willows and cottonwoods are flourishing among radium beds and silt glaciers. And on some of these radium beds, communities of cryptobiotic microorganisms are already at work rebuilding desert crust, which scientists say could help prevent radioactive dust from blowing up into the air. [^34] This strikes me as a wondrous serendipity, that billions of organisms from diverse clades of life--bacteria, algae, fungi, lichens--are amassing to provide a protective shield over a problem that has stumped and worried both environmentalists and land managers.
 
 Then again, this might not be serendipity at all. Diné understand that níłch’i, the Holy Wind will eventually remediate human disruptions and restore balance and harmony. This process of  reharmonization, however, is often preceded by human suffering and sacrifice, likely brought on by a period of persistent drought and disease. [^9]
 
 This whorl of time—-in which (some) humans are able to inflict unfettered disruption on the world and expect the world not to rise back up in response--seems to be reaching its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes and teeming with the life that has survived it all, I find myself wanting to lean again towards wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different hue: a wonder that drives us, as philosopher Isabelle Stengers puts it, "to be surprised and entertain questions.” [^35] For now, I am entertaining the questions: 
 
-What might I learn from listening to the stories embedded in Glen Canyon's sediment? 
-
-What can trees and flowers teach me about resilience? 
-
-What does the wind have to say about coalitions? 
-
-How do the people who have lived in this landscape for hundreds and thousands of years understand it? 
-
-Can ebbing waters be an example for ceding land back to original inhabitants?
-
-What do microorganisms know about collaboration? 
-
-Can humans lead with the same resilience, collaboration, and grace? I hope to be surprised by the answer. 
-
-{% include feature/image-gallery.html objectid="sediment120" caption=false%}
-
+* What might I learn from listening to the stories embedded in Glen Canyon's sediment? 
+* What can trees and flowers teach me about resilience? 
+* What does the wind have to say about coalitions? 
+* How do the people who have lived in this landscape for hundreds and thousands of years understand it? 
+* Can ebbing waters be an example for ceding land back to original inhabitants?
+* What do microorganisms know about collaboration? 
+* Can humans lead with the same resilience, collaboration, and grace? I hope to be surprised by the answer. 
 
 {% include feature/new-section.html %}
 
