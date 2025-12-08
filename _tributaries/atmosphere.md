@@ -15,7 +15,7 @@ scrollama: true
 
 ## Wind Memories
 
-<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
+<div class="float-start pe-4 mb-2 w-50" >
 {% include feature/image-gallery.html objectid="sediment40" caption=false%}
 {% include feature/image-gallery.html objectid="sediment82" caption=false%}
 {% include feature/image-gallery.html objectid="sediment129" caption=false%}
@@ -65,7 +65,7 @@ FOR THE HOPI people, the slashes in the Plateau's dunes mark the moment that the
 
 ## Crossed Tracks
 
-<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
+<div class="float-start pe-4 mb-2 w-50" >
 
 {% include feature/image-gallery.html objectid="sediment133" caption=false%}
 {% include feature/image-gallery.html objectid="sediment84" caption=false%}
@@ -94,19 +94,15 @@ The wind, I have learned, works with many collaborators to shape Glen Canyon.
 
 Diné worldviews understand that all of nature is suffused with níłch’i, which translates roughly into "Holy Wind". Apache philosopher Viola Cordova notes that for Diné people, níłch’i "serves as the means of communication between all elements of the living world” and gives "life, thought, speech, and the power of motion to all living things." Níłch’i, in other words, is the force that animates life, and all life is a manifestation of níłch’i. Humans, Cordova writes, are "vortices" within níłch’i, as are all of the other "'things' of the world." [^6]
 
-Diné elders explained to ethnographer James Kale McNeley [^7] in the early 1970s that the traces of níłch'i can be seen within the swirls on our fingertips and toes, and in the coils of our ears and hair:
+Diné elders explained to ethnographer James Kale McNeley [^7] in the early 1970s that the traces of níłch’i can be seen within the swirls on our fingertips and toes, and in the coils of our ears and hair:
 
-<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
+<div class="float-start pe-4 mb-2 w-50" >
 {% include feature/image-gallery.html objectid="sediment82" caption=false%}
 </div>
 
 {% include feature/blockquote.html quote="*There are whorls here at the tips of our fingers. Winds stick out here. It is the same way on the toes of our feet, and Winds exist on us here where soft spots are, where there are spirals. At the tops of our heads some children have two spirals, some have only one, you see.*" source="CM" size="sm" class="px-3 mt-0" %}
 
 I hold my fingertips up close to my desk lamp, and see the same whorled patterns that mark Glen Canyon's dunes. 
-
-Cordova stresses that although Diné know humans to be expressions of níłch’i, humans can still cause disruption to the world by acting incorrectly. Thus, Cordova says, the human's "first obligation is to be aware of the consequences of his actions in the world and in relationship with other beings. The second (but equally important) obligation," she continues, "is to create, or add to, the beauty of the universe. He does this through adjusting his behaviour to harmonize with his surroundings and he does this also through the creation of beauty through ritual, song, and artistic objects. The deliberate creation of ugliness or introduction of disorderly elements is a disruption of the universe." [^8]
-
-I think about how many of the Wind's formations--the swooping dunes, spring-fed pools, maidenhair tapestries, snakes, scorpions, frogs, the Diné people themselves--were drowned or displaced by the Glen Canyon Dam and the stagnant, bloated waters of Lake Powell. Eventually, however, Cordova insists that Diné universe will "handle any disruptions with its tendency to balance and harmony," Cordova writes. "But as it balances itself," she warns "a human may be harmed," perhaps by events such as persistent "drought and disease." [^9]
 
 
 ## Formations
@@ -272,6 +268,17 @@ I think back now to my work on those lands, the water from our office faucet tha
 
 {% include feature/new-section.html %}
 
+## Disruption
+
+{% include feature/image-gallery.html objectid="sediment105" caption=false%}
+
+
+Viola Cordova stresses that although Diné know humans to be expressions of níłch’i, humans can still cause disruption to the world by acting incorrectly. Thus, Cordova says, the human's "first obligation is to be aware of the consequences of his actions in the world and in relationship with other beings. The second (but equally important) obligation," she continues, "is to create, or add to, the beauty of the universe. He does this through adjusting his behaviour to harmonize with his surroundings and he does this also through the creation of beauty through ritual, song, and artistic objects. The deliberate creation of ugliness or introduction of disorderly elements is a disruption of the universe." [^8]
+
+I think about how many of the Wind's formations--the swooping dunes, spring-fed pools, maidenhair tapestries, snakes, scorpions, frogs, the Diné people themselves--were drowned or displaced by the Glen Canyon Dam and the stagnant, bloated waters of Lake Powell. Eventually, however, Cordova insists that Diné universe will "handle any disruptions with its tendency to balance and harmony," Cordova writes. "But as it balances itself," she warns "a human may be harmed," perhaps by events such as persistent "drought and disease." [^9]
+
+{% include feature/new-section.html %}
+
 ## A New Climate
 {% include feature/image-gallery.html objectid="sediment77" caption=false%}
 
@@ -314,21 +321,20 @@ Thus, the currents of change that flow through Glen Canyon become inextricably e
 
 ## Reemergence
 
-Alongside Glen Canyon's radium beds, silt glaciers, and methane volcanoes, an ecosystem that is both new and old is reemerging. As the lake retreats, plants have been quick to take root in the freshly-exposed soil. At first, these plants are mostly invasive--tumbleweed, cheatgrass, and camelthorn. But after a few years, native species return. One biologist declared the recently resurfaced X Canyon "the most intact native ecosystem I've ever seen!" [^33]
-
-As I read about Glen Canyon's history, or about the progression of climate change, it is easy to imagine a story of steady, unidirectional degradation, an unrelenting fall towards widespread ruin and destruction. But when I learned that Glen Canyon is once again blossoming with fremont cottonwood, coyote willow, Goodding's willow, paintbrush, hackberry, Western redbuds, singleleaf ash, maidenhair fern, and columbine, I felt, for the first time since I can remember, that there are other, more vibrant possibilities for the future. Perhaps the out-of-control superstorm that is climate change and human recklessness once in a while blows in an opportunity to do things differently, to do things better. 
-
-Perhaps time and change do not always unfold along such straight lines: sometimes the landscapes of the past reemerge to share spaces with the landscapes of the future. Radium and silt glaciers nest alongside willows and cottonwoods. We must deal with both. 
-
-For example, if the territory lines between Navajo Nation and the United States were originally drawn around the edges of Lake Powell, 
-
-Perhaps time does not always unfold quite so linearly: sometimes, 
-
-On some of these silt beds, cryptobiotic microorganisms are already at work rebuilding desert crust. 
-
-living soils. The crusts hold soils in place during windstorms and hold moisture by up to 14% (Podmore 140). Dust landing on snowfields can decrease runoff by as much as 5%. (Podmore 140). Could help the toxic dust from blowing. (Podmore 141). 
+{% include feature/image-gallery.html objectid="sediment127" caption=false%}
 
 
+ALONGSIDE GLEN CANYON’S radium beds and methane volcanoes, an ecosystem that is both new and old is emerging. As the reservoir retreats, plants have been quick to take root in the Canyon's freshly-exposed banks. The first plants to arrive are usually invasive—tumbleweed, cheatgrass, and camelthorn. But a few years after the water recedes, native species, too, return. Scientists have yet to fully explore Glen Canyon’s resurgence, but one biologist declared a recently resurfaced tributary canyon "the most intact native ecosystem I've ever seen.” [^33]
+
+As I read about Glen Canyon's history, and about the progression of climate change, it is easy to imagine a story of steady, unidirectional degradation, an unrelenting fall towards widespread ruin and destruction. But when I learned that Glen Canyon is once again blossoming with fremont cottonwood, coyote willow, paintbrush, hackberry, Western redbuds, singleleaf ash, maidenhair fern, and columbine, I felt, for the first time since I can remember, that perhaps there are other, more vibrant possibilities for the future. I cannot trace a story of uniform decline through a landscape in bloom. 
+
+In Glen Canyon, the out-of-control superstorm that is climate change and human recklessness has paradoxically caused time to stutter, and reel back on itself. The seemingly unstoppable, forward-hurtling train of anthropogenic domination and inundation has—for a moment, at least—burnt itself to a stop.  As the reservoir disappears, a landscape is emerging that insists, in every flowering columbine, in every shifting silt bed, that even amidst ruination, there still remain opportunities for rearrangement and regrowth. 
+
+This is a landscape that is neither lost, nor wholly restored: this is a new kind of landscape altogether, often rife with incongruities and surprises. Willows and cottonwoods are flourishing among radium beds and silt glaciers. And on some of these radium beds, communities of cryptobiotic microorganisms are already at work rebuilding desert crust, which scientists say could help prevent radioactive dust from blowing up into the air. [^34] This strikes me as a wondrous serendipity—that billions of organisms from diverse clades of life—bacteria, algae, fungi, lichens—are amassing to provide a protective shield over a problem that neither environmentalists nor land managers have managed to solve. 
+
+Perhaps this whorl of time—in which (some) humans imagine that humans alone can dictate the world’s unfolding—has reached its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes yet still teeming with life and possibility, I suggest that we encounter such landscapes with a sense of wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different kind: a wonder that means, as philosopher Isabelle Stengers puts it, “both to be surprised and entertain questions.” [^35]
+
+{% include feature/image-gallery.html objectid="sediment120" caption=false%}
 
 
 {% include feature/new-section.html %}
@@ -406,4 +412,8 @@ As I try to map Glen Canyon's past and future stories, pull together the threads
 [^32]: Zaske, Sara, et al. “Methane Emissions from Reservoirs Are Increasing.” WSU Insider, *WSU Insider*, 19 September 2022, [https://news.wsu.edu/news/2022/09/19/methane-emissions-from-reservoirs-are-increasing/](ttps://news.wsu.edu/news/2022/09/19/methane-emissions-from-reservoirs-are-increasing/)
 
 [^33]: Podmore, 25. 
+
+[^34]: Ibid, 141. 
+
+[^35]: Ogden, 13. 
 

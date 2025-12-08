@@ -31,7 +31,7 @@ All of these tracings, inadvertent or intentional, assert a claim on Glen Canyon
 
 For political ecologist Laura Ogden, such processes, in which an actor--human or not--reworks the elements of the earth in order to profess or make possible their belonging are forms of *territorial inscription*. 
 
-"Birds claim territory through song;" she writes, "fiddler crabs dig burrows; ocean life glows with bioluminescence; beavers build lodges and dams. The suburbs are a nested architecture of inscription practices, from gated entrances to backyard privacy fences. These practices of territorial inscription leave their mark on the world, though sometimes the mark is just a shimmer" (32-33)[^1]. 
+"Birds claim territory through song;" she writes, "fiddler crabs dig burrows; ocean life glows with bioluminescence; beavers build lodges and dams. The suburbs are a nested architecture of inscription practices, from gated entrances to backyard privacy fences. These practices of territorial inscription leave their mark on the world, though sometimes the mark is just a shimmer" [^1]. 
 
 Glen Canyon's inscriptions trace out a kind of territorial map, overlapping with various and often contested claims. 
 
@@ -41,7 +41,6 @@ This map is not flat, and its territories do not sit cleanly beside one another 
 
 {% include feature/new-section.html %}
 
-<br><br><br><br><br><br><br>
 
 ## Subsumation
 
@@ -55,6 +54,7 @@ Together, the dam and the lake visually and symbolically insist upon complete co
 
 Yet, as sediment reminds me, neither the earth nor history are quite so stratigraphic. Instead, particulates of the past are constantly eroding and resurfacing into the present and the future. In Glen Canyon, reemergence and recirculation are not metaphors. Glen Canyon's inscriptions cut through time, bringing people of different temporalities into contact and interaction with one another.
 
+{% include feature/new-section.html %}
 
 ## Absence and Presence
 
@@ -62,25 +62,31 @@ Yet, as sediment reminds me, neither the earth nor history are quite so stratigr
 
 Someone gathers up rust-colored rocks and heaps them into a shallow stone bowl. With another, stronger rock, they pulverize the rocks into dust and stir in water or their own spit, or animal fat or blood, until the dust becomes a red and gluey paste. They dip each of their hands in the paste and press them splayed against a sandstone wall. Their companions follow suit, leaving ten pairs of dark handprints to adorn Glen Canyon. 
 
-Long after the people move on, their handprints remain, registering their existence and this moment of contact with Glen Canyon, this blending of stone and water, spit, or animal. As other people from different times and places pass by the wall, some reach out to place their own hands over the prints. 
+Long after the people move on, their handprints remain, registering their existence and this moment of contact with Glen Canyon, this blending of stone and water, spit, or animal. As other people from different times and places pass by the wall, some reach out to place their own hands over the prints, as Tad Nichols does here. For a moment, the people of the past and the present are drawn together, sharing the same gesture in the same place. 
 
-Impressions of hands like these are sometimes called dermatoglyphs, which Laura Ogden translates to mean "traces of existence." They carry, she writes, "the past and being-in-the world forcibly into the present. In doing so, they touch us" (23, 27)[^2]. 
+Handprints like these are sometimes called dermatoglyphs, which Laura Ogden translates to mean "traces of existence." They carry, she writes, "the past and being-in-the world forcibly into the present. In doing so, they touch us" [^2]. 
 
+Something is communicated in this touching: a recognition of presence and precedent, perhaps. "We were here, just as you are now" they seem to say. But there is something ghostly about the handprints too; the absence of other bodies feels conspicuous--almost tangible--next to Tad's own lively figure. 
 
+For Jacques Derrida, traces are inherently spectral in that they disclose the "absence of presence,"[^3] by drawing attention to what was once there, but is no longer. 
 
-A petroglyph requires both the absence and presence of sediment: one must carve out some sediment and release it into the land.
+It strikes me, though, that a different kind of absence is present here by the handprint wall. When I think of absence, I think of nonexistence, nonparticipation, a complete lack of being in and bearing on the moment. Yet the handprints preserve a kind of lingering existence and carry their makers into an ongoing participation in the world that exceeds their physical absence. Perhaps, instead, the trace more accurately preserves a presence--a presence of absence. 
 
-Derrida presents us with a contradiction, describing the trace as the absence of presence (26)
+Indeed, tracings like these figured critically into how proceeding humans interacted with and reshaped Glen Canyon. John Wesley Powell, who famously led a government-sponsored survey of the Colorado River in 1869 in order to determine the potential for colonization and resource extraction of the region, often recorded close detail of traces of both Indigenous presence and absence. This was more than a personal interest. As historian Erika Marie Bsumek notes, "Throughout his journey, [Powell] also looked to the surrounding landscape for clues to help him understand how people had once lived in the area and what had happened to them."  In other words, Glen Canyon's tracings became evidence of 
 
-"dermatoglyphs also carry the past and being-­in-­the-world forcibly into the present. In doing so, they touch us.
+...to determine the region's future, white scientists determined they needed to gain a fuller understanding of the previous generations' relationships with the...desert landscapes...white interlopers...believed that Indigenous cultures belonged to the past, not the present.” (64, 66-67)
+
 
 
 
 {% include feature/image-gallery.html objectid="sediment80" caption=false%}
 
+{% include feature/new-section.html %}
 
 
 ## Foundations
+
+
 
 Irrigation ditches --> 
 
@@ -350,8 +356,9 @@ This is where collection objects related to infrastructure will be displayed
 
 ## Works Cited
 
-[^1]: Ogden, Laura A. *Loss and Wonder at the World’s End.* Duke University Press, 2021. Crossref, [https://doi.org/10.1215/9781478021865].(https://doi.org/10.1215/9781478021865)
-
+[^1]: Ogden, Laura A. *Loss and Wonder at the World’s End.* Duke University Press, 2021, pp. 32-33. [https://doi.org/10.1215/9781478021865].(https://doi.org/10.1215/9781478021865)
+[^2]: Ibid, pp. 23, 27
+[^3]: Derrida, Jacques. *Speech and Phenomena: And Other Essays on Husserl's Theory of Signs.* Northwestern University Press, 1973, p.4. 
 
 ## Collection Objects
 
