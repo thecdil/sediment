@@ -61,7 +61,7 @@ This narrative structure is unfamiliar to me. It does not line up with the narra
 
 {% include feature/image-gallery.html objectid="sediment161" caption=false%} 
 
-FOR THE HOPI people, the slashes in the Plateau's dunes mark the moment that the living world transformed from flat mudsea to a terrain contoured by canyons, mountains, and hills. Hopi oral traditions tell of two warrior twins, Pokanghoya and Polongahoya, who emerged from the Lower World of the spirits in order mold the earth of the Upper World. According to Harold Courlander's synthesis of Hopi accounts, when the twins arrived to the Upper World, Pokanghoya declared that "Everything has a sameness. Something needs to be done," to which his brother replied “yes...The ground is soft. It is nothing but mud." [^4] The brothers gathered up this mud and heaped it into mounds and mountains, buttes and spires. When they had finished, they began a game of *nahoydadatsia*, chasing a buckskin ball across the earth with sticks. As Pokanghoya and Polongahoya ran, they hurled lightning arrows at the land and scored it with their sticks, and the soft mud turned hard beneath their footsteps. 
+FOR THE HOPI people, the slashes in the Plateau's dunes hold the story of the living world's transformation from flat mudsea to a terrain contoured by canyons, mountains, and hills. Two warrior twins, Pokanghoya and Polongahoya emerged from the Lower World of the spirits in order mold the earth of the Upper World. When the twins arrived to the Upper World, Pokanghoya declared that "Everything has a sameness. Something needs to be done," to which his brother replied “yes...The ground is soft. It is nothing but mud." [^4] The brothers gathered up this mud and heaped it into mounds and mountains, buttes and spires. When they had finished, they began a game of *nahoydadatsia*, chasing a buckskin ball across the earth with sticks. As Pokanghoya and Polongahoya ran, they hurled lightning arrows at the land and scored it with their sticks, and the soft mud turned hard beneath their footsteps. 
 
 ## Crossed Tracks
 
@@ -92,9 +92,9 @@ The wind, I have learned, works with many collaborators to shape Glen Canyon.
 
 ## Níłch’i 
 
-Diné worldviews understand that all of nature is suffused with níłch’i, which translates roughly into "Holy Wind". Apache philosopher Viola Cordova notes that for Diné people, níłch’i "serves as the means of communication between all elements of the living world” and gives "life, thought, speech, and the power of motion to all living things." Níłch’i, in other words, is the force that animates life, and all life is a manifestation of níłch’i. Humans, Cordova writes, are "vortices" within níłch’i, as are all of the other "'things' of the world." [^6]
+Diné worldviews understand that all of nature is suffused with níłch’i, which translates roughly into "Holy Wind". For the Diné people, níłch’i "serves as the means of communication between all elements of the living world” and gives "life, thought, speech, and the power of motion to all living things," as philosopher Viola Cordova puts it. Níłch’i, in other words, is the force that animates life, and all life is a manifestation of níłch’i. Humans, Cordova writes, are "vortices" within níłch’i, as are all of the other "'things' of the world." [^6]
 
-Diné elders explained to ethnographer James Kale McNeley [^7] in the early 1970s that the traces of níłch’i can be seen within the swirls on our fingertips and toes, and in the coils of our ears and hair:
+Diné elders[^7] explain that the traces of níłch’i can be seen within the swirls on our fingertips and toes, and in the coils of our ears and hair:
 
 <div class="float-start pe-4 mb-2 w-50" >
 {% include feature/image-gallery.html objectid="sediment82" caption=false%}
@@ -153,7 +153,6 @@ In the collection, I find more photographs of balanced rocks, and in all of them
 {% include feature/new-section.html %}
 
 ## Images of a Lost World 
-
 
 {% include feature/image-gallery.html objectid="sediment144;sediment145" caption=false%}
 
@@ -272,10 +271,9 @@ I think back now to my work on those lands, the water from our office faucet tha
 
 {% include feature/image-gallery.html objectid="sediment105" caption=false%}
 
+DINÉ KNOW HUMANS to be expressions of the Holy Wind níłch’i, as are canyons, rivers, cottonwood trees, lizards, and all other things in the world. But humans can still cause disruption by acting incorrectly. Thus, the human's "first obligation," philosopher Viola Cordova explains, "is to be aware of the consequences of his actions in the world and in relationship with other beings. The second (but equally important) obligation is to create, or add to, the beauty of the universe. He does this through adjusting his behaviour to harmonize with his surroundings and he does this also through the creation of beauty through ritual, song, and artistic objects. The deliberate creation of ugliness or introduction of disorderly elements is a disruption of the universe." [^8]
 
-Viola Cordova stresses that although Diné know humans to be expressions of níłch’i, humans can still cause disruption to the world by acting incorrectly. Thus, Cordova says, the human's "first obligation is to be aware of the consequences of his actions in the world and in relationship with other beings. The second (but equally important) obligation," she continues, "is to create, or add to, the beauty of the universe. He does this through adjusting his behaviour to harmonize with his surroundings and he does this also through the creation of beauty through ritual, song, and artistic objects. The deliberate creation of ugliness or introduction of disorderly elements is a disruption of the universe." [^8]
-
-I think about how many of the Wind's formations--the swooping dunes, spring-fed pools, maidenhair tapestries, snakes, scorpions, frogs, the Diné people themselves--were drowned or displaced by the Glen Canyon Dam and the stagnant, bloated waters of Lake Powell. Eventually, however, Cordova insists that Diné universe will "handle any disruptions with its tendency to balance and harmony," Cordova writes. "But as it balances itself," she warns "a human may be harmed," perhaps by events such as persistent "drought and disease." [^9]
+I think about how many of the Wind's formations--the swooping dunes, spring-fed pools, maidenhair tapestries, snakes, scorpions, frogs, the Diné people themselves--were drowned or displaced by the Glen Canyon Dam and the stagnant, bloated waters of Lake Powell. 
 
 {% include feature/new-section.html %}
 
@@ -292,7 +290,7 @@ As the lake runs dry, a transformed landscape--and climate--is emerging. Where t
 ## Radium Dust
 {% include feature/image-gallery.html objectid="sediment60" caption=false%}
 
-In 1949, in the wake of World War II and the rush for nuclear power, the Vanadium Corporation of America constructed a uranium mill on the banks of Glen Canyon. The mill closed in 1953, but Vanadium left behind 26,000 tons of radioactive tailings in an uncovered heap. When Lake Powell began to fill ten years later, dam managers decided to allow lake waters to back up over Vanadium's refuse, all of which leached into Lake Powell's sediment. [^30]
+In 1949, IN the wake of World War II and the rush for nuclear power, the Vanadium Corporation of America constructed a uranium mill on the banks of Glen Canyon. The mill closed in 1953, but Vanadium left behind 26,000 tons of radioactive tailings in an uncovered heap. When Lake Powell began to fill ten years later, dam managers decided to allow lake waters to back up over Vanadium's refuse, all of which leached into Lake Powell's sediment. [^30]
 
 If and when the lake retreats, radium-infused sediment will become exposed to air, and radioactive dust will blow across the basin. Uranium is bone-seeking, meaning once it gets into the body, it settles in the skeleton and incorporates with the bone's minerals. Cells decay when they come into contact with radium, causing the body to eventually disintegrate. 
 
@@ -307,7 +305,7 @@ Here, sediment becomes not only an archive of the past, but an archive of the fu
 
 {% include feature/image-gallery.html objectid="sediment155" caption=false%} 
 
-Radium is not the only danger lurking in Lake Powell's sediment. The lake's silt beds have also become a breeding ground for anaerobic bacteria, which digest organic material cached in the sediment and turn this material into methane. Trapped beneath the pressure of the lake, methane will collect in pockets and fissures in the silt, but as the lake recedes and pressure is released, methane erupts to surface and dissipates into the atmosphere. [^31]
+RADIUM IS NOT the only danger lurking in Lake Powell's sediment. The lake's silt beds have also become a breeding ground for anaerobic bacteria, which digest organic material cached in the sediment and turn this material into methane. Trapped beneath the pressure of the lake, methane will collect in pockets and fissures in the silt, but as the lake recedes and pressure is released, methane erupts to surface and dissipates into the atmosphere. [^31]
 
 Methane is 80 times more effective at trapping heat than carbon dioxide and reservoirs--such as Lake Powell--contribute 6%-8% of total human-caused methane emissions. [^32]
 
@@ -324,15 +322,31 @@ Thus, the currents of change that flow through Glen Canyon become inextricably e
 {% include feature/image-gallery.html objectid="sediment127" caption=false%}
 
 
-ALONGSIDE GLEN CANYON’S radium beds and methane volcanoes, an ecosystem that is both new and old is emerging. As the reservoir retreats, plants have been quick to take root in the Canyon's freshly-exposed banks. The first plants to arrive are usually invasive—tumbleweed, cheatgrass, and camelthorn. But a few years after the water recedes, native species, too, return. Scientists have yet to fully explore Glen Canyon’s resurgence, but one biologist declared a recently resurfaced tributary canyon "the most intact native ecosystem I've ever seen.” [^33]
+ALONGSIDE GLEN CANYON’S radium beds and methane volcanoes, an ecosystem that is both new and old is emerging. As the reservoir dries up, plants have been quick to take root in the Canyon's freshly-exposed banks. The first plants to arrive are usually invasive—tumbleweed, cheatgrass, and camelthorn. But a few years after the water recedes, native species, too, return. Scientists have yet to fully explore Glen Canyon’s resurgence, but one biologist declared a recently resurfaced tributary canyon "the most intact native ecosystem I've ever seen.” [^33]
 
 As I read about Glen Canyon's history, and about the progression of climate change, it is easy to imagine a story of steady, unidirectional degradation, an unrelenting fall towards widespread ruin and destruction. But when I learned that Glen Canyon is once again blossoming with fremont cottonwood, coyote willow, paintbrush, hackberry, Western redbuds, singleleaf ash, maidenhair fern, and columbine, I felt, for the first time since I can remember, that perhaps there are other, more vibrant possibilities for the future. I cannot trace a story of uniform decline through a landscape in bloom. 
 
-In Glen Canyon, the out-of-control superstorm that is climate change and human recklessness has paradoxically caused time to stutter, and reel back on itself. The seemingly unstoppable, forward-hurtling train of anthropogenic domination and inundation has—for a moment, at least—burnt itself to a stop.  As the reservoir disappears, a landscape is emerging that insists, in every flowering columbine, in every shifting silt bed, that even amidst ruination, there still remain opportunities for rearrangement and regrowth. 
+In Glen Canyon, the out-of-control superstorm that is climate change and human recklessness has paradoxically caused time to stutter, and reel back on itself. The seemingly unstoppable, forward-hurtling train of anthropogenic domination and inundation has—-for a moment, at least—-burnt itself to a stop. And as Lake Powell retreats, a landscape is surfacing that insists, in every flowering columbine, in every shifting silt bed, that even amidst ruination, there still remain opportunities for rearrangement and regrowth. 
 
-This is a landscape that is neither lost, nor wholly restored: this is a new kind of landscape altogether, often rife with incongruities and surprises. Willows and cottonwoods are flourishing among radium beds and silt glaciers. And on some of these radium beds, communities of cryptobiotic microorganisms are already at work rebuilding desert crust, which scientists say could help prevent radioactive dust from blowing up into the air. [^34] This strikes me as a wondrous serendipity—that billions of organisms from diverse clades of life—bacteria, algae, fungi, lichens—are amassing to provide a protective shield over a problem that neither environmentalists nor land managers have managed to solve. 
+This is a landscape that is neither lost, nor wholly restored: this is a new kind of landscape altogether, rife with incongruities and surprises. Willows and cottonwoods are flourishing among radium beds and silt glaciers. And on some of these radium beds, communities of cryptobiotic microorganisms are already at work rebuilding desert crust, which scientists say could help prevent radioactive dust from blowing up into the air. [^34] This strikes me as a wondrous serendipity, that billions of organisms from diverse clades of life--bacteria, algae, fungi, lichens--are amassing to provide a protective shield over a problem that has stumped and worried both environmentalists and land managers.
 
-Perhaps this whorl of time—in which (some) humans imagine that humans alone can dictate the world’s unfolding—has reached its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes yet still teeming with life and possibility, I suggest that we encounter such landscapes with a sense of wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different kind: a wonder that means, as philosopher Isabelle Stengers puts it, “both to be surprised and entertain questions.” [^35]
+Then again, this might not be serendipity at all. Diné understand that níłch’i, the Holy Wind will eventually remediate human disruptions and restore balance and harmony. This process of  reharmonization, however, is often preceded by human suffering and sacrifice, likely brought on by a period of persistent drought and disease. [^9]
+
+This whorl of time—-in which (some) humans are able to inflict unfettered disruption on the world and expect the world not to rise back up in response--seems to be reaching its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes and teeming with the life that has survived it all, I find myself wanting to lean again towards wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different hue: a wonder that drives us, as philosopher Isabelle Stengers puts it, "to be surprised and entertain questions.” [^35] For now, I am entertaining the questions: 
+
+What might I learn from listening to the stories embedded in Glen Canyon's sediment? 
+
+What can trees and flowers teach me about resilience? 
+
+What does the wind have to say about coalitions? 
+
+How do the people who have lived in this landscape for hundreds and thousands of years understand it? 
+
+Can ebbing waters be an example for ceding land back to original inhabitants?
+
+What do microorganisms know about collaboration? 
+
+Can humans lead with the same resilience, collaboration, and grace? I hope to be surprised by the answer. 
 
 {% include feature/image-gallery.html objectid="sediment120" caption=false%}
 
