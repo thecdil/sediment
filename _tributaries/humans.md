@@ -88,10 +88,9 @@ For Jacques Derrida, traces are inherently spectral in that they disclose the "a
 
 It strikes me, though, that a different kind of absence is present here. When I think of absence, I think of nonexistence, nonparticipation, a complete lack of being in and bearing on the moment. Yet the handprints preserve a lingering presence, and carry their makers into an ongoing participation in the world which exceeds their physical absence. As Tad touches the prints, they touch him too, altering his interactions with the canyon. 
 
-But just as the past informs and transforms the unfoldings of the present, so can the present distort the traces of the past and thus divert the course of the future. As Tad's hand grazes the prints, flecks of paint rub away. With enough touching, the handprints will be erased, and this wall will no longer communicate to visitors about the people who came before. 
+But just as the past informs and transforms the unfoldings of the present, so can the present distort the traces of the past. Tad lifts flecks of paint from the prints in his touching, and wipes away, forever, a bit of the past. If this gesture is repeated enough times, handprints will be erased, and this wall will no longer communicate to visitors about the people who came before. 
 
-Material touching each other across time
-
+Material traces connect people across otherwise disconnected segments of time, and draw us into conversation and relation with one another. It matters how we encounter and touch these traces. [continue]
 {% include feature/image-gallery.html objectid="sediment162" caption=false%}
 
 
@@ -103,11 +102,14 @@ Material touching each other across time
 {% include feature/image-gallery.html objectid="sediment164" caption=false%}
 
 
-ON MAY 11th of 1869, one day after the completion of the Transcontinental Railroad, ten men disembarked from a Union Pacific Train at Green River Station, Wyoming. They had with them four wooden boats, packed with compasses, thermometers, barometers, chronometers, guns, ammunition, as well as coffee, flour, bacon, and beans, paid for by the U.S. Army. Thirteen days later, the men and their boats pushed off from the banks of the Green River, and headed downstream toward the Colorado. They would paddle nearly one thousand miles over the course of the next three months, lose one of their boats and a third of their food, and three of the men would die. 
+ON MAY 11th of 1869, one day after the completion of the Transcontinental Railroad, ten men disembarked from a Union Pacific Train at Green River Station, Wyoming. They had with them four wooden boats, packed with compasses, thermometers, barometers, chronometers, guns, ammunition, as well as coffee, flour, bacon, and beans, paid for by the U.S. Army. Thirteen days later, the men and their boats pushed off from the banks of the Green River and headed downstream toward the Colorado. They would paddle nearly one thousand miles over the course of the next three months, lose one of their boats and a third of their food, and three of the men would die. 
 
-Their leader was John Wesley Powell, a one-armed Civil war Veteran, geologist, ethnographer, and botanist, and their purpose was to survey the length of the Colorado River. They collected data on the basin's topography, climate, botanical makeup, water resources, and Indigenous cultures; assessed the land's potential for settlement, and filled in what had been considered a "blank spot" on the map of the United States. 
+Their leader was John Wesley Powell, a one-armed Civil war Veteran, geologist, ethnographer, and botanist, and their purpose was to survey the length of the Colorado River. They assessed the land's potential for settlement and agriculture, and they filled in what had been considered a "blank spot" on the map of the United States with data on the basin's topography, climate, botanical makeup, water resources, and Indigenous cultures. 
 
-The reports that Powell produced would significantly change the course of ...
+The maps and reports that Powell produced significantly altered the course of western development. Powell identified that survival in the West was more contingent on access to water (which was scarce) than land (which was plenty); a direct inversion of the conditions that governed settlement in the East. Eastern settlers were land hungry, but had taken water for granted, and until Powell's expeditions, expansionists had not considered that in order to move westward, they would either have to reconfigure their lifestyles--or reconfigure the land. 
+
+Powell cautioned Congress in 1878 that life would have to mold itself around the West's sparse waterways, and he drew up a map which proposed that state lines follow alongside watershed boundaries. Each state, then, would organize public irrigation infrastructure in order to optimize water distribution for agrarian communities. At first, Powell's heedings were wholly rejected; lawmakers, like many Americans believed that as emigrants surged westward that "rain would follow the plow." But by 1902, Congress had come to accept that agrarianism in the west would fail without large-scale water management interventions, just as Powell had advised. Thus, the Bureau of Reclamation was born, which would go on to construct more than 600 dams, including the Hoover Dam, the Grand Coulee Dam, and the Glen Canyon Dam. 
+
 
 Powell read the traces in the landscape in order to chart a future for colonization. Both remnants of people, water, and plants mattered. 
 

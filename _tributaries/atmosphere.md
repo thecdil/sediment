@@ -61,7 +61,7 @@ This narrative structure is unfamiliar to me. It does not line up with the narra
 
 {% include feature/image-gallery.html objectid="sediment161" caption=false%} 
 
-FOR THE HOPI people, the slashes in the Plateau's dunes hold the story of the living world's transformation from flat mudsea to a terrain contoured by canyons, mountains, and hills. Two warrior twins, Pokanghoya and Polongahoya emerged from the Lower World of the spirits in order mold the earth of the Upper World. When the twins arrived to the Upper World, Pokanghoya declared that "Everything has a sameness. Something needs to be done," to which his brother replied “yes...The ground is soft. It is nothing but mud." [^4] The brothers gathered up this mud and heaped it into mounds and mountains, buttes and spires. When they had finished, they began a game of *nahoydadatsia*, chasing a buckskin ball across the earth with sticks. As Pokanghoya and Polongahoya ran, they hurled lightning arrows at the land and scored it with their sticks, and the soft mud turned hard beneath their footsteps. 
+FOR THE HOPI people, the slashes in the Plateau's dunes hold the story of the living world's transformation from flat mudsea to a terrain contoured by canyons, mountains, and hills. Two warrior twins, Pokanghoya and Polongahoya emerged from the Lower World of the spirits in order to mold the earth of the Upper World. When the twins arrived to the Upper World, Pokanghoya declared that "Everything has a sameness. Something needs to be done," to which his brother replied “yes...The ground is soft. It is nothing but mud." [^4] The brothers gathered up this mud and heaped it into mounds and mountains, buttes and spires. When they had finished, they began a game of *nahoydadatsia*, chasing a buckskin ball across the earth with sticks. As Pokanghoya and Polongahoya ran, they hurled lightning arrows at the land and scored it with their sticks, and the soft mud turned hard beneath their footsteps. 
 
 {% include feature/trib-button.html trib="humans" image="dwellings" text="Humans" %}
 
@@ -106,7 +106,7 @@ Diné elders[^7] explain that the traces of níłch’i can be seen within the s
 
 {% include feature/image-gallery.html objectid="sediment82" caption=false%}
 
-I hold my fingertips up close to my desk lamp, and see the same whorled patterns that mark Glen Canyon's dunes. 
+I hold my fingertips up close to my desk lamp and see the same whorled patterns that mark Glen Canyon's dunes. 
 
 {% include feature/trib-button.html trib="humans" image="dwellings" text="Humans" %}
 
@@ -337,7 +337,7 @@ ALONGSIDE GLEN CANYON’S radium beds and methane volcanoes, an ecosystem that i
 
 As I read about Glen Canyon's history, and about the progression of climate change, it is easy to imagine a story of steady, unidirectional degradation, an unrelenting fall towards widespread ruin and destruction. But when I learned that Glen Canyon is once again blossoming with fremont cottonwood, coyote willow, paintbrush, hackberry, Western redbuds, singleleaf ash, maidenhair fern, and columbine, I felt, for the first time since I can remember, that perhaps there are other, more vibrant possibilities for the future. I cannot trace a story of uniform decline through a landscape in bloom. 
 
-In Glen Canyon, the out-of-control superstorm that is climate change and human recklessness has paradoxically caused time to stutter, and reel back on itself. The seemingly unstoppable, forward-hurtling train of anthropogenic domination and inundation has—-for a moment, at least—-burnt itself to a stop. And as Lake Powell retreats, a landscape is surfacing that insists, in every flowering columbine, in every shifting silt bed, that even amidst ruination, there still remain opportunities for rearrangement and regrowth. 
+In Glen Canyon, the out-of-control superstorm that is climate change and human recklessness has paradoxically caused time to stutter and reel back on itself. The seemingly unstoppable, forward-hurtling train of anthropogenic domination and inundation has—-for a moment, at least—-burnt itself to a stop. And as Lake Powell retreats, a landscape is surfacing that insists, in every flowering columbine, in every shifting silt bed, that even amidst ruination, there remain opportunities for rearrangement and regrowth. 
 
 {% include feature/image-gallery.html objectid="sediment120" caption=false%}
 
@@ -347,7 +347,7 @@ Then again, this might not be serendipity at all. Diné understand that níłch�
 
 This whorl of time—in which (some) humans are able to inflict unfettered disruption on the world and expect the world not to rise back up in response-seems to be reaching its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes and teeming with the life that has survived it all, I find myself wanting to lean again towards wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different hue: a wonder that drives us, as philosopher Isabelle Stengers puts it, "to be surprised and entertain questions.” [^35] For now, I am entertaining the questions: 
 
-What might I learn from listening to the stories embedded in Glen Canyon's sediment? What can trees and flowers teach me about resilience? What does the wind have to say about coalitions? How do the people who have lived in this landscape for hundreds and thousands of years understand it? Can ebbing waters be an example for ceding land back to original inhabitants? What do microorganisms know about collaboration? Can humans lead with the same resilience, collaboration, and grace? I hope to be surprised by the answer. 
+What might I learn from listening to the stories embedded in Glen Canyon's sediment? What can trees and flowers teach me about resilience? What does the wind have to say about coalitions? How do the people who have lived in this landscape for hundreds and thousands of years understand it? Can ebbing waters be an example for ceding land back to original inhabitants? What do microorganisms know about collaboration? Can humans lead with the same resilience, collaboration, and grace? 
 
 {% include feature/new-section.html %}
 
