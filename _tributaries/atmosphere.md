@@ -345,15 +345,9 @@ This is a landscape that is neither lost, nor wholly restored: this is a new kin
 
 Then again, this might not be serendipity at all. Diné understand that níłch’i, the Holy Wind will eventually remediate human disruptions and restore balance and harmony. This process of  reharmonization, however, is often preceded by human suffering and sacrifice, likely brought on by a period of persistent drought and disease. [^9]
 
-This whorl of time—-in which (some) humans are able to inflict unfettered disruption on the world and expect the world not to rise back up in response--seems to be reaching its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes and teeming with the life that has survived it all, I find myself wanting to lean again towards wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different hue: a wonder that drives us, as philosopher Isabelle Stengers puts it, "to be surprised and entertain questions.” [^35] For now, I am entertaining the questions: 
+This whorl of time—in which (some) humans are able to inflict unfettered disruption on the world and expect the world not to rise back up in response-seems to be reaching its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes and teeming with the life that has survived it all, I find myself wanting to lean again towards wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different hue: a wonder that drives us, as philosopher Isabelle Stengers puts it, "to be surprised and entertain questions.” [^35] For now, I am entertaining the questions: 
 
-* What might I learn from listening to the stories embedded in Glen Canyon's sediment? 
-* What can trees and flowers teach me about resilience? 
-* What does the wind have to say about coalitions? 
-* How do the people who have lived in this landscape for hundreds and thousands of years understand it? 
-* Can ebbing waters be an example for ceding land back to original inhabitants?
-* What do microorganisms know about collaboration? 
-* Can humans lead with the same resilience, collaboration, and grace? I hope to be surprised by the answer. 
+What might I learn from listening to the stories embedded in Glen Canyon's sediment? What can trees and flowers teach me about resilience? What does the wind have to say about coalitions? How do the people who have lived in this landscape for hundreds and thousands of years understand it? Can ebbing waters be an example for ceding land back to original inhabitants? What do microorganisms know about collaboration? Can humans lead with the same resilience, collaboration, and grace? I hope to be surprised by the answer. 
 
 {% include feature/new-section.html %}
 

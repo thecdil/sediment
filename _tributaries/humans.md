@@ -14,28 +14,35 @@ scrollama: true
 
 ## Inscriptions
 
-<div class="float-start float-md-start pe-md-4 mb-2 w-100 w-md-50" >
+<div class="float-start pe-4 mb-2 w-50" >
+
 {% include feature/image-gallery.html objectid="sediment49" caption=false%}
 {% include feature/image-gallery.html objectid="sediment55" caption=false%}
 {% include feature/image-gallery.html objectid="sediment119" caption=false%}
 {% include feature/image-gallery.html objectid="sediment91" caption=false%}
 {% include feature/image-gallery.html objectid="sediment31" caption=false%}
 
-
 </div>
-Scrawled across Glen Canyon's rock faces are the tracks and tracings of human life. Some of these markings are inadvertent, the scars left behind as people moved through and settled in the Canyon. Chinked steps, gouged footholds, dynamite-blasted trails reveal where Paiute hunters, Diné sheepherders, Spanish Conquistadors, Mormon pioneers, and uranium miners sought access to--or passageway through--the canyon's enclaves. Dugout caves, adobe dwellings, stone granaries, irrigation canals, and the borings of loom holes locate where Puebloan weavers, Hopi Farmers,and gold prospectors made their homes. 
+
+<br>
+
+SCRAWLED ACROSS GLEN Canyon's rock faces are the tracks and tracings of human life. Some of these markings are inadvertent, the scars left behind as people moved through and settled in the Canyon. Chinked steps, gouged footholds, dynamite-blasted trails reveal where Paiute hunters, Diné sheepherders, Spanish Conquistadors, Mormon pioneers, and uranium miners sought access to--or passageway through--the canyon's enclaves. Dugout caves, adobe dwellings, stone granaries, irrigation canals, and the borings of loom holes locate where Puebloan weavers, Hopi Farmers,and gold prospectors made their homes. 
 
 Other markings are intentional, as if those humans who engraved petroglyph tapestries and carved out their names wanted to ensure their existence was remembered by the people of the future. 
 
-All of these tracings, inadvertent or intentional, assert a claim on Glen Canyon. Each trail, etching, and boring indicates the presence of a human who felt that the land was theirs to alter; that the stones and mud were theirs for home-building, that the canyons were theirs to blow open, that the cliffs were theirs to inscribe. 
+All of these tracings, inadvertent or intentional, assert a claim on Glen Canyon. 
+
+Each trail, etching, and boring indicates the presence of a human who felt that the land was theirs to alter, that the rocks and mud were theirs for home-building, that the canyons were theirs to blow open, or that the sandstone was theirs to inscribe. 
 
 For political ecologist Laura Ogden, such processes, in which an actor--human or not--reworks the elements of the earth in order to profess or make possible their belonging are forms of *territorial inscription*. 
 
 "Birds claim territory through song;" she writes, "fiddler crabs dig burrows; ocean life glows with bioluminescence; beavers build lodges and dams. The suburbs are a nested architecture of inscription practices, from gated entrances to backyard privacy fences. These practices of territorial inscription leave their mark on the world, though sometimes the mark is just a shimmer" [^1]. 
 
-Glen Canyon's inscriptions trace out a kind of territorial map, overlapping with various and often contested claims. 
+Glen Canyon's inscriptions, then, trace out a kind of territorial map, overlapping with various and often contested claims. 
 
-This map is not flat, and its territories do not sit cleanly beside one another (as few territories do). This is a vertical and lively cartography; more like a palimpsest in which various inscriptions layer and touch, transform and efface one another through time. This is a map whose material recirculates and is reused to build new life, to build the concrete of dams, the adobe grouting of homes, the bedding of microbes.
+This map is not flat, and its territories do not sit cleanly beside one another (as few territories do). This is a vertical and lively cartography; more like a palimpsest in which various inscriptions layer and touch, transform and efface one another through time. This is a map whose material recirculates and is reused to build new life: the concrete of dams, the adobe grouting of homes, or the bedding of microbes.
+
+<br><br>
 
 {% include feature/trib-button.html trib="biota" image="vegetation" text="Biota" %}
 
@@ -46,9 +53,9 @@ This map is not flat, and its territories do not sit cleanly beside one another 
 
 {% include feature/image-gallery.html objectid="sediment123" caption=false%}
 
-When the Glen Canyon Dam was completed in 1963, the United States declared--in the dam's 700-foot tall concrete walls, in the reservoir it sent spreading over 250 square miles of land--that the Canyon and its flooded tributaries were theirs. As Lake Powell bloated higher and swelled further than the river had ever reached, its waters engulfed thousands of Indigenous petroglyphs, dwellings, and trails. It drowned out the microbial films which once draped the Canyon's walls; the habitats and shallow prints of herons, frogs, and lizards; the swaths of coyote willow, paintbrush, columbines, and cottonwoods that once grew along the riverbanks. Lake Powell covered, too, the tracks of colonial forebears, swallowing the physical residues of mining operations, the etchings made by the canyon's first white explorers, and homesteads of early settlers. And it hid the once volatile river beneath its glossy sapphire surface. 
+WHEN THE GLEN Canyon Dam was completed in 1963, the United States declared--in the dam's 700-foot tall concrete walls and in the reservoir it sent spreading over 250 square miles of land--that the Canyon and its flooded tributaries were theirs. As Lake Powell bloated higher and swelled further than the river had ever reached, its waters engulfed thousands of Indigenous petroglyphs, dwellings, and trails, drowned out the microbial films which once draped the Canyon's walls, the habitats and shallow prints of herons, frogs, and lizards, and the swaths of coyote willow, paintbrush, columbines, and cottonwoods that once grew along the riverbanks. Lake Powell covered, too, the tracks of colonial forebears, swallowing the physical residues of mining operations, the etchings made by the canyon's first white explorers, and homesteads of early settlers. And it hid the once volatile river beneath its glossy surface. 
 
-Together, the dam and the lake visually and symbolically insist upon complete colonial territorialization, and they serve to erase the archive of the lives that came before, removing any physical evidence of a different past, of other claims to the land. This total subsumation props up western notions of linear progress and unidirectional time; it reifies the belief that the present can be laid over the past like the next layer of strata. 
+Together, the dam and the lake visually and symbolically insist upon complete colonial territorialization, and they serve to erase the archive of the lives that came before, removing any physical evidence of a different past, of other claims to the land. This total subsumation props up western notions of linear progress and unidirectional time, and it reifies the belief that the present can be laid over the past like the next layer of strata. 
 
 {% include feature/image-gallery.html objectid="sediment37" caption=false%}
 
@@ -58,39 +65,64 @@ Yet, as sediment reminds me, neither the earth nor history are quite so stratigr
 
 ## Absence and Presence
 
+{% include feature/image-gallery.html objectid="sediment80" caption=false%}
+
+SOMEONE GATHERS UP rust-colored rocks and heaps them into a shallow stone bowl. With another, stronger stone, they pulverize the rust-colored rocks into dust and stir in water or their own spit, or animal fat or blood, until the dust becomes a red and gluey paste. They dip each of their hands in the paste and press them splayed against a sandstone wall. Their companions follow suit, leaving ten pairs of dark handprints reaching up Glen Canyon's sides. 
+
+
+<div class="float-start pe-4 mb-2 w-50" >
+
 {% include feature/image-gallery.html objectid="sediment163" caption=false%}
 
-Someone gathers up rust-colored rocks and heaps them into a shallow stone bowl. With another, stronger rock, they pulverize the rocks into dust and stir in water or their own spit, or animal fat or blood, until the dust becomes a red and gluey paste. They dip each of their hands in the paste and press them splayed against a sandstone wall. Their companions follow suit, leaving ten pairs of dark handprints to adorn Glen Canyon. 
+</div>
 
-Long after the people move on, their handprints remain, registering their existence and this moment of contact with Glen Canyon, this blending of stone and water, spit, or animal. As other people from different times and places pass by the wall, some reach out to place their own hands over the prints, as Tad Nichols does here. For a moment, the people of the past and the present are drawn together, sharing the same gesture in the same place. 
+<br>
+
+Long after the people move on, their handprints remain, registering their existence and this moment of contact with Glen Canyon, this blending of stone and water, spit, or animal. As other people from different times and places pass by the wall, some place their own hands over the prints, as Tad Nichols does here. For a moment, the people of the past and the present draw together, sharing the same gesture in the same place. 
 
 Handprints like these are sometimes called dermatoglyphs, which Laura Ogden translates to mean "traces of existence." They carry, she writes, "the past and being-in-the world forcibly into the present. In doing so, they touch us" [^2]. 
 
-Something is communicated in this touching: a recognition of presence and precedent, perhaps. "We were here, just as you are now" they seem to say. But there is something ghostly about the handprints too; the absence of other bodies feels conspicuous--almost tangible--next to Tad's own lively figure. 
+Something is communicated in this touching: a recognition of presence and precedent, perhaps. "We were here, just as you are now" the handprints seem to say. But there is something ghostly about the prints too; the absence of other bodies feels conspicuous--almost tangible--in the empty space around Tad. 
 
-For Jacques Derrida, traces are inherently spectral in that they disclose the "absence of presence,"[^3] by drawing attention to what was once there, but is no longer. 
+For Jacques Derrida, traces are inherently spectral in that they disclose the "absence of presence" by drawing attention to what was once there, but is no longer.[^3] 
 
-It strikes me, though, that a different kind of absence is present here by the handprint wall. When I think of absence, I think of nonexistence, nonparticipation, a complete lack of being in and bearing on the moment. Yet the handprints preserve a kind of lingering existence and carry their makers into an ongoing participation in the world that exceeds their physical absence. Perhaps, instead, the trace more accurately preserves a presence--a presence of absence. 
+It strikes me, though, that a different kind of absence is present here. When I think of absence, I think of nonexistence, nonparticipation, a complete lack of being in and bearing on the moment. Yet the handprints preserve a lingering presence, and carry their makers into an ongoing participation in the world which exceeds their physical absence. As Tad touches the prints, they touch him too, altering his interactions with the canyon. 
 
-Indeed, tracings like these figured critically into how proceeding humans interacted with and reshaped Glen Canyon. John Wesley Powell, who famously led a government-sponsored survey of the Colorado River in 1869 in order to determine the potential for colonization and resource extraction of the region, often recorded close detail of traces of both Indigenous presence and absence. This was more than a personal interest. As historian Erika Marie Bsumek notes, "Throughout his journey, [Powell] also looked to the surrounding landscape for clues to help him understand how people had once lived in the area and what had happened to them."  In other words, Glen Canyon's tracings became evidence of 
+But just as the past informs and transforms the unfoldings of the present, so can the present distort the traces of the past and thus divert the course of the future. As Tad's hand grazes the prints, flecks of paint rub away. With enough touching, the handprints will be erased, and this wall will no longer communicate to visitors about the people who came before. 
 
-...to determine the region's future, white scientists determined they needed to gain a fuller understanding of the previous generations' relationships with the...desert landscapes...white interlopers...believed that Indigenous cultures belonged to the past, not the present.” (64, 66-67)
+Material touching each other across time
 
+{% include feature/image-gallery.html objectid="sediment162" caption=false%}
 
-
-
-{% include feature/image-gallery.html objectid="sediment80" caption=false%}
 
 {% include feature/new-section.html %}
 
 
 ## Foundations
 
+{% include feature/image-gallery.html objectid="sediment164" caption=false%}
+
+
+ON MAY 11th of 1869, one day after the completion of the Transcontinental Railroad, ten men disembarked from a Union Pacific Train at Green River Station, Wyoming. They had with them four wooden boats, packed with compasses, thermometers, barometers, chronometers, guns, ammunition, as well as coffee, flour, bacon, and beans, paid for by the U.S. Army. Thirteen days later, the men and their boats pushed off from the banks of the Green River, and headed downstream toward the Colorado. They would paddle nearly one thousand miles over the course of the next three months, lose one of their boats and a third of their food, and three of the men would die. 
+
+Their leader was John Wesley Powell, a one-armed Civil war Veteran, geologist, ethnographer, and botanist, and their purpose was to survey the length of the Colorado River. They collected data on the basin's topography, climate, botanical makeup, water resources, and Indigenous cultures; assessed the land's potential for settlement, and filled in what had been considered a "blank spot" on the map of the United States. 
+
+The reports that Powell produced would significantly change the course of ...
+
+Powell read the traces in the landscape in order to chart a future for colonization. Both remnants of people, water, and plants mattered. 
+
+
+
+Powell saw geology and ethnography both as data for colonization. 
+
+Traces like these figured critically into how proceeding humans interacted with and reshaped Glen Canyon. John Wesley Powell, who famously led a government-sponsored survey of the Colorado River in 1869 in order to determine the potential for colonization and resource extraction of the region, often recorded close detail of traces of both Indigenous presence and absence. This was more than a personal interest. As historian Erika Marie Bsumek notes, "Throughout his journey, [Powell] also looked to the surrounding landscape for clues to help him understand how people had once lived in the area and what had happened to them."  In other words, Glen Canyon's tracings became evidence of 
+
+...to determine the region's future, white scientists determined they needed to gain a fuller understanding of the previous generations' relationships with the...desert landscapes...white interlopers...believed that Indigenous cultures belonged to the past, not the present.” (64, 66-67)
 
 
 Irrigation ditches --> 
 
-## Earthly Archives
+## Earthly Archives/Archives
 
 ## Hole-in-the-Rock
 
@@ -102,7 +134,6 @@ Irrigation ditches -->
 
 ## Reemergence
 
-## Archives
 
 
 -Absence and presence 
