@@ -21,6 +21,14 @@ scrollama: true
 </div>
 <div class="col-lg-7">
 Glen Canyon is a land is made of sediment, deposited by ancient oceans, rivers, and winds. The Colorado River carries a heavy sediment load, and its silt-sharp waters enable the river to etch canyons, bridges, buttes, spires, and pedestal rocks out of the land. The water always delivers more sediment, laying down sandbars, rippled laminae, pocked muck, sink holes, silt volcanoes, and desiccated mud over the sandstone ground. 
+
+Vertical space is disorienting; it is a disorienting landscape to navigate. I always thought I'd reach Lake's edge only to see a cliff. 
+
+The walls feel and look like flesh; I wonder if that is why people are so drawn to this place; it feels alive. The earth seems to play with itself here. 
+
+Land and water are in a complex relationship here; they define one another's edges and mingle. 
+
+
 </div>
 </div>
 

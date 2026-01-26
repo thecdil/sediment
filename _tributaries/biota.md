@@ -75,6 +75,14 @@ slow the water, allowing plants to root
 At first, invasive species like tumbleweed, cheatgrass, and camelthorn take root. But after a few years, native species come back. Fremont fcottonwood, coyote willow, Goodding's willow, Indian paintbrush, hackberry, Western redbuds, singleleaf ash, miadenhair fern, columbine
 
 "This is the most intact native ecosystem I've ever seen!" (Podmore 25) - biologist
+## Antelope
+
+Antelope cannot cross river anymore
+
+## Birds
+
+I saw a great blue heron, coots diving in a smelly cove. 
+
 ## Other life
 
 Also bighorn sheep, deer, lizards, snakes, frogs, mountain lioins, ringtail cats, coytotes, black bears. Many drowned. Side canyons could support up to 200 species of birds. 

@@ -82,11 +82,11 @@ Long after the people move on, their handprints remain, registering their existe
 
 Handprints like these are sometimes called dermatoglyphs, which Laura Ogden translates to mean "traces of existence." They carry, she writes, "the past and being-in-the world forcibly into the present. In doing so, they touch us" [^2]. 
 
-Something is communicated in this touching: a recognition of presence and precedent, perhaps. "We were here, just as you are now" the handprints seem to say. But there is something ghostly about the prints too; the absence of other bodies feels conspicuous--almost tangible--in the empty space around Tad. 
+Something is communicated in this touching: a recognition of presence and precedent, perhaps. "We were here, just as you are now" the handprints say. But there is something ghostly about the prints too; the absence of other bodies feels conspicuous--almost tangible--in the empty space around Tad. 
 
 For Jacques Derrida, traces are inherently spectral in that they disclose the "absence of presence" by drawing attention to what was once there, but is no longer.[^3] 
 
-It strikes me, though, that a different kind of absence is present here. When I think of absence, I think of nonexistence, nonparticipation, a complete lack of being in and bearing on the moment. Yet the handprints preserve a lingering presence, and carry their makers into an ongoing participation in the world which exceeds their physical absence. As Tad touches the prints, they touch him too, altering his interactions with the canyon. 
+It strikes me, though, that a different kind of absence is present here. When I think of absence, I think of nonexistence, nonparticipation, a complete lack of being in and bearing on the moment. Yet the handprints preserve a lingering presence and carry their makers into an ongoing participation in the world which exceeds their physical absence. As Tad touches the prints, they touch him too, altering his interactions with the canyon. 
 
 But just as the past informs and transforms the unfoldings of the present, so can the present distort the traces of the past. Tad lifts flecks of paint from the prints in his touching, and wipes away, forever, a bit of the past. If this gesture is repeated enough times, handprints will be erased, and this wall will no longer communicate to visitors about the people who came before. 
 
@@ -102,18 +102,22 @@ Material traces connect people across otherwise disconnected segments of time, a
 {% include feature/image-gallery.html objectid="sediment164" caption=false%}
 
 
-ON MAY 11th of 1869, one day after the completion of the Transcontinental Railroad, ten men disembarked from a Union Pacific Train at Green River Station, Wyoming. They had with them four wooden boats, packed with compasses, thermometers, barometers, chronometers, guns, ammunition, as well as coffee, flour, bacon, and beans, paid for by the U.S. Army. Thirteen days later, the men and their boats pushed off from the banks of the Green River and headed downstream toward the Colorado. They would paddle nearly one thousand miles over the course of the next three months, lose one of their boats and a third of their food, and three of the men would die. 
+ONE DAY AFTER the completion of the Transcontinental Railroad, ten men disembarked from a Union Pacific Train at Green River Station, Wyoming. They had with them four wooden boats, packed with compasses, thermometers, barometers, chronometers, guns, ammunition, as well as coffee, flour, bacon, and beans, paid for by the U.S. Army. Thirteen days later, on May 24th, 1869, the men and their boats pushed off from the banks of the Green River and headed downstream towards the Colorado. They would paddle nearly one thousand miles over the course of the next three months, lose one of their boats and a third of their food, and three of the men would die. 
 
 Their leader was John Wesley Powell, a one-armed Civil war Veteran, geologist, ethnographer, and botanist, and their purpose was to survey the length of the Colorado River. They assessed the land's potential for settlement and agriculture, and they filled in what had been considered a "blank spot" on the map of the United States with data on the basin's topography, climate, botanical makeup, water resources, and Indigenous cultures. 
 
 The maps and reports that Powell produced significantly altered the course of western development. Powell identified that survival in the West was more contingent on access to water (which was scarce) than land (which was plenty); a direct inversion of the conditions that governed settlement in the East. Eastern settlers were land hungry, but had taken water for granted, and until Powell's expeditions, expansionists had not considered that in order to move westward, they would either have to reconfigure their lifestyles--or reconfigure the land. 
 
-Powell cautioned Congress in 1878 that life would have to mold itself around the West's sparse waterways, and he drew up a map which proposed that state lines follow alongside watershed boundaries. Each state, then, would organize public irrigation infrastructure in order to optimize water distribution for agrarian communities. At first, Powell's heedings were wholly rejected; lawmakers, like many Americans believed that as emigrants surged westward that "rain would follow the plow." But by 1902, Congress had come to accept that agrarianism in the west would fail without large-scale water management interventions, just as Powell had advised. Thus, the Bureau of Reclamation was born, which would go on to construct more than 600 dams, including the Hoover Dam, the Grand Coulee Dam, and the Glen Canyon Dam. 
+{% include feature/image-gallery.html objectid="sediment191" caption=false%}
 
+
+Powell cautioned Congress in 1890 that life would have to mold itself around the West's sparse waterways, and he drew up a map which proposed state lines follow watershed boundaries. Each state, then, would organize public irrigation infrastructure in order to provide water distribution for agrarian communities. At first, Powell's heedings were wholly rejected; lawmakers, like many Americans believed that as emigrants surged westward that "rain would follow the plow." But by 1902, Congress had come to accept that agrarian settlements in the west would fail without large-scale water management interventions, just as Powell had advised. Thus, the Bureau of Reclamation was born. Over the next hundred years, they would go on to construct more than 600 dams, including the Hoover Dam, the Grand Coulee Dam, and the Glen Canyon Dam, drastically transfiguring the landscapes and waterflows of the West. 
+
+But before these projects could begin, or even be imagined, the American West had to first be carefully mapped, its water tallied, and its topography plotted. Land managers, engineers, and lawmakers needed to understand the contours of the land and the precise location of its resources in order to lay out plans to settle it. 
+
+Thus, the first step to developing the West was to plumb the landscape for any evidence it offered towards its potential for extraction and development. Powell understood that such evidence  
 
 Powell read the traces in the landscape in order to chart a future for colonization. Both remnants of people, water, and plants mattered. 
-
-
 
 Powell saw geology and ethnography both as data for colonization. 
 
@@ -126,13 +130,48 @@ Irrigation ditches -->
 
 ## Earthly Archives/Archives
 
+
+
 ## Hole-in-the-Rock
 
 ## Failures
 
-## Reclamation 
+## Reclamation
 
 ## Rainbow Bridge
+
+## Remains of the Future
+
+IN DECEMBER 2025, I drove from my home in the Idaho panhandle down to Glen Canyon. This is a seventeen hour trip, so I stopped halfway for a few nights, in a small town along the western hem of the Tetons. I was hoping to cross country ski, but I arrived to find the valley bare and dry--which given the weeks-long string of sunny, 55 degree days wasn't so much surprising as disconcerting. 
+
+FIX: In the west, bad winters mean bad summers; rampant fires, smoke-choked skies, and half-empty reservoirs. Western Americans are closely attuned to these cross-seasonal contingencies . People I spoke with from Idaho to Arizona were anxiously monitoring the weather of the present in order to predict the climates of the future. Time and space in the west is linked 
+
+
+I drove up the upper reaches of the foothills were crusted with only a thin and scratchy layer of snow. I skied once, clattering over chundered trails, and then searched the internet for other things to do. 
+
+This was how I learned about the Teton Dam. FIX
+
+In November of 1975, the Bureau of Reclamation completed a 305-foot tall, half-mile long earthen dam along the Teton River, despite the alarm of their own engineers and geologists. The canyon which would buttress the dam was riddled with fissures and composed of porous rock--basalt and rhyolite. The region was known to experience regular seismic activity. But the Bureau, emboldened by their decades-long streak of building improbable dams simply caulked the rifts with grout and proceeded as usual. 
+
+The reservoir reached full pool seven months later--and immediately collapsed. 80 billion gallons of water moving at 2 million cubic feet per second surged out from the reservoir, chewing open the dam walls to rip across the plain in a flood 15 feet high and four miles across. Two towns were wiped off the banks. Eleven people and 16,000 livestock drowned. 
+
+Fifty years later, the landscape still bears the scars of the catastrophe, and the remnants of the failed dam. 
+
+The morning I went to the dam, a record-breaking was blowing across the Pacific Northwest. I drove thirty miles east out of Driggs, fighting to keep my car straight against gusts that reached eighty miles per hour. There is a small brown sign on the side of the highway, pointing down a broken road. I eased over potholes and heaves. In some sections, dirt had crawled out onto the pavement, covering it entirely. The road ends abruptly at the edge of the canyon, and is taped across by orange construction flagging. 
+
+I sat in my car for a moment, which was rocking in the heavy wind. Perhaps it was the apocalyptic weather--the grey yellow skies and the tumbleweeds shooting across the plains--or the signs posted all around that told me I was being surveilled, or the thick rusted pipe at the edge of the parking lot that looked as if it had been hurled up by the flood, or perhaps it was the knowing that I was in a place that fifty years before had been the site of cataclysmic disaster, but I began to feel a deep dread. Eventually I pushed my door open--it was caught by the wind and flung back and I had to fight to close it again. I started down a rutted dirt trail towards the remains of the dam. 
+
+The wind howled a low tone. It began to rain, and I nearly turned back, but the wind was pushing me forward and I went. Eventually, over a crest, the dam came into view. What remained was a stark and ugly cone with its face cut cleanly off, rising up from the canyon floor. Up on either hillside stood disconnected concrete abutments, both of which were scrawled with graffiti and circled by a chainlink fence that had been bent back in places where people had climbed through. I hurriedly took pictures, too frantic at this point to notice that some of my pictures were obscured by the fence wires. I turned down valley, and saw the path of the flood--a scoured chasm stretched out into the distance, walls bared and torn and crumbling in.
+
+A gust of wind whipped down the plains, this time bringing rain sideways, and the fence began to rattle. The dread 
+
+
+
+
+
+
+
+
 
 ## Reemergence
 

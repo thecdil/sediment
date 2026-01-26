@@ -22,7 +22,7 @@ scrollama: true
 {% include feature/image-gallery.html objectid="sediment133" caption=false%}
 </div>
 
-ABOVE GLEN CANYON'S rim, the land swells with domed mounds of rock. Their sides are deeply lacerated, but their edges are soft and swoop gently. To me, it looks as if scoops of ice cream have been dropped over the plateau, or as if a baker has patiently laminated slim rounds of cake and left them to droop, crack, and crumble under the hot sun. They reminisce of withered dunes fixed in place—which in fact, they are.   
+ABOVE GLEN CANYON'S rim, the land swells with domed mounds of rock. Their sides are deeply lacerated, but their edges are soft and swoop gently. To me, it looks as if scoops of ice cream have been dropped over the plateau, or as if a baker has patiently laminated slim rounds of cake and left them to droop and crumble under the hot sun. They reminisce of withered dunes fixed in place—which in fact, they are.   
 
 190 million years ago, during the Early Jurassic period, wind systems blew vast quantities of sand over the western continent. The sand piled into high dunes, and the winds whipped the dunes higher and steeper until the sand at the peaks met their angle of repose and tumbled down in thin avalanches to spill over the leeward slopes. Each avalanche spread a fresh coating over the dunes’ shoulders, and over time, these coatings stacked up like the layers of a cake. Later, under the weight of ensuing sand, each lamination was cemented in place, aided by cloying minerals.[^1]
 
@@ -239,7 +239,7 @@ Wonder thus became a limitlessly replenishable resource that promised to forever
 
 THE FEELING I remember most from my time on the Colorado Plateau is the crackling dryness that plucked at my skin, the film of dust that settled in my pores, in my the crevices of my bedding, in the fabric of my clothes. At night, the wind lifted up the rain fly of my tent, and in the morning, I would touch my face and find it slipped with fine grains. I spent most of my time outside, building trails for work, and had access to showers or sinks only when I returned to my aunt's house every eight days, where I would watch a muddy stream pour down the bathtub drain. For most of my days in the field, I was within a few horizontal miles of the Colorado River, but it was tucked out of reach, 6,000 feet below me at the bottom of the Grand Canyon. To drink from, bathe in, or touch the Colorado River would have required hiking 24 miles roundtrip from camp.  
 
-Only once, in all those months, did I wash my dust off in the Colorado River. This was during a detour to Lee’s Ferry, the only place in Arizona where the river’s canyons dip and relent enough to allow access by road. I jumped in fully clothed, and rubbed the sand out from my ears and the webbing of my hands. Then I sat down on the beach to dry. By the time I got back in the car, I was dusty again.
+Only once, in all those months, did I wash my dust off in the Colorado River. This was during a detour to Lee’s Ferry, one of the only places in Arizona where the river’s canyons dip and relent enough to allow access by road. I jumped in fully clothed, and rubbed the sand out from my ears and the webbing of my hands. Then I sat down on the beach to dry. By the time I got back in the truck, I was dusty again.
 
 {% include feature/image-gallery.html objectid="sediment123" caption=false%}
 
@@ -301,7 +301,7 @@ As the lake runs dry, a transformed landscape--and climate--is emerging. Where t
 ## Radium Dust
 {% include feature/image-gallery.html objectid="sediment60" caption=false%}
 
-In 1949, IN the wake of World War II and the rush for nuclear power, the Vanadium Corporation of America constructed a uranium mill on the banks of Glen Canyon. The mill closed in 1953, but Vanadium left behind 26,000 tons of radioactive tailings in an uncovered heap. When Lake Powell began to fill ten years later, dam managers decided to allow lake waters to back up over Vanadium's refuse, all of which leached into Lake Powell's sediment. [^30]
+IN 1949, following World War II and the rush for nuclear power, the Vanadium Corporation of America constructed a uranium mill on the banks of Glen Canyon. The mill closed in 1953, but Vanadium left behind 26,000 tons of radioactive tailings in an uncovered heap. When Lake Powell began to fill ten years later, dam managers decided to allow lake waters to back up over Vanadium's refuse, all of which leached into Lake Powell's sediment. [^30]
 
 If and when the lake retreats, radium-infused sediment will become exposed to air, and radioactive dust will blow across the basin. Uranium is bone-seeking, meaning once it gets into the body, it settles in the skeleton and incorporates with the bone's minerals. Cells decay when they come into contact with radium, causing the body to eventually disintegrate. 
 
@@ -341,9 +341,9 @@ In Glen Canyon, the out-of-control superstorm that is climate change and human r
 
 {% include feature/image-gallery.html objectid="sediment120" caption=false%}
 
-This is a landscape that is neither lost, nor wholly restored: this is a new kind of landscape altogether, rife with incongruities and surprises. Willows and cottonwoods are flourishing among radium beds and silt glaciers. And on some of these radium beds, communities of cryptobiotic microorganisms are already at work rebuilding desert crust, which scientists say could help prevent radioactive dust from blowing up into the air. [^34] This strikes me as a wondrous serendipity, that billions of organisms from diverse clades of life--bacteria, algae, fungi, lichens--are amassing to provide a protective shield over a problem that has stumped and worried both environmentalists and land managers.
+This is a landscape that is neither lost, nor wholly restored: this is a new kind of landscape altogether, rife with incongruities and surprises. Willows and cottonwoods are flourishing among radium beds and silt glaciers. And on some of these radium beds, communities of cryptobiotic microorganisms are already at work rebuilding desert crust, which scientists say could help prevent radioactive dust from blowing up into the air. [^34] This strikes me as a wondrous serendipity, that billions of organisms from diverse clades of life--bacteria, algae, fungi, lichens--are amassing to provide a protective shield over a problem that has stumped and worried both environmentalists and land managers for decades.
 
-Then again, this might not be serendipity at all. Diné understand that níłch’i, the Holy Wind will eventually remediate human disruptions and restore balance and harmony. This process of  reharmonization, however, is often preceded by human suffering and sacrifice, likely brought on by a period of persistent drought and disease. [^9]
+Then again, this might not be serendipity at all. Diné understand that níłch’i, the Holy Wind, will eventually remediate human disruptions and restore balance and harmony. This process of  reharmonization, however, is often preceded by human suffering and sacrifice, likely brought on by a period of persistent drought and disease. [^9]
 
 This whorl of time—in which (some) humans are able to inflict unfettered disruption on the world and expect the world not to rise back up in response-seems to be reaching its end. As we all are confronted with new kinds of landscapes, riddled with the relics of past mistakes and teeming with the life that has survived it all, I find myself wanting to lean again towards wonder. Not the kind of wonder that drives acquisition, possession, and eventually loss, but wonder of a different hue: a wonder that drives us, as philosopher Isabelle Stengers puts it, "to be surprised and entertain questions.” [^35] For now, I am entertaining the questions: 
 
@@ -355,7 +355,7 @@ What might I learn from listening to the stories embedded in Glen Canyon's sedim
 
 {% include feature/image-gallery.html objectid="sediment38" caption=false%} 
 
-As I try to map Glen Canyon's past and future stories, pull together the threads of events that have moved through so many other places, drawn along by so many other actors across so many different times, I think back to the swirled layers of the petrified sandsea. If I am to tell a true story about Glen Canyon, I think it needs to look like this: it needs to be particular--made of a mass of granular stories-- and it needs to also follow alongside the vaster currents that carried them there. These stories need to heap, whirl, and mingle, and they must inevitably erode, recirculate, and transform as they are dragged out into other spaces and other times.
+AS I TRY to map Glen Canyon's past and future stories, pull together the threads of events that have moved through so many other places, drawn along by so many other actors across so many different times, I think back to the swirled layers of the petrified sandsea. If I am to tell a true story about Glen Canyon, I think it needs to look like this: it needs to be particular--made of a mass of granular stories-- and it needs to also follow alongside the vaster currents that carried them there. These stories need to heap, whirl, and mingle, and they must inevitably erode, recirculate, and transform as they are dragged out into other spaces and other times.
 
 ## Works Cited
 
@@ -369,7 +369,7 @@ As I try to map Glen Canyon's past and future stories, pull together the threads
 
 [^5]: Mustoe, G. E. "The origin of honeycomb weathering." *Geological Society of America Bulletin,* vol. 93, 1982, pp. 108-115 [https://doi.org/10.1130/0016-7606(1982)93<108:TOOHW>2.0.CO;2.](https://doi.org/10.1130/0016-7606(1982)93<108:TOOHW>2.0.CO;2)
 
-[^6]: Cordova, Viola F.. "The Concept of Monism in Navajo Thought." (1992), pp. 70, 100, 92. [https://digitalrepository.unm.edu/phil_etds/29.](https://digitalrepository.unm.edu/phil_etds/29)
+[^6]: Cordova, Viola F. "The Concept of Monism in Navajo Thought." (1992), pp. 70, 100, 92. [https://digitalrepository.unm.edu/phil_etds/29.](https://digitalrepository.unm.edu/phil_etds/29)
 
 [^7]: McNeley, James Kale. *Holy Wind in Navajo Philosophy.* University of Arizona Press, 1981, p.35 [https://uapress.arizona.edu/book/holy-wind-in-navajo-philosophy.](https://uapress.arizona.edu/book/holy-wind-in-navajo-philosophy)
 
