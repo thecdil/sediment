@@ -1,130 +1,451 @@
 <div style="background:transparent;">
     <button class="navbar-toggler sediment-map-toggle {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border border-dark"
-        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-        aria-label="Open navigation">
+        type="button" onclick="openFullPageNav()" aria-label="Open navigation">
         <!-- Folding Map Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi icon-sprite map-icon"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
         </svg>
     </button>
-    <div class="offcanvas offcanvas-start bg-dark text-start" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header ">
-            <h2 class="offcanvas-title text-white" id="offcanvasNavbarLabel"><a class="text-white"
-                        href="{{ '/.html' | relative_url }}">{{ site.title }}</a></h2>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p class="h6 mb-3 text-white fst-italic">{{ site.tagline }}</p>
+    
+    <!-- Full Page Navigation Overlay -->
+    <div id="fullPageNav" class="full-page-nav">
+        <button class="close-nav-btn" onclick="closeFullPageNav()" aria-label="Close navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+        </button>
 
-            <div class="accordion accordion-flush" id="sideNavAccordion">
-                <!-- Main link -->
-                <div class="accordion-item bg-dark">
-                    <div class="nav-link text-light{% if page.url == '/' %} active{% endif %}">
-                        <a class="text-light text-decoration-none" href="{{ '/main.html' | relative_url }}">Main</a>
+        <!-- Sediment particle background -->
+        <svg class="nav-sediment-bg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="navParticles" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <circle cx="5" cy="8" r="1.2" fill="#8B7355" opacity="0.15"/>
+                    <circle cx="15" cy="5" r="0.9" fill="#A0845C" opacity="0.12"/>
+                    <circle cx="25" cy="12" r="1.4" fill="#CD853F" opacity="0.1"/>
+                    <circle cx="35" cy="18" r="1.1" fill="#D2691E" opacity="0.13"/>
+                    <circle cx="10" cy="25" r="0.8" fill="#DEB887" opacity="0.11"/>
+                    <circle cx="30" cy="30" r="1.3" fill="#BC8F8F" opacity="0.14"/>
+                    <circle cx="20" cy="35" r="1" fill="#F4A460" opacity="0.12"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#navParticles)"/>
+        </svg>
+
+        <div class="nav-content-wrapper">
+            <!-- Left side: Visual Navigation -->
+            <div class="visual-nav-section">
+                <h2 class="nav-section-heading">
+                    <span class="heading-main">Tributaries</span>
+                    <span class="heading-sub">Visual Map</span>
+                </h2>
+                
+                <div class="rivers-container">
+                    <!-- Land River -->
+                    <div class="river-column" data-tributary="land">
+                        <h3 class="river-title">Land</h3>
+                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <!-- Sediment particle patterns for segments -->
+                                <pattern id="landParticles" x="0" y="0" width="12" height="14" patternUnits="userSpaceOnUse">
+                                    <circle cx="2" cy="2" r="1.3" fill="#CD853F" opacity="0.8"/>
+                                    <circle cx="6" cy="3" r="1.1" fill="#D2691E" opacity="0.75"/>
+                                    <circle cx="10" cy="2.5" r="1.4" fill="#DEB887" opacity="0.7"/>
+                                    <circle cx="3" cy="6" r="1.2" fill="#BC8F8F" opacity="0.78"/>
+                                    <circle cx="8" cy="7" r="1.5" fill="#F4A460" opacity="0.73"/>
+                                    <circle cx="11" cy="8.5" r="1.1" fill="#A0522D" opacity="0.75"/>
+                                    <circle cx="1.5" cy="10" r="1.3" fill="#CD853F" opacity="0.8"/>
+                                    <circle cx="5.5" cy="11" r="1.2" fill="#D2691E" opacity="0.73"/>
+                                    <circle cx="9" cy="12.5" r="1.4" fill="#DEB887" opacity="0.77"/>
+                                </pattern>
+                                <pattern id="landParticlesSmall" x="0" y="0" width="8" height="10" patternUnits="userSpaceOnUse">
+                                    <circle cx="1.5" cy="1" r="0.7" fill="#CD853F" opacity="0.5"/>
+                                    <circle cx="4" cy="2" r="0.6" fill="#D2691E" opacity="0.55"/>
+                                    <circle cx="6.5" cy="1.5" r="0.8" fill="#DEB887" opacity="0.48"/>
+                                    <circle cx="2" cy="4" r="0.7" fill="#BC8F8F" opacity="0.52"/>
+                                    <circle cx="5" cy="5" r="0.75" fill="#F4A460" opacity="0.5"/>
+                                    <circle cx="7" cy="6" r="0.65" fill="#A0522D" opacity="0.53"/>
+                                    <circle cx="1" cy="7.5" r="0.7" fill="#CD853F" opacity="0.52"/>
+                                    <circle cx="3.5" cy="8.5" r="0.8" fill="#DEB887" opacity="0.5"/>
+                                    <circle cx="6" cy="9" r="0.7" fill="#D2691E" opacity="0.55"/>
+                                </pattern>
+                            </defs>
+                            <!-- Segments as rectangles filled with sediment particles -->
+                            <g class="river-segments">
+                                <g class="river-segment" data-section="formations" data-title="Formations">
+                                    <rect x="20" y="10" width="40" height="92" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="10" width="40" height="92" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="canyons" data-title="Canyons">
+                                    <rect x="20" y="107" width="40" height="92" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="107" width="40" height="92" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="mud" data-title="Mud">
+                                    <rect x="20" y="204" width="40" height="92" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="204" width="40" height="92" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="inscriptions" data-title="Inscriptions">
+                                    <rect x="20" y="301" width="40" height="92" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="301" width="40" height="92" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="collection-objects" data-title="Collection Objects">
+                                    <rect x="20" y="398" width="40" height="92" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="398" width="40" height="92" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Water River -->
+                    <div class="river-column" data-tributary="water">
+                        <h3 class="river-title">Water</h3>
+                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                            <g class="river-segments">
+                                <g class="river-segment" data-section="field-notes" data-title="Field Notes">
+                                    <rect x="20" y="10" width="40" height="67" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="10" width="40" height="67" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="seeps" data-title="Seeps">
+                                    <rect x="20" y="82" width="40" height="67" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="82" width="40" height="67" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="river" data-title="River">
+                                    <rect x="20" y="154" width="40" height="67" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="154" width="40" height="67" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="lake" data-title="Lake">
+                                    <rect x="20" y="226" width="40" height="67" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="226" width="40" height="67" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="flash-floods" data-title="Flash Floods">
+                                    <rect x="20" y="298" width="40" height="67" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="298" width="40" height="67" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="collection-objects" data-title="Collection Objects">
+                                    <rect x="20" y="370" width="40" height="120" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="370" width="40" height="120" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Biota River -->
+                    <div class="river-column" data-tributary="biota">
+                        <h3 class="river-title">Biota</h3>
+                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                            <g class="river-segments">
+                                <g class="river-segment" data-section="varnish" data-title="Varnish">
+                                    <rect x="20" y="10" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="10" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="mesozoic-lifeboats" data-title="Mesozoic Lifeboats">
+                                    <rect x="20" y="57" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="57" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="cyanobacteria" data-title="Cyanobacteria">
+                                    <rect x="20" y="104" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="104" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="cryptobiotic" data-title="Cryptobiotic">
+                                    <rect x="20" y="151" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="151" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="fish" data-title="Fish">
+                                    <rect x="20" y="198" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="198" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="beavers" data-title="Beavers">
+                                    <rect x="20" y="245" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="245" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="plants" data-title="Plants">
+                                    <rect x="20" y="292" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="292" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="antelope" data-title="Antelope">
+                                    <rect x="20" y="339" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="339" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="birds" data-title="Birds">
+                                    <rect x="20" y="386" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="386" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="other-life" data-title="Other life">
+                                    <rect x="20" y="433" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="433" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="collection-objects" data-title="Collection Objects">
+                                    <rect x="20" y="480" width="40" height="10" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="480" width="40" height="10" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Atmosphere River -->
+                    <div class="river-column" data-tributary="atmosphere">
+                        <h3 class="river-title">Atmosphere</h3>
+                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                            <g class="river-segments">
+                                <g class="river-segment" data-section="wind-memories" data-title="Wind Memories">
+                                    <rect x="20" y="10" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="10" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="sand-grains" data-title="Sand Grains">
+                                    <rect x="20" y="66" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="66" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="twin-warriors" data-title="Twin Warriors">
+                                    <rect x="20" y="122" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="122" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="crossed-tracks" data-title="Crossed Tracks">
+                                    <rect x="20" y="178" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="178" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="níłchi" data-title="Níłch'i">
+                                    <rect x="20" y="234" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="234" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="formations" data-title="Formations">
+                                    <rect x="20" y="290" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="290" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="wonder" data-title="Wonder">
+                                    <rect x="20" y="346" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="346" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="images-of-a-lost-world" data-title="Images of a Lost World">
+                                    <rect x="20" y="402" width="40" height="51" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="402" width="40" height="51" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="claiming-wonder" data-title="Claiming Wonder">
+                                    <rect x="20" y="458" width="40" height="32" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="458" width="40" height="32" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Humans River -->
+                    <div class="river-column" data-tributary="humans">
+                        <h3 class="river-title">Humans</h3>
+                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                            <g class="river-segments">
+                                <g class="river-segment" data-section="inscriptions" data-title="Inscriptions">
+                                    <rect x="20" y="10" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="10" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="subsumation" data-title="Subsumation">
+                                    <rect x="20" y="57" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="57" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="absence-and-presence" data-title="Absence and Presence">
+                                    <rect x="20" y="104" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="104" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="foundations" data-title="Foundations">
+                                    <rect x="20" y="151" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="151" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="earthly-archives" data-title="Earthly Archives">
+                                    <rect x="20" y="198" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="198" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="hole-in-the-rock" data-title="Hole-in-the-Rock">
+                                    <rect x="20" y="245" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="245" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="failures" data-title="Failures">
+                                    <rect x="20" y="292" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="292" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="reclamation" data-title="Reclamation">
+                                    <rect x="20" y="339" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="339" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="rainbow-bridge" data-title="Rainbow Bridge">
+                                    <rect x="20" y="386" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="386" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="remains-of-the-future" data-title="Remains of the Future">
+                                    <rect x="20" y="433" width="40" height="42" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="433" width="40" height="42" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                                <g class="river-segment" data-section="reemergence" data-title="Reemergence">
+                                    <rect x="20" y="480" width="40" height="10" fill="url(#landParticles)" rx="2"/>
+                                    <rect x="20" y="480" width="40" height="10" fill="url(#landParticlesSmall)" rx="2"/>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
                 </div>
 
-                <!-- Tributaries accordion item -->
-                <div class="accordion-item bg-dark">
-                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == "Tributaries"' %}
-                    {%- assign childStubs = navChildren | map: 'stub' -%}
-                    <div class="accordion-header" id="tributariesHeading">
-                        <button class="accordion-button collapsed nav-accordion-button text-light{% if childStubs contains page.url %} active{% endif %}" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#tributariesCollapse" 
-                                aria-expanded="false" 
-                                aria-controls="tributariesCollapse">
-                            <span class="text-light">Tributaries</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="chevron-icon" viewBox="0 0 16 16">
-                                <path d="m1 8 6-6 6 6 3 0L8 0 0 8z"/>
-                            </svg>
-                        </button>
+                <!-- Map legend -->
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <span class="legend-swatch"></span>
+                        <span class="legend-text">Hover to reveal section</span>
                     </div>
-                    <div id="tributariesCollapse" 
-                         class="accordion-collapse collapse{% if page.url contains 'tributaries' %} show{% endif %}" 
-                         aria-labelledby="tributariesHeading" 
-                         data-bs-parent="#sideNavAccordion">
-                        <div class="accordion-body p-0 ps-3">
-                            {% for c in site.tributaries %}
-                            <div class="nav-item">
-                                <a class="nav-link text-light {% if page.url contains c.url %}active{% endif %}"
-                                   href="{{ c.url | relative_url }}">{{ c.title }}</a>
-                            </div>
-                            {% endfor %}
-                        </div>
+                    <div class="legend-item">
+                        <span class="legend-swatch active"></span>
+                        <span class="legend-text">Current section</span>
                     </div>
                 </div>
-
-                <!-- Dynamic navigation items -->
-                {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
-                {% for nav in navItems %}
-                {% if nav.stub %}
-                <!-- Single nav item -->
-                <div class="accordion-item bg-dark">
-                    <div class="nav-link text-light{% if page.url == nav.stub %} active{% endif %}">
-                        <a class="text-light text-decoration-none" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
-                    </div>
-                </div>
-                {%- else -%}
-                <!-- Accordion nav item with children -->
-                <div class="accordion-item bg-dark">
-                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
-                    {%- assign childStubs = navChildren | map: 'stub' -%}
-                    {% assign accordionId = nav.display_name | slugify %}
-                    <div class="accordion-header" id="{{ accordionId }}Heading">
-                        <button class="accordion-button collapsed nav-accordion-button text-light{% if childStubs contains page.url %} active{% endif %}" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#{{ accordionId }}Collapse" 
-                                aria-expanded="false" 
-                                aria-controls="{{ accordionId }}Collapse">
-                            <span class="text-light">{{ nav.display_name }}</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="chevron-icon" viewBox="0 0 16 16">
-                                <path d="m1 8 6-6 6 6 3 0L8 0 0 8z"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="{{ accordionId }}Collapse" 
-                         class="accordion-collapse collapse{% if childStubs contains page.url %} show{% endif %}" 
-                         aria-labelledby="{{ accordionId }}Heading" 
-                         data-bs-parent="#sideNavAccordion">
-                        <div class="accordion-body p-0 ps-3">
-                            {% for c in navChildren %}
-                            <div class="nav-item">
-                                <a class="nav-link text-light {% if page.url == c.stub %}active{% endif %}"
-                                   href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                {% endif %}
-                {%- endfor -%}
             </div>
 
-            <div class="text-center">
-                {% if site.organization-logo-nav %}
-                <div class="mt-5">
+            <!-- Right side: Textual Navigation -->
+            <div class="textual-nav-section">
+                <h2 class="nav-section-heading">Site Navigation</h2>
+                
+                <nav class="text-nav-list">
+                    <a class="text-nav-link{% if page.url == '/main.html' %} active{% endif %}" href="{{ '/main.html' | relative_url }}">Main</a>
+                    <a class="text-nav-link{% if page.url == '/about.html' %} active{% endif %}" href="{{ '/about.html' | relative_url }}">About</a>
+                    <a class="text-nav-link{% if page.url == '/resources.html' %} active{% endif %}" href="{{ '/resources.html' | relative_url }}">Resources</a>
+                    
+                    <div class="text-nav-group">
+                        <div class="text-nav-group-title">Collection</div>
+                        <a class="text-nav-link{% if page.url == '/browse.html' %} active{% endif %}" href="{{ '/browse.html' | relative_url }}">Browse</a>
+                        <a class="text-nav-link{% if page.url == '/subjects.html' %} active{% endif %}" href="{{ '/subjects.html' | relative_url }}">Subjects</a>
+                        <a class="text-nav-link{% if page.url == '/map.html' %} active{% endif %}" href="{{ '/map.html' | relative_url }}">Map</a>
+                        <a class="text-nav-link{% if page.url == '/locations.html' %} active{% endif %}" href="{{ '/locations.html' | relative_url }}">Locations</a>
+                        <a class="text-nav-link{% if page.url == '/data.html' %} active{% endif %}" href="{{ '/data.html' | relative_url }}">Data</a>
+                    </div>
+
+                    <div class="text-nav-group">
+                        <div class="text-nav-group-title">Tributaries</div>
+                        {% for c in site.tributaries %}
+                        <a class="text-nav-link {% if page.url contains c.url %}active{% endif %}" href="{{ c.url | relative_url }}">{{ c.title }}</a>
+                        {% endfor %}
+                    </div>
+                </nav>
+
+                <div class="nav-logos">
+                    {% if site.organization-logo-nav %}
                     <a href="{{ site.organization-link }}" target="_blank" rel="noopener">
-                        <img id="footer-logo" class="img-fluid sidebar-nav-imag"
-                            src="{{ site.organization-logo-nav | relative_url }}"
-                            alt="{{ site.organization-name | escape }} home">
+                        <img class="nav-logo-img" src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name | escape }} home">
                     </a>
-                </div>
-                {% endif %}
-                <div class="mt-3">
+                    {% endif %}
                     <a href="https://www.lib.uidaho.edu" target="_blank" rel="noopener">
-                        <img id="footer-logo" class="img-fluid sidebar-nav-imag"
-                            src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png"
-                            alt="{{ site.organization-name | escape }} home">
+                        <img class="nav-logo-img" src="https://www.lib.uidaho.edu/media/digital/liblogo_transparent.png" alt="University of Idaho Library">
                     </a>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
+
+<script>
+(function() {
+    'use strict';
+    
+    // Get current page info on load
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash.replace('#', '');
+    const currentTributary = getCurrentTributary(currentPath);
+    
+    function getCurrentTributary(path) {
+        if (path.includes('/tributaries/land')) return 'land';
+        if (path.includes('/tributaries/water')) return 'water';
+        if (path.includes('/tributaries/biota')) return 'biota';
+        if (path.includes('/tributaries/atmosphere')) return 'atmosphere';
+        if (path.includes('/tributaries/humans')) return 'humans';
+        return null;
+    }
+    
+    // Highlight current tributary and section
+    document.addEventListener('DOMContentLoaded', function() {
+        if (currentTributary) {
+            const riverColumns = document.querySelectorAll('.river-column');
+            riverColumns.forEach(column => {
+                if (column.dataset.tributary === currentTributary) {
+                    column.classList.add('current-tributary');
+                    
+                    // Highlight current section if hash matches
+                    if (currentHash) {
+                        const segments = column.querySelectorAll('.river-segment');
+                        segments.forEach(segment => {
+                            if (segment.dataset.section === currentHash) {
+                                segment.classList.add('active');
+                            }
+                        });
+                    }
+                }
+            });
+        }
+        
+        // Attach hover and click handlers to all segments
+        const segments = document.querySelectorAll('.river-segment');
+        segments.forEach(segment => {
+            segment.addEventListener('mouseenter', showLabel);
+            segment.addEventListener('mouseleave', hideLabel);
+            segment.addEventListener('click', navigateToSection);
+        });
+    });
+    
+    function showLabel(e) {
+        const segment = e.currentTarget;
+        const title = segment.dataset.title;
+        const svg = segment.closest('svg');
+        
+        // Remove any existing label in this SVG
+        const existingLabel = svg.querySelector('.segment-label');
+        if (existingLabel) {
+            existingLabel.remove();
+        }
+        
+        // Create text element
+        const textEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        textEl.classList.add('segment-label');
+        
+        // Get segment position - use first rect in group for positioning
+        const rect = segment.querySelector('rect');
+        const x = parseFloat(rect.getAttribute('x')) + parseFloat(rect.getAttribute('width')) / 2;
+        const y = parseFloat(rect.getAttribute('y')) + parseFloat(rect.getAttribute('height')) / 2;
+        
+        textEl.setAttribute('x', x);
+        textEl.setAttribute('y', y + 3);
+        textEl.setAttribute('text-anchor', 'middle');
+        textEl.setAttribute('dominant-baseline', 'middle');
+        textEl.textContent = title;
+        
+        svg.appendChild(textEl);
+    }
+    
+    function hideLabel(e) {
+        const segment = e.currentTarget;
+        const svg = segment.closest('svg');
+        const label = svg.querySelector('.segment-label');
+        if (label) {
+            label.remove();
+        }
+    }
+    
+    function navigateToSection(e) {
+        const segment = e.currentTarget;
+        const column = segment.closest('.river-column');
+        const tributary = column.dataset.tributary;
+        const sectionId = segment.dataset.section;
+        
+        window.location.href = '{{ "/tributaries/" | relative_url }}' + tributary + '/#' + sectionId;
+    }
+})();
+
+// Full page nav open/close functions
+function openFullPageNav() {
+    document.getElementById('fullPageNav').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFullPageNav() {
+    document.getElementById('fullPageNav').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close on Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeFullPageNav();
+    }
+});
+</script>
