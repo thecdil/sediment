@@ -431,6 +431,193 @@
     }
 })();
 
+// Tributaries navigation data loader
+// This module loads tributary section data from JSON and dynamically generates river segments
+// Features:
+//   - Caches data in sessionStorage for 1 hour to reduce server requests
+//   - Dynamically calculates segment heights based on number of sections per tributary
+//   - Attaches hover labels and click handlers to all segments
+//   - Falls back gracefully to hardcoded segments if JSON fetch fails
+(function() {
+    const STORAGE_KEY = 'sediment_tributaries_data';
+    const STORAGE_TIMESTAMP_KEY = 'sediment_tributaries_timestamp';
+    const CACHE_DURATION = 1000 * 60 * 60; // 1 hour
+
+    // Load tributary data from cache or fetch from server
+    // Automatically called when DOM is ready
+    function loadTributariesData() {
+        // Check sessionStorage first
+        const cachedData = sessionStorage.getItem(STORAGE_KEY);
+        const cachedTimestamp = sessionStorage.getItem(STORAGE_TIMESTAMP_KEY);
+        
+        if (cachedData && cachedTimestamp) {
+            const age = Date.now() - parseInt(cachedTimestamp);
+            if (age < CACHE_DURATION) {
+                try {
+                    const data = JSON.parse(cachedData);
+                    renderNavigation(data);
+                    return;
+                } catch (e) {
+                    console.warn('Failed to parse cached tributaries data:', e);
+                }
+            }
+        }
+
+        // Fetch from server
+        const navContainer = document.getElementById('fullPageNav');
+        if (navContainer) {
+            navContainer.classList.add('loading');
+        }
+
+        fetch('{{ "/assets/data/tributaries.json" | relative_url }}')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load tributaries data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Cache the data
+                sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+                sessionStorage.setItem(STORAGE_TIMESTAMP_KEY, Date.now().toString());
+                renderNavigation(data);
+            })
+            .catch(error => {
+                console.error('Error loading tributaries data:', error);
+                console.error('Check if /assets/data/tributaries.json is accessible');
+                // Navigation already has hardcoded fallback segments
+                if (navContainer) {
+                    navContainer.classList.remove('loading');
+                }
+            });
+    }
+
+    // Render navigation segments from tributary data
+    // Dynamically creates SVG rect elements for each section with proportional heights
+    // Marks the current tributary based on URL path
+    function renderNavigation(data) {
+        const currentPath = window.location.pathname;
+        
+        data.tributaries.forEach(trib => {
+            const riverColumn = document.querySelector(`.river-column[data-tributary="${trib.slug}"]`);
+            if (!riverColumn) return;
+
+            const svg = riverColumn.querySelector('.vertical-river');
+            const segmentsGroup = svg.querySelector('.river-segments');
+            if (!segmentsGroup) return;
+
+            // Clear existing segments
+            segmentsGroup.innerHTML = '';
+
+            const viewBoxHeight = 500;
+            const sectionCount = trib.sections.length;
+            const segmentHeight = Math.floor((viewBoxHeight - 10) / sectionCount) - 5;
+
+            trib.sections.forEach((section, index) => {
+                const yPos = 10 + (index * (segmentHeight + 5));
+                
+                const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                g.setAttribute('class', 'river-segment');
+                g.setAttribute('data-section', section.id);
+                g.setAttribute('data-title', section.heading);
+
+                // Create two rects for layered particle effect
+                const rect1 = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect1.setAttribute('x', '20');
+                rect1.setAttribute('y', yPos.toString());
+                rect1.setAttribute('width', '40');
+                rect1.setAttribute('height', segmentHeight.toString());
+                rect1.setAttribute('fill', 'url(#landParticles)');
+                rect1.setAttribute('rx', '2');
+
+                const rect2 = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect2.setAttribute('x', '20');
+                rect2.setAttribute('y', yPos.toString());
+                rect2.setAttribute('width', '40');
+                rect2.setAttribute('height', segmentHeight.toString());
+                rect2.setAttribute('fill', 'url(#landParticlesSmall)');
+                rect2.setAttribute('rx', '2');
+
+                g.appendChild(rect1);
+                g.appendChild(rect2);
+                segmentsGroup.appendChild(g);
+            });
+
+            // Mark current tributary
+            if (currentPath.includes(trib.slug)) {
+                riverColumn.classList.add('current-tributary');
+            }
+        });
+
+        // Re-attach event listeners
+        attachSegmentListeners();
+        
+        const navContainer = document.getElementById('fullPageNav');
+        if (navContainer) {
+            navContainer.classList.remove('loading');
+        }
+    }
+
+    // Attach event listeners to dynamically generated segments
+    // Handles: hover labels, click navigation, label positioning
+    function attachSegmentListeners() {
+        document.querySelectorAll('.river-segment').forEach(segment => {
+            segment.addEventListener('mouseenter', function(e) {
+                const segment = e.currentTarget;
+                const title = segment.dataset.title;
+                const svg = segment.closest('svg');
+                
+                // Remove any existing label in this SVG
+                const existingLabel = svg.querySelector('.segment-label');
+                if (existingLabel) {
+                    existingLabel.remove();
+                }
+                
+                // Create text element
+                const textEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                textEl.classList.add('segment-label');
+                
+                // Get segment position - use first rect in group for positioning
+                const rect = segment.querySelector('rect');
+                const x = parseFloat(rect.getAttribute('x')) + parseFloat(rect.getAttribute('width')) / 2;
+                const y = parseFloat(rect.getAttribute('y')) + parseFloat(rect.getAttribute('height')) / 2;
+                
+                textEl.setAttribute('x', x);
+                textEl.setAttribute('y', y + 3);
+                textEl.setAttribute('text-anchor', 'middle');
+                textEl.setAttribute('dominant-baseline', 'middle');
+                textEl.textContent = title;
+                
+                svg.appendChild(textEl);
+            });
+            
+            segment.addEventListener('mouseleave', function(e) {
+                const segment = e.currentTarget;
+                const svg = segment.closest('svg');
+                const label = svg.querySelector('.segment-label');
+                if (label) {
+                    label.remove();
+                }
+            });
+            
+            segment.addEventListener('click', function(e) {
+                const segment = e.currentTarget;
+                const section = segment.getAttribute('data-section');
+                const column = segment.closest('.river-column');
+                const tributary = column.getAttribute('data-tributary');
+                window.location.href = '{{ "/tributaries/" | relative_url }}' + tributary + '/#' + section;
+            });
+        });
+    }
+
+    // Load when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadTributariesData);
+    } else {
+        loadTributariesData();
+    }
+})();
+
 // Full page nav open/close functions
 function openFullPageNav() {
     document.getElementById('fullPageNav').classList.add('active');
