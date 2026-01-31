@@ -5,6 +5,22 @@ custom-foot: js/spotlight-media-handler.html
 
 {% assign tributary_side = page.tributary-side | default: "left" %}
 
+<!-- Include the full navigation (overlay, script, button) -->
+<!-- The original button will be hidden via CSS, only our sticky one will show -->
+{% include side-nav-banner.html %}
+
+<!-- Sticky Navigation Button for Tributary Pages -->
+<div class="sticky-nav-button">
+  <button class="navbar-toggler sediment-map-toggle text-dark bg-light border border-dark"
+      type="button" onclick="openFullPageNav()" aria-label="Open navigation">
+      <!-- Folding Map Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi icon-sprite map-icon"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
+      </svg>
+  </button>
+</div>
+
 <div class="tributary-container">
   <!-- SVG River Background -->
   {% include tributary-river.html side=tributary_side id=page.slug %}

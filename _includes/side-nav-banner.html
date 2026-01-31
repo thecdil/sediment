@@ -1,5 +1,5 @@
 <div style="background:transparent;">
-    <button class="navbar-toggler sediment-map-toggle {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border border-dark"
+    <button class="{% if page.layout == 'tributary' %} d-none{% endif %} navbar-toggler{% unless page.layout == 'tributary' %} sediment-map-toggle {% endunless %} {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border border-dark"
         type="button" onclick="openFullPageNav()" aria-label="Open navigation">
         <!-- Folding Map Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi icon-sprite map-icon"

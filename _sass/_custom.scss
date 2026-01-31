@@ -587,6 +587,46 @@ article{
    River Navigation Styles
    ======================================== */
 
+/* Hide the first div with background:transparent (the button wrapper) on tributary pages */
+body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first-of-type {
+  display: none !important;
+}
+
+/* Sticky navigation button for tributary pages */
+.sticky-nav-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.sticky-nav-button .sediment-map-toggle {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(139, 115, 85, 0.3) !important;
+}
+
+.sticky-nav-button .sediment-map-toggle:hover {
+  box-shadow: 0 6px 20px rgba(205, 133, 63, 0.4);
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(205, 133, 63, 0.6) !important;
+}
+
+.sticky-nav-button .sediment-map-toggle svg {
+  width: 28px;
+  height: 28px;
+}
+
 /* Full Page Navigation Overlay */
 .full-page-nav {
   position: fixed;
