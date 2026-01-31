@@ -439,6 +439,12 @@
 //   - Attaches hover labels and click handlers to all segments
 //   - Falls back gracefully to hardcoded segments if JSON fetch fails
 (function() {
+    // Prevent multiple initializations
+    if (window.sedimentNavInitialized) {
+        return;
+    }
+    window.sedimentNavInitialized = true;
+    
     const STORAGE_KEY = 'sediment_tributaries_data';
     const STORAGE_TIMESTAMP_KEY = 'sediment_tributaries_timestamp';
     const CACHE_DURATION = 1000 * 60 * 60; // 1 hour
@@ -563,6 +569,12 @@
     function attachSegmentListeners() {
         document.querySelectorAll('.river-segment').forEach(segment => {
             segment.addEventListener('mouseenter', function(e) {
+                const column = e.currentTarget.closest('.river-column');
+                // Don't show individual labels if this river is locked or another is locked
+                if (column.classList.contains('locked') || document.querySelector('.river-column.locked')) {
+                    return;
+                }
+                
                 const segment = e.currentTarget;
                 const title = segment.dataset.title;
                 const svg = segment.closest('svg');
@@ -592,6 +604,12 @@
             });
             
             segment.addEventListener('mouseleave', function(e) {
+                const column = e.currentTarget.closest('.river-column');
+                // Don't remove labels if this river is locked
+                if (column.classList.contains('locked')) {
+                    return;
+                }
+                
                 const segment = e.currentTarget;
                 const svg = segment.closest('svg');
                 const label = svg.querySelector('.segment-label');
@@ -606,6 +624,112 @@
                 const column = segment.closest('.river-column');
                 const tributary = column.getAttribute('data-tributary');
                 window.location.href = '{{ "/tributaries/" | relative_url }}' + tributary + '/#' + section;
+            });
+        });
+        
+        // Attach river title click/hover handlers
+        attachRiverTitleHandlers();
+    }
+    
+    // Show all labels for a river column
+    function showAllLabels(riverColumn) {
+        const svg = riverColumn.querySelector('.vertical-river');
+        const segments = riverColumn.querySelectorAll('.river-segment');
+        
+        segments.forEach(segment => {
+            const title = segment.dataset.title;
+            const rect = segment.querySelector('rect');
+            const x = parseFloat(rect.getAttribute('x')) + parseFloat(rect.getAttribute('width')) / 2;
+            const y = parseFloat(rect.getAttribute('y')) + parseFloat(rect.getAttribute('height')) / 2;
+            
+            const textEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            textEl.classList.add('segment-label');
+            textEl.setAttribute('x', x);
+            textEl.setAttribute('y', y + 3);
+            textEl.setAttribute('text-anchor', 'middle');
+            textEl.setAttribute('dominant-baseline', 'middle');
+            textEl.textContent = title;
+            
+            svg.appendChild(textEl);
+        });
+    }
+    
+    // Hide all labels for a river column
+    function hideAllLabels(riverColumn) {
+        const svg = riverColumn.querySelector('.vertical-river');
+        const labels = svg.querySelectorAll('.segment-label');
+        labels.forEach(label => label.remove());
+    }
+    
+    // Attach hover and click handlers to river titles
+    function attachRiverTitleHandlers() {
+        document.querySelectorAll('.river-title').forEach(title => {
+            // Skip if already has handlers attached
+            if (title.dataset.handlersAttached === 'true') {
+                return;
+            }
+            title.dataset.handlersAttached = 'true';
+            
+            title.style.cursor = 'pointer';
+            
+            // Hover: show labels temporarily
+            title.addEventListener('mouseenter', function(e) {
+                const column = e.currentTarget.closest('.river-column');
+                const lockedColumn = document.querySelector('.river-column.locked');
+                
+                // If this column is already locked, do nothing on hover
+                if (column.classList.contains('locked')) {
+                    return;
+                }
+                
+                // If another column is locked, mute it
+                if (lockedColumn && lockedColumn !== column) {
+                    lockedColumn.classList.add('muted');
+                }
+                
+                // Show labels for this river
+                showAllLabels(column);
+            });
+            
+            title.addEventListener('mouseleave', function(e) {
+                const column = e.currentTarget.closest('.river-column');
+                const lockedColumn = document.querySelector('.river-column.locked');
+                
+                // If this column is locked, don't hide on mouse leave
+                if (column.classList.contains('locked')) {
+                    return;
+                }
+                
+                // Hide labels
+                hideAllLabels(column);
+                
+                // Unmute any muted columns
+                if (lockedColumn) {
+                    lockedColumn.classList.remove('muted');
+                }
+            });
+            
+            // Click: toggle lock
+            title.addEventListener('click', function(e) {
+                const column = e.currentTarget.closest('.river-column');
+                const wasLocked = column.classList.contains('locked');
+                
+                // Unlock all other rivers first
+                document.querySelectorAll('.river-column.locked').forEach(col => {
+                    col.classList.remove('locked', 'muted');
+                    hideAllLabels(col);
+                });
+                
+                if (wasLocked) {
+                    // Clicking again unlocks
+                    column.classList.remove('locked');
+                    hideAllLabels(column);
+                } else {
+                    // Lock this river
+                    column.classList.add('locked');
+                    hideAllLabels(column); // Clear any existing
+                    showAllLabels(column);
+                }
             });
         });
     }

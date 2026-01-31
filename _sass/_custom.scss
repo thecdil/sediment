@@ -824,6 +824,9 @@ body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first
   align-items: center;
   min-width: 0;
   position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 15px 10px;
+  border-radius: 8px;
 }
 
 .river-column.current-tributary .river-title {
@@ -832,15 +835,38 @@ body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first
   font-weight: 700;
 }
 
-.river-column.current-tributary::before {
-  content: '●';
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #CD853F;
-  font-size: 12px;
-  animation: pulse 2s ease-in-out infinite;
+/* Highlight when on current tributary page */
+.river-column.current-tributary {
+  background: rgba(205, 133, 63, 0.25);
+  border-top: 3px solid #CD853F;
+  box-shadow: 0 2px 8px rgba(205, 133, 63, 0.2);
+}
+
+/* Locked state - labels persist */
+.river-column.locked {
+  background: rgba(205, 133, 63, 0.25);
+  border-top: 3px solid #CD853F;
+  box-shadow: 0 2px 8px rgba(205, 133, 63, 0.2);
+}
+
+.river-column.locked .segment-label {
+  opacity: 1;
+}
+
+/* Hover state - temporary highlight */
+.river-column:hover:not(.locked):not(.muted) {
+  background: rgba(139, 115, 85, 0.15);
+  border-top: 3px solid rgba(205, 133, 63, 0.5);
+  box-shadow: 0 2px 8px rgba(205, 133, 63, 0.1);
+}
+
+/* Muted state - when another river is active */
+.river-column.muted {
+  opacity: 0.35;
+}
+
+.river-column.muted .segment-label {
+  opacity: 0.3;
 }
 
 @keyframes pulse {
@@ -858,6 +884,15 @@ body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first
   writing-mode: horizontal-tb;
   text-align: center;
   transition: all 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.river-title:hover {
+  color: #F5DEB3;
+  text-shadow: 0 0 10px rgba(205, 133, 63, 0.4);
 }
 
 /* Vertical river SVG */
