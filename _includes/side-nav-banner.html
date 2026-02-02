@@ -1,6 +1,6 @@
 <div style="background:transparent;">
     <button class="{% if page.layout == 'tributary' %} d-none{% endif %} navbar-toggler{% unless page.layout == 'tributary' %} sediment-map-toggle {% endunless %} {% if page.layout == 'home' %}text-white{% else %}text-dark bg-light{% endif %} border border-dark"
-        type="button" onclick="openFullPageNav()" aria-label="Open navigation">
+        type="button" onclick="openFullPageNav()" aria-label="Toggle navigation">
         <!-- Folding Map Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi icon-sprite map-icon"
             viewBox="0 0 16 16">
@@ -44,7 +44,7 @@
                     <!-- Land River -->
                     <div class="river-column" data-tributary="land">
                         <h3 class="river-title">Land</h3>
-                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="vertical-river" viewBox="0 0 80 700" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <!-- Sediment particle patterns for segments -->
                                 <pattern id="landParticles" x="0" y="0" width="12" height="14" patternUnits="userSpaceOnUse">
@@ -99,7 +99,7 @@
                     <!-- Water River -->
                     <div class="river-column" data-tributary="water">
                         <h3 class="river-title">Water</h3>
-                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="vertical-river" viewBox="0 0 80 700" xmlns="http://www.w3.org/2000/svg">
                             <g class="river-segments">
                                 <g class="river-segment" data-section="field-notes" data-title="Field Notes">
                                     <rect x="20" y="10" width="40" height="67" fill="url(#landParticles)" rx="2"/>
@@ -132,7 +132,7 @@
                     <!-- Biota River -->
                     <div class="river-column" data-tributary="biota">
                         <h3 class="river-title">Biota</h3>
-                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="vertical-river" viewBox="0 0 80 700" xmlns="http://www.w3.org/2000/svg">
                             <g class="river-segments">
                                 <g class="river-segment" data-section="varnish" data-title="Varnish">
                                     <rect x="20" y="10" width="40" height="42" fill="url(#landParticles)" rx="2"/>
@@ -185,7 +185,7 @@
                     <!-- Atmosphere River -->
                     <div class="river-column" data-tributary="atmosphere">
                         <h3 class="river-title">Atmosphere</h3>
-                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="vertical-river" viewBox="0 0 80 700" xmlns="http://www.w3.org/2000/svg">
                             <g class="river-segments">
                                 <g class="river-segment" data-section="wind-memories" data-title="Wind Memories">
                                     <rect x="20" y="10" width="40" height="51" fill="url(#landParticles)" rx="2"/>
@@ -230,7 +230,7 @@
                     <!-- Humans River -->
                     <div class="river-column" data-tributary="humans">
                         <h3 class="river-title">Humans</h3>
-                        <svg class="vertical-river" viewBox="0 0 80 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="vertical-river" viewBox="0 0 80 700" xmlns="http://www.w3.org/2000/svg">
                             <g class="river-segments">
                                 <g class="river-segment" data-section="inscriptions" data-title="Inscriptions">
                                     <rect x="20" y="10" width="40" height="42" fill="url(#landParticles)" rx="2"/>
@@ -515,7 +515,7 @@
             // Clear existing segments
             segmentsGroup.innerHTML = '';
 
-            const viewBoxHeight = 500;
+            const viewBoxHeight = 700;
             const sectionCount = trib.sections.length;
             const segmentHeight = Math.floor((viewBoxHeight - 10) / sectionCount) - 5;
 
