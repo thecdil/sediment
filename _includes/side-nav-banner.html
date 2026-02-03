@@ -745,11 +745,13 @@
 // Full page nav open/close functions
 function openFullPageNav() {
     document.getElementById('fullPageNav').classList.add('active');
+    document.body.classList.add('nav-open');
     document.body.style.overflow = 'hidden';
 }
 
 function closeFullPageNav() {
     document.getElementById('fullPageNav').classList.remove('active');
+    document.body.classList.remove('nav-open');
     document.body.style.overflow = '';
 }
 

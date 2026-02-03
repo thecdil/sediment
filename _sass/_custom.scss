@@ -4,9 +4,8 @@
 */
 
 /* Hide sticky nav button when full page nav is open */
-#fullPageNav.active ~ .sticky-nav-button,
-.full-page-nav.active ~ .sticky-nav-button {
-  display: none;
+body.nav-open .sticky-nav-button {
+  display: none !important;
 }
 
 #maincontent{
