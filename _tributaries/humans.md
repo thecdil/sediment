@@ -26,7 +26,7 @@ scrollama: true
 
 <br>
 
-SCRAWLED ACROSS GLEN Canyon's rock faces are the tracks and tracings of human life. Some of these markings are inadvertent, the scars left behind as people moved through and settled in the Canyon. Chinked steps, gouged footholds, dynamite-blasted trails reveal where Paiute hunters, Diné sheepherders, Spanish Conquistadors, Mormon pioneers, and uranium miners sought access to--or passageway through--the canyon's enclaves. Dugout caves, adobe dwellings, stone granaries, irrigation canals, and the borings of loom holes locate where Puebloan weavers, Hopi Farmers,and gold prospectors made their homes. 
+SCRAWLED ACROSS GLEN Canyon's rock faces are the tracks and tracings of human life. Some of these markings are inadvertent, the scars left behind as people moved through and settled in the Canyon. Chinked steps, gouged footholds, dynamite-blasted trails reveal where Paiute hunters, Diné sheepherders, Spanish Conquistadors, Mormon pioneers, and uranium miners sought access to--or passageway through--the canyon's enclaves. Dugout caves, adobe dwellings, stone granaries, irrigation canals, and the borings of loom holes locate where Pueblo weavers, Hopi Farmers, and gold prospectors made their homes. 
 
 Other markings are intentional, as if those humans who engraved petroglyph tapestries and carved out their names wanted to ensure their existence was remembered by the people of the future. 
 
@@ -102,7 +102,7 @@ Material traces connect people across otherwise disconnected segments of time, a
 {% include feature/image-gallery.html objectid="sediment164" caption=false%}
 
 
-ONE DAY AFTER the completion of the Transcontinental Railroad, ten men disembarked from a Union Pacific Train at Green River Station, Wyoming. They had with them four wooden boats, packed with compasses, thermometers, barometers, chronometers, guns, ammunition, as well as coffee, flour, bacon, and beans, paid for by the U.S. Army. Thirteen days later, on May 24th, 1869, the men and their boats pushed off from the banks of the Green River and headed downstream towards the Colorado. They would paddle nearly one thousand miles over the course of the next three months, lose one of their boats and a third of their food, and three of the men would die. 
+ONE DAY AFTER the completion of the Transcontinental Railroad, ten men disembarked from a Union Pacific Train at Green River Station, Wyoming. They had with them four wooden boats, packed with compasses, thermometers, barometers, chronometers, guns, and ammunition, as well as coffee, flour, bacon, and beans, all paid for by the U.S. Army. Thirteen days later, on May 24th, 1869, the men and their boats pushed off from the banks of the Green River and headed downstream towards the Colorado. They would paddle nearly one thousand miles over the course of the next three months, lose one of their boats and a third of their food, and three of the men would die. 
 
 Their leader was John Wesley Powell, a one-armed Civil war Veteran, geologist, ethnographer, and botanist, and their purpose was to survey the length of the Colorado River. They assessed the land's potential for settlement and agriculture, and they filled in what had been considered a "blank spot" on the map of the United States with data on the basin's topography, climate, botanical makeup, water resources, and Indigenous cultures. 
 
