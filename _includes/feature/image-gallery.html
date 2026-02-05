@@ -33,7 +33,11 @@
 {%- capture image_alt -%}{{ alts[forloop.index0] }}{%- endcapture -%}
 {%- capture image_link -%}{{ links[forloop.index0] | default: image_src }}{%- endcapture -%}
 {% else %}
-{%- assign figure = site.data[site.metadata] | where: "objectid", i | first -%}
+{%- assign metadata_source = page.metadata | default: site.metadata -%}
+{%- assign figure = site.data[metadata_source] | where: "objectid", i | first -%}
+{%- if figure == nil -%}
+  {%- assign figure = site.data[site.metadata] | where: "objectid", i | first -%}
+{%- endif -%}
 {%- capture image_link -%}{{ '/items/' | relative_url }}{% if figure.parentid %}{{ figure.parentid }}.html#{{ figure.objectid }}{% else %}{{ figure.objectid }}.html{% endif %}{% endcapture %}
 {%- capture image_caption -%}{{ captions[forloop.index0] | default: figure.title }}{%- endcapture -%}
 {%- capture image_alt -%}{{ alts[forloop.index0] | default: figure.image_alt_text | default: figure.description | default: figure.title }}{%- endcapture -%}
