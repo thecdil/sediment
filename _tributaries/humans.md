@@ -28,7 +28,7 @@ scrollama: true
 
 SCRAWLED ACROSS GLEN Canyon's rock faces are the tracks and tracings of human life. Some of these markings are inadvertent, the scars left behind as people moved through and settled in the Canyon. Chinked steps, gouged footholds, dynamite-blasted trails reveal where Paiute hunters, Diné sheepherders, Spanish Conquistadors, Mormon pioneers, and uranium miners sought access to--or passageway through--the canyon's enclaves. Dugout caves, adobe dwellings, stone granaries, irrigation canals, and the borings of loom holes locate where Pueblo weavers, Hopi Farmers, and gold prospectors made their homes. 
 
-Other markings are intentional, as if those humans who engraved petroglyph tapestries and carved out their names wanted to ensure their existence was remembered by the people of the future. 
+Other markings are intentional, as if those humans who engraved petroglyph tapestries and carved their names wanted to ensure their existence was remembered by the people of the future. 
 
 All of these tracings, inadvertent or intentional, assert a claim on Glen Canyon. 
 
@@ -40,7 +40,7 @@ For political ecologist Laura Ogden, such processes, in which an actor--human or
 
 Glen Canyon's inscriptions, then, trace out a kind of territorial map, overlapping with various and often contested claims. 
 
-This map is not flat, and its territories do not sit cleanly beside one another (as few territories do). This is a vertical and lively cartography; more like a palimpsest in which various inscriptions layer and touch, transform and efface one another through time. This is a map whose material recirculates and is reused to build new life: the concrete of dams, the adobe grouting of homes, or the bedding of microbes.
+This map is not flat, and its territories do not sit cleanly beside one another (as few territories do). This is a vertical and lively cartography; more like a palimpsest in which various inscriptions layer and touch, transform and efface one another through time. This is a map whose material recirculates, and sometimes is reused to build new life: the concrete of dams, the adobe grouting of homes, or the bedding of microbes.
 
 <br><br>
 
@@ -53,7 +53,7 @@ This map is not flat, and its territories do not sit cleanly beside one another 
 
 {% include feature/image-gallery.html objectid="sediment123" caption=false%}
 
-WHEN THE GLEN Canyon Dam was completed in 1963, the United States declared--in the dam's 700-foot tall concrete walls and in the reservoir it sent spreading over 250 square miles of land--that the Canyon and its flooded tributaries were theirs. As Lake Powell bloated higher and swelled further than the river had ever reached, its waters engulfed thousands of Indigenous petroglyphs, dwellings, and trails, drowned out the microbial films which once draped the Canyon's walls, the habitats and shallow prints of herons, frogs, and lizards, and the swaths of coyote willow, paintbrush, columbines, and cottonwoods that once grew along the riverbanks. Lake Powell covered, too, the tracks of colonial forebears, swallowing the physical residues of mining operations, the etchings made by the canyon's first white explorers, and homesteads of early settlers. And it hid the once volatile river beneath its glossy surface. 
+WHEN THE GLEN Canyon Dam was completed in 1963, the United States declared--in the dam's 700-foot tall concrete walls and in the reservoir it sent spreading out over the land--that the Canyon and its flooded tributaries were theirs. As Lake Powell bloated higher and swelled further than the river had ever reached, its waters engulfed thousands of Indigenous petroglyphs, dwellings, and trails, drowned out the microbial films which once draped the Canyon's walls, the habitats and shallow prints of herons, frogs, and lizards, and the swaths of coyote willow, paintbrush, columbines, and cottonwoods that once grew along the riverbanks. Lake Powell covered, too, the tracks of colonial forebears, swallowing the physical residues of mining operations, the etchings made by the canyon's first white explorers, and homesteads of early settlers. And it hid the once volatile river beneath its glossy surface. 
 
 Together, the dam and the lake visually and symbolically insist upon complete colonial territorialization, and they serve to erase the archive of the lives that came before, removing any physical evidence of a different past, of other claims to the land. This total subsumation props up western notions of linear progress and unidirectional time, and it reifies the belief that the present can be laid over the past like the next layer of strata. 
 
