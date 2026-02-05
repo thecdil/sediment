@@ -22,13 +22,18 @@
          data-scroll-mobile="{{ section.scroll_position_mobile | default: section.scroll_position | default: 0 }}"
          style="position: absolute;
                 top: {{ section.scroll_position | default: 0 }}px;
+                {% if section.side == 'middle' %}
+                left: 50%;
+                transform: translateX(-50%);
+                {% else %}
                 {{ section.side }}: 0;
+                {% endif %}
                 z-index: 150;">
       
       <div class="poem-content-wrapper"
            style="display: flex;
                   align-items: center;
-                  justify-content: {{ section.side == 'right' ? 'flex-end' : 'flex-start' }};
+                  justify-content: {% if section.side == 'right' %}flex-end{% elsif section.side == 'middle' %}center{% else %}flex-start{% endif %};
                   padding-top: {{ section.padding_top | default: 20 }}px;
                   padding-bottom: {{ section.padding_bottom | default: 20 }}px;
                   padding-left: {{ section.padding_left | default: 20 }}px;
