@@ -53,11 +53,9 @@ For instance: microbes now fester in sediment beds that, before the dam, was thr
 
 ## Subsumation
 
-{% include feature/image-gallery.html objectid="sediment123" caption=false%}
+{% include feature/image-gallery.html objectid="sediment123" caption=false %}
 
 WHEN THE GLEN Canyon Dam was completed in 1963, the United States declared--in the dam's 700-foot tall concrete walls and in the reservoir it sent spreading out over the land--that the Canyon and its flooded tributaries were theirs. As Lake Powell bloated higher and swelled further than the river had ever reached, its waters engulfed thousands of Indigenous petroglyphs, dwellings, and trails. It bleached away, too, the microbial films that once draped the Canyon's walls, and it drowned hoards of lizards, scorpions, and snakes as well as any traces--tracks, scent markings, or burrows--of their lives. The lake razed the swaths of coyote willow, columbines, and cottonwoods which bloomed along the river's edge, and it hid the once volatile Colorado River beneath its glossy surface. Lake Powell covered, too, the remains of Glen Canyon's early settlement efforts: it swallowed the physical residues of mining operations, the etchings made by the canyon's first white explorers, and the homesteads of its first settlers. 
-
-{% include feature/image-gallery.html objectid="sediment291" caption=false%}
 
 Together, the dam and the lake visually and symbolically insist upon complete colonial territorialization, and they serve to erase the archive of the lives that came before, removing evidence of a different past, of other claims to the land. Put another way, the lake wipes the slate of history clean--at least on its surface. It transforms a landscape brimming with other existences into a *terra nullius*, a blank space on the map ready to be developed. This kind of subsumation also props up western notions of linear progress and unidirectional time, and it reifies the belief that the present can be laid cleanly over the past like the next layer of strata. 
 
@@ -118,113 +116,81 @@ Their leader was John Wesley Powell, a one-armed Civil war Veteran, geologist, e
 
 The maps and reports that Powell produced on this expedition (and another one like it two years later) would greatly shape the course of Western development. Powell identified that survival in the West was more contingent on access to water (which was scarce) than land (which was plenty); a direct inversion of the conditions that governed settlement in the East. Eastern settlers were land hungry, but had taken water for granted, and until Powell's expeditions, expansionists had not considered that in order to move westward, they would either have to reconfigure their lifestyles--or reconfigure the land. 
 
+
 {% include feature/image-gallery.html objectid="sediment191" caption=false%}
 
 Powell cautioned Congress in 1890 that life would have to mold itself around the West's sparse waterways, and he proposed that state lines be drawn not according to "the logic of the grid," but instead along watershed boundaries. Each state, Powell suggested, would oversee and implement public irrigation infrastructure, and water would be cooperatively managed by basin residents. 
 
-At first, Powell's heedings were wholly rejected. Such a collective approach to resource management clashed too strongly with American desires for unfettered growth, rapid expansion, and individual freedom. What's more, lawmakers, like many Americans, believed that as emigrants surged westward, "rain would follow the plow." But by 1902, Congress had come to accept that agrarian settlements in the West would fail (as many already had) without help from large-scale water management interventions--just as Powell had originally advised. Thus, the Bureau of Reclamation was born, a government agency that, in the ensuing hundred years, would construct over 600 dams and drastically transfigure the landscapes and waterflows of the West. 
+At first, Powell's heedings were wholly rejected. Such a collective approach to resource management clashed too strongly with American desires for unfettered growth, rapid expansion, and individual freedom. What's more, lawmakers, like many Americans, believed that as emigrants surged westward, "rain would follow the plow." But by 1902, Congress had come to accept that agrarian settlements in the West would fail (as many already had) without help from large-scale water management interventions--just as Powell had originally advised. Thus, the Bureau of Reclamation was born, a government agency which would go on to construct over 600 dams and drastically transfigure the landscapes and waterflows of the West. 
 
 But before these projects could begin, or even be imagined, the American West had to first be carefully mapped, its water tallied, and its topography plotted. Land managers, engineers, and lawmakers needed to understand the contours of the land and the precise location of its resources in order to lay out plans to settle and develop it. Even if Powell's dream of communal watershed governance was never to materialize, the data he collected on his expeditions nevertheless laid the groundwork for the Colorado River to be transformed into a tightly-regulated plumbing system, choked with dams and siphoning aqueducts.
 
 Much of the data that Powell provided Congress was gleaned through traditional survey methods. He measured distances by triangulating his position in relation to the stars; he carefully tracked the river's gradient with thrice-daily barometer readings; he drew elaborate sketches of riverside terrain; and he kept a detailed journal about all that he saw. 
 
-[INSERT PICTURE-LINE DRAWING]
+{% include feature/image-gallery.html objectid="sediment316" caption=false%}
 
 But Powell was an ethnologist as well as a botanist-geologist, and he knew that local Indigenous communities possessed "intimate knowledge of the landscape" that could help him understand how the region's resources might best be harnessed for human use. Powell extracted a wealth of information from the Indigenous communities he encountered: in the Grand Canyon, for example, Powell met a band of Shi'-vwit Paiutes, and told their chief that "I wish to learn about their cañons and mountains, and about themselves, to tell other men at home; and that I want to take pictures of everything, and show them to my friends" (Powell 129). 
 
-But Powell also understood that the rock art, dwelling structures, and irrigation canals he encountered offered vital insight into how the land had previously been utilized in the past, and thus could be utilized in the future. "from extensive study of the ruins," he wrote,  "it seems that everywhere tribal pueblos were built of considerable dimensions, usually to give shelter to several hundred people. Then the people cultivated the soil by irrigation, and had their gardens and little fields scattered at wide distances about the central pueblo, by little springs and streams and wherever they could control the water with little labor to bring it on the land."  (Powell Canyons of the Colorado). "Irrigation," Powell concluded, "is a necessary adjunct to successful cultivation in all the region explored" (Powell 143) 
+Powell also understood that the rock art, dwelling structures, and irrigation canals he encountered offered vital insight into how the land had previously been utilized in the past, and thus could be utilized in the future. "from extensive study of the ruins," he wrote,  "it seems that everywhere tribal pueblos were built of considerable dimensions, usually to give shelter to several hundred people. Then the people cultivated the soil by irrigation, and had their gardens and little fields scattered at wide distances about the central pueblo, by little springs and streams and wherever they could control the water with little labor to bring it on the land."  (Powell Canyons of the Colorado). "Irrigation," Powell concluded, "is a necessary adjunct to successful cultivation in all the region explored" (Powell 143) 
 
 Powell was not the first or the last frontiersman to leverage Indigenous knowledge in order to determine a landscape's potential for colonization. In fact, the practice of extracting knowledge only to dispossess and erase its producers was so central to the region's colonial development, historian Erika Marie Bsumek filled an entire book chronicling repeated instances of this pattern. And as Bsumek notes, while settlers often pilfered information directly from Indigenous informants, they also frequently extracted insight from whatever material traces they encountered. 
 
 "In many cases," Bsumek writes, "white settlers, surveyors, and engineers first located Indigenous irrigation ditches in order to find the most promising sites on which to build their own communities" (6). The value of such markings was so significant, in fact, one Mormon missionary proclaimed the Colorado Plateau a viable site to settle because he "had evidence that this land has been densley [sic] populated" (28). 
 
-[INSERT PICTURE]
-
-Neither Powell, nor the Mormons, nor any white settler thereafter seemed to interpret "evidence" of Indigenous existence as an assertion about a territory that had long ago been claimed--whose claims were inscribed on the land itself, and which was still "densely populated" by hundreds of thousands of Native people. 
-
-Inscriptive practices might declare territorial claims, but they can also be appropriated and misused by those in pursuit of endless and unprincipled expansion. 
+Neither Powell, nor the Mormons, nor any white settler thereafter seemed to interpret "evidence" of Indigenous existence as an assertion that this territory had long ago been claimed--whose claims were inscribed on the land itself, and which was still "densely populated" by hundreds of thousands of Native people. 
 
 {% include feature/image-gallery.html objectid="sediment135" caption=false%}
 
-Such a pattern is by no means unprecedented: the pillaging of others' knowledge without the consent, inclusion, and respect of those that produced it is often the mechanism by which colonial cultures seek their ascendancy. And as Bsumek reminds us, such an ascendancy relies not only on the use of stolen knowledge, but also on the erasure of its producers. It is only through this process of simultaneous extraction and erasure that colonial agents can maintain the narratives of supremacy upon which their projects depend. 
+Inscriptive practices might declare territorial claims, but they can also be appropriated by those in pursuit of endless and unprincipled expansion. 
 
-Indeed, the re-settlement of the Colorado River Basin was predicated on first clearing Indigenous people from the land, and then removing any evidence of their belonging. At the same time as Mormon missionaries and government agencies launched violent removal campaigns--such as the 1864 Long Walk, which forcibly relocated 8,000 Diné men, women, and children from their homelands to an internment camp at Fort Sumner, New Mexico--settlers also worked to efface the traces of Indigenous existence, and overlay them with their own territorial inscriptions. 
+Such a pattern is by no means unprecedented: the pillaging of others' knowledge without the consent, inclusion, and respect of those who produced it is often the mechanism by which colonial cultures seek their ascendancy. And as Bsumek reminds us, such an ascendancy relies not only on the use of stolen knowledge, but also on the erasure of its producers. It is only through this process of simultaneous extraction and erasure that colonial agents can maintain the narratives of supremacy upon which their projects depend. 
 
-As Powell noted, Mormons often used material taken from Native dwellings to build their homes, and as they laid irrigation tracks over those already there, Mormon settlers simultaneously averred their own claims over the land while eradicating any physical indication that that same land had recently belonged to someone else, or that settlement was made possible not because of divine destiny and self-reliance, but because such settlements were so often build on a foundation of stolen knowledge and material. 
+Indeed, the re-settlement of the Colorado River Basin was predicated on first clearing Indigenous people from the land, and then removing any evidence of their belonging. At the same time as Mormon missionaries and government agencies launched violent removal campaigns--such as the 1864 Long Walk, which forcibly relocated 8,000 Diné men, women, and children from their homelands to an internment camp at Fort Sumner, New Mexico--settlers also worked to expunge physical traces of Indigenous existence, or overlay them with their own inscriptions. 
 
-PICTURE 
+As Powell noted, Mormons often used stones taken from Native dwellings to build their own homes, and as they laid irrigation canals over those already there, Mormon settlers simultaneously averred their own claims over the land while eradicating any physical indication that the land had previously belonged to someone else. Such practices also affirmed notions that Mormon expansion was made  possible by divine destiny and ingenuity rather than built on a foundation of stolen knowledge and material. 
 
-The reality that colonial societies are built not on top prior cultures, but by using their materials undercuts the stratigraphic, progressive logic that is so often enlisted in justifying colonialism in the first place. These practices of physical erasure and replacement not only assuage the settler consciousness and affirm their belonging, they also reify false narratives that Euroamerican settlers were the first to successfully develop the land for permanent habitation. But as the region's irrigation canals, dwellings, granaries, water storage tanks, and hunting trails attest, Indigenous cultures had long ago figured out how to adapt the land--and their own subsistence strategies--to support long-term survival and flourishing. 
+{% include feature/image-gallery.html objectid="sediment317" caption=false%}
 
-When Powell came across these structures, however, many of which were no longer in use, he concluded that the region's contemporary Indigenous populations must be less "'civilized' than their ancestors," and decided that "Indigenous cultures belonged to the past, not the present." (Bsumek 61, 67) Powell read, in other words, the absence of Indigenous presence within Glen Canyon to indicate cultural failure and inadequacy, a narrative which legitimized state encroachment. But of course, physical residues alone rarely tell a complete story, and attempting to fill in the gaps--as Powell did--risks filling them with mistruths and misunderstandings. 
+The reality that colonial societies are not established on top of prior cultures, but by using their materials undercuts the stratigraphic, progressive logic so often enlisted in naturalizing colonialism in the first place. These practices of physical erasure and replacement not only assuage the settler consciousness and affirm their belonging, they also reify false narratives that Euroamerican settlers were the first to successfully develop the land for permanent habitation. But as the region's irrigation canals, dwellings, granaries, water storage tanks, and hunting trails attest, Indigenous cultures had long ago figured out how to adapt the land--and their own subsistence strategies--to support long-term survival and flourishing. 
 
-PICTURE
+However, when Powell came across these "ruins", many of which were no longer in use, he concluded that the region's contemporary Indigenous populations must be less "'civilized' than their ancestors," and decided that "Indigenous cultures belonged to the past, not the present." (Bsumek 61, 67) Powell read, in other words, the absence of Indigenous presence within Glen Canyon to indicate cultural failure and inadequacy, a narrative which legitimized Euroamerican encroachment. But of course, physical residues alone rarely tell a complete story, and attempting to fill in the gaps--as Powell did--risks filling them with mistruths and misunderstandings. 
 
-At the time of Powell's expedition, there were dozens of Indigenous groups living just above Glen Canyon's rim, many of whom were, in fact, descended from those people who had built the gardens and dwellings Powell encountered. Their ancestors had not disappeared; they had purposefully migrated out of the Canyon in order to survive a cycle of drought, which was a common phenomena in the Southwest's volatile climate. [Understood survival not to be progressive but cyclical]
+{% include feature/image-gallery.html objectid="sediment292" caption=false%}
 
-The absence of permanent inhabitants in the Canyon at the time of Powell's surveys, then, was not a result of cultural failings (as Powell claimed), but is rather a testimony of the Puebloans' deep knowledge of the region's long-term climatic pattern and their ability to successfully adapt to a shifting climate.  
+At the time of Powell's expedition, there were dozens of Indigenous groups living on Glen Canyon's shoulders, many of whom were descended from those people who had built the gardens and dwellings Powell encountered. Their ancestors, the Puebloans, had not disappeared; they had purposefully migrated out of the Canyon in order to survive a cycle of drought--a common phenomena in the Southwest's volatile climate.
 
-Lack of ancestral knowledge? Powell certainly understood that water was a constraint for the West, but at the time of his expedition, there was enough water in the river to indicate that sedentary agriculture was possible, as long as water was carefully managed and partitioned. 
+The absence of permanent inhabitants in the Canyon at the time of Powell's surveys, then, was not a result of cultural regression (as Powell claimed), but is rather a testimony to the Puebloans' deep knowledge of the region's long-term climatic patterns as well as their ability to successfully adapt to a shifting environment. Survival, they understood, is not always enabled by unyielding, unidirectional progress, but also by but also by calibrating societal lifestyles to respond effectively to the earth’s rhythms.
 
-It seems the only part of this message Congress received--or at least decided to heed--was the part about the possibility of development. Powell's brightly splotched maps and stacks of reports apparently did not communicate the reality of the Southwestern landscape. And so, from their seats in the humid, verdant East, legislators went ahead mapped Eastern ways of living onto Powell's map of the West. 
+The earth’s rhythms tend to exceed the span of a single lifetime--let alone the span of two expeditions--and Indigenous knowledge about climatic fluctuations and how to adapt to them is often accumulated over thousands of generations. Powell, an easterner descended from Europeans, had no such generational insight, and he had little context for understanding why the ruins he encountered might be vacant. In his attempts to fill these gaps, Powell inserted a false--and racialized--narrative about civilizational decline. 
 
-Powell understood some part of this--he warned Congress about the lack of water. Yet he still believed in sedentary agriculturalism, and this is the message that Congress received. And because those legistlators were making land management decisions not from the rocky landscape of the west, but their seats in the verdant east, they went ahead with plans to settle that they would later have to amend. Data is not enough; the physical cues of landscape are critical to undersatnding how to best live in it.  -And because plans for settlement were made thousands of miles away, neither did congressmen have such an opportunity to read the landscape and undersatnd that to survive, western societies would have to be flexible. They looked at Powell's map, and mapped their own assumptions, bred by their position in an eastern landscape, and mapped those onto the west. 
+Powell certainly understood that water was a limited resource in the West, but at the time of his expedition, there was enough water in the basin to indicate that Euroamerican settlement *was* possible, as long as this water was carefully managed and partitioned--and as long as the climate did not get any hotter or drier. 
 
+However, the only part of Powell's message that Congress received--or at least decided to heed--was the part about the possibility of development. Powell's brightly splotched maps, black and white sketches, and written reports apparently did not fully convey the realities of the Southwestern landscape. And so, from their seats in the humid, verdant East, legislators went ahead and transposed temperate modes of subsistence onto Powell's map of the West. 
 
-PICTURE OF LAKE POWELL
+It is difficult to say whether development in the West would have unfolded along different lines if those Eastern congressmen had seen, with their own eyes, what Powell saw: had they climbed up into those ruins, and listened more attentively to the people already there; had they squeezed through canyons scoured by spring floods and slung with high-flung debris; had they paddled across that thin and muddy river which contains so much of the West's water; had they mired their boats in its shifting sandbanks. Would they have understood that this is a territory already claimed? Would they have seen that this is a land of little--but sometimes violent--water flows? Would they have realized that long-term survival in a place of such constant flux required mobility and adaptation, not great immovable infrastructures? 
 
-Today, both the dwellings that Powell encountered and the thin ribbon of river are no longer visible.Today, these traces are beneath water. That the region is scarce with water, or that one's existence depends on the erausre of others is hard to believe when one is standing on the edge of a sprawling lake, when one cannot see When they see only a pool of water, they do not understand their own precarity, nor the history of lives that have been erased by their own existence. The earthly archives matter; they tell us how we belong in the world and connect us to other people from other times. They tell us whose land we are on, what acts of violence have taken place to allow us to be here. They help us understand that we don’t stand atop the shoulders of others, we are living within their presence. 
+It would be naive, of course, to argue that prudent legislation comes all the way down to making decisions about place in place. As I have gestured to here, the engine of colonization was not fueled entirely by optimistic ignorance, but also by a voracious hunger for "incessant expansion" (Turner).
 
-The earthly archives preserve much that our human ones do not. Powell's map does not communicate this--but as Lake Powell recedes, these narratives are being recommunicated. 
+{% include feature/image-gallery.html objectid="sediment307" caption=false%}
 
+Americans today, however, are living with the legacies of those decisions, and it has become much more difficult to make sound and fair decisions about how to live in place when the record of that place's history is no longer so visible. 
 
+Today, most of what Powell encountered in Glen Canyon lies hundreds of feet beneath Lake Powell. It is difficult to believe that this is a land of precious water while standing on the edge of a deep and sprawling lake. And it is difficult, too, to sense the web of lives and history within our own are built when there are little traces left of those history. 
 
+But as a new cycle of drought descends, and Lake Powell plummets, these inscriptions are resurfacing. This time, we must pay closer attention. 
 
-
-The data that Powell collected on his
-
--fueled by powell's readings of the past
-
--but Powell also rendered invisible--reading absence--the presence of Indigenous people. In fact, what 
-
--Congress's misinterpretation woudl have drastic consequences
-
--Today, the land is subsumed, this affects people's decision-making power about the future
+## Earthly Archives - Tuesday
 
 
+-Dissonance-Powell archive (emplacement)
 
+-No one archivist but collective (archon); shows us what matter
 
+-degradation is a good thing; shows us cyclicality 
 
--
+-human archive upheld by loss
 
-HERE: 
-
-The archive of the past can be weaponized and misread, and the stuff of the past recycled to build the stuff of the future. Reading of both absence and presence. The world is constructed via a reading of and transformation of the earthly archives. 
-
-Powell’s reading of the region’s water scarcity is dependent on traces that are now inundated–in their place is a an abundance of water. What does this do for the human subject who strives to understand their place within the landscape? 
-
-Practiced agriculture despite narratives that indigenous people were somehow primitive
-
-
-Thus, the first step to developing the West was to plumb the landscape for any evidence it offered towards its potential for extraction and development. Powell understood that such evidence  
-
-Powell read the traces in the landscape in order to chart a future for colonization. Both remnants of people, water, and plants mattered. 
-
-Powell saw geology and ethnography both as data for colonization. 
-
-Traces like these figured critically into how proceeding humans interacted with and reshaped Glen Canyon. John Wesley Powell, who famously led a government-sponsored survey of the Colorado River in 1869 in order to determine the potential for colonization and resource extraction of the region, often recorded close detail of traces of both Indigenous presence and absence. This was more than a personal interest. As historian Erika Marie Bsumek notes, "Throughout his journey, [Powell] also looked to the surrounding landscape for clues to help him understand how people had once lived in the area and what had happened to them."  In other words, Glen Canyon's tracings became evidence of 
-
-...to determine the region's future, white scientists determined they needed to gain a fuller understanding of the previous generations' relationships with the...desert landscapes...white interlopers...believed that Indigenous cultures belonged to the past, not the present.” (64, 66-67)
-
-
-Irrigation ditches --> 
-
-## Earthly Archives - Sunday
-
-In 
-
-
-Dissonance-Powell archive
+-Territorial inscription (Rainbow Bridge)
 
 -
 
@@ -244,21 +210,23 @@ What environmental and social conditions create the archive? Can we trace this b
 
 -also serves to uphold territorialization
 
-## Exterior and Interior Landscapes - Monday
+## Rainbow Bridge - Wednesday
 
-Ripping of cultural tethers
+-Legality
 
-## Rainbow Bridge - Sunday
+## Exterior and Interior Landscapes - Wednesday
 
-## Hole-in-the-Rock - Monday
+-Ripping of cultural tethers
+
+## Hole-in-the-Rock - Thursday
 
 Transformation of the land is part of the belonging
 
-## Territorial Proliferations - Tuesday
+## Failures - Thursday
 
-## Failures - Tuesday
+## Territorial Proliferations - Saturday
 
-## Blasted Landscapes / Remains of the Future - Wednesday
+## Blasted Landscapes / Remains of the Future - Saturday
 
 IN DECEMBER 2025, I drove from my home in the Idaho panhandle down to Glen Canyon. This is a seventeen hour trip, so I stopped halfway for a few nights in a small town along the western hem of the Tetons, hoping to cross-country ski for a few days. I arrived to find the valley bare and dry--which, given the weeks-long string of sunny, 55-degree days wasn't so much surprising as disconcerting. 
 
@@ -283,9 +251,7 @@ The wind howled a low tone. It began to rain, and I nearly turned back, but the 
 
 A gust of wind whipped down the plains, this time bringing rain sideways, and the fence began to rattle. The dread 
 
-## Reemergence - Thursday
-
-
+## Reemergence - Sunday
 
 -Absence and presence 
 -Territorial inscription

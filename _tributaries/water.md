@@ -12,6 +12,22 @@ scrollama: true
 
 # Water
 
+## More than River
+
+## Ancient Ocean
+
+## Interplay with Land 
+
+## Floods
+
+## Underflows
+
+## Seeps 
+
+## Confluence
+
+## Stagnancy
+
 ## Field Notes
 
 Water goes down 3 inches per day. That's not geologic time. People feel that in their bodies, when they have to haul the docks further out into the lake. 
@@ -73,6 +89,8 @@ Obscures - verticality
 
 
 ## Flash Floods
+
+## Color
 
 Flushes sediment out rapidly, revives ecosystem quickly
 

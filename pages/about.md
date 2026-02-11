@@ -26,21 +26,16 @@ When the Glen Canyon Dam drowned Glen Canyon, it also subsumed the lives and his
 
 *Sedimentation* was created by Hannah Green and Devin Becker with support from the University of Idaho's Center for Digital Inquiry and Learning. 
 
-**Hannah Green** is an English M.A. student at the University of Idaho, where she studies the role of stories in conditioning human-nature relations. *Sedimentation* is her master's thesis project. 
+**Hannah Green** is an English M.A. student at the University of Idaho, where she studies how stories condition human-nature relations. *Sedimentation* is her master's thesis project. 
 
 **Devin Becker** is the Associate Dean for Research and Instruction at the University of Idaho Library, where he also co-directs the Center for Digital Inquiry and Learning (CDIL) and oversees the development of the digital exhibit frameworks CollectionBuilder, Oral History as Data, and Digital Dramaturgy.
 
-**Thanks also to** Doctor Jennifer Ladino, who has nurtured this project in its entirety from start to finish; Doctors Erin James and Aly Kreikemeyer, who read, edited, and provided brilliant feedback for all of *Sedimentation*'s written content;  and Chris Lamb, who was *Sedimentation*'s first supporter, and has been a source of inspiration and guidance ever since. 
-
+**Thanks also to**: Dr. Jennifer Ladino, who has nurtured this project in its entirety from start to finish; Dr. Erin James and Dr. Aly Kreikemeyer, who read, edited, and provided brilliant feedback for all of *Sedimentation*'s written content;  and Chris Lamb, who was *Sedimentation*'s first supporter, and has been a source of inspiration and guidance ever since. 
 
 {% include feature/image-gallery.html objectid="Me;devin" caption=false%}
 
 
 ## More CDIL Projects
-
-
-
-
 
 
 Glen Canyon is a land made of sediment. Its sprawling canyon system was etched by the Colorado River’s silt-heavy waters, which downcut through 700 feet of sedimentary rock laid in place by ancient winds, rivers, and oceans. Traces of the canyon's past are written in the canyon's sediment: dinosaur fossils and bone dust are encased in the canyon walls; microbial communities eat potholes and varnish across cliff faces; herons stamp their tracks into riverside beaches; petroglyphs bear the markings of Indigenous life; dynamite-blasted chasms reveal the trails of Mormon settlers, and the canyon's silty beds are laced with the spoils of the mid-century Uranium boom. 

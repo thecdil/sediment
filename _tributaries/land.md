@@ -13,6 +13,15 @@ scrollama: true
 
 # Land
 
+
+## Shifting
+
+## Dominy Glacier
+
+## Difficulty
+
+## Layers
+
 <div class="row">
 <div class="col-lg-5">
 {% include feature/image-gallery.html objectid="sediment25;sediment33" caption=false%}
