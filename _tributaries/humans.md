@@ -42,7 +42,9 @@ Glen Canyon's inscriptions, then, trace out a kind of territorial map, overlappi
 
 This map is not flat, and its territories do not sit cleanly beside one another (as few territories do). This is a vertical and lively cartography; more like a palimpsest in which various inscriptions layer and touch, transform and efface one another through time. This is a map whose material is always in the process of erosion, recirculation, and reconfiguration as competing actors draw and redraw territory with the substrate of their predecessors.
 
-For instance: microbes now fester in sediment beds that, before the dam, was threaded thick with primrose roots. Mormon emigrants deconstruct Puebloan cliff dwellings--and the memories of the lives they contained--as they pillage stones for their own homes. A creekside beach once packed with antelope tracks is obliterated--wiped entirely off the map--when its sand is harvested to fill the concrete walls of the Glen Canyon Dam.
+For instance: microbes fester in sediment beds that, before the dam, were thickly threaded with willow roots. Mormon emigrants deconstruct Puebloan cliff dwellings--and the memories of the lives they contained--as they pillage stones for their own homes. A creekside beach once packed with antelope tracks is obliterated--wiped entirely off the map--when its sand is harvested to fill the concrete walls of the Glen Canyon Dam. 
+
+Yet even in those places most ravaged by territorial erasures and remappings, the traces of past inscriptions can linger, though they are often faint and fragmented (willow branches fossilize in anaerobic lake beds; pot sherds are interred beneath the soil of a garden; the antelope are memorialized in a petroglyph panel). If you look closely, beneath the surfaces, you will find these traces scrawl out a ghostly map, embossed with layered claims.  
 
 <br><br>
 
@@ -88,9 +90,7 @@ Something is communicated in this touching: a recognition of presence and preced
 
 For Jacques Derrida, traces are inherently spectral in that they disclose the "absence of presence" by drawing attention to what was once there, but is no longer.[^3] 
 
-The handprints, then, emphasize the absence of their makers, but they make visible other kinds of absences, too: as I attempt to write about the prints, I am faced again and again with the incompleteness of their record, and the incompleteness of my own knowledge. Enclosed between the prints' slim disclosures (of another's presence, of the paint's composition) is vast sea of unknowns: 
-
-We cannot know, for example, who these people were; we cannot discern their names, their relation to one another, nor their dreams, sorrows, or joys. Without this information, I cannot apprehend the makers in all their human complexities, and any attempt to fill such gaps would almost certainly efface the handprinters as they were, and instead replace them with some distorted version of my own. 
+The handprints, then, emphasize the absence of their makers, but they make visible other kinds of absences, too: as I attempt to write about the prints, I am faced again and again with the incompleteness of their record, and the incompleteness of my own knowledge. Enclosed between the prints' slim disclosures are seas of unknowns: they are proof of another's presence, and their chemical signatures offer hints about the processes by which they were made, but they do not tell us much more than that. We cannot know who these people were, or discern their names, or their relation to one another, or know their dreams, sorrows, or joys. Without this information, I cannot apprehend the makers in all their human complexities, and any attempt to fill such gaps would almost certainly efface the handprinters as they were, and instead replace them with some distorted version of my own. 
 
 I am reminded here that as I read the traces of the past, I must be careful not to reduce the silences--and all the possibilities they contain--in an attempt to write a complete story. It is enough to accept the handprinters' declaration of existence, and it is enough to be touched by their presence. 
 
@@ -100,13 +100,13 @@ It strikes me, then, that the handprints do not mark an absence of presence so m
 
 But just as the past informs and transforms the unfoldings of the present, so can the present disfigure the traces of the past. When Tad pulls his hand from the wall, he will lift flecks of paint off the prints, wiping away, forever, a bit of history. If this gesture is repeated enough times, the handprints will be erased, and will no longer communicate to visitors about the people who came before. 
 
-The remains we encounter--or ourselves leave behind--allows us to connect with humans across otherwise unreachable spans of time, drawing us into conversation and relation with one another. When we alter these remains, we rupture the possibility for the people of the future to commune with the people of the past. It matters, then--for people in all times--how we touch such remains. 
+The remains we encounter--or ourselves leave behind--allows us to connect with humans across otherwise unreachable spans of time, drawing us into conversation and relation with one another. When we alter these remains, we rupture the possibility for the people of the future to commune with the people of the past. It matters, then, how we touch such remains. 
 
 
 {% include feature/new-section.html %}
 
 
-## Foundations
+## Palimpsests
 
 {% include feature/image-gallery.html objectid="sediment164" caption=false%}
 
@@ -115,7 +115,6 @@ ONE DAY AFTER the completion of the Transcontinental Railroad, ten men disembark
 Their leader was John Wesley Powell, a one-armed Civil war Veteran, geologist, ethnographer, and botanist, and their purpose was to survey the length of the Colorado and Green Rivers. While his men rowed, Powell assessed the land's potential for settlement and agriculture, and he filled in what had been previously considered a "blank spot" on the map of the United States with data on the region's topography, climate, botanical makeup, water resources, and Indigenous cultures. 
 
 The maps and reports that Powell produced on this expedition (and another one like it two years later) would greatly shape the course of Western development. Powell identified that survival in the West was more contingent on access to water (which was scarce) than land (which was plenty); a direct inversion of the conditions that governed settlement in the East. Eastern settlers were land hungry, but had taken water for granted, and until Powell's expeditions, expansionists had not considered that in order to move westward, they would either have to reconfigure their lifestyles--or reconfigure the land. 
-
 
 {% include feature/image-gallery.html objectid="sediment191" caption=false%}
 
@@ -129,7 +128,7 @@ Much of the data that Powell provided Congress was gleaned through traditional s
 
 {% include feature/image-gallery.html objectid="sediment316" caption=false%}
 
-But Powell was an ethnologist as well as a botanist-geologist, and he knew that local Indigenous communities possessed "intimate knowledge of the landscape" that could help him understand how the region's resources might best be harnessed for human use. Powell extracted a wealth of information from the Indigenous communities he encountered: in the Grand Canyon, for example, Powell met a band of Shi'-vwit Paiutes, and told their chief that "I wish to learn about their cañons and mountains, and about themselves, to tell other men at home; and that I want to take pictures of everything, and show them to my friends" (Powell 129). 
+But Powell was an ethnologist as well as a botanist-geologist, and he knew that local Indigenous communities possessed "intimate knowledge of the landscape" that could help him understand how the region's resources might best be harnessed for human use. Powell extracted a wealth of information from the Indigenous communities he encountered. In the Grand Canyon, for example, Powell met a band of Shi'-vwit Paiutes, and told their chief that "I wish to learn about their cañons and mountains, and about themselves, to tell other men at home; and that I want to take pictures of everything, and show them to my friends" (Powell 129). 
 
 Powell also understood that the rock art, dwelling structures, and irrigation canals he encountered offered vital insight into how the land had previously been utilized in the past, and thus could be utilized in the future. "from extensive study of the ruins," he wrote,  "it seems that everywhere tribal pueblos were built of considerable dimensions, usually to give shelter to several hundred people. Then the people cultivated the soil by irrigation, and had their gardens and little fields scattered at wide distances about the central pueblo, by little springs and streams and wherever they could control the water with little labor to bring it on the land."  (Powell Canyons of the Colorado). "Irrigation," Powell concluded, "is a necessary adjunct to successful cultivation in all the region explored" (Powell 143) 
 
@@ -141,45 +140,68 @@ Neither Powell, nor the Mormons, nor any white settler thereafter seemed to inte
 
 {% include feature/image-gallery.html objectid="sediment135" caption=false%}
 
-Inscriptive practices might declare territorial claims, but they can also be appropriated by those in pursuit of endless and unprincipled expansion. 
+Inscriptive practices might declare territorial claims, but the knowledge they contain can also be appropriated by those in pursuit of endless and unprincipled expansion. 
 
 Such a pattern is by no means unprecedented: the pillaging of others' knowledge without the consent, inclusion, and respect of those who produced it is often the mechanism by which colonial cultures seek their ascendancy. And as Bsumek reminds us, such an ascendancy relies not only on the use of stolen knowledge, but also on the erasure of its producers. It is only through this process of simultaneous extraction and erasure that colonial agents can maintain the narratives of supremacy upon which their projects depend. 
 
 Indeed, the re-settlement of the Colorado River Basin was predicated on first clearing Indigenous people from the land, and then removing any evidence of their belonging. At the same time as Mormon missionaries and government agencies launched violent removal campaigns--such as the 1864 Long Walk, which forcibly relocated 8,000 Diné men, women, and children from their homelands to an internment camp at Fort Sumner, New Mexico--settlers also worked to expunge physical traces of Indigenous existence, or overlay them with their own inscriptions. 
 
-As Powell noted, Mormons often used stones taken from Native dwellings to build their own homes, and as they laid irrigation canals over those already there, Mormon settlers simultaneously averred their own claims over the land while eradicating any physical indication that the land had previously belonged to someone else. Such practices also affirmed notions that Mormon expansion was made  possible by divine destiny and ingenuity rather than built on a foundation of stolen knowledge and material. 
+As Powell noted, Mormons often used stones taken from Native dwellings to build their own homes, and as they laid irrigation ditches over those already there, Mormon settlers simultaneously averred their own claims over the land while eradicating any physical indication that the land had previously belonged to someone else. 
 
 {% include feature/image-gallery.html objectid="sediment317" caption=false%}
 
-The reality that colonial societies are not established on top of prior cultures, but by using their materials undercuts the stratigraphic, progressive logic so often enlisted in naturalizing colonialism in the first place. These practices of physical erasure and replacement not only assuage the settler consciousness and affirm their belonging, they also reify false narratives that Euroamerican settlers were the first to successfully develop the land for permanent habitation. But as the region's irrigation canals, dwellings, granaries, water storage tanks, and hunting trails attest, Indigenous cultures had long ago figured out how to adapt the land--and their own subsistence strategies--to support long-term survival and flourishing. 
+In order to justify their encroachment, colonizers frequently invoked stadial theories of evolution, which imagined that newer, more advanced civilizations will naturally succeed and subsume those older and less advanced, like the accrual of new strata on top of old. However, the reality that settler infrastructures were established not *on top* of prior cultures, but *using* their materials undercuts this kind of stratigraphic logic; Mormon settlements were made possible because they were built *with* the stuff of the past, not over it. 
+
+Practices of physical erasure and replacement not only assuage the settler consciousness and affirm their belonging, they also reify false narratives that Euroamerican settlers were the first to successfully develop the land for permanent habitation. But as the region's irrigation canals, dwellings, granaries, water storage tanks, and hunting trails attest, Indigenous cultures had long ago figured out how to adapt the land--and their own subsistence strategies--to support long-term survival and flourishing. 
 
 However, when Powell came across these "ruins", many of which were no longer in use, he concluded that the region's contemporary Indigenous populations must be less "'civilized' than their ancestors," and decided that "Indigenous cultures belonged to the past, not the present." (Bsumek 61, 67) Powell read, in other words, the absence of Indigenous presence within Glen Canyon to indicate cultural failure and inadequacy, a narrative which legitimized Euroamerican encroachment. But of course, physical residues alone rarely tell a complete story, and attempting to fill in the gaps--as Powell did--risks filling them with mistruths and misunderstandings. 
 
 {% include feature/image-gallery.html objectid="sediment292" caption=false%}
 
-At the time of Powell's expedition, there were dozens of Indigenous groups living on Glen Canyon's shoulders, many of whom were descended from those people who had built the gardens and dwellings Powell encountered. Their ancestors, the Puebloans, had not disappeared; they had purposefully migrated out of the Canyon in order to survive a cycle of drought--a common phenomena in the Southwest's volatile climate.
+At the time of Powell's expedition, there were dozens of Indigenous groups living on Glen Canyon's shoulders, many of whom were descended from those people who had built the gardens and dwellings that Powell encountered. Their ancestors, the Puebloans, had not disappeared; they had purposefully migrated out of the Canyon in order to survive an episode of drought--a common phenomena in the Southwest's cyclically variable climate.
 
-The absence of permanent inhabitants in the Canyon at the time of Powell's surveys, then, was not a result of cultural regression (as Powell claimed), but is rather a testimony to the Puebloans' deep knowledge of the region's long-term climatic patterns as well as their ability to successfully adapt to a shifting environment. Survival, they understood, is not always enabled by unyielding, unidirectional progress, but also by but also by calibrating societal lifestyles to respond effectively to the earth’s rhythms.
+The absence of permanent inhabitants in the Canyon at the time of Powell's surveys, then, was not a result of cultural regression (as Powell claimed), but is rather a testimony to the Puebloans' deep knowledge of the region's long-term climatic patterns as well as their ability to successfully adapt to a shifting environment. Survival is not always achieved through sedentary accumulation and unidirectional progress; sometimes surviving requires mobility and responsiveness as the earth cycles through its rhythms. 
 
-The earth’s rhythms tend to exceed the span of a single lifetime--let alone the span of two expeditions--and Indigenous knowledge about climatic fluctuations and how to adapt to them is often accumulated over thousands of generations. Powell, an easterner descended from Europeans, had no such generational insight, and he had little context for understanding why the ruins he encountered might be vacant. In his attempts to fill these gaps, Powell inserted a false--and racialized--narrative about civilizational decline. 
+The earth’s rhythms tend to exceed the span of a single lifetime--let alone the span of two expeditions--and Indigenous knowledge about climatic fluctuations and how to adapt to them is often accumulated over thousands of generations. Powell, an easterner descended from Europeans, had no such generational insight, and he had little context for understanding why the ruins he encountered might be vacant. In his attempts to fill these gaps, Powell inserted a false--and racialized--narrative about civilizational decline, and he blinded himself to the sea of other stories that the ruins--and his Indigenous informants--contained. 
 
-Powell certainly understood that water was a limited resource in the West, but at the time of his expedition, there was enough water in the basin to indicate that Euroamerican settlement *was* possible, as long as this water was carefully managed and partitioned--and as long as the climate did not get any hotter or drier. 
+Scientists have since figured out that that tree rings store a yearly record of their environment's climatic history, and as it turns out, both of Powell's expeditions took place during an unusually wet period. Reconstructive modeling indicates that in the year of Powell's first expedition, the Colorado River saw water flows around 20 million acre-feet, about 30% more than the long-term average.(https://www.treeflow.info/content/upper-colorado#field-metadata). Thus, at the time of Powell's expedition, there was enough water in the basin to indicate that sedentary, agriculture-based settlement *was* possible, as long as this water was carefully managed and partitioned. And while Powell certainly recognized the scarcity of the region's water, it is likely he himself overestimated how many people the region could, in the long-term, support. 
 
-However, the only part of Powell's message that Congress received--or at least decided to heed--was the part about the possibility of development. Powell's brightly splotched maps, black and white sketches, and written reports apparently did not fully convey the realities of the Southwestern landscape. And so, from their seats in the humid, verdant East, legislators went ahead and transposed temperate modes of subsistence onto Powell's map of the West. 
+What's more, the only part of Powell's message that Congress received--or at least decided to heed--was the part about the possibility of development. Powell's brightly splotched maps, black and white sketches, and written reports apparently did not fully convey the realities of the southwestern climate. And so, from their seats in the humid, verdant East, legislators went ahead and transposed temperate plans for living onto Powell's map of the West. 
 
-It is difficult to say whether development in the West would have unfolded along different lines if those Eastern congressmen had seen, with their own eyes, what Powell saw: had they climbed up into those ruins, and listened more attentively to the people already there; had they squeezed through canyons scoured by spring floods and slung with high-flung debris; had they paddled across that thin and muddy river which contains so much of the West's water; had they mired their boats in its shifting sandbanks. Would they have understood that this is a territory already claimed? Would they have seen that this is a land of little--but sometimes violent--water flows? Would they have realized that long-term survival in a place of such constant flux required mobility and adaptation, not great immovable infrastructures? 
+Since then, the climate of the Southwest has cycled again into drought. Fueled by warming global temperatures, the Colorado River is facing its driest spell in 1,200 years--drier, even, than the drought which drove the Puebloans to move out of the river's canyons. 40 million people now live across the river basin, most of whom depend on the river to provide them with water and electricity, and almost none of whom are prepared to pick up move elsewhere if and when the water gets too low. 
 
-It would be naive, of course, to argue that prudent legislation comes all the way down to making decisions about place in place. As I have gestured to here, the engine of colonization was not fueled entirely by optimistic ignorance, but also by a voracious hunger for "incessant expansion" (Turner).
+It is difficult to say whether development in the West would have unfolded along different lines if those Eastern congressmen had seen, with their own eyes, what Powell saw: had they climbed up into those Puebloan ruins, or listened more attentively to the people who had lived there since time immemorial; had they squeezed through canyons scoured by spring floods and slung with high-flung debris; had they paddled across that thin and muddy river which contains so much of the West's water; had they mired their boats in its shifting sandbanks. Would they have understood that this is a territory already claimed? Would they have seen that this is a land of little--but sometimes violent--water flows? Would they have realized that long-term survival in a place of such constant flux required mobility and adaptation, not great immovable infrastructures? 
+
+It would be naive, of course, to argue that prudent legislation comes all the way down to making decisions about place in place. As I have gestured to here, the engine of colonization was not fueled entirely by optimistic ignorance, but also by a voracious hunger for "incessant expansion" (Turner) and supremacist logics. 
 
 {% include feature/image-gallery.html objectid="sediment307" caption=false%}
 
-Americans today, however, are living with the legacies of those decisions, and it has become much more difficult to make sound and fair decisions about how to live in place when the record of that place's history is no longer so visible. 
+Americans today, however, are living with the legacies of those decisions, and it is much more difficult to make just and informed choices about how to live when the historical record has been hidden from public view. 
 
-Today, most of what Powell encountered in Glen Canyon lies hundreds of feet beneath Lake Powell. It is difficult to believe that this is a land of precious water while standing on the edge of a deep and sprawling lake. And it is difficult, too, to sense the web of lives and history within our own are built when there are little traces left of those history. 
+Today, most of what John Wesley Powell encountered in Glen Canyon lies hundreds of feet beneath a dammed reservoir. It is difficult to believe that this is a land of precious water while standing at the edge of a deep and sprawling lake. And it is difficult, too, to understand that continued existence in that land is entangled and made possible by so many webs of life, loss, violence, success, resilience, and greed when one cannot see the strands of such webs.
 
-But as a new cycle of drought descends, and Lake Powell plummets, these inscriptions are resurfacing. This time, we must pay closer attention. 
+But as the drought draws the Lake lower, Glen Canyon--and its networks of inscriptions--is resurfacing. This time, we must pay closer attention, and not rush to fill in the stories. 
 
 ## Earthly Archives - Tuesday
+
+AT THE END of 2025, I visited Lake Powell. The day I arrived, a historic windstorm was sweeping across the West, buffeting back my car with sixty-mile-an-hour winds, and tipping tractor trailers across the interstate. Several times I pulled over to wait out alerts of particularly life-threatening super cells, or to unclaw my hands from the steering wheel. What should have been a nine hour drive became fifteen, and I did not make it to Page until late into the night. 
+
+I had booked a hotel as close to the Lake's edge as I could find; a resort that had once advertised itself as *lakeside*, but now disclaimed on their booking portal that their "View rooms may have limited views due to declining water levels." And so I was not expecting, when I threw my open room curtains in the the morning, to see the lake spread before me, turned softly pink and orange by the sunrise. Without stopping to make coffee, I slipped on my shoes and went to the water. 
+
+I had learned five years before, while working along the upper ledges of the Grand Canyon, that this is a landscape which quickly distorts human senses of scale. Things on the Colorado Plateau are always much larger and farther than they seem--but I was still surprised, as I moved toward the Lake, to find it so far away and so low beneath me. I shuffled for fifteen minutes down a road which cut steeply down a sandy slope, until the pavement abruptly ended and emptied onto a beach clumped with Russian Thistles. At the water's edge, the beach was hemmed by four feet or so of wet sand which crumbled easily into the Lake--too easily for me to get close. I watched a small flock of coots rummage in a cove--they seemed to like the pondweed, which protruded up through the water's surface and was tossed around its fringes--but when I moved too quickly, the coots splashed away. Like geese in a city pond, they seemed to enjoy this human-made habitat, although they had not yet grown accustomed to humans themselves.
+
+As I made my way back up to the hotel--which I could see now was more than a hundred feet above me, perched high on a rocky outcrop, I watched the landscape slide through a series of rapid transitions--it was if I was moving between zones on a mountain, but the transitions were much too quick, the zones too slim. Wet sand, then loose sand--with chains--, then crusted sand--some piled high as construction crews rearranged the road--and then landscaped with grey gravel, then red gravel planted with desert plants, then the green watered lawn that abutted the hotel. Scale had been distorted again--but this time, too small. A strata, not of geologic scale but of the last 20 years of drought. I could see where the Lake had been gone long enough for hotel managers to draw up landscaping plans, and where it had receded only so recently that they had not had time to extend the road. 
+
+After coffee, I drove into Page for breakfast--biscuits and gravy at a diner in the "Dam Plaza." From the parking lot, I saw, across the street, mounted on what looked like the kind of wooden boat. 
+
+The woman was kind, but nervous. She disappeared into a back room. 
+
+
+
+Powell archive. 
+
+
+
 
 
 -Dissonance-Powell archive (emplacement)
@@ -210,19 +232,24 @@ What environmental and social conditions create the archive? Can we trace this b
 
 -also serves to uphold territorialization
 
-## Rainbow Bridge - Wednesday
-
--Legality
 
 ## Exterior and Interior Landscapes - Wednesday
 
 -Ripping of cultural tethers
+
+“Indeed, stories are most frequently recalled as people are passing by a specific geographical feature or the exact location where a story took place. The precise date of the incident often is less important than the place or location of the happenning…Thus, in the case of many of the Pueblo narratives, it is impossible to determine which came first, the incident or the geographical feature that begs to be brought alive in a story that features some unusual aspect of this location” (33). 
+
+## Rainbow Bridge - Wednesday
+
+When the Bureau of Reclamation published 
 
 ## Hole-in-the-Rock - Thursday
 
 Transformation of the land is part of the belonging
 
 ## Failures - Thursday
+
+Long line of extraction
 
 ## Territorial Proliferations - Saturday
 
@@ -265,10 +292,6 @@ Indigenous groups have lived in and around Glen Canyon for over 10,000 years. Se
 Corn and beans are deeply rooted in Hopi origin mythology. They are a people who came from water, made a circle and wound off again. Sand would blow in and cover fields--Hopi would wait until it moved on (Courlander 134)
 
 "How would America feel if we decided to flood Arlington Cemetery and the Tomb of the Unknown Solder" -Hank Stevens, resident of Navajo Mountain and Navajo Nation's representative on the Bears Ears Inter-Tribal Coalition. (Podmore 157). 
-
-many side canyons are fed by dripping springs and hanging gardens
-
-Evidence for potato farming 9000 BCE
 
 Erasure: Eliot Porter's book "None but Indians have ever lived in this country, and they exist as only a part of it, they pass through it silently, leaving as little trace as sunlight through wind." (Podmore 32)
 
