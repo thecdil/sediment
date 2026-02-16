@@ -20,10 +20,10 @@ source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
 # title of site appears in banner
 title: Sedimentation
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: An Agentic Archive of the Glen Canyon Dam
+tagline: An Archive of Glen Canyon
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "An essaying at sediment centered around the site of Glen Canyon in its multitude of formulations, interactions, and movements."
+description: "An exploration of Glen Canyon's entangled human and natural histories, traced through the sedimentary archive"
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
 keywords: colorado river; glen canyon dam; inland northwest
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name

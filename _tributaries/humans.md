@@ -44,7 +44,7 @@ This map is not flat, and its territories do not sit cleanly beside one another 
 
 For instance: microbes fester in sediment beds that, before the dam, were thickly threaded with willow roots. Mormon emigrants deconstruct Puebloan cliff dwellings--and the memories of the lives they contained--as they pillage stones for their own homes. A creekside beach once packed with antelope tracks is obliterated--wiped entirely off the map--when its sand is harvested to fill the concrete walls of the Glen Canyon Dam. 
 
-Yet even in those places most ravaged by territorial erasures and remappings, the traces of past inscriptions can linger, though they are often faint and fragmented (willow branches fossilize in anaerobic lake beds; pot sherds are interred beneath the soil of a garden; the antelope are memorialized in a petroglyph panel). If you look closely, beneath the surfaces, you will find these traces scrawl out a ghostly map, embossed with layered claims.  
+Yet even in those places most ravaged by territorial erasures and remappings, the traces of past inscriptions can linger, though they are often faint and fragmented (willow branches fossilize in anaerobic lake beds; pot sherds are interred beneath the soil of a garden; the antelope are memorialized in a petroglyph panel). If you look closely, beneath the surface, you will find these traces scrawl out a ghostly map, embossed with layered claims.  
 
 <br><br>
 
@@ -57,9 +57,9 @@ Yet even in those places most ravaged by territorial erasures and remappings, th
 
 {% include feature/image-gallery.html objectid="sediment123" caption=false %}
 
-WHEN THE GLEN Canyon Dam was completed in 1963, the United States declared--in the dam's 700-foot tall concrete walls and in the reservoir it sent spreading out over the land--that the Canyon and its flooded tributaries were theirs. As Lake Powell bloated higher and swelled further than the river had ever reached, its waters engulfed thousands of Indigenous petroglyphs, dwellings, and trails. It bleached away, too, the microbial films that once draped the Canyon's walls, and it drowned hoards of lizards, scorpions, and snakes as well as any traces--tracks, scent markings, or burrows--of their lives. The lake razed the swaths of coyote willow, columbines, and cottonwoods which bloomed along the river's edge, and it hid the once volatile Colorado River beneath its glossy surface. Lake Powell covered, too, the remains of Glen Canyon's early settlement efforts: it swallowed the physical residues of mining operations, the etchings made by the canyon's first white explorers, and the homesteads of its first settlers. 
+WHEN THE GLEN Canyon Dam was completed in 1963, the United States declared--in the dam's 700-foot tall concrete walls and in the reservoir it sent spreading out over the land--that the Canyon and its flooded tributaries were theirs. As Lake Powell bloated higher and swelled further than the river had ever reached, its waters engulfed thousands of Indigenous petroglyphs, dwellings, and trails. It bleached away, too, the microbial films that once draped the Canyon's walls, and it drowned hoards of lizards, scorpions, and snakes and the makings and markings of their lives. The lake razed swaths of coyote willow, columbines, and cottonwoods which bloomed along the river's edge, and it hid the once volatile Colorado River beneath its glossy surface. Lake Powell covered, too, the remains of Glen Canyon's early settlement efforts: it swallowed the physical residues of mining operations, the etchings made by the canyon's first white explorers, and the homesteads of its first settlers. 
 
-Together, the dam and the lake visually and symbolically insist upon complete colonial territorialization, and they serve to erase the archive of the lives that came before, removing evidence of a different past, of other claims to the land. Put another way, the lake wipes the slate of history clean--at least on its surface. It transforms a landscape brimming with other existences into a *terra nullius*, a blank space on the map ready to be developed. This kind of subsumation also props up western notions of linear progress and unidirectional time, and it reifies the belief that the present can be laid cleanly over the past like the next layer of strata. 
+Together, the dam and the lake visually and symbolically insist upon complete colonial territorialization, and they serve to erase the archive of the lives that came before, removing evidence of a different past, of other claims to the land. It transforms a landscape brimming with other existences into a *terra nullius*, a blank space on the map ready to be developed. This kind of subsumation props up western notions of linear progress and unidirectional time, and it reifies the belief that the present can be laid cleanly over the past like the next layer of strata. 
 
 {% include feature/image-gallery.html objectid="sediment37" caption=false%}
 
@@ -90,7 +90,7 @@ Something is communicated in this touching: a recognition of presence and preced
 
 For Jacques Derrida, traces are inherently spectral in that they disclose the "absence of presence" by drawing attention to what was once there, but is no longer.[^3] 
 
-The handprints, then, emphasize the absence of their makers, but they make visible other kinds of absences, too: as I attempt to write about the prints, I am faced again and again with the incompleteness of their record, and the incompleteness of my own knowledge. Enclosed between the prints' slim disclosures are seas of unknowns: they are proof of another's presence, and their chemical signatures offer hints about the processes by which they were made, but they do not tell us much more than that. We cannot know who these people were, or discern their names, or their relation to one another, or know their dreams, sorrows, or joys. Without this information, I cannot apprehend the makers in all their human complexities, and any attempt to fill such gaps would almost certainly efface the handprinters as they were, and instead replace them with some distorted version of my own. 
+The handprints, then, emphasize the absence of their makers, but they make visible other kinds of absences, too: as I attempt to write about the prints, I am faced again and again with the incompleteness of their record, and the incompleteness of my own knowledge. Enclosed between the prints' slim revelations are seas of unknowns: the prints testify to another's presence, and their chemical signatures offer hints about the processes by which they were made, but they do not tell us much more than that. We cannot know who these people were, or discern their names, or their relation to one another, or know their dreams, sorrows, or joys. Without this information, I cannot apprehend the makers in all their human complexities, and any attempt to fill such gaps would almost certainly efface the handprinters as they were, and instead replace them with some distorted version of my own. 
 
 I am reminded here that as I read the traces of the past, I must be careful not to reduce the silences--and all the possibilities they contain--in an attempt to write a complete story. It is enough to accept the handprinters' declaration of existence, and it is enough to be touched by their presence. 
 
@@ -124,23 +124,23 @@ At first, Powell's heedings were wholly rejected. Such a collective approach to 
 
 But before these projects could begin, or even be imagined, the American West had to first be carefully mapped, its water tallied, and its topography plotted. Land managers, engineers, and lawmakers needed to understand the contours of the land and the precise location of its resources in order to lay out plans to settle and develop it. Even if Powell's dream of communal watershed governance was never to materialize, the data he collected on his expeditions nevertheless laid the groundwork for the Colorado River to be transformed into a tightly-regulated plumbing system, choked with dams and siphoning aqueducts.
 
-Much of the data that Powell provided Congress was gleaned through traditional survey methods. He measured distances by triangulating his position in relation to the stars; he carefully tracked the river's gradient with thrice-daily barometer readings; he drew elaborate sketches of riverside terrain; and he kept a detailed journal about all that he saw. 
+Much of the data that Powell provided Congress was gleaned through traditional survey methods. He measured distances by triangulating his position in relation to the stars; he carefully tracked the river's gradient with thrice-daily barometer readings; and he relied on vegetation--"luxuriant grasses" or "thorny cactus here and there"--to indicate rainfall patterns. 
 
 {% include feature/image-gallery.html objectid="sediment316" caption=false%}
 
-But Powell was an ethnologist as well as a botanist-geologist, and he knew that local Indigenous communities possessed "intimate knowledge of the landscape" that could help him understand how the region's resources might best be harnessed for human use. Powell extracted a wealth of information from the Indigenous communities he encountered. In the Grand Canyon, for example, Powell met a band of Shi'-vwit Paiutes, and told their chief that "I wish to learn about their cañons and mountains, and about themselves, to tell other men at home; and that I want to take pictures of everything, and show them to my friends" (Powell 129). 
+But Powell was an ethnologist as well as a botanist-geologist, and he knew that local Indigenous communities possessed "intimate knowledge of the landscape" that could help him understand how the region's resources might best be harnessed for human use. Powell extracted a wealth of information from the Indigenous communities he encountered, and he was often explicit about these strategies. In the Grand Canyon, for example, Powell met a band of Shi'-vwit Paiutes, and told their chief that "I wish to learn about their cañons and mountains, and about themselves, to tell other men at home; and that I want to take pictures of everything, and show them to my friends" (Powell 129). 
 
 Powell also understood that the rock art, dwelling structures, and irrigation canals he encountered offered vital insight into how the land had previously been utilized in the past, and thus could be utilized in the future. "from extensive study of the ruins," he wrote,  "it seems that everywhere tribal pueblos were built of considerable dimensions, usually to give shelter to several hundred people. Then the people cultivated the soil by irrigation, and had their gardens and little fields scattered at wide distances about the central pueblo, by little springs and streams and wherever they could control the water with little labor to bring it on the land."  (Powell Canyons of the Colorado). "Irrigation," Powell concluded, "is a necessary adjunct to successful cultivation in all the region explored" (Powell 143) 
 
 Powell was not the first or the last frontiersman to leverage Indigenous knowledge in order to determine a landscape's potential for colonization. In fact, the practice of extracting knowledge only to dispossess and erase its producers was so central to the region's colonial development, historian Erika Marie Bsumek filled an entire book chronicling repeated instances of this pattern. And as Bsumek notes, while settlers often pilfered information directly from Indigenous informants, they also frequently extracted insight from whatever material traces they encountered. 
 
-"In many cases," Bsumek writes, "white settlers, surveyors, and engineers first located Indigenous irrigation ditches in order to find the most promising sites on which to build their own communities" (6). The value of such markings was so significant, in fact, one Mormon missionary proclaimed the Colorado Plateau a viable site to settle because he "had evidence that this land has been densley [sic] populated" (28). 
+"In many cases," Bsumek writes, "white settlers, surveyors, and engineers first located Indigenous irrigation ditches in order to find the most promising sites on which to build their own communities" (6). The value of such markings was so significant, one Mormon missionary proclaimed the Colorado Plateau a viable site to settle because he "had evidence that this land has been densley [sic] populated" (28). 
 
-Neither Powell, nor the Mormons, nor any white settler thereafter seemed to interpret "evidence" of Indigenous existence as an assertion that this territory had long ago been claimed--whose claims were inscribed on the land itself, and which was still "densely populated" by hundreds of thousands of Native people. 
+Neither Powell, nor the Mormons, nor any white settler thereafter seemed to interpret "evidence" of Indigenous existence as an assertion that this territory had long ago been claimed--whose claims were inscribed on the land itself, and which was still "densely populated" by hundreds of thousands of Native people. Instead, they viewed such evidence as a repository of useful information which could be harnessed to further their own aims. 
 
 {% include feature/image-gallery.html objectid="sediment135" caption=false%}
 
-Inscriptive practices might declare territorial claims, but the knowledge they contain can also be appropriated by those in pursuit of endless and unprincipled expansion. 
+Inscriptive practices can declare territorial claims, but they can also be appropriated for remapping by those in pursuit of endless expansion. 
 
 Such a pattern is by no means unprecedented: the pillaging of others' knowledge without the consent, inclusion, and respect of those who produced it is often the mechanism by which colonial cultures seek their ascendancy. And as Bsumek reminds us, such an ascendancy relies not only on the use of stolen knowledge, but also on the erasure of its producers. It is only through this process of simultaneous extraction and erasure that colonial agents can maintain the narratives of supremacy upon which their projects depend. 
 
@@ -150,21 +150,30 @@ As Powell noted, Mormons often used stones taken from Native dwellings to build 
 
 {% include feature/image-gallery.html objectid="sediment317" caption=false%}
 
-In order to justify their encroachment, colonizers frequently invoked stadial theories of evolution, which imagined that newer, more advanced civilizations will naturally succeed and subsume those older and less advanced, like the accrual of new strata on top of old. However, the reality that settler infrastructures were established not *on top* of prior cultures, but *using* their materials undercuts this kind of stratigraphic logic; Mormon settlements were made possible because they were built *with* the stuff of the past, not over it. 
+In order to justify these encroachments, colonizers frequently invoked stadial theories of evolution, which imagined that newer, more advanced civilizations will naturally succeed and subsume those older and less advanced, like the accrual of new strata on top of old. However, the reality that settler infrastructures were established not *on top* of prior cultures, but *using* their materials undercuts this kind of stratigraphic logic; Mormon settlements were made possible because they were built *with* the stuff of the past, not on top of it. 
 
-Practices of physical erasure and replacement not only assuage the settler consciousness and affirm their belonging, they also reify false narratives that Euroamerican settlers were the first to successfully develop the land for permanent habitation. But as the region's irrigation canals, dwellings, granaries, water storage tanks, and hunting trails attest, Indigenous cultures had long ago figured out how to adapt the land--and their own subsistence strategies--to support long-term survival and flourishing. 
+Practices of cultural superpositions not only assuage the settler consciousness and affirm their belonging, they also reify false narratives that Euroamerican settlers were the first to successfully develop the land for permanent habitation. But as the region's irrigation canals, dwellings, granaries, water storage tanks, and hunting trails attest, Indigenous cultures had long ago figured out how to adapt the land--and their own subsistence strategies--to support long-term survival and flourishing. 
 
-However, when Powell came across these "ruins", many of which were no longer in use, he concluded that the region's contemporary Indigenous populations must be less "'civilized' than their ancestors," and decided that "Indigenous cultures belonged to the past, not the present." (Bsumek 61, 67) Powell read, in other words, the absence of Indigenous presence within Glen Canyon to indicate cultural failure and inadequacy, a narrative which legitimized Euroamerican encroachment. But of course, physical residues alone rarely tell a complete story, and attempting to fill in the gaps--as Powell did--risks filling them with mistruths and misunderstandings. 
+However, when Powell came across these "ruins", many of which were no longer in use, he concluded that the region's contemporary Indigenous populations must be less "'civilized' than their ancestors," and decided that "Indigenous cultures belonged to the past, not the present." (Bsumek 61, 67) Powell read, in other words, the absence of Indigenous presence within Glen Canyon to indicate cultural obsolescence, a narrative which legitimized Euroamerican encroachment. But of course, physical residues alone rarely tell a complete story, and attempting to fill in the gaps--as Powell did--risks filling them with mistruths and misunderstandings. 
 
 {% include feature/image-gallery.html objectid="sediment292" caption=false%}
 
-At the time of Powell's expedition, there were dozens of Indigenous groups living on Glen Canyon's shoulders, many of whom were descended from those people who had built the gardens and dwellings that Powell encountered. Their ancestors, the Puebloans, had not disappeared; they had purposefully migrated out of the Canyon in order to survive an episode of drought--a common phenomena in the Southwest's cyclically variable climate.
+At the time of Powell's expedition, there were dozens of Indigenous groups living on Glen Canyon's shoulders, many of whom were descended from those people who had built the gardens and dwellings that Powell encountered. Their ancestors, the Ancestral Puebloans, had not disappeared; they had purposefully migrated out of the Canyon in order to survive an episode of drought--a cyclically common phenomena in the Southwest's variable climate.
 
-The absence of permanent inhabitants in the Canyon at the time of Powell's surveys, then, was not a result of cultural regression (as Powell claimed), but is rather a testimony to the Puebloans' deep knowledge of the region's long-term climatic patterns as well as their ability to successfully adapt to a shifting environment. Survival is not always achieved through sedentary accumulation and unidirectional progress; sometimes surviving requires mobility and responsiveness as the earth cycles through its rhythms. 
+The absence of permanent inhabitants in the Canyon at the time of Powell's surveys, then, was not a result of cultural regression (as Powell claimed), but is rather a testimony to the Puebloans' deep knowledge of the region's long-term climatic patterns as well as their ability to successfully adapt to a shifting environment. Cyclical migration is a common adaptive practice for cultures living in changeable climates, and Indigenous communities have persisted on the Colorado Plateau over thousands and thousands of years precisely because they have calibrated where and how they lived with the ebbs and flows of the region's water. Theresa Pasqual, director of the Acoma’s Historic Preservation Office, richly captures the migratory patterns of her Puebloan ancestors: 
 
-The earth’s rhythms tend to exceed the span of a single lifetime--let alone the span of two expeditions--and Indigenous knowledge about climatic fluctuations and how to adapt to them is often accumulated over thousands of generations. Powell, an easterner descended from Europeans, had no such generational insight, and he had little context for understanding why the ruins he encountered might be vacant. In his attempts to fill these gaps, Powell inserted a false--and racialized--narrative about civilizational decline, and he blinded himself to the sea of other stories that the ruins--and his Indigenous informants--contained. 
+"Those movements weren’t linear. They weren’t from point A to point B. They happened to move and almost move like waves of—of the ocean upon the beach: in and out, back and forth. They moved across the landscape, depending on what resources were available to them." Pasqual continues to emphasize that Westerners have difficulty grasping this kind of lifestyle because "from a Western perspective, almost anything that we do, is very linear. There’s a beginning and there’s an end... But for our Pueblo communities, and I would dare say for almost all of our indigenous communities, that is not the way that we approach things...Time for us as Pueblo people can be present, it can be the future, it can be the past, and it can be all of those things at the very same time." (https://www.oerproject.com/OER-Materials/OER-Media/Videos/Origins/Unit3/Communities-of-Movement-Ancestral-Puebloans)
 
-Scientists have since figured out that that tree rings store a yearly record of their environment's climatic history, and as it turns out, both of Powell's expeditions took place during an unusually wet period. Reconstructive modeling indicates that in the year of Powell's first expedition, the Colorado River saw water flows around 20 million acre-feet, about 30% more than the long-term average.(https://www.treeflow.info/content/upper-colorado#field-metadata). Thus, at the time of Powell's expedition, there was enough water in the basin to indicate that sedentary, agriculture-based settlement *was* possible, as long as this water was carefully managed and partitioned. And while Powell certainly recognized the scarcity of the region's water, it is likely he himself overestimated how many people the region could, in the long-term, support. 
+Survival, as Pasqual illustrates, is not always achieved through sedentary accumulation and unidirectional progress; oftentimes, surviving requires mobility and responsiveness as the earth cycles through its rhythms, which are rarely linear.  
+
+However, these rhythms and pulses tend to exceed the span of a single lifetime--let alone the span of two expeditions--and Indigenous knowledge about climatic fluctuations and how to adapt to them is often accumulated over thousands of generations. Powell, an easterner descended from Europeans, had no such generational insight, and he therefore had little context for understanding why the ruins he encountered might be vacant. In his attempts to fill these gaps, Powell inserted a false--and racialized--narrative about civilizational decline, and he blinded himself to the sea of other stories that the ruins, the landscape, and its people contained. 
+
+
+
+ stretch far beyond the horizon of what Powell, as an individual just passing through, could have possibly observed. and so the information that Powell gleaned about the --and later presented to Congress--
+
+
+Scientists have since figured out that tree rings store a yearly catalog of their environment's climatic history, and as  both of Powell's expeditions took place during an unusually wet period. Reconstructive modeling indicates that in the year of Powell's first expedition, the Colorado River saw water flows around 20 million acre-feet, about 30% more than the long-term average.(https://www.treeflow.info/content/upper-colorado#field-metadata). Thus, at the time of Powell's expedition, there was enough water in the basin to indicate that sedentary, agriculture-based settlement *was* possible, as long as this water was carefully managed and partitioned. And while Powell certainly recognized the scarcity of the region's water, it is likely he himself overestimated how many people the region could, in the long-term, support. 
 
 What's more, the only part of Powell's message that Congress received--or at least decided to heed--was the part about the possibility of development. Powell's brightly splotched maps, black and white sketches, and written reports apparently did not fully convey the realities of the southwestern climate. And so, from their seats in the humid, verdant East, legislators went ahead and transposed temperate plans for living onto Powell's map of the West. 
 
@@ -176,13 +185,16 @@ It would be naive, of course, to argue that prudent legislation comes all the wa
 
 {% include feature/image-gallery.html objectid="sediment307" caption=false%}
 
-Americans today, however, are living with the legacies of those decisions, and it is much more difficult to make just and informed choices about how to live when the historical record has been hidden from public view. 
+Americans today, however, are living with the legacies of those decisions, and it is much more difficult to make just and informed choices about the future when the record of what came before has been hidden from public view. 
 
-Today, most of what John Wesley Powell encountered in Glen Canyon lies hundreds of feet beneath a dammed reservoir. It is difficult to believe that this is a land of precious water while standing at the edge of a deep and sprawling lake. And it is difficult, too, to understand that continued existence in that land is entangled and made possible by so many webs of life, loss, violence, success, resilience, and greed when one cannot see the strands of such webs.
+Today, most of what John Wesley Powell encountered in Glen Canyon lies hundreds of feet beneath a dammed reservoir. It is difficult to believe that this is a land of precious water while standing at the edge of a deep and sprawling lake. And it is difficult, too, to understand that one's existence in that land is entangled and made possible by so many webs of life, loss, violence, success, resilience, and greed when one cannot see these strands. 
 
 But as the drought draws the Lake lower, Glen Canyon--and its networks of inscriptions--is resurfacing. This time, we must pay closer attention, and not rush to fill in the stories. 
 
-## Earthly Archives - Tuesday
+{% include feature/new-section.html %}
+
+
+## Earthly Archives
 
 AT THE END of 2025, I visited Lake Powell. The day I arrived, a historic windstorm was sweeping across the West, buffeting back my car with sixty-mile-an-hour winds, and tipping tractor trailers across the interstate. Several times I pulled over to wait out alerts of particularly life-threatening super cells, or to unclaw my hands from the steering wheel. What should have been a nine hour drive became fifteen, and I did not make it to Page until late into the night. 
 
@@ -199,9 +211,6 @@ The woman was kind, but nervous. She disappeared into a back room.
 
 
 Powell archive. 
-
-
-
 
 
 -Dissonance-Powell archive (emplacement)
@@ -232,35 +241,83 @@ What environmental and social conditions create the archive? Can we trace this b
 
 -also serves to uphold territorialization
 
-
-## Exterior and Interior Landscapes - Wednesday
-
--Ripping of cultural tethers
-
-“Indeed, stories are most frequently recalled as people are passing by a specific geographical feature or the exact location where a story took place. The precise date of the incident often is less important than the place or location of the happenning…Thus, in the case of many of the Pueblo narratives, it is impossible to determine which came first, the incident or the geographical feature that begs to be brought alive in a story that features some unusual aspect of this location” (33). 
-
-## Rainbow Bridge - Wednesday
-
-When the Bureau of Reclamation published 
-
-## Hole-in-the-Rock - Thursday
-
-Transformation of the land is part of the belonging
-
-## Failures - Thursday
-
-Long line of extraction
-
-## Territorial Proliferations - Saturday
-
-## Blasted Landscapes / Remains of the Future - Saturday
-
-IN DECEMBER 2025, I drove from my home in the Idaho panhandle down to Glen Canyon. This is a seventeen hour trip, so I stopped halfway for a few nights in a small town along the western hem of the Tetons, hoping to cross-country ski for a few days. I arrived to find the valley bare and dry--which, given the weeks-long string of sunny, 55-degree days wasn't so much surprising as disconcerting. 
-
-In the West, bad winters mean bad summers; rampant fires, smoke-choked skies, and half-empty reservoirs. Western Americans are closely attuned to these cross-seasonal contingencies. People I spoke with from Idaho to Arizona were anxiously monitoring the weather of the present in order to predict the climates of the future. Time and space in the west is linked 
+{% include feature/new-section.html %}
 
 
-I drove up the upper reaches of the foothills were crusted with only a thin and scratchy layer of snow. I skied once, clattering over chundered trails, and then searched the internet for other things to do. 
+
+## Interior Landscapes 
+
+
+{% include feature/image-gallery.html objectid="sediment321" caption=false%}
+
+Landscapes capture and store the residues of human life, but land is by no means a passive backdrop to these lives. As Leslie Marmon Silko illuminates in her essay "Interior and Exterior Landscapes", human identity and culture are formed not upon the surfaces of the earth, but rather from *within* the places that nourish and touch us. "The term *landscape*," she writes, "as it has entered the English language, is misleading." It "assumes the viewer is somehow outside or separate from the territory he or she surveys," although in reality, "there is no high mesa edge or mountain peak where one can stand and not immediately be part of all that surrounds" (27-28). Humanity--with all our knowledge, habits, rituals, desires--emerges through our interrelationships with specific landscapes, which we are a part of. 
+
+Western society--with its Cartesian dualisms, tendencies toward commodification and extraction, and global imperialism--has somewhat successfully abstracted the processes by which nature forges, and includes, culture. But for many other societies, nature remains a central part of culture-making. 
+
+As Silko shares, this is case for traditional Puebloans: Puebloan stories--which are critical modes of sharing knowledge and values--are almost always tethered to specific geographical features, though Silko notes that "it is impossible to determine which came first, the incident or the geographical feature that begs to be brought alive in a story." 
+
+Silko illustrates the inextricable intertwinement between landscape, story, and culture by recounting a family story: she tells of a high dark mesa on the Swanhee plains and of her sheepherding relatives who were killed there when they strayed into the mesa's shadow and thus could not see the Apache raiders lying in wait for them. Silko's narrative at once brings alive the mesa, showing its critical role in determining the life and death of her relatives; it embeds the memory of her relatives in the mesa; and it affixes instructions about how to best navigate the mesa to the mesa itself. "Thus," she writes, "the continuity and accuracy" of Pueblo knowledge is "reinforced by the landscape." 
+
+{% include feature/image-gallery.html objectid="sediment318" caption=false%}
+
+For the Diné, too, geographical features actively participate in cultural formation and survival. Tsé Naní' áhiígíí, a rainbow-shaped rock bridge wedged between the walls of Bridge Canyon (one of Glen Canyon's tributaries), has long oriented both spiritual and material life for Diné people. Stories about the origins of Tsé Naní' áhiígíí abound, offering knowledge about proximal springs where people might draw water, about how to ask for rain in periods of drought, how to travel across the Plateau's chasmal landscapes, and about the movements and unions of the Holy people. One account shares that the Holy people created Tsé Naní' áhiígíí as a place of refuge in "the safest place they could imagine" (Bsumek 68)--and when Kit Carson launched a violent removal campaign in 1864, many Navajo survived by fleeing to the shelter of Bridge Canyon. 
+
+Shortly after the completion of the Glen Canyon Dam, Tsé Naní' áhiígíí was inundated with Lake water, despite objections from many Diné representatives, and despite the government's promise to protect the site from the rising reservoir. For the Navajo, the drowning of Bridge Canyon did more than subsume their ancestral territory: as Navajo elder Lamar Badoni put it, "The Rainbow is broken. Our way of life, our way of thinking, our religion is broken" (Luckert 148).
+
+{% include feature/new-section.html %}
+
+
+## Rainbow Bridge 
+
+{% include feature/image-gallery.html objectid="sediment322" caption=false%}
+
+Rainbow Bridge was never supposed to be flooded. Congress authorized Glen Canyon Dam's construction in 1956 only *after* provisions were added to guarantee Rainbow Bridge's protection. This provision explicitly stated that "as part of the Glen Canyon Unit the Secretary of the Interior shall take adequate protective measures to preclude impairment of Rainbow Bridge National Monument." 
+
+The easiest way to protect Rainbow Bridge would have been to keep lake levels below 3,654 feet--but this is 46 feet lower than Lake Powell's full capacity, and the Bureau of Reclamation proved unwilling to let their dam be used for anything less than its maximum potential. Instead, the agency promised to sandwich Rainbow Bridge between two cofferdams, one below the Bridge to keep out rising lake water, and a second one above the Bridge to prevent runoff from getting trapped behind the first.
+
+The Bureau was, however, unwilling to follow through on this promise either. Then commissioner of the Bureau Floyd Dominy later confessed that although "according to law...we had to ask for money to build these structures," he had "advised the appropriation committee that they would be foolish to give it to me." The committee never appropriated the funds, the cofferdams were never built, and Rainbow Bridge was flooded. 
+
+As lake water seeped up under the Bridge, tourists arrived by the hordes, most of them on powerboats, many of them to party. They left behind great quantities of trash, played loud music, and they swam naked around and crawled up onto the Bridge. For many Navajo, to whom the Bridge is a deeply sacred site, such behaviors were defiling and intrusive. 
+
+Navajo elder Paul Goodman told ethnographer Karl Luckert in 1977, for example, that Rainbow Bridge "has been and is being desecrated. People walk all over it; they urinate in the area; they throw bottles around. It just is not sacred anymore" (141). Navajo communities increasingly spoke out against the degradation of Rainbow Bridge, but when more water and more tourists continued pouring in, eight Navajo singers and three Navajo chapter houses turned took their concerns to the courts. 
+
+In 1974, the Navajo Legal Aid Society filed a lawsuit demanding that the Bureau lower Lake Powell, and that the National Park Service better manage tourist activity. The case, *Badoni vs. Higginson,* argued that by allowing Rainbow Bridge to flood, both with Lake water and with tourists, that the government had impeded the Navajo from freely exercising their religious activities, a right guaranteed by the First Amendment. "Rainbow Bridge," the plaintiffs said, was "a religious symbol and a focal point through which many prayers and religious ceremonies derive meaning and vitality by reason of its role in the emergence of the Navajo people." 
+
+The case was struck down, on the basis that the Navajo did not have a demonstrable "property interest" in Rainbow Bridge--that is, they had no title to the land or any other written record, legible to the U.S. court system, that could prove a property claim (National Park Service). Even by court standards, this is only partially true: an executive order by the U.S. government had added the Bridge and its surrounding lands to the Navajo Reservation in 1884, and then revoked that order in 1892. This appeal, however, was overridden when the court decided that the material and economic good that Lake Powell provided non-Indigenous people "outweighs the plaintiff's religious interests." 
+
+Once again, Westerners invoked a stratigraphic logic that naturalized and privileged settler encroachments while subsuming Navajo entitlements to an inert and bygone past. 
+
+{% include feature/image-gallery.html objectid="sediment22" caption=false%}
+
+
+But this instance of dispossession also exposes the role that the archive--and how the archive is defined--plays in power formation. Derrida reminds us that the very word *archive* comes from the Greek Arkhe, which means both commencement and commandment. And the earliest archives, he notes, were those places where official documents were stored, and called on by those who command, the *archons,* to "impose the law" (10). Those who create and guard the archive retain the power of commandment. When the court decided that the Navajo had no claims to Rainbow Bridge, they relied on the archive that they themselves had constructed, and they relied also upon their own constructed systems of classifying those archival documents: an executive order of removal was not a title. And certainly, neither oral stories, nor cultural memory, nor those petroglyphs, dwellings, and trails that attested to many years of Navajo presence, counted as a property title, according to the court's narrowly-classified definition.
+
+Definitions of "archive" abound. Archives can be "a place where historical records are kept" (Cambridge) "collections of information" (National Archives) or "material preserved" (Merriam Webster), and many other things too; there seem to be as many definitions for archive as people who have attempted to define it. That archive is so difficult to singularly define betrays its arbitrary nature; the archive is, to some degree, what we imagine it to be. In trying myself to grasp what an archive is, or what it might be, I take a cue from Leslie Marmon Silko and Puebloan understandings of communal meaning-making. "For them," Silko writes, the "truth lived somewhere within the web of differing versions, disputes over minor points, and outright contradictions" (32). 
+
+If an archive is a place that collects preserved material, what then, precludes generational memory (which resides in bodies of so many people, collecting and preserving bits of knowledge through time) or the land itself (a place that preserves, in material form, records of so many pasts) from being read as an archive? And by extending the definition of the archive, might power be released from the *archons* and distributed more evenly, to everyone and everything who contains within them a record of the past? The web of stories of will surely explode out, the truths that seem to anchor life as we know it will become unfixed and elusive, the web will become tangled with disputes and differing versions and contradictions, but somewhere within this messy web will lie, if not a singular truth, a path towards remediation. 
+
+
+{% include feature/new-section.html %}
+
+## Proliferations
+
+<div class="pe-0 mb-0">
+{% include feature/image-gallery.html objectid="sediment218;sediment256" caption=false%}
+{% include feature/image-gallery.html objectid="sediment210;sediment217" caption=false%}
+</div>
+<br>
+Along Lake Powell's hems, where water meets cliff, bands of green scum cling to the rock. This is algae, bred in stagnant water but not yet dried up by sun and air. Above these thin stripes of scum, the cliffs are chalked white with minerals--mostly lime--deposited by Lake Powell. The chalk is thick and solid at the cliff's bottoms, but it becomes patchier towards the top.  Where the land slopes more gently to lake, thick beds of sand have heaped up like desicated dunes, and the coves are choked with sucking muck. Some of this muck is laced with pollutants, spilled from farms upstream, or from the uranium mines of the 1950s. 
+
+These are all agents of what Anna Tsing calls "feral ecologies" that is, "ecologies that have been encouraged by human-built infrastructures, but which have developed and spread beyond human control." They carry out the proliferating effects of infrastructure , and they remind us that environmental disturbances are rarely locally contained. Each of these agents, then, become tentacles marking every corner of the landscape as claimed, even if this claim is one of contamination and toxicity.  
+
+But--at the same time that algae, sediment, minerals, fish, and thistles have enrolled in colonial territory-making, they also undermine this same project. They are reminders even behemoth projects like the Glen Canyon Dam cannot accomplish total anthropocentric control: new life will always spring up and lay claim to the cracks. 
+
+{% include feature/new-section.html %}
+
+
+## Blasted Landscapes / Remains of the Future
+
+IN DECEMBER 2025, I drove from my home in the Idaho panhandle down to Glen Canyon. This is a seventeen hour trip, so I stopped halfway for a few nights in a small town along the western hem of the Tetons, hoping to cross-country ski for a few days. I arrived to find the valley bare and dry--which, given the weeks-long string of sunny, 55-degree days wasn't so much surprising as disconcerting. I drove up the upper reaches of the foothills were crusted with only a thin and scratchy layer of snow. I skied once, clattering over chundered trails, and then searched the internet for other things to do. 
 
 This was how I learned about the Teton Dam. FIX
 
@@ -274,227 +331,12 @@ The morning I went to the dam, a record-breaking was blowing across the Pacific 
 
 I sat in my car for a moment, which was rocking in the heavy wind. Perhaps it was the apocalyptic weather--the grey yellow skies and the tumbleweeds shooting across the plains--or the signs posted all around that told me I was being surveilled, or the thick rusted pipe at the edge of the parking lot that looked as if it had been hurled up by the flood, or perhaps it was the knowing that I was in a place that fifty years before had been the site of cataclysmic disaster, but I began to feel a deep dread. Eventually I pushed my door open--it was caught by the wind and flung back and I had to fight to close it again. I started down a rutted dirt trail towards the remains of the dam. 
 
+{% include feature/image-gallery.html objectid="sediment201" caption=false%}
+
 The wind howled a low tone. It began to rain, and I nearly turned back, but the wind was pushing me forward and I went. Eventually, over a crest, the dam came into view. What remained was a stark and ugly cone with its face cut cleanly off, rising up from the canyon floor. Up on either hillside stood disconnected concrete abutments, both of which were scrawled with graffiti and circled by a chainlink fence that had been bent back in places where people had climbed through. I hurriedly took pictures, too frantic at this point to notice that some of my pictures were obscured by the fence wires. I turned down valley, and saw the path of the flood--a scoured chasm stretched out into the distance, walls bared and torn and crumbling in.
 
-A gust of wind whipped down the plains, this time bringing rain sideways, and the fence began to rattle. The dread 
-
-## Reemergence - Sunday
-
--Absence and presence 
--Territorial inscription
--Archive of the past
--Yet this archive is material; it shows us where and how humans have come in contact with the earth and changed it
--Which changes how we interact with it
--recirculations
-
-Indigenous groups have lived in and around Glen Canyon for over 10,000 years. Sediment has provided material for the dwelling structures, pottery, irrigation canals, petroglyphs, and spiritual landmarks that support and orient the lives of the region’s many Indigenous communities. The canyons, bridges, buttes, and spires sediment carved out of itself–aided by wind and water–became important landmarks for many tribes’ cultural and spiritual formations. Despite the coerced removal of Indigenous people from the land, these sedimentary landmarks persist as markings of Indigenous territory. Nine federally recognized tribes have ties to Glen Canyon, including the Anasazi, Núu-agha-tʉvʉ-pʉ̱ (Ute), Diné Bikéyah (Navajo), Hopitutskwa (Hopi), Nuwuvi (Southern Paiute), A:shiwi (Zuni), and Havasu Baaja (Havasupai).
-
-Corn and beans are deeply rooted in Hopi origin mythology. They are a people who came from water, made a circle and wound off again. Sand would blow in and cover fields--Hopi would wait until it moved on (Courlander 134)
-
-"How would America feel if we decided to flood Arlington Cemetery and the Tomb of the Unknown Solder" -Hank Stevens, resident of Navajo Mountain and Navajo Nation's representative on the Bears Ears Inter-Tribal Coalition. (Podmore 157). 
-
-Erasure: Eliot Porter's book "None but Indians have ever lived in this country, and they exist as only a part of it, they pass through it silently, leaving as little trace as sunlight through wind." (Podmore 32)
-
-A dwelling documented by Powell called Fort Moki was drowned, then reexposed. But the Dominy formation changed the river's course "like a hose under high pressure" and it collapsed. (Podmore 33)
-
-The land swap was preceded by violence on McCracken Mesa, in which many horses were killed or sold back to Navajo for high prices. They sued and were awareded $100,000 in damages which never arrived. The Navajos supported Glen Canyon under the auspices that they would benefit from the CRSP via the Navajo Indian Irrigation pProject, which was never finished (Podmore 193). 
-
-Hopi stories talk about a hero who floated from Colorado River to the Gulf of California, where he learned the rain dance (197). Navajo say the joining of the San Juan and Colorado created water chihldren, cloud and rain people." (Podmore 197). 
-
-Built a tank used for irrigating corn, squash, and beans.
-
-
-
-{% include feature/image-gallery.html objectid="sediment37" caption=false%}
-
- When John Wesley Powell surveyed and mapped Glen Canyon in 1869, he read the canyon's petroglyphs and Indigenous dwellings as important evidence that the canyon was capable of sustaining human life, encouraging settlement of the region. 
-
- carved his name
-
-{% include feature/new-section.html %}
-
-
-{% include feature/image-gallery.html objectid="sediment44;sediment64" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment137;sediment116" caption=false%}
-
-Ancestral Puebloans built thousands of dwelling structures up and down the Canyon and its tributaries. These dwellings were typically constructed with stone fragments held together by adobe, composed of sediment, straw, and water. Dwellings were often nestled in the canyon's natural topographical features such as alcoves or mesa tops. 
-
-
-
-{% include feature/image-gallery.html objectid="sediment9;sediment37" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment45;sediment71" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment80;sediment81" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment87;sediment101" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment102;sediment119" caption=false%}
-
-
-Petroglyphs adorn much of the canyon, marking places where culturally or personally important events have unfolded, and inscribing various Indigenous communities’ presence, territory, and ways of life onto the landscape itself. The contrast in color between the glyph and the surrounding stone is created by desert varnish, which forms when sediment interacts with air, water, minerals, and microorganisms over thousands of years. A petroglyph requires both the absence and presence of sediment: one must carve out some sediment and release it into the land. This process entrusts the human story to the land, and it binds humans, language, and sediment together and locks it in the landscape. This is markedly different than a paper medium, which can be transported across locations, which does not return material to the land, and which does not locate the human story in the geologic record. 
-
-"We can see evidence of how Utes used the landscape to record their history and culture on the area's sandstone walls. The archaeologist Polly Schaafsma asserts, 'Rock art is the product of shared concepts and modes of picturing the world held by members of any given culture at any particular time and in a particular place. With or without intent, a corpus of mutually understandable iconography distributed throughout a given landscape is a mechanism for asserting identity in space...such images illustrate that Utes chronicled their kills, kept an eye on animal populations, used horses and dogs in their hunts, and made their mark on the landscape as they etched their activities onto the canyon walls in their homeland." (Bsumek 41)
-
-
-{% include feature/image-gallery.html objectid="sediment4;sediment18" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment15" caption=false%}
-
-
-In 1776, Franciscan priests, Fathers Escalante and Dominguez set out from Santa Fe, New Mexico in search of an overland route to a Catholic Mission in Monterrey, California, but they were forced to backtrack as winter approached. Indigenous guides had initially led them safely across the Colorado, but on their return their guide, who was 12 years old, suddenly quit after witnessing the severe punishment of a servant. Lost and out of supplies, the party was forced to eat their horses. They wandered along the Colorado River for a month before they found an accessible crossing. The exact location of this crossing is unknown, but the Fathers remarked in their journal that the crossing was made possible by carving steps down the sandstone cliffs, and by swimming across a part of the river that had been made narrow by sandbars trapped by a bend in the river. The Crossing of the Fathers now lies beneath Lake Powell's waters. 
-
-
-{% include feature/image-gallery.html objectid="sediment136" caption=false%}
-{% include feature/image-gallery.html objectid="sediment116" caption=false%}
-
-
- 
-
-"An adequate conception of the ruggedness of this particular region cannot be conveyed in words," wrote Earl Morris during his 1921 expedition into Forbidding Canyon. Morris had joined Charles L. Bernheimer's expedition to find an easier route between the main stem of the Colorado River and Rainbow Bridge, a natural arch which has captivated and drawn humans for millenia, and is sacred for many Indigenous groups including the Navajo, Hopi, San Juan Southern Paiute, Kaibab Paiute, and White Mesa Ute. The group found little hope that Forbidding Canyon would make for an easier journey as it formed "a maze of tortuous canons winding in and out among dumpling-like knobs of rock, too hopelessly rough to be crossed" according to Morris. Eventually the group returned with dynamite to blast obstacles from their path. This trail became known as the Bernheimer trail. Forbidding Canyon flooded deep with water after Glen Canyon Dam was built, and it has now become the most visited tributary of Glen Canyon as 200,000-300,000 tourists motor boat through it to visit Rainbow Bridge. 
-
-"Bryon Cummings, an archaeologist and professor of Greek and Latin at the University of Utah, and William Douglass, the general land surveyor for the USGS...set out to find [Rainbow Bridge] in 1909...It became a significant episode in the use of science in the name of preservation as a form of regional development. The discourse of discovery was often a precursor to the invention of a place in the historical imagination. Douglass wanted the region to remain 'wild' and 'undeveloped'...Cumming's desire to claim the bridge was fueled by his academic ambition." (Bsumek 68-69). 
-
-Eugene C. LeRue, hydraulic engineer was hired in 1921 by USGS and the Southern California Edison power company to survey, map, and explore the Colorado and Green Rivers. He looked for sites for a hydroelectric dam and storage reservoir. He studied the Navajo Twins or Hero Twins or Monster Slayer rocks in order to understand erosion rates, "an issue that would become increasingly important as engineers contemplated building a dam along the Navajo sandstone walls at Glen Canyon." However, these rocks represent sacred figures in Navajo cosmology who helped fight the monsters "who were creating problems to bring balance to the world." (Bsumek 96)
-
-"On May 10, 1910, President William Howard Taft signed a proclamation designating the 160 acres surrounding the bridge as Rainbow Bridge National Monument...the official proclamation stated: "the extraordinary natural bridge, having an arch which is in form and appearance much like a rainbow...is of great scientific interest as an example of eccentric stream erosion....It appears that the public interest would be promoted by reserving this bridge as a National Monument." (Bsumek 72)
-
-{% include feature/image-gallery.html objectid="sediment103" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment55;sediment58" caption=false%}
-
-
-When John Wesley Powell surveyed and mapped Glen Canyon in 1869, he read the canyon's petroglyphs and Indigenous dwellings both as important evidence of human presence and absence, both which spurred the project of colonizing the region.
-
-In 2019, the reservoir genearted $420 million. 
-
-In 1990s, the gas station at Dnagling Rope Marina was the the biggest marina fuel stop east of the Mississippi. The Earth Island Institute concluded in 1997 that the equivalent of an Exxon Valdez amount of fuel leaked into Lake Powell every 3.8 years (Podmore 74). 
-
-An early supporter of the Reclamation Act said in 1905 that "the object of the Relcmation Act is not so much to irrigate the land as it is to make homes." (Podmore 79)
-
-Powell said that Indigenous people were a "vital resource to be mined and transformed into knowledge." (132)
-
-Podmore describes cans and plastic fused to the rock and carvings from tourists (149). 
-{% include feature/image-gallery.html objectid="sediment49;sediment57" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment59" caption=false%}
-
- As sediment was carried by water and and wind, it etched webs of canyons and laid down sandy troughs over the plateau, carving a rough terrain out of itself. Early Mormon outcasts, seeking a remote place to settle, found the rugged land attractive, though difficult to navigate. As they traveled, they dynamited holes and axed trails into the land, and affixed those sites into their mythology as the site Mormon origin into the West. 
-
-{% include feature/image-gallery.html objectid="sediment61" caption=false%}
-
-This same terrain, made of both hard-packed and loose sediment did not absorb rainfall like the soils of the east, but instead quickly diverted water into deep, hard-to-reach canyons. The rest of the plateau often remained dry and thus resisted sedentary agriculture practices. The Mormons called dusty landscape barren, and ordained themselves by God to make “the desert blossom like a rose,” (Isaiah 35:1), kicking off a reclamation/infrastructure mania that still grips and shapes life and land in the river basin today. 
-
-The Mormons did not invent irrigation in Glen Canyon, and they often built their own canals on top of the irrigation ditches already excavated by Indigenous communities. In other words, the success of Mormon settlements was dependent on reading the archive left in the canyon, which mapped out its fertile spaces. This also serves to erase the evidence of Indigenous agriculture and existence.
-
-
-{% include feature/blockquote.html quote="Medium --> To our settling this new land, we had evidence that this land has been densley populated" size="md"  source="Jessie Smith, LDS Missionary" link="sedminent12"%}
-
- Mormons reused the materials of Indigenous dwellings to build their own. This shows me the ways that the physical landscape is reconstructed to serve as an archive for the dominant culture. 
-
-{% include feature/image-gallery.html objectid="sediment72;sediment91" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment92;sediment93" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment94;sediment95" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment96;sediment97" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment135" caption=false%}
-
-
-Colonization
-
-
-
-{% include feature/image-gallery.html objectid="sediment4;sediment18" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment15" caption=false%}
-
-
-In 1776, Franciscan priests, Fathers Escalante and Dominguez set out from Santa Fe, New Mexico in search of an overland route to a Catholic Mission in Monterrey, California, but they were forced to backtrack as winter approached. Indigenous guides had initially led them safely across the Colorado, but on their return their guide, who was 12 years old, suddenly quit after witnessing the severe punishment of a servant. Lost and out of supplies, the party was forced to eat their horses. They wandered along the Colorado River for a month before they found an accessible crossing. The exact location of this crossing is unknown, but the Fathers remarked in their journal that the crossing was made possible by carving steps down the sandstone cliffs, and by swimming across a part of the river that had been made narrow by sandbars trapped by a bend in the river. The Crossing of the Fathers now lies beneath Lake Powell's waters. 
-
-
-{% include feature/image-gallery.html objectid="sediment17;sediment58" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment103" caption=false%}
-
-
-"An adequate conception of the ruggedness of this particular region cannot be conveyed in words," wrote Earl Morris during his 1921 expedition into Forbidding Canyon. Morris had joined Charles L. Bernheimer's expedition to find an easier route between the main stem of the Colorado River and Rainbow Bridge, a natural arch which has captivated and drawn humans for millenia, and is sacred for many Indigenous groups including the Navajo, Hopi, San Juan Southern Paiute, Kaibab Paiute, and White Mesa Ute. The group found little hope that Forbidding Canyon would make for an easier journey as it formed "a maze of tortuous canons winding in and out among dumpling-like knobs of rock, too hopelessly rough to be crossed" according to Morris. Eventually the group returned with dynamite to blast obstacles from their path. This trail became known as the Bernheimer trail. Forbidding Canyon flooded deep with water after Glen Canyon Dam was built, and it has now become the most visited tributary of Glen Canyon as 200,000-300,000 tourists motor boat through it to visit Rainbow Bridge. 
-
-"Bryon Cummings, an archaeologist and professor of Greek and Latin at the University of Utah, and William Douglass, the general land surveyor for the USGS...set out to find [Rainbow Bridge] in 1909...It became a significant episode in the use of science in the name of preservation as a form of regional development. The discourse of discovery was often a precursor to the invention of a place in the historical imagination. Douglass wanted the region to remain 'wild' and 'undeveloped'...Cumming's desire to claim the bridge was fueled by his academic ambition." (Bsumek 68-69). 
-
-Eugene C. LeRue, hydraulic engineer was hired in 1921 by USGS and the Southern California Edison power company to survey, map, and explore the Colorado and Green Rivers. He looked for sites for a hydroelectric dam and storage reservoir. He studied the Navajo Twins or Hero Twins or Monster Slayer rocks in order to understand erosion rates, "an issue that would become increasingly important as engineers contemplated building a dam along the Navajo sandstone walls at Glen Canyon." However, these rocks represent sacred figures in Navajo cosmology who helped fight the monsters "who were creating problems to bring balance to the world." (Bsumek 96)
-
-"On May 10, 1910, President William Howard Taft signed a proclamation designating the 160 acres surrounding the bridge as Rainbow Bridge National Monument...the official proclamation stated: "the extraordinary natural bridge, having an arch which is in form and appearance much like a rainbow...is of great scientific interest as an example of eccentric stream erosion....It appears that the public interest would be promoted by reserving this bridge as a National Monument." (Bsumek 72)
-
-
-{% include feature/image-gallery.html objectid="sediment55;sediment58" caption=false%}
-
-
-
-
-When John Wesley Powell surveyed and mapped Glen Canyon in 1869, he read the canyon's petroglyphs and Indigenous dwellings both as important evidence of human presence and absence, both which spurred the project of colonizing the region.
-
-
-
-
-{% include feature/image-gallery.html objectid="sediment49;sediment57" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment59" caption=false%}
-
- As sediment was carried by water and and wind, it etched webs of canyons and laid down sandy troughs over the plateau, carving a rough terrain out of itself. Early Mormon outcasts, seeking a remote place to settle, found the rugged land attractive, though difficult to navigate. As they traveled, they dynamited holes and axed trails into the land, and affixed those sites into their mythology as the site Mormon origin into the West. 
-
-{% include feature/image-gallery.html objectid="sediment61" caption=false%}
-
-This same terrain, made of both hard-packed and loose sediment did not absorb rainfall like the soils of the east, but instead quickly diverted water into deep, hard-to-reach canyons. The rest of the plateau often remained dry and thus resisted sedentary agriculture practices. The Mormons called dusty landscape barren, and ordained themselves by God to make “the desert blossom like a rose,” (Isaiah 35:1), kicking off a reclamation/infrastructure mania that still grips and shapes life and land in the river basin today. 
-
-The Mormons did not invent irrigation in Glen Canyon, and they often built their own canals on top of the irrigation ditches already excavated by Indigenous communities. In other words, the success of Mormon settlements was dependent on reading the archive left in the canyon, which mapped out its fertile spaces. This also serves to erase the evidence of Indigenous agriculture and existence.
-
-
-{% include feature/blockquote.html quote="Medium --> To our settling this new land, we had evidence that this land has been densley populated" size="md"  source="Jessie Smith, LDS Missionary" link="sedminent12"%}
-
- Mormons reused the materials of Indigenous dwellings to build their own. This shows me the ways that the physical landscape is reconstructed to serve as an archive for the dominant culture. 
-
-
-
-{% include feature/image-gallery.html objectid="sediment41;sediment20" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment104;sediment 105" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment106;sediment107" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment108;sediment 109" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment110;sediment140" caption=false%}
-
-Sediment both forms the concrete of the dam itself and the strata which it in place. But its accretion behind the dam reveals the project’s consequences, showing the ways these projects accumulate and hoard resources in some places, burying and subsuming the lives that came before while withholding it from others. 
-
-The foundations of the Glen Canyon Dam were laid in the Colorado River's old bed. The river's water first had to be rerouted through temporary diversion tunnels, which took three years to dig. The diversion tunnels finished behind schedule as the soft sandstone continuously broke apart and collapsed into the tunnels. In 1958, for example, 5,200 cubic yards, or 500 dump trucks worth of sediment cleaved away in the left diversion tunnel. Much of the sand and rock used in Glen Canyon's concrete walls comes from Wahweep Canyon, which is a nearby tributary just five miles away from the dam site. 
-
-When projects like the Glen Canyon Dam drown a landscape, they physically and figuratively subsume the histories encoded in that landscape. The inscription of other histories and forms of life and agency– the long and ancient geologic forces that formed the land, the river and wind and rain’s  work in composing the canyons and landforms, the microbes that bred desert varnish upon which Indigenous people etched out their stories in petroglyphs,  the landforms that allowed early Conquistadors to cross the river, the markings left by failed mining operations, the spoils of those operations, even the dry and muddy landscape that inspired such projects–all become illegible beneath the glossy reservoir, which instead asserts a scene of colonial control, stagnancy, riches, and violent, potent power. This breeds new inscriptions of a feral and pre-collapse–the proliferation of algae, mud glaciers, pollution, all of which are traces of both colonial impact on the land and work like tentacles to lay further claim on it. As the reservoir dries up and sediment continues to accumulate, these histories and inscriptions are resurfacing. 
-
-
-{% include feature/image-gallery.html objectid="sediment31;sediment56" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment60;sediment62" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment63;sediment67" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment135;sediment124" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment126;sediment 130" caption=false%}
-
-
-{% include feature/image-gallery.html objectid="sediment136;sediment125" caption=false%}
-
-Sediment caches the gold, silver, and uranium deposits which drew early prospectors. It also stymied those same prospectors as it clogged and wore down mining machinery and chewed up and dispersed its minerals into fragments too small to be economically extractible. 
-
-Miners picked steps into Glen Canyon's soft sandstone walls in order to more easily access gold deposits. The history of mining in Glen Canyon begins with James Merrick and Ernst Mitchell, who searched the nearby Navajo Mountain and Monument Valley region in the 1870s for the source of silver that supplied Navajo jewelry-makers. In 1879, the men were killed by members of the Southern Paiute tribe. Two buttes nearby, which were sacred to the Paitues, now bear their names. This event attracted attention to the region, especially from Cass Hite, who set out to search for the Merrick-Mitchell mine. With the help of a Navajo chief named Hoskinnini, Hite discovered placer gold near Dandy Crossing in 1883. Hundreds of miners rushed in, searching for gold at Wright sand bar. Hite sought investment and infrastructure to support gold mining in the canyon, prompting railroad construction by the Denver, Colorado, Canyon, and Pacific Railroad Co. Robert B. Stanton sought to build a railroad from Grand Junction to Gulf of California and staked out five placer claims in doing so, including near the mouth of Hanson (Pine Alcove) creek. He named his mining company the Hoskannini Mining Co., established in 1897 in Glen Canyon, which became the largest gold mining outfit in Glen Canyon. He became the second person to float from Green River through Glen Canyon while performing a railraod survey. By 1899, Stanton had 145 claims in glen Canyon, and bought a fleet of dredges in order to sift for gold dust in Glen Canyon's sand. He began dredge operations in 1901, but was stymied by variable water levels and his equipment's failure to capture gold dust. The silt-laden river water ate away at pump machinery and supply points were difficult due to the canyoned terrain. The project was abandoned. In 1909-1912, Charles H. Spencer and his American Placer Corp. prospected Lee's Ferry by sluicing, which was assisted by a pneumatic pipe which helped dredge sand and gravel for gold extraction, and processed the gold with amalgamation, which involves mixing mercury to separate ore from gold. This process took place near the Paria River. The machinery was powered from coal, which was mined from Warren Creek, and transported at first by mule train, and then by steamboat, which did not last long as there was not enough coal to power the steam boat. Spencer ran into issues with the price of mercury, which was higher than the price of gold extraction, and his mine shut down. In the 1920s, oil prospecting and drilling took place, and in the 1950s uranium claims were staked up and down Glen Canyon. The deposits were too low to be profitable and so most prospects went undeveloped.
-
-
-*More content about infrastructure's impact on sediment will be added here.*
+A gust of wind whipped down the plains, this time bringing rain sideways, and the fence began to rattle. 
+{% include feature/image-gallery.html objectid="sediment202" caption=false%}
 
 
 
@@ -504,10 +346,15 @@ Miners picked steps into Glen Canyon's soft sandstone walls in order to more eas
 [^2]: Ibid, pp. 23, 27
 [^3]: Derrida, Jacques. *Speech and Phenomena: And Other Essays on Husserl's Theory of Signs.* Northwestern University Press, 1973, p.4. 
 
-## Collection Objects
 
-{% comment %}
-This is where collection objects related to Indigenous relations will be displayed
-{% endcomment %}
+Silko, Leslie Marmon. “Interior and Exterior Landscapes: The Pueblo Migration Stories.” *Yellow Woman and a Beauty of the Spirit: Essays on Native American Life Today*, Simon & Schuster, 1997.
 
-*More content about Indigenous perspectives on sediment will be added here.*
+Powell, James Lawrence. *Dead Pool: Lake Powell, Global Warming, and the Future of Water in the West.* University of California Press, 2020.
+
+Luckert, Karl W. *Navajo Mountain and Rainbow Bridge Religion.* Museum of Northern Arizona, 1977.
+
+Bsumek, Erika Marie. *The Foundations of Glen Canyon Dam: Infrastructures of Dispossession on the Colorado Plateau.* University of Texas Press, 2025.
+
+Powell, John Wesley. *Canyons of the Colorado.* Flood & Vincent, 1895. 
+
+"Rainbow Bridge Religion and Navajo Legal Claims, 1863-1998." Rainbow Bridge Administrative History, National Park Service, ch. 5, [www.riversimulator.org/Resources/Legal/GCD/NavajoLegalClaims.pdf](www.riversimulator.org/Resources/Legal/GCD/NavajoLegalClaims.pdf)
