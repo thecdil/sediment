@@ -18,7 +18,9 @@ scrollama: true
 
 ## Dominy Glacier
 
-## Difficulty
+## Difficulty of navigation
+
+## Archive
 
 ## Layers
 
@@ -160,6 +162,57 @@ Each layer of the sediment laminae was laid by a distinct geologic event--such a
 
 
 
+
+## Earthly Archives
+
+AT THE END of 2025, I visited Lake Powell. The day I arrived, a historic windstorm was sweeping across the West, buffeting back my car with sixty-mile-an-hour winds, and tipping tractor trailers across the interstate. Several times I pulled over to wait out alerts of particularly life-threatening super cells, or to unclaw my hands from the steering wheel. What should have been a nine hour drive became fifteen, and I did not make it to Page until late into the night. 
+
+I had booked a hotel as close to the Lake's edge as I could find; a resort that had once advertised itself as *lakeside*, but now disclaimed on their booking portal that their "View rooms may have limited views due to declining water levels." And so I was not expecting, when I threw my open room curtains in the the morning, to see the lake spread before me, turned softly pink and orange by the sunrise. Without stopping to make coffee, I slipped on my shoes and went to the water. 
+
+I had learned five years before, while working along the upper ledges of the Grand Canyon, that this is a landscape which quickly distorts human senses of scale. Things on the Colorado Plateau are always much larger and farther than they seem--but I was still surprised, as I moved toward the Lake, to find it so far away and so low beneath me. I shuffled for fifteen minutes down a road which cut steeply down a sandy slope, until the pavement abruptly ended and emptied onto a beach clumped with Russian Thistles. At the water's edge, the beach was hemmed by four feet or so of wet sand which crumbled easily into the Lake--too easily for me to get close. I watched a small flock of coots rummage in a cove--they seemed to like the pondweed, which protruded up through the water's surface and was tossed around its fringes--but when I moved too quickly, the coots splashed away. Like geese in a city pond, they seemed to enjoy this human-made habitat, although they had not yet grown accustomed to humans themselves.
+
+As I made my way back up to the hotel--which I could see now was more than a hundred feet above me, perched high on a rocky outcrop, I watched the landscape slide through a series of rapid transitions--it was if I was moving between zones on a mountain, but the transitions were much too quick, the zones too slim. Wet sand, then loose sand--with chains--, then crusted sand--some piled high as construction crews rearranged the road--and then landscaped with grey gravel, then red gravel planted with desert plants, then the green watered lawn that abutted the hotel. Scale had been distorted again--but this time, too small. A strata, not of geologic scale but of the last 20 years of drought. I could see where the Lake had been gone long enough for hotel managers to draw up landscaping plans, and where it had receded only so recently that they had not had time to extend the road. 
+
+After coffee, I drove into Page for breakfast--biscuits and gravy at a diner in the "Dam Plaza." From the parking lot, I saw, across the street, mounted on what looked like the kind of wooden boat. 
+
+The woman was kind, but nervous. She disappeared into a back room. 
+
+
+
+Powell archive. 
+
+
+-Dissonance-Powell archive (emplacement)
+
+-No one archivist but collective (archon); shows us what matter
+
+-degradation is a good thing; shows us cyclicality 
+
+-human archive upheld by loss
+
+-Territorial inscription (Rainbow Bridge)
+
+-
+
+
+Experience with Powell museum–they are fragile, suspecpitble, and hard to access. 
+
+Earthly archives are fixed to the land. Rainbow bridge case–why this matters. 
+
+Earthly archive making participates in landmaking–material is returned back to the land as they are etched. The subject is surrounded by other cues
+
+They matter also because they matter; the archives are a difficult palace to navigate. Starting with what matters for life of all kinds in the landscape is a good starting place because it tells us how history is actually interacting with itself in real space. 
+
+The physical archive is abstracted from the landscape, and is created in a different context; as a salvage project in anticipation of impending loss; archives are always created in anticipation of loss and as a girder against it. Their existence is upheld by the lsos of the canyon, both because interest in the photographs is driven by the no-longer-exising, and because the power which generates the archives comes from the dam. Materiality of human archives impacts the landscape, but this process is often abstracted. 
+
+What environmental and social conditions create the archive? Can we trace this back to the land itself? 
+
+
+-also serves to uphold territorialization
+
+{% include feature/new-section.html %}
+
+
 ## Collection Objects
 
 {% comment %}
@@ -167,3 +220,5 @@ This is where collection objects related to sediment will be displayed
 {% endcomment %}
 
 *More content about sediment and its role in the Glen Canyon ecosystem will be added here.*
+
+
