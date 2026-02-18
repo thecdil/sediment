@@ -23,12 +23,15 @@ When the Glen Canyon Dam drowned Glen Canyon, it also subsumed the lives and his
 
 *Sedimentation* was created by Hannah Green and Devin Becker with support from the University of Idaho's Center for Digital Inquiry and Learning. 
 
+{% include feature/image.html objectid="/objects/Me.png" caption=false width="25"%}
+
 **Hannah Green** is an English M.A. student at the University of Idaho. Her research focuses on the relations between humans, nature, and storytelling. *Sedimentation* is her master's thesis project. 
+
+{% include feature/image.html objectid="/objects/devin.png" caption=false width="75" %}
 
 **Devin Becker** is the Associate Dean for Research and Instruction at the University of Idaho Library, where he also co-directs the Center for Digital Inquiry and Learning (CDIL) and oversees the development of the digital exhibit frameworks CollectionBuilder, Oral History as Data, and Digital Dramaturgy.
 
 **Thanks also to**: Dr. Jennifer Ladino, Dr. Erin James, Dr. Aly Kreikemeier, and Chris Lamb, all of whom have nurtured, guided, and supported this project from start to finish. 
 
-{% include feature/image-gallery.html objectid="Me;devin" caption=false%}
 
 ## More CDIL Projects
