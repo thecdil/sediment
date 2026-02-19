@@ -187,7 +187,7 @@ Since then, the climate of the Southwest has cycled again into drought. Fueled b
 
 I am not sure whether development West would have unfolded along even slightly different lines if those Eastern congressmen had seen, with their own eyes, what Powell saw: had they climbed up into those Puebloan ruins, or listened more attentively to the people who already lived there; had they squeezed through canyons scoured by spring floods and slung with high-flung debris; had they paddled across that thin and muddy river which contains so much of the West's water; had they mired their boats in its shifting sandbanks. Would they have better understood that this is a territory already claimed? Would they have seen that this is a land of little--but sometimes violent--water flows? Would they have realized that long-term survival in a place of such constant flux required mobility and adaptation, not great immovable infrastructures? 
 
-It would be naive, of course, to argue that prudent legislation comes all the way down to making decisions about place in place. As I have gestured to here, the engine of colonization was not fueled entirely by optimistic ignorance, but also by a voracious hunger for "incessant expansion" combined with stadial logics.
+I will not argue that prudent legislation comes all the way down to making decisions about place in place. As I have gestured to here, the engine of colonization was not fueled entirely by optimistic ignorance, but also by a voracious hunger for "incessant expansion" combined with stadial logics.
 
 {% include feature/image-gallery.html objectid="sediment307" caption=false%}
 
@@ -195,10 +195,9 @@ Americans today, however, are living with the legacies of those decisions, and h
 
 It is difficult to enact a more attuned, inclusive, and just future, however, when the record of the past–and the traces of the people, biota, and landforms that composed it–is hidden from view.  It is hard to believe, for example, that the Colorado Plateau is a land of precious water while standing at the edge of a deep and sprawling lake, even if that lake is slowly shrinking. And it is difficult, too, to sense the web of life, loss, failure, success, and resilience that composes the present when the markings of these lives lay beneath hundreds of feet of water. 
 
-But as the drought draws Lake Powell lower, Glen Canyon and its palimpsested inscriptions are resurfacing. This time, we must pay closer attention, and not rush to fill the gaps with our own stories. 
+But as the drought draws Lake Powell lower, Glen Canyon and its palimpsested inscriptions are resurfacing. This time, we must pay closer attention, and not rush to fill the gaps with a singular story. 
 
 {% include feature/trib-button.html trib="water" image="water2" text="Water" %}
-
 
 
 {% include feature/new-section.html %}
@@ -251,7 +250,7 @@ Once again, Westerners invoked a stratigraphic logic that naturalized and privil
 
 {% include feature/image-gallery.html objectid="sediment22" caption=false%}
 
-But this instance of dispossession also exposes the role that the archive--and the way that the archive is defined--plays in power formation and territory-making. Derrida reminds us that the very word archive comes from the Greek *Arkhe*, which means both commencement and commandment. The earliest archives, he notes, were those places where official documents were stored, and called upon by the *archons* (bureaucratic magistrates) to "impose the law.” Those who create and guard the archive, Derrida says, retain the power of commandment. 
+This instance of dispossession also exposes the role that the archive--and the way that the archive is defined--plays in power formation and territory-making. Derrida reminds us that the very word archive comes from the Greek *Arkhe*, which means both commencement and commandment. The earliest archives, he notes, were those places where official documents were stored, and called upon by the *archons* (bureaucratic magistrates) to "impose the law.” Those who create and guard the archive, Derrida says, retain the power of commandment. 
 
 When the courts asserted that the Navajo had no claims to Rainbow Bridge, the basis of this assertion–and the power to carry it out–was drawn from an archive that they themselves had constructed, and drawn also from their own systems of classification. An executive order of removal, they declared, was not a property title. Then certainly, neither oral stories, nor cultural memory, nor the petroglyphs, dwellings, or trails that attested to many years of Navajo presence in the landscape could count as a property title either. 
 
@@ -260,6 +259,8 @@ Despite the power that resides in the archive, archive has no singular definitio
 In my own efforts to grasp what an archive is, or what it might be, I take a cue from Leslie Marmon Silko and Puebloan understandings of meaning-making: “The ancient Pueblo people,” Silko writes, “sought a communal truth, not an absolute truth. For them, the truth lived somewhere within the web of differing versions, disputes over minor points, and outright contradictions.” 
 
 As I draw together the web of differing archival definitions, I have come to wonder: if an archive is a place that collects preserved material, what then, precludes generational memory (which resides in bodies of so many people, who collect and preserve bits of knowledge through time) or the land itself (a place that preserves, in material form, records of so many pasts) from being read as an archive? And by extending the definition of the archive, might power be released from the archons and distributed more evenly, to everyone and everything who keeps a record of the past? The web of stories will surely explode out, the truths that seem to anchor life as we know it will become unfixed and elusive, and the web will become tangled with disputes and contradictions, but somewhere within this mess will lie, if not a singular truth, a path that more carefully accounts for them all. 
+
+{% include feature/image-gallery.html objectid="sediment22;sediment328" caption=false%}
 
 {% include feature/trib-button.html trib="land" image="land" text="Land" %}
 
