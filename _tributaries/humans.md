@@ -44,7 +44,7 @@ This map is not flat, and its territories do not sit cleanly beside one another 
 
 For instance: microbes fester in sediment beds that, before the dam, were thickly threaded with willow roots. Mormon emigrants deconstruct Puebloan cliff dwellings as they pillage stones for their own homes. A creekside beach once packed with antelope tracks is obliterated--wiped entirely off the map--when its sand is harvested to fill the concrete walls of the Glen Canyon Dam. 
 
-Yet even in those places most ravaged by territorial erasures and remappings, the traces of past inscriptions can linger, though they are often faint and fragmented (willow branches fossilize in anaerobic lake beds; pot sherds are interred beneath the soil of a garden; antelope are memorialized in the name of a canyon). If you look closely, beneath the surfaces, you will find these traces scrawl out a ghostly map, embossed with layered claims.  
+Yet even in those places most ravaged by territorial erasures and remappings, the traces of past inscriptions can linger, though they are often faint and fragmented (willow branches fossilize in lake beds; pot sherds are interred beneath the soil of a garden; antelope are memorialized by the name of a canyon). Faint as they might be, these traces scrawl out a ghostly map, embossed with layered claims. 
 
 <br><br>
 
@@ -103,7 +103,7 @@ It strikes me, then, that the handprints do not mark an absence of presence so m
 
 But just as the past informs and transforms the unfoldings of the present, so can the present disfigure the traces of the past. When Tad pulls his hand from the wall, he will lift flecks of paint off the prints, wiping away, forever, a bit of history. If this gesture is repeated enough times, the handprints will be erased, and will no longer communicate to visitors about the people who came before. 
 
-The remains we encounter--or ourselves leave behind--allows us to connect with humans across otherwise unreachable spans of time, drawing us into conversation and relation with one another. When we alter these remains, we rupture the possibility for the people of the future to commune with the people of the past. It matters, then, how we touch such remains. 
+The remains we encounter--or ourselves leave behind--allow us to connect with humans across otherwise unreachable spans of time, drawing us into conversation and relation with one another. When we alter these remains, we rupture the possibility for the people of the future to commune with the people of the past. It matters, then, how we touch such traces. 
 
 {% include feature/trib-button.html trib="land" image="land" text="Land" %}
 
@@ -279,7 +279,10 @@ At the lake’s far edges, where the land begins to slope more gently to the wat
 
 These are all agents of what Anna Tsing calls "feral ecologies" that is, "ecologies that have been encouraged by human-built infrastructures, but which have developed and spread beyond human control." Each agent carries out the mushrooming effects of human infrastructure, and each serves as a reminder that environmental disturbances are rarely locally contained. As these agents proliferate, they become like tentacles, marking every corner of the landscape as claimed, even if this claim is one of contamination and toxicity.  
 
-But--at the same time that Lake Powell’s algal blooms, sediment glaciers, lime encrustations, and tumbleweeds have become enrolled as agents of colonial territorialization, they are also saboteurs of this same project. Feral, after all, means to “escape from captivity” and as each of these entities explode out of human control, they serve as reminders that even behemoth projects like the Glen Canyon Dam do not grant humans total power to command and manage every bit of nature. Life, new and old, will always spring up and lay claim to the cracks.  
+But--at the same time that Lake Powell’s algal blooms, sediment glaciers, lime encrustations, and tumbleweeds have become enrolled as agents of colonial territorialization, they are also saboteurs of this same project. Feral, after all, means to “escape from captivity” and as each of these entities explode out of human control, they remind us that even behemoth projects like the Glen Canyon Dam do not grant humans total power to command and manage every bit of nature. Life, new and old, will always spring up and lay claim to the cracks.  
+
+{% include feature/image-gallery.html objectid="sediment210;sediment221" caption=false%}
+
 
 
 {% include feature/trib-button.html trib="biota" image="microbes" text="Biota" %}

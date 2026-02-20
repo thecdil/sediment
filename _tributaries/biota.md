@@ -15,8 +15,6 @@ scrollama: true
 
 ## Lifeboats
 
-## Proliferation
-
 ## Cooperators
 
 ## Beavers
@@ -24,6 +22,8 @@ scrollama: true
 ## Mammoth
 
 ## Antelope
+
+## Fish
 
 ## Sheep
 

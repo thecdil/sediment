@@ -3,6 +3,12 @@
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
 
+/* Remove heading borders */
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
 /* Hide sticky nav button when full page nav is open */
 body.nav-open .sticky-nav-button {
   display: none !important;
