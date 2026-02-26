@@ -14,94 +14,82 @@ scrollama: true
 # Land
 
 
-## Shifting
+*This section argues that the earth is not passive but lively and constitues sociopolitical lives. As an archive, this liveliness means the archive participates in ongoing life, only that which matters gets in* space is not so stratigraphic, fixed, or always shaped by large forces. Narrative? 
+
+Through its transformations, sediment also shows how these histories encounter and transform one another, muddling the boundaries between them.  
+
+
+## Sedimentation
+
+<div class="float-start pe-4 mb-2 w-50" >
+
+{% include feature/image-gallery.html objectid="sediment131" caption=false%}
+{% include feature/image-gallery.html objectid="sediment200" caption=false%}
+{% include feature/image-gallery.html objectid="sediment134" caption=false%}
+
+</div>
+
+GLEN CANYON IS a landscape in constant motion. Here, the contours of space rarely hold still: bits of earth--sediment, rock dust, sandstone shards--are at all times sloughing away from their bedrock encasings, etched out by wind, water, animal hoof, or plant root. Some of these loose bits are plucked up by wind, and set down in the crevices of the canyon's rilled buttes, hills, and cliffs, or piled up into high dunes. Other bits are taken up by water--carried by a trickle of rain or the Colorado River itself--to heap up on sandy shore or to get caught along the river's bottom. And so the edges of things waver and drift and the ground swells and subsides, like a viscous, slow-moving sea. This is not *terra firma,* solid earth, fixed space--this is a terrain always in flux: fissures, cut by flowing water, worm through the soft sandstone ground, grow into chasms, then splinter into tendrils of tributary canyons. For as long as these canyons exist, they will meander and writhe as water cuts new pathways across its always morphing beds. 
+
+Of course, no place on earth is inert and unchanging: elementary-aged children can tell you that all mountains rise and crumble, that rivers carve valleys and deep canyons, and the tectonic plates will eventually tear the continents apart and bring new ones together. But barring natural catastrophe--earthquakes, volcanic eruptions, landslides--these changes have, for centuries, been imagined to take place at such a gradual pace that earthly change is almost entirely imperceptible, and therefore inconsequential, for human life. 
+
+Such gradualist views of nature's animacy have dominated western science and thought since the early 19th century, when geologists James Hutton and Charles Lyell theorized that the earth was formed not through a series of violent calamities, but by incremental accruals, erosions, and shifts. Nature, it was believed, "does not make leaps" (26). For author Amitav Ghosh, these gradualist ideas have rendered nature functionally static: hills and mountains may drift, gradualists say, but they do so at a pace that has no bearing on human activity. This is how, Ghosh asserts, nature came to be understood--and represented in classical literature and mapping practices--as a passive stage upon which human dramas takes place (78). 
+
+But nature is not inert, even at the human scale. In Glen Canyon, one does not have to stand in place for a thousand years to witness the drifting of the hills: I have seen the landscape mutate with my own eyes, and many others have seen this too. Over the span of four years, I have witnessed rocks rise fifteen taller as Lake Powell falls by the same amount, and I have walked across beaches that have crept dozens of yards wider in the same length of time. Hydrologists have documented two hundred foot-tall mud glaciers forming in the mere sixty years since the Glen Canyon Dam's construction, and boaters have recorded videos of these glaciers calving suddenly into the river like melting glaciers. These fallen mud bergs rearrange the river into new and unfamilar channels, and they whip up rapids that shift day by day, creating "blind corners" even for boaters that have run the river many times before (Podmore 38). A guide who has run walking tours through the famous Antelope Canyon showed me pictures of the canyon ten years apart: in the earlier photo, the canyon was ten feet deeper. Because of the drought, she explained, the spring floods had not come, and so the sand that the wind steadily deposits had not been flushed as usual. In Glen Canyon, nature is not moving at a gradual pace: the ground is literally shifting beneath our feet. 
+
+
+
+
+
+
+
+
+
+
+Sediment/scale
+
+
+
+
+
+
+For some six million years, the Colorado River has etched canyons across the surface of the Colorado Plateau. These canyons are vast and deep; one plunges more than a mile from plateau rim to river bed, another, though a tenth the height of its Grand neighbor, was named Tséyi by Indigenous Diné for the way river cut deep in the rock (this is the canyon known as Glen by western settlers). Geologically speaking, the river’s work in composing such immense canyons was swift. The plateau’s sedimentary rocks are quick to release their particulates to the river, which in turn sharpens the waters with silt.  Silt, borne by the water’s continuous flow, files easily through the soft strata and deposits on the river’s shores and estuaries, contouring both the river’s channels and the land’s topography. The basin’s biota, many of which are endemic, have found home along the river’s sandy waters and beaches. And this ecosystem– composed by canyons, water, silt, plants, and animals– supported and was tended by many groups of Indigenous peoples, including the Núu-agha-tʉvʉ-pʉ̱ (Ute), Diné Bikéyah (Navajo), Hopitutskwa (Hopi), Nuwuvi (Southern Paiute), A:shiwi (Zuni), Havasu Baaja (Havasupai) for thousands of years (Native Land Digital). 
+
+
+## Shifting 
+
+## Sociopolitical lives
+
+
+
+## Mud 
+
+Yet mud resists the lure of endless forward
+momentum. The lure of endless forward momentum comes in many guises,
+as Arturo has shown: development, sustainability, modernity, globalization,
+to name a few. But the muddy earth, literally and figuratively, slows things
+down. Mud is antimodernity. Mud holds place and territory dear. Mud is the
+earth’s version of resistance. Mud archives overlooked histories.
+Mud is a life project, too. Challenging our basic understandings of what
+constitutes living, mud teems with sulfuric, anaerobic life. Bacteria, crayfish,
+worms, and the like flourish in the muddy earth. Tiny creatures create sub-
+terranean burrows in the mud, a meshwork of sorts, which enable oxygen
+and nutrients to cycle across multiple strata. In its solid form, mud creates
+architectures of life and loss, from sunbaked adobe walls to funereal urns.
+Muddy floors are a vexing reminder of the futility of keeping nature out.
+Muddiness by definition is an ontological mess: land or sea, earth or water,
+nature or culture?
+Yet this ontological shiftiness enables the muddy earth’s radical potential.
+Mud could be mistaken as life at the slow margins of the world (particularly
+by those entranced by the lure of endless forward momentum). (45)
+
+
+## Earth as Archive
 
 ## Dominy Glacier
 
-## Difficulty of navigation
-
-## Archive
-
-## Layers
-
-<div class="row">
-<div class="col-lg-5">
-{% include feature/image-gallery.html objectid="sediment25;sediment33" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment17;sediment12" caption=false%}
-</div>
-<div class="col-lg-7">
-Glen Canyon is a land is made of sediment, deposited by ancient oceans, rivers, and winds. The Colorado River carries a heavy sediment load, and its silt-sharp waters enable the river to etch canyons, bridges, buttes, spires, and pedestal rocks out of the land. The water always delivers more sediment, laying down sandbars, rippled laminae, pocked muck, sink holes, silt volcanoes, and desiccated mud over the sandstone ground. 
-
-Vertical space is disorienting; it is a disorienting landscape to navigate. I always thought I'd reach Lake's edge only to see a cliff. 
-
-The walls feel and look like flesh; I wonder if that is why people are so drawn to this place; it feels alive. The earth seems to play with itself here. 
-
-Land and water are in a complex relationship here; they define one another's edges and mingle. 
 
 
-</div>
-</div>
-
-## Formations
-
-{% include feature/image-gallery.html objectid="sediment14" caption=false%}
-
-Soft sandstone often develop hollows across its face called tafoni. These caverns are scooped out by weathering processes such as water, wind, and chemical reactions, revealing where sediment particulates were bound together less firmly. 
-
-{% include feature/trib-button.html trib="water" %}
-
-{% include feature/image-gallery.html objectid="sediment34;sediment134" caption=false%}
-
-
-Geologist Herbert E. Gregory surveyed the land beginning in 1908 for the USGS, and is responsible for naming much of the strata. Gregory named layers Navajo Sandstone, Entrada (conquistadors), Bluff and Cow Springs (mormon settlements), Yale Point (alma mater). "Gregory, like Powell, affixed his interpretation of the stages of civilization onto the landscape, effectively placing Navajos beneath European and white civilization...the whites...named the features of the land according to a social and stratigraphical order that they themselves helped create. The emerging names of landforms and rock layers represented a narrative of racial hierarchies and stadial evolution theory....In this sense, knowledge production and shifting power relations were interconnected processes. As whites came to dominate in the region, a narrative retelling of the imposition of racial hierarchies and colonization efforts was literally mapped onto the landscape itself" (Bsumek 85-86).
-
-"Water, warfare, and personal desire became features of the colonized landscape, and the names attached to each place serve as inscriptions that represent different stages--past, present, and imagined white future--of regional development." (Talking about Chinle, Carson Mesa, and Edna Needle).” (Bsumek 56)
-
-"Many Navajos consider specific rock formations, including Tsé Naní' áhígíí 'actual incarnate forms of Navajo gods.'  Native peoples from the Navajo Mountain area...claim that 'geological formations in the Rainbow Bridge area...held positions of central importance in the religion of Navajo peoples,' and various tribal groups had constructed shrines in the vicinity of the bridge for centuries...Tsé Naní' áhígíí is linked  to Navajo origin stories...Navajo Holy Beings placed the magic rainbow in the safest place they could imagine...it was a place of refuge, where many Navajos fleeing Kit Carson's violent campaign to destroy their homelands between 1863 and 1864 hid.”  (Bsumek 68)
-
-Navajo mountain is a warrior's shield (Podmore 183). 
-
-Rainbow Bridge is the joining of two rainbow people, male and female, who gave birth to Rainbow and Cloud and made the land moist. Lamar Bedonie told Luckert that Rainbow Bridge "is not holy anymore, and so we do not have rain now...the Rainbow is broken. Our way of life, our way of thinking, our relgion is broken." (197) 
-
-
-{% include feature/image-gallery.html objectid="sediment69" caption=false%}
-
-
-
- Vernon Masayesva on place: "It is our umbilical chord that connects us to our motherland" Vernon Masayesva, interview by Jack Loeffler, in Moving Waters: The Colorado
-River and the West, program 1, six-part radio series, produced by Jack Loeffler for the
-Arizona Humanities Council, 2001
-
-" One-Eyed Man of the Salt Clan appears to be the Navajo
-elder identified as Blind Salt Clansman, the first Diné credited with the “discovery” of
-Rainbow Bridge. A petroglyph once commemorated Blind Salt Clansman’s journey to
-the foot of the rainbow. Local resident Lamar Bedonie remembered, “Against the rock [Rainbow Bridge] Blind Salt Clansman was sitting on his horse. . . . in this manner Blind
-Salt Clansman and his horse’s figures were engraved on the face of the rock—with him
-sitting on his horse. That is gone now. Someone destroyed it.” (Luckert 146). 
-
-Rainbow Bridge has long been understood as a place of refuge and source of water--in one story, two women carried water from a spring to their hogan, in another two men buried a shell with atlantic ocean water by rainbow bridge. (Dickey 25) The rainbow is a mode of transportation for mythical beings. It is also a protective shield for Navajo Mountain, head of earth woman. 
-
-For the Hopi, the bridge represents the place that Tiyo, a hero for the Snake Clan, who trained to raft the Colorado River, ran and leapt across the Bridge. They also describe Spider Old Woman and brothers 
-"Pokunghoya and Polonghoya as the deities responsible for
-earthly and cosmological exploits. Pokunghoya and Polonghoya, for example, threw
-lightning bolts and piled mud in huge heaps, slashing the earth’s surface and sculpting the
-environmental wonders of the Colorado Plateau as they played nahoydadatsia...hrough their playful adventures, the brothers dictated
-the course of the Colorado River through Glen and Grand canyons and formed the
-mountains, mesas, buttes and spires, and numerous canyons that sever the high desert
-landscape." (Dickey 42-43). 
-
-Navajo mountain has 200 hopi dwellings (43)
-
-## Canyons
-
-{% include feature/image-gallery.html objectid="sediment17;sediment139" caption=false %}
-{% include feature/image-gallery.html objectid="sediment121" caption=false %}
-
-
-"An adequate conception of the ruggedness of this particular region cannot be conveyed in words," wrote Earl Morris during his 1921 expedition into Forbidding Canyon. Morris had joined Charles L. Bernheimer's expedition to find an easier route between the main stem of the Colorado River and Rainbow Bridge, a natural arch which has captivated and drawn humans to it for millenia and is sacred for many Indigenous groups including the Navajo, Hopi, San Juan Southern Paiute, Kaibab Paiute, and White Mesa Ute. The group found little hope that Forbidding Canyon would make for an easier journey as it formed "a maze of tortuous canons winding in and out among dumpling-like knobs of rock, too hopelessly rough to be crossed" according to Morris. Eventually the group returned with dynamite to blast obstacles from their path. This trail became known as the Bernheimer trail. Forbidding Canyon flooded deep with water after Glen Canyon Dam was built, and it has now become the most visited tributary of Glen Canyon as 200,000-300,000 tourists motor boat through it to visit Rainbow Bridge. 
-
-White bathtub rings of bleached rocks
 
 over one hundred side canyons, one hundred plus tributaries
 
@@ -114,54 +102,6 @@ Dominy formation, which can reach two hundred feet high, quickly getting flushed
 changing landscape, maps are usless "it directed us to campsites fifty vertical feet above the river." (Podmore 9) Podmore describes going around blind corners, not knowing what he would encounter. Podmore says it is an "active geologic force" which changes the river's course. Mike DeHoff says that the river cut down 33 vertical feet in two years" (209)
 
 Verticality: Seth Arnes, ecologist, says that as you move up Lake Powell, "we're not only walking in space, we're also walking back in time." (126)
-
-Canyon shape bears the mark of water
-
-{% include feature/image-gallery.html objectid="sediment22" caption=false%}
-
-Each layer of the sediment laminae was laid by a distinct geologic event--such as a spring flood which deposited a load of sediment all at once. The ripples forms are carved by water, and keep a record of the river's current. Ripples form as water erodes sediment on the upstream (stoss) side of a bank and quickly deposit it on the downstream (lee) side.  These scallop-shaped structures are called catenary ripples, which suggest a faster flow. Today there is no current in the bottom reaches of Cottonwood Canyon as it lies below Lake Powell. 
-
-
-## Mud
-
-
-{% include feature/image-gallery.html objectid="sediment76;sediment77;" caption=false%}
-{% include feature/image-gallery.html objectid="sediment78;sediment79" caption=false%}
-{% include feature/image-gallery.html objectid="sediment112;sediment 113" caption=false%}
-
-
-
-
-
-## Inscriptions
-
-{% include feature/image-gallery.html objectid="sediment55;sediment83" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment111;sediment131" caption=false%}
-
-
-
-
-
-
-
-{% include feature/blockquote.html quote="default (just don't add size) --> Sediment is really cool."  source="Some Guy" link="sedminent12"%}
-
-{% include feature/blockquote.html quote="Large --> Sediment is really cool." size="lg"  source="Some Guy" link="sedminent12"%}
-
-{% include feature/blockquote.html quote="Medium --> Sediment is really cool." size="md"  source="Some Guy" link="sedminent12"%}
-
-{% include feature/video.html objectid="sediment10"%}
-
-{% include feature/blockquote.html quote="Small --> Sediment is really cool." size="sm"  source="Some Guy" link="sedminent12"%}
-
-{% include feature/blockquote.html quote="Extra Large --> Sediment is really cool." size="xl"  source="Some Guy" link="sedminent12"%}
-
-
-{% include feature/image.html objectid="/objects/land.png" caption=false%}
-
-
-
 
 ## Earthly Archives
 
@@ -212,13 +152,4 @@ What environmental and social conditions create the archive? Can we trace this b
 
 {% include feature/new-section.html %}
 
-
-## Collection Objects
-
-{% comment %}
-This is where collection objects related to sediment will be displayed
-{% endcomment %}
-
-*More content about sediment and its role in the Glen Canyon ecosystem will be added here.*
-
-
+## Works Cited

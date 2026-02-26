@@ -104,5 +104,4 @@ If you'd like to learn more about Glen Canyon's history, human-nature relations,
 
 </div>
 
-
-
+<br>
