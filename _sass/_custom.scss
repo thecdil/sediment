@@ -9,10 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: none !important;
 }
 
-/* Hide sticky nav button when full page nav is open */
-body.nav-open .sticky-nav-button {
-  display: none !important;
-}
+/* Keep nav button visible when nav is open - removed hiding rule that caused button to disappear */
 
 #maincontent{
   background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
@@ -149,9 +146,9 @@ article{
   animation: fadeInRiver 1.5s ease-in;
 }
 
-/* Ensure header and navigation have higher z-index than tributary canvas */
+/* Ensure old complex header has higher z-index than tributary canvas (not used on tributary pages) */
 .sediment-header {
-  z-index: 1000 !important; /* Much higher than tributary canvas */
+  z-index: 1000 !important;
 }
 
 .header-content {
@@ -160,6 +157,19 @@ article{
 
 .header-nav {
   z-index: 1002 !important;
+}
+
+/* Static header - only used on non-tributary pages, normal stacking */
+.static-sediment-header {
+  z-index: auto !important;
+}
+
+.static-header-content {
+  z-index: auto !important;
+}
+
+.static-header-nav {
+  z-index: 20 !important;
 }
 
 /* Ensure offcanvas navigation has the highest z-index */
@@ -199,11 +209,52 @@ article{
 }
 
 .tributary-body {
-  padding: 40px;
+  padding: 0 40px 40px;
   /* Add background gradient to prevent river interference on mobile */
   background: linear-gradient(135deg, rgba(248, 246, 240, 0.95) 0%, rgba(237, 232, 216, 0.95) 100%);
   position: relative;
   z-index: 15; /* Above river (z-index: 1) */
+}
+
+/* Inline title image at top of tributary content */
+.tributary-title-image-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0 30px;
+  margin-bottom: 20px;
+}
+
+.tributary-title-image-container a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.tributary-title-image-container a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.tributary-title-img {
+  height: 100px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .tributary-title-img {
+    height: 60px;
+  }
+
+  .tributary-title-image-container {
+    padding: 15px 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tributary-title-img {
+    height: 45px;
+  }
 }
 
  h1,
@@ -599,9 +650,14 @@ article{
    River Navigation Styles
    ======================================== */
 
-/* Hide the first div with background:transparent (the button wrapper) on tributary pages */
-body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first-of-type {
-  display: none !important;
+
+/* Static header - only used on non-tributary pages (About, Browse, Items, etc) */
+.static-sediment-header {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
 }
 
 /* Sticky navigation button for tributary pages */
@@ -613,30 +669,29 @@ body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first
   transition: all 0.3s ease;
 }
 
+
 .sticky-nav-button .sediment-map-toggle {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(139, 115, 85, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    background-color: #F8F6F0 !important;
+    border: 2px solid #D2691E !important;
+}
+
+.sticky-nav-button .sediment-map-toggle .map-icon {
+    width: 28px !important;
+    height: 28px !important;
+    color: #8B4513 !important;
 }
 
 .sticky-nav-button .sediment-map-toggle:hover {
-  box-shadow: 0 6px 20px rgba(205, 133, 63, 0.4);
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 1) !important;
-  border-color: rgba(205, 133, 63, 0.6) !important;
-}
-
-.sticky-nav-button .sediment-map-toggle svg {
-  width: 28px;
-  height: 28px;
+    background-color: #FFF !important;
+    box-shadow: 0 6px 16px rgba(139, 69, 19, 0.4) !important;
 }
 
 /* ========================================
@@ -1367,7 +1422,7 @@ body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first
   left: 20px;
   bottom: 10px;
   width: 180px;
-  max-height: calc(100vh - 140px);
+  max-height: calc(100vh - 220px);
   padding: 20px 0;
   z-index: 500;
   overflow-y: auto;
