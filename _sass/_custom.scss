@@ -1365,7 +1365,7 @@ body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first
 .section-nav-menu {
   position: fixed;
   left: 20px;
-  top: 100px;
+  bottom: 10px;
   width: 180px;
   max-height: calc(100vh - 140px);
   padding: 20px 0;
