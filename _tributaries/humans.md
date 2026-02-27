@@ -132,7 +132,7 @@ But by 1902, Congress had come to accept that agrarian settlements in the West w
 
 Before these projects could begin, or even be imagined, the American West had to first be carefully mapped, its water tallied, and its topography plotted. Land managers, engineers, and lawmakers needed to understand the contours of the land and the precise location of its resources in order to lay out plans to settle and develop it. Even if Powell's dream of communal watershed governance was never to materialize, the data he collected on his expeditions nevertheless laid the groundwork for the Colorado River to be transformed into a tightly-regulated plumbing system, choked with dams and siphoning aqueducts.
 
-Much of the data that Powell provided Congress was gleaned through traditional survey methods. He measured distances by triangulating his position in relation to the stars; he carefully tracked the river's gradient with thrice-daily barometer readings; and his botanical observations--"luxuriant grasses" or "thorny cactus here and there"--would help him to estimate regional rainfall patterns.  
+Much of the data that Powell provided Congress was gleaned through traditional survey methods. He measured distances by triangulating his position in relation to the stars; he carefully tracked the river's gradient with thrice-daily barometer readings; and his botanical observations--"luxuriant grasses" or "thorny cactus here and there"--helped him estimate regional rainfall patterns.  
 
 {% include feature/image-gallery.html objectid="sediment316" caption=false%}
 

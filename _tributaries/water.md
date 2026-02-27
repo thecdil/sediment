@@ -12,9 +12,7 @@ scrollama: true
 
 # Water
 
-## More than River
-
-## Ancient Ocean
+## More than River, More than Resource
 
 ## Interplay with Land 
 
@@ -22,11 +20,17 @@ scrollama: true
 
 ## Underflows
 
-## Seeps 
-
 ## Confluence
 
 ## Stagnancy
+
+## Drought 
+
+## Seeps
+
+Seeps are places where water pushes out from a cliff face. As rain falls on sandstone ground, it percolates down through the porous rock until it reaches a layer of shale, whose sedimentary particulates are gathered too tightly to allow water to pass. The water then moves sideways along the shale surface until it pushes out through the cliff wall. Water can spend years traveling through the rock before it emerges from a seep. 
+
+Drew people together
 
 ## Field Notes
 
@@ -47,8 +51,6 @@ Water is in charge of time and space; where we can go, how long it takes to get 
 I am told that Antelope Canyon tours keep the economy afloat; yet it is filling up with sand. Our tour guide, Lynette, has everyone take pictures, and she shows us one she took a long time ago of a rock she calls George Washington about 6 feet lower to the ground. Here, everyone is producing a kind of archive. 
 
 
-
-
 The town is acutely aware of the water levels
 
 
@@ -64,40 +66,5 @@ Verticality: Indigenous people are not allowed to create concessions below 3,720
 
 {% include feature/image-gallery.html objectid="sediment1" caption=false%}
 
-Seeps are places where water pushes out from a cliff face. As rain falls on sandstone ground, it percolates down through the porous rock until it reaches a layer of shale, whose sedimentary particulates are gathered too tightly to allow water to pass. The water then moves sideways along the shale surface until it pushes out through the cliff wall. Water can spend years traveling through the rock before it emerges from a seep. 
 
 
-Drew people together
-
-### Beds
-{% include feature/trib-button.html trib="land" %}
-
-
-
-{% include feature/image-gallery.html objectid="sediment33;sediment89" caption=false%}
-
-{% include feature/image-gallery.html objectid="sediment12;sediment22" caption=false%}
-
-
-## River
-
-{% include feature/image-gallery.html objectid="sediment122" caption=false %}
-
-## Lake
-
-Obscures - verticality
-
-
-## Flash Floods
-
-## Color
-
-Flushes sediment out rapidly, revives ecosystem quickly
-
-## Collection Objects
-
-{% comment %}
-This is where collection objects related to water will be displayed
-{% endcomment %}
-
-*More content about water's relationship with sediment will be added here.*
