@@ -8,9 +8,11 @@ credits: false
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-# About Glen Canyon 
+# About Glen Canyon
 
-Glen Canyon (called Tséyi, or deep in the rock by Diné) sits just upstream from the Grand Canyon and straddles modern-day Arizona and Utah. Like the Grand Canyon, Glen Canyon formed around 6 million years ago as the silt-rich Colorado River downcut through 700 feet of the Colorado Plateau. Seven federally recognized Indigenous tribes have ancestral ties to Glen Canyon, including the Diné (Navajo), Hopi, Ute Mountain Ute, San Juan Southern Paiute, Paiute Indian Tribe of Utah, Kaibab Paiute, and Zuni. Glen Canyon is also home to 79 native plant species, 189 native bird species, 34 native mammal species, and 8 native fish species. 
+Glen Canyon (called Tséyi, or deep in the rock by Diné) sits just upstream from the Grand Canyon and straddles modern-day Arizona and Utah. Like the Grand Canyon, Glen Canyon formed around 6 million years ago as the silt-rich Colorado River downcut through 700 feet of the Colorado Plateau. Seven federally recognized Indigenous tribes have ancestral ties to Glen Canyon, including the Diné (Navajo), Hopi, Ute Mountain Ute, San Juan Southern Paiute, Paiute Indian Tribe of Utah, Kaibab Paiute, and Zuni. Glen Canyon is also home to 79 native plant species, 189 native bird species, 34 native mammal species, and 8 native fish species.
+
+{% include feature/mini-map.html map-zoom="7" basemap="Esri_NatGeoWorldMap" latitude="37.08051318" longitude="-111.3133762" %} 
 
 Since 1966, Glen Canyon has lay beneath Lake Powell, a man-made reservoir held back by the 700-foot tall Glen Canyon Dam. The damming of Glen Canyon destroyed vast swaths of critical wildlife habitat, inundated countless culturally vital sites, displaced thousands of Indigenous families from their homelands, and dispossessed tribal nations of their land and water rights. As a result, the Glen Canyon Dam has long drawn public criticism, even outrage, for the harms it has incited.  "Surely," wrote Edward Abbey, "no manmade structure in history has been hated so much by so many, for so long with such good reason as Glen Canyon Dam."
 
