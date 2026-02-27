@@ -302,20 +302,32 @@
                     <a class="text-nav-link{% if page.url == '/main.html' %} active{% endif %}" href="{{ '/main.html' | relative_url }}">Main</a>
                     <a class="text-nav-link{% if page.url == '/about.html' %} active{% endif %}" href="{{ '/about.html' | relative_url }}">About</a>
                     <a class="text-nav-link{% if page.url == '/resources.html' %} active{% endif %}" href="{{ '/resources.html' | relative_url }}">Resources</a>
-                    
-                    <div class="text-nav-group">
-                        <div class="text-nav-group-title">Collection</div>
-                        <a class="text-nav-link{% if page.url == '/browse.html' %} active{% endif %}" href="{{ '/browse.html' | relative_url }}">Browse</a>
-                        <a class="text-nav-link{% if page.url == '/subjects.html' %} active{% endif %}" href="{{ '/subjects.html' | relative_url }}">Subjects</a>
-                        <a class="text-nav-link{% if page.url == '/map.html' %} active{% endif %}" href="{{ '/map.html' | relative_url }}">Map</a>
-                        <a class="text-nav-link{% if page.url == '/locations.html' %} active{% endif %}" href="{{ '/locations.html' | relative_url }}">Locations</a>
-                        <a class="text-nav-link{% if page.url == '/data.html' %} active{% endif %}" href="{{ '/data.html' | relative_url }}">Data</a>
+
+                    <div class="collection-dropdown">
+                        <a class="text-nav-link collection-toggle" href="{{ '/browse.html' | relative_url }}">
+                            Collection
+                            <svg class="chevron-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="collection-submenu">
+                            <a class="text-nav-link{% if page.url == '/browse.html' %} active{% endif %}" href="{{ '/browse.html' | relative_url }}">Browse</a>
+                            <a class="text-nav-link{% if page.url == '/subjects.html' %} active{% endif %}" href="{{ '/subjects.html' | relative_url }}">Subjects</a>
+                            <a class="text-nav-link{% if page.url == '/map.html' %} active{% endif %}" href="{{ '/map.html' | relative_url }}">Map</a>
+                            <a class="text-nav-link{% if page.url == '/locations.html' %} active{% endif %}" href="{{ '/locations.html' | relative_url }}">Locations</a>
+                            <a class="text-nav-link{% if page.url == '/data.html' %} active{% endif %}" href="{{ '/data.html' | relative_url }}">Data</a>
+                        </div>
                     </div>
 
                     <div class="text-nav-group">
                         <div class="text-nav-group-title">Tributaries</div>
                         {% for c in site.tributaries %}
-                        <a class="text-nav-link {% if page.url contains c.url %}active{% endif %}" href="{{ c.url | relative_url }}">{{ c.title }}</a>
+                        <div class="tributary-dropdown{% if page.url contains c.url %} current-tributary{% endif %}" data-tributary="{{ c.slug }}">
+                            <a class="text-nav-link tributary-link {% if page.url contains c.url %}active{% endif %}" href="{{ c.url | relative_url }}">{{ c.title }}</a>
+                            <div class="tributary-sections" style="display: none;">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
                         {% endfor %}
                     </div>
                 </nav>
@@ -503,7 +515,8 @@
     // Marks the current tributary based on URL path
     function renderNavigation(data) {
         const currentPath = window.location.pathname;
-        
+        const currentHash = window.location.hash.replace('#', '');
+
         data.tributaries.forEach(trib => {
             const riverColumn = document.querySelector(`.river-column[data-tributary="${trib.slug}"]`);
             if (!riverColumn) return;
@@ -553,10 +566,52 @@
             if (currentPath.includes(trib.slug)) {
                 riverColumn.classList.add('current-tributary');
             }
+
+            // Populate tributary dropdown sections
+            const dropdown = document.querySelector(`.tributary-dropdown[data-tributary="${trib.slug}"]`);
+            if (dropdown) {
+                const sectionsContainer = dropdown.querySelector('.tributary-sections');
+                if (sectionsContainer && trib.sections && trib.sections.length > 0) {
+                    sectionsContainer.innerHTML = '';
+
+                    trib.sections.forEach(section => {
+                        const a = document.createElement('a');
+                        a.href = `{{ "/tributaries/" | relative_url }}${trib.slug}/#${section.id}`;
+                        a.textContent = section.heading;
+                        a.className = 'text-nav-link section-link';
+                        a.dataset.section = section.id;
+
+                        // Mark as active if on this page and section
+                        if (currentPath.includes(trib.slug) && currentHash === section.id) {
+                            a.classList.add('active');
+                        }
+
+                        // Close nav when clicking section link on current page
+                        a.addEventListener('click', function(e) {
+                            if (currentPath.includes(trib.slug)) {
+                                // On the same page, close the nav
+                                setTimeout(() => {
+                                    closeFullPageNav();
+                                }, 100);
+                            }
+                            // Otherwise let it navigate normally
+                        });
+
+                        sectionsContainer.appendChild(a);
+                    });
+
+                    // Show sections if this is the current tributary
+                    if (dropdown.classList.contains('current-tributary')) {
+                        sectionsContainer.style.display = 'block';
+                        dropdown.classList.add('expanded');
+                    }
+                }
+            }
         });
 
         // Re-attach event listeners
         attachSegmentListeners();
+        attachDropdownListeners();
         
         const navContainer = document.getElementById('fullPageNav');
         if (navContainer) {
@@ -734,6 +789,37 @@
         });
     }
 
+    // Attach click listeners to tributary links for dropdown toggle
+    function attachDropdownListeners() {
+        document.querySelectorAll('.tributary-link').forEach(link => {
+            // Skip if already has listener
+            if (link.dataset.dropdownAttached === 'true') return;
+            link.dataset.dropdownAttached = 'true';
+
+            link.addEventListener('click', function(e) {
+                const dropdown = this.closest('.tributary-dropdown');
+                const sectionsContainer = dropdown.querySelector('.tributary-sections');
+
+                // If sections exist and this is a subtle click (e.g., to expand), toggle
+                if (sectionsContainer && sectionsContainer.children.length > 0) {
+                    const isExpanded = dropdown.classList.contains('expanded');
+
+                    // If user clicks and dropdown is collapsed, expand without navigation
+                    if (!isExpanded && e.shiftKey) {
+                        e.preventDefault();
+                        dropdown.classList.add('expanded');
+                        sectionsContainer.style.display = 'block';
+                    } else if (isExpanded && e.shiftKey) {
+                        e.preventDefault();
+                        dropdown.classList.remove('expanded');
+                        sectionsContainer.style.display = 'none';
+                    }
+                    // Otherwise, let normal navigation happen
+                }
+            });
+        });
+    }
+
     // Load when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', loadTributariesData);
@@ -747,6 +833,29 @@ function openFullPageNav() {
     document.getElementById('fullPageNav').classList.add('active');
     document.body.classList.add('nav-open');
     document.body.style.overflow = 'hidden';
+
+    // Initialize collection dropdown toggle after nav is opened
+    setTimeout(initCollectionDropdown, 50);
+}
+
+// Collection dropdown toggle
+function initCollectionDropdown() {
+    const collectionToggle = document.querySelector('.collection-toggle');
+    const collectionDropdown = document.querySelector('.collection-dropdown');
+
+    if (collectionToggle && collectionDropdown && !collectionToggle.dataset.initialized) {
+        collectionToggle.dataset.initialized = 'true';
+
+        collectionToggle.addEventListener('click', function(e) {
+            // Only prevent default and toggle on mobile
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                collectionDropdown.classList.toggle('expanded');
+            }
+            // On desktop, let it navigate normally
+        });
+    }
 }
 
 function closeFullPageNav() {

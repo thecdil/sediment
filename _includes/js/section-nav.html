@@ -68,9 +68,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Function to update active section in menu
+  // Function to update active section in both menus
   function updateActiveSection(sectionId) {
+    // Update fixed left menu
     document.querySelectorAll('.section-nav-link').forEach(link => {
+      if (link.dataset.section === sectionId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+
+    // Update full-page nav dropdown sections
+    document.querySelectorAll('.section-link').forEach(link => {
       if (link.dataset.section === sectionId) {
         link.classList.add('active');
       } else {
