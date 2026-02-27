@@ -14,9 +14,12 @@ river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75
 
   <!-- Introductory Content Box -->
   <div class="intro-content-box">
-    
+    <h1 class="sedimentation-title">SEDIMENTATION</h1>
+
 {% capture intro_content %}{% include intro.md %}{% endcapture %}
 {{ intro_content | markdownify }}
+
+    {% include navigation-cards.html %}
 
     <div class="intro-buttons">
       <a href="{{ '/about.html' | relative_url }}" class="btn btn-primary btn-sm me-2">About</a>
@@ -115,13 +118,25 @@ river_path: "M190,-10 Q105,0 100,0 T65,15 50,23 Q45,25 30,35 Q20,45 19,65 Q42,75
 
 .intro-content-box {
   position: absolute;
-  top: 200px;
+  top: 140px;
   right: 6.5%;
   width: 85%;
   background: white;
-  padding: 25px;
+  padding: 30px;
   z-index: 200;
   animation: fadeInUp 1s ease-out;
+}
+
+.sedimentation-title {
+  font-family: 'Inconsolata', monospace;
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(139, 115, 85, 0.5);
+  text-stroke: 1px rgba(139, 115, 85, 0.5);
+  letter-spacing: 0.05em;
+  margin: 0 0 20px 0;
+  text-align: center;
 }
 
 .intro-content-box h2 {
