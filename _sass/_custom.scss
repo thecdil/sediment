@@ -1264,3 +1264,144 @@ body:has(.sticky-nav-button) > main > div[style*="background:transparent"]:first
     gap: 30px;
   }
 }
+
+/* ========================================
+   Section Navigation Menu (Tributary Pages)
+
+   A fixed left-side menu showing H2 sections in the current tributary essay.
+   Updates as user scrolls to show current position in the essay.
+   ======================================== */
+
+.section-nav-menu {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  width: 180px;
+  max-height: calc(100vh - 140px);
+  padding: 20px 0;
+  z-index: 500;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Subtle background */
+  background: rgba(248, 246, 240, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(139, 69, 19, 0.15);
+  /* Custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 69, 19, 0.3) transparent;
+}
+
+.section-nav-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.section-nav-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.section-nav-menu::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 69, 19, 0.3);
+  border-radius: 2px;
+}
+
+.section-nav-menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(139, 69, 19, 0.5);
+}
+
+.section-nav-title {
+  font-family: 'Inconsolata', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8B4513;
+  padding: 0 15px 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.2);
+}
+
+.section-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-nav-list li {
+  margin: 0;
+}
+
+.section-nav-link {
+  display: block;
+  padding: 8px 15px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #5D4037;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  position: relative;
+}
+
+.section-nav-link:hover {
+  color: #8B4513;
+  background: rgba(139, 69, 19, 0.08);
+  border-left-color: rgba(210, 105, 30, 0.4);
+  transform: translateX(2px);
+}
+
+.section-nav-link.active {
+  color: #8B4513;
+  font-weight: 600;
+  background: rgba(205, 133, 63, 0.15);
+  border-left-color: #CD853F;
+}
+
+.section-nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #CD853F, transparent);
+}
+
+/* Responsive behavior */
+@media (max-width: 1200px) {
+  .section-nav-menu {
+    width: 160px;
+    left: 15px;
+  }
+
+  .section-nav-link {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-nav-menu {
+    width: 140px;
+    left: 10px;
+    top: 90px;
+  }
+
+  .section-nav-title {
+    font-size: 10px;
+    padding: 0 12px 10px;
+  }
+
+  .section-nav-link {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+/* Hide on smaller screens where it would interfere with content */
+@media (max-width: 768px) {
+  .section-nav-menu {
+    display: none;
+  }
+}
