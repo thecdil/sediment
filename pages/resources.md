@@ -102,6 +102,4 @@ If you'd like to learn more about Glen Canyon's history, human-nature relations,
 
 {% include feature/citation.html objectid="bodenhamer" %}
 
-</div>
-
 <br>
