@@ -31,4 +31,14 @@
         {% endif %}
     </div>
 </div>
-{% endif %} 
+{% endif %}
+
+<script>
+function navigateToTributary(event) {
+    event.preventDefault();
+    const tributaries = "{{ page.tributary }}".split(';').map(t => t.trim()).filter(t => t);
+    const randomTributary = tributaries[Math.floor(Math.random() * tributaries.length)];
+    const baseUrl = "{{ '/tributaries' | relative_url }}";
+    window.location.href = baseUrl + "/" + randomTributary;
+}
+</script>
