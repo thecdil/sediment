@@ -13,66 +13,122 @@ scrollama: true
 
 # Land
 
-
-*This section argues that the earth is not passive but lively and constitues sociopolitical lives. As an archive, this liveliness means the archive participates in ongoing life, only that which matters gets in* space is not so stratigraphic, fixed, or always shaped by large forces. Narrative? 
-
-Through its transformations, sediment also shows how these histories encounter and transform one another, muddling the boundaries between them.  
-
-
 ## Terra Infirma
 
-<div class="float-start pe-4 mb-2 w-50" >
+<div class="float-start pe-4 mb-0 w-50" >
 
 {% include feature/image-gallery.html objectid="sediment131" caption=false%}
-{% include feature/image-gallery.html objectid="sediment200" caption=false%}
 {% include feature/image-gallery.html objectid="sediment134" caption=false%}
+{% include feature/image-gallery.html objectid="sediment200" caption=false%}
+{% include feature/image-gallery.html objectid="sediment176" caption=false%}
+{% include feature/image-gallery.html objectid="sediment12" caption=false%}
+{% include feature/image-gallery.html objectid="sediment186" caption=false%}
+
+
+
 
 </div>
 
-GLEN CANYON IS a landscape in constant motion. Here, the contours of space rarely hold still: bits of earth--sediment, rock dust, sandstone shards--are at all times sloughing away from their bedrock encasings, etched out by wind, water, animal hoof, or plant root. Some of these loose bits are plucked up by wind, and set down in the crevices of the canyon's rilled buttes, hills, and cliffs; others pile up into high dunes. Some bits are taken up in water--carried by a trickle of rain or the Colorado River itself--to heap onto sandy shore, or to get lodged along the river's bottom. And so the edges of things waver and drift and the ground swells and subsides, like a viscous, slow-moving sea. This is not *terra firma,* solid earth, fixed space--this is a terrain always in flux: fissures, cut by flowing water, worm through the soft sandstone ground. Eventually, cracks grow into chasms, and splinter into branches. For as long as these canyons exist, they will meander and writhe like a great sluggish snake. 
+<br>
 
-Of course, all landscapes shift over time: elementary-aged children can tell you that mountains rise and crumble, that rivers carve valleys and deep canyons, and the tectonic plates will eventually tear the continents apart and bring new ones together. But barring natural catastrophe--earthquakes, volcanic eruptions, landslides--these mutations have, for centuries, been imagined to take place at such a gradual, creeping pace they are nearly imperceptible, and therefore inconsequential, for human life.  We have come to expect the ground will remain firm beneath our feet. 
+GLEN CANYON IS a landscape in constant motion. Here, the contours of space rarely hold still: bits of earth--sediment, rock dust, sandstone shards--are at all times sloughing away from their bedrock encasings, etched out by wind, water, animal hoof, or plant root. 
 
-Not all humans view nature as inert and inanimate: author Amitav Ghosh reminds us this is a Western way of thinking, and even then, gradualist ideas only gained prevalence as of the early 19th century, when geologists James Hutton and Charles Lyell theorized that the earth was formed not through a series of violent calamities, but by incremental accruals, erosions, and shifts. Nature, they asserted, "does not make leaps" (26). These gradualist notions have rendered nature functionally static: hills and mountains certainly drift, gradualists say, but they do so at a pace that has no bearing on human activity. And so nature was imagined--and represented, in literature and cartography--as a passive stage upon which human dramas takes place (78). 
+Some of these loose bits are plucked up by wind, and set down in the crevices of the canyon's rilled buttes, hills, and cliffs; others pile up into high dunes. Some bits are taken up in water--carried by a trickle of rain or the Colorado River itself--to heap up on sandy shore, or to get lodged along the river's bottom. And so the edges of things waver and drift, and the ground swells and subsides, like a viscous, slow-moving sea. 
+
+This is not *terra firma,* solid earth, fixed space--this is a terrain always in flux: fissures, cut by flowing water, worm through the soft sandstone ground. Eventually, cracks grow into chasms, and splinter into branches. For as long as these canyons exist, they will meander and writhe like great sluggish snakes. 
+
+Of course, all landscapes shift over time: elementary-aged children can tell you that mountains rise and crumble, that rivers carve valleys and deep canyons, and the tectonic plates will eventually tear the continents apart and bring new ones together. But barring natural catastrophe--earthquakes, volcanic eruptions, landslides--these mutations have, for centuries, been imagined to take place at such a gradual, creeping pace they are nearly imperceptible, and therefore inconsequential, for human life.
+
+We have come to expect, in other words, that the ground will remain firm beneath our feet. 
+
+However, not all humans view nature as inert and inanimate: author Amitav Ghosh reminds us this is a Western way of thinking, and even then, gradualist ideas only gained prevalence as of the early 19th century, when geologists James Hutton and Charles Lyell theorized that the earth was formed not through a series of violent calamities, but by incremental accruals, erosions, and shifts. Nature, they asserted, "does not make leaps" (26). 
+
+Thus, nature has been rendered functionally static: hills and mountains certainly drift, gradualists say, but they do so at a pace that has no bearing on human activity. A family who builds a house upon a hill need not worry about the hill blowing away (unless of course, natural disaster strikes, which, despite their regularity, are extraordinary exceptions to gradualist logics). And so nature was imagined--and represented, in literature and cartography--as a passive stage upon which human dramas takes place (78). 
 
 But nature is not inert, even at the human scale. In Glen Canyon, one does not have to stand in place for a thousand years to witness the drifting of the hills: I have seen the landscape morph with my own eyes, and many others have seen this too. 
 
-Last winter, I visited Lone Rock, a solitary butte that rises high out of Wahweap Bay, one of Lake Powell's coves. Decades ago, when the lake was at full pool, Lone Rock was encircled by deep water, but the lake has long since retreated, leaving behind a vast bed of sand and a shallow, mucky puddle. Even as I walked across the sand flats, I could see that they had grown longer and the lake even smaller since I had last been here four years before. With the lake shrunk down, Lone Rock had grown taller, its bleached bathtub rings wider. The contours of the land had been remade, in this case by shifting water, not shifting earth. 
+<br><br><br>
 
-In other places, the earth's contours are maintained by water, and are remade in its absence. Two days before I went to Lone Rock, as I stood in the narrow slit of Antelope Canyon, a guide showed our tour group a photograph of the same place, five years earlier. Do you see, she asked us, that the floor is ten feet higher now than it was then. One by one, we looked at her phone, then back up at the canyon's juttments, trying to reconcile the two different places that were actually the same. Because of the drought, she explained, the spring floods had not come, and so the sand that the wind steadily blows in had not been flushed as usual, but was instead filling up the canyon floor. The man next to me looked down at the ground with an air of surprise, perhaps trying to imagine, as I was, how the coordinates of space could have be rearranged so suddenly, how a floor could appear where there used to be only air. 
-
-Sometimes, water and earth come together and remake the land into drastic and sudden new forms. In the mere sixty years since Glen Canyon Dam's construction, the Colorado River has built towering mud glaciers-some two hundred feet tall--at the seams where river slows into lake. These glaciers are loosely bound, and prone to collapse, and boaters have captured videos of great hunks of mud calving off and slumping into the river.  When these mud bergs fall, they rearrange the river into new channels, and they whip up rapids that shift day by day. A friend who runs raft trips on the Grand Canyon all summer long described a similar phenemona occuring where the Canyon begins to empty into Lake Mead, and told me that nobody knew anymore what they would find around the Canyon's final bends: the ground was moving too rapidly. 
-
-On a reddit page--one of my favorites--r/NatureisFuckingLit, I recently came across a video of a "strange phenomena" at Lake Powell, titled "Underwater Avalanche?!" and subtitled, more scientifically, "Turbidity current at Lake Powell." In the video, a cloud of murky, seething water erupts across the lake's blue surface, as if the lake has begun to boil. Suddenly, the cloud darts downstream, trailing a churning path, and I cannot help but think of the way the sandworms in *Dune* push up berms of sand before they breach. The cameraman then zooms on an object moving quickly through the tumult, wondering out loud if it's animal trapped in the current, before realizing, with even greater alarm, it's an entire log being pulled down into the Lake. He pans to his boat's depth gauge, and remarks that it is acting strange: "it reads almost 150 feet" he says, although "it should be less than 20." Perhaps, he jokes, he has just seen the Lake Powell monster. 
-
-For both me and the cameraman, the river's sudden break in ordinary behavior conjured up a supernatural imagination: only something alive, our instincts said, could cause the earth to move with such suddenness and erratic agency. For those of us who have been conditioned by gradualist visions of nature, there is something disorienting, even unsettling, in recognizing that nature is not so orderly or predictable after all, that the ground beneath our feet might rise up or fall away, that even a tamed, highly-managed lake can boil and swallow anything caught in its flows. For Ghosh, "those moments when something that seems inanimate turns out to be vitally, even dangerously alive" produce, for gradualist thinkers, a sensation of deep uncanniness. This uncanniness is a recognition that we humans are not alone, nor we can ever keep the trajectories of our lives from getting muddled. There is no stage holding us in place, this is moving all around us and so we are bogged into its flows. 
-
-But these moments of recognition seem to produce other, less horrific feelings, as well. When elementary children learn about plate tectonics,or when the man on my tour realized he was standing in what was once pure air, when my friend told me about finding new rapids each time she goes down the Grand Canyon, there is a recognizable flash of awe, excitement, captivation. Perhaps this is why I enjoy scrolling through r/NatureisFuckingLit: there is something captivating 
+{% include feature/trib-button.html trib="atmosphere" image="atmosphere" text="Wind" %}
 
 
+{% include feature/new-section.html %}
+## NatureisFuckingLit
 
-In Glen Canyon, nature is not moving at a gradual pace: the ground is literally shifting around our feet: and so we are bogged in with its flows. We have no choice: there is no static earth, nor can we hold time still.
 
+Last winter, I visited Lone Rock, a solitary butte that rises high out of Wahweap Bay, one of Lake Powell's coves. Decades ago, when the lake was at full pool, Lone Rock was encircled by deep water, but the lake has long since retreated, leaving behind a vast bed of sand and a shallow, mucky puddle. Even as I walked across the sand flats, I could see that beach had grown longer and the lake even smaller since I had last been to Lone Rock four years before. With the lake shrunk down, Lone Rock had also become taller, its bleached bathtub rings wider. The contours of the land had been remade, in this case by shifting water, not shifting earth. 
+
+{% include feature/image-gallery.html objectid="sediment329" caption=false%}
+{% include feature/image-gallery.html objectid="sediment220" caption=false%}
+
+In other places, the earth's contours are maintained by water, and are remade in its absence. Two days before I went to Lone Rock, I took a walking tour of Antelope Canyon, whose pink swerving walls you might recognize from computer desktop backgrounds. Deep in the canyon, our guide pointed a rock that swerved into shape of George Washington's profile, and then pulled out her phone to show the group a photograph of the same place, five years earlier. 
+
+<div class="float-start pe-4 mb-0 w-50" >
+
+{% include feature/image-gallery.html objectid="sediment204" caption=false%}
+</div>
+
+<br>
+Do you see, she asked us, that the floor is ten feet higher now than it was then. One by one, we looked at her phone, then back up at George Washington, trying to reconcile the two different places that were actually the same. Now, we could reach up and touch Washington's nose. Then, George Washington's chin floated high above the canyon floor. Because of the drought, she explained, the spring floods had not come, and so the sand that the wind steadily blows in during the year had not been flushed as usual. Instead, it was filling up the canyon floor. The man next to me looked down at the ground with an air of surprise, perhaps trying to imagine, as I was, how the coordinates of space could have be rearranged so quickly, how a floor could appear where there used to be only air. 
+
+<br><br><br>
+
+Sometimes, water and earth come together and remake the land into drastic and sudden new forms. In the mere sixty years since Glen Canyon Dam's construction, the Colorado River has built towering mud glaciers--some two hundred feet tall--at the point where flowing river meets still lake (this point itself is always moving, according to the lake's level at any given time: fuller lake means the delta point is further upstream, lower lake means the delta moves downstream). Lake Powell's mud glaciers, which are still new and uncompacted by the forces of time, are loosely bound, and therefore prone to collapse. Boaters have captured videos of great hunks of mud calving off of them and slumping into the river. When these mud bergs fall, they rearrange the river into new channels, and they whip up rapids that shift day by day. 
+
+A friend of mine, who runs raft trips on the Grand Canyon all summer long, described a similar phenemona occuring where the Grand Canyon begins to empty into Lake Mead, and told me that nobody knew anymore what they would find around the Canyon's final bends: garganutuan standing waves piling up over underwater mud piles, the river split into three or four or five narrow channels, or squeezed into one torrential stream. The ground was shifting too rapidly. 
+
+On a reddit page--one of my favorites--r/NatureisFuckingLit--I recently came across a video of a "strange phenomena" at Lake Powell, titled "Underwater Avalanche?!" and subtitled, more scientifically, "Turbidity current at Lake Powell." In the video, a cloud of murky, seething water spreads out across the lake's surface. It seems as if the lake has begun to boil. Suddenly, the cloud darts downstream, trailing a churning path, and I cannot help but think of the way the sandworms in *Dune* push up ridges of slithering sand before they breach. 
+
+{% include feature/video.html objectid="https://www.youtube.com/watch?v=ltshXuLuwJM" width="100" %}
+
+In the video, the cameraman zooms in on a dark object slipping quickly through the tumult, and he wonders out loud if it's animal trapped in the current--before realizing, with even greater alarm, it's an entire log being pulled down into the lake. He pans to his boat's depth gauge, and remarks that it is acting strange: "it reads almost 150 feet" he says, although "it should be less than 20." Perhaps, he jokes, he has just seen the Lake Powell monster. 
+
+For me and the cameraman alike, the river's strange behavior conjures up a supernatural image: only something alive, our instincts both said, could cause the earth to move with such erratic agency. For those of us conditioned by gradualist views of nature, there is something unsettling in recognizing that nature is not so orderly or predictable after all. I cannot help but feel a prickle of squeamish distress when I think about the ground beneath me as *in motion*, like I'm standing on earth made of squirming, wriggling snakes. And I am even more unsettled knowing that even a highly-managed, manmade lake can suddenly open up and swallow logs whole.
+
+Ghosh groups these feelings of disoriented, unsettled, squeamish distress into the category of uncanniness. The uncanny, he says, emerges in "those moments when something that seems inanimate turns out to be vitally, even dangerously alive." Recognizing a lively earth means recognizing that even in those moments in which we think we are alone, there are in fact innumerable things in motion all around us. It means, too, a recognition that we are not separate from this world in motion, but are caught up and bogged down in its flows. 
+
+{% include feature/image-gallery.html objectid="sediment5" caption=false%}
+
+
+But I do not think that the recognition of a lively earth is always so horror-inducing. When elementary children learn about plate tectonics, or when the man in Antelope Canyon realized he was standing on a moving floor, or when my friend told me about the Grand Canyon generating a new and different riverscape every day, like some fervent artist, there is also awe, excitement, and captivation. 
+
+Perhaps this is why I--and the 1.2 million other subscribers--enjoy scrolling through r/NatureisFuckingLit: it feels good to look through the kaleidoscope of the earth's expressions--curtains of rain moving over a city like an army of ghosts; glittering red sand swirling in the ocean's tides; winds whipping snow into snaking ropes over a frozen lake; baby woodcocks luring worms out of the ground with a tiny, bobbing dance; sparrow murmurations rippling across the sky--and to be reminded of the surprising creativity, multiplicity, and vitality of our planet. The subreddit, seems to me, to signify a collective impulse to witness and catalog forms of agency and expression that are explicitly *not* human. 
+
+Perhaps this impulse is driven by a desire to know we are not alone, that we are not floating through space atop some cold and inert chunk of rock, nor are we separate from the rains and tides and winds and birds. Perhaps, after uncanniness, there is something we might find in recognizing that we are nestled into, tangled up in, and even made of the vibrant community of others who are here with us.
+
+{% include feature/image-gallery.html objectid="sediment42" caption=false%}
+
+{% include feature/trib-button.html trib="biota" image="microbes" text="Biota" %}
+
+
+{% include feature/new-section.html %}
 
 ## Sedimentation
 
-When Charles 
+
+*More coming soon*
+
+
+How did those 19th century geologists, James Hutton and Charles Lyell, who looked so intently at the earth, become responsible for formulating a narrative that the earth's rhythms were so gradual, that it came to be viewed as inert? 
+
+
 Particularatization, derangement, metaphor, relations, openness/construction, multiplicity
 
+## Maps / Shifting
 
-## Narrative
+## Representation
 
-## Maps
-
-
-## Sedimentation
-
+Sediment as archive
 
 ## Sociopolitical lives
 
+Yusoff - I am tracing sediment through sociopolitical lives. 
 
+Mining + failure 
 
-## Mud 
+space produces certain kinds of subjects; spatial arrangements determine power: encroachment, ??? 
+
+## Mud + Failure
 
 Yet mud resists the lure of endless forward
 momentum. The lure of endless forward momentum comes in many guises,
@@ -93,13 +149,7 @@ Yet this ontological shiftiness enables the muddy earth’s radical potential.
 Mud could be mistaken as life at the slow margins of the world (particularly
 by those entranced by the lure of endless forward momentum). (45)
 
-
-## Earth as Archive
-
 ## Dominy Glacier
-
-
-
 
 over one hundred side canyons, one hundred plus tributaries
 

@@ -279,7 +279,7 @@ These are all agents of what Anna Tsing calls "feral ecologies" that is, "ecolog
 
 But--at the same time that Lake Powell’s algal blooms, sediment glaciers, lime encrustations, and tumbleweeds have become enrolled as agents of colonial territorialization, they are also saboteurs of this same project. Feral, after all, means to “escape from captivity” and as each of these entities explode out of human control, they remind us that even behemoth projects like the Glen Canyon Dam do not grant humans total power to command and manage every bit of nature. Life, new and old, will always spring up and lay claim to the cracks.  
 
-{% include feature/image-gallery.html objectid="sediment210;sediment221" caption=false%}
+{% include feature/image-gallery.html objectid="sediment221" caption=false%}
 
 
 
